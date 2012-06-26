@@ -1,0 +1,88 @@
+Hacksaw Watermelon
+
+Misc Ideas
+----------
+* shouldn't turn wheat directly into bread
+* melon drops block itself, have to cut it into slices with a knife (ergo mod name)
+* milk needs to be less useless, as do eggs, pumpkins, and sheep
+* implement mod as a basic api with several separate addons
+  - config options to toggle as many behaviors as possible
+  - plan for IC2 integration in some addons, but not all
+* food quality
+  - high grade food lasts longer, provides more saturation
+  - eventually food decays in grade - unless preserved somehow
+  - seeds may produce food of grade 0-1 higher than their parent fruit
+? what do we do about fertilizer/bonemeal
+
+Resources
+---------
+* tree fruit
+  - banana
+  - coconut
+  ? vanilla bean
+  + durian
+  - lime, lemon, orange
+* ground crop
+  - pineapple
+  ! carrot - naturally occurring in the wild
+  - peas
+  - lettuce - seeds drop from dandelions
+  ! barley - naturally occurring in the wild
+  - ginger
+* special
+  + strawberry - spread kind of like groundcover?
+  + tomato - double high, regrowing, needs cage/support to reach potential
+* vanilla
+  - milk
+  - eggs
+  ! sheep - mutton, milk?
+  - pumpkin
+  ? dandelion
+
+Tools
+-----
+* chef's knife
+  - limited durability
+  - works similar to crafting with an rp2 handsaw
+  - mince vegetables, chop/grind meat
+    - all new crop types would have a chopped ingredient version
+* thermos
+  - can hold either juice or soup
+  - preserves contents
+  - capacity of 4 servings
+
+Machines
+--------
+* grill
+  - flat crafting grid 
+  - slowly cooks items over time
+    - corner slots are colder, middle slot is hotter
+  - burns charcoal or wood, not coal
+* juicer
+  - convert fruit/veg into juice
+* stewpot
+  - convert food + liquid into stew
+  - continual cooking
+  - recipe includes cauldron + furnace
+  - value = nutrition / liquid
+  - cooks slowly
+    - whenever an item is added, it must integrate before the newly reconstituted stew may be removed in bowls/thermos
+    - chopped ingredients add same nutritional value as raw but integrate much more quickly
+* icebox
+  - large chest that only holds food items (extra whitelist in config file)
+  - front-opening (so stackable)
+  - doubles as a crafting machine - certain recipes require chilling perhaps
+  - fuel either with snowballs or ic2 or nothing at all
+  - preserves food
+* stove
+  - ultimate in kitchen awesome, combines several machines into one
+  - at the very least, it provides both grilltop and baking capabilities
+? fryer
+  - possibly implement as an option on a grilltop somehow
+
+Recipes
+-------
+* cheese
+* vegetable oil
+* salad
+* sandwich
