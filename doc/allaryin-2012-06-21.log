@@ -1,0 +1,1012 @@
+Session Start: Thu Jun 21 05:07:51 2012
+[05:07.51] <allaryin> what is your github username?
+[05:08.07] <DV8FromTheWorld> dv8fromtheworld 
+[05:08.08] <DV8FromTheWorld> :P
+[05:08.10] <DV8FromTheWorld> why?
+[05:08.16] <allaryin> it didn't search
+[05:08.23] <DV8FromTheWorld> odd..
+[05:08.36] <DV8FromTheWorld> look up "The Icarus Project"
+[05:08.39] <DV8FromTheWorld> see if it comes up
+[05:08.51] <allaryin> i bet it's case sensitive
+[05:08.53] <allaryin> weird
+[05:09.01] <DV8FromTheWorld> DV8FromTheWorld then
+[05:13.54] <DV8FromTheWorld> so why you creepin on my github? :D
+[05:14.03] <allaryin> laugh
+[05:14.09] <allaryin> was going to set up a project
+[05:14.47] <DV8FromTheWorld> hacksaw watermelon?
+[05:14.50] <DV8FromTheWorld> or another one?
+[05:14.50] <allaryin> yes
+[05:14.56] <DV8FromTheWorld> umm, actually.
+[05:14.58] <allaryin> ;)
+[05:15.16] <DV8FromTheWorld> if you dont mind, let me set it up, ill give you ssh access.  Dont know why but i want the original setup
+[05:15.16] <DV8FromTheWorld> :P
+[05:15.20] <DV8FromTheWorld> 1 moment.
+[05:15.24] <allaryin> sure deal
+[05:15.33] <DV8FromTheWorld> github name
+[05:15.36] <allaryin> allaryin :P
+[05:15.43] <allaryin> lowercase because it's a username ;)
+[05:15.51] <DV8FromTheWorld> your cool :P
+[05:16.46] <DV8FromTheWorld> Great repository names are short and memorable. Need inspiration? How about flaming-octo-hipster.
+[05:16.48] <DV8FromTheWorld> lol^
+[05:16.48] <allaryin> i've got a meeting in a bit and am waiting for slow jobs to run - afterward i was just going to start aggregating ideas in a gist or something, but remembered that github projects have wikis and silliness like that
+[05:16.53] <allaryin> not short.
+[05:17.02] <DV8FromTheWorld> yea really
+[05:17.02] <DV8FromTheWorld> XD
+[05:17.04] <allaryin> but flaming octopus is a good project name
+[05:17.11] <DV8FromTheWorld> i agree
+[05:17.14] <allaryin> maybe flammable octopus is better
+[05:17.19] <DV8FromTheWorld> yes.
+[05:17.20] <DV8FromTheWorld> much
+[05:17.36] <allaryin> my server config repo is tin monkey
+[05:17.46] <allaryin> world with my daughter is turnip pancake :P
+[05:17.51] <DV8FromTheWorld> lol
+[05:19.01] <DV8FromTheWorld> k its up
+[05:19.09] <allaryin> cool
+[05:19.09] <DV8FromTheWorld> and your a collaborator
+[05:19.18] <DV8FromTheWorld> make sure you can do like everything with it
+[05:19.24] <DV8FromTheWorld> like that you have perms
+[05:19.37] <allaryin> excellent
+[05:19.57] <allaryin> it looks like i have push access
+[05:20.11] <DV8FromTheWorld> i made you a collaborator
+[05:20.15] <DV8FromTheWorld> so i would hope so
+[05:20.15] <DV8FromTheWorld> :P
+[05:20.18] <allaryin> yup ;)
+[05:20.27] <allaryin> yeah, looks like everything i'll need
+[05:20.36] <DV8FromTheWorld> ok,
+[05:20.37] <allaryin> ok, afk
+[05:20.42] <DV8FromTheWorld> for now ima stop porting
+[05:20.57] <DV8FromTheWorld> if you want later, you could run through the log of the IRC and pickout what we decided on
+[05:20.58] <DV8FromTheWorld> cya
+[05:21.05] <DV8FromTheWorld> start porting*
+[06:57.50] <allaryin> oh bleh.
+[06:58.07] <allaryin> first git commit from this machine ever - that's a terrible username :P
+[06:58.40] <DV8FromTheWorld> O.o?
+[06:59.50] <allaryin> oh, just committed the chatlog
+[07:00.04] <allaryin> only edited out join/leave messages so people's ip's aren't stored
+[07:00.06] <DV8FromTheWorld> oh god
+[07:00.08] <DV8FromTheWorld> please
+[07:00.10] <DV8FromTheWorld> im begging you
+[07:00.13] <DV8FromTheWorld> fix your name
+[07:00.16] <allaryin> yeah.
+[07:00.31] <allaryin> i just did, this machine i don't normally use git from
+[07:00.37] <DV8FromTheWorld> k lol
+[07:00.42] <allaryin> i tried to update it
+[07:00.42] <DV8FromTheWorld> that is terrible :P
+[07:00.50] <allaryin> and it failed to change history or whatever :P
+[07:00.53] <allaryin> not terribly surprising
+[07:00.58] <DV8FromTheWorld> ?
+[07:01.33] <allaryin> oh, i merged a rename in
+[07:01.52] <allaryin> but github is showing the bad username on the directory
+[07:02.06] <allaryin> if you nav into the dir it's fine
+[07:02.29] <DV8FromTheWorld> keep the document
+[07:02.35] <DV8FromTheWorld> ill remake the repo
+[07:02.36] <DV8FromTheWorld> k?
+[07:02.51] <DV8FromTheWorld> that way the dumb name isnt there :P
+[07:02.55] <DV8FromTheWorld> or wait
+[07:02.59] <DV8FromTheWorld> is it in the history?
+[07:03.05] <DV8FromTheWorld> or is it the right name?
+[07:03.22] <allaryin> if you want to recreate, sure
+[07:03.36] <DV8FromTheWorld> im very.... perticular about some things
+[07:03.37] <allaryin> otherwise, we have the one dumb commit WAAAAY back in history :P
+[07:03.45] <DV8FromTheWorld> orginaization is one of them
+[07:03.46] <allaryin> now's the time to be doing stuff like this
+[07:03.48] <DV8FromTheWorld> same with history
+[07:03.49] <DV8FromTheWorld> :D
+[07:04.10] <DV8FromTheWorld> k one sec
+[07:06.26] <DV8FromTheWorld> fixed
+[07:06.29] <DV8FromTheWorld> go for it
+[07:08.32] <allaryin> yay!
+[07:08.43] <allaryin> but yeah, putting file in repo instead of on wiki because wiki hosed formatting
+[07:10.02] <allaryin> oh, and i did a bit of reading up on mushrooms
+[07:10.09] <allaryin> really... people aren't very creative with them
+[07:10.41] <allaryin> not any major obvious applications that i didn't mention
+[07:20.13] <DV8FromTheWorld> so they are basically just sauces?
+[07:21.16] <allaryin> you can treat mushrooms like meat if they're big
+[07:21.23] <DV8FromTheWorld> true
+[07:21.27] <allaryin> otherwise you stew them
+[07:21.33] <allaryin> sautee for burgers
+[07:21.42] <DV8FromTheWorld> btw, i want to convay something to you
+[07:21.43] <allaryin> but they're -good- for broth
+[07:22.00] <DV8FromTheWorld> this is suppose to be something similar to just adding more food options
+[07:22.09] <DV8FromTheWorld> i dont want to get to to complicated
+[07:22.12] <allaryin> nodnod
+[07:22.16] <DV8FromTheWorld> and overwelm the user
+[07:22.24] <allaryin> making food rot will overwhelm people ;)
+[07:22.25] <DV8FromTheWorld> but having lots of cool fruits and vegies
+[07:22.38] <DV8FromTheWorld> config option for a reason, set to off by default
+[07:22.43] <allaryin> nod
+[07:22.44] <DV8FromTheWorld> someone WII request it, you know it
+[07:22.45] <DV8FromTheWorld> :D
+[07:22.48] <DV8FromTheWorld> will*
+[07:22.55] <allaryin> i think the fridge, grill, etc... should also be optional perhaps
+[07:23.04] <DV8FromTheWorld> well.. hmm
+[07:23.06] <allaryin> provide regular crafting table or furnace recipes as an alternative
+[07:23.08] <allaryin> maybe?
+[07:23.08] <DV8FromTheWorld> the fride is no
+[07:23.13] <DV8FromTheWorld> icebox is yes
+[07:23.16] <allaryin> erm, yes
+[07:23.18] <DV8FromTheWorld> just a place to hold food
+[07:23.21] <allaryin> yeah
+[07:23.32] <DV8FromTheWorld> the option to like reduce the time of rotting if a config optioin
+[07:23.34] <allaryin> we can put all machines on one block id
+[07:23.36] <DV8FromTheWorld> relating to the icebox
+[07:23.39] <DV8FromTheWorld> agreed
+[07:23.51] <allaryin> well, i like icebox being a big chest that looks unique and only stores food
+[07:23.56] <DV8FromTheWorld> yes
+[07:24.02] <allaryin> reason to use it instead of silver chest or something
+[07:24.12] <DV8FromTheWorld> mm
+[07:24.19] <allaryin> not humongous
+[07:24.20] <allaryin> but big
+[07:24.30] <DV8FromTheWorld> mm
+[07:24.40] <allaryin> visually, it'd be cool if it opened to the front
+[07:24.44] <allaryin> then let you stack them :P
+[07:24.46] <DV8FromTheWorld> yea
+[07:24.52] <DV8FromTheWorld> thats what i was gonna say
+[07:25.01] <DV8FromTheWorld> and if you put 2 on top of eachother, they combine?
+[07:25.03] <allaryin> that earns it all KINDS of bonuses
+[07:25.05] <allaryin> ... maybe?
+[07:25.08] <DV8FromTheWorld> to a limit of 2 or 3?
+[07:25.19] <allaryin> dunno how involved that gets
+[07:25.20] <DV8FromTheWorld> maybe :D
+[07:25.30] <allaryin> honestly, just 3 on top with 3 separate doors is fine by me
+[07:25.39] <DV8FromTheWorld> idea
+[07:25.46] <allaryin> esp if there was some kind of configurable option on the chill dial
+[07:25.48] <DV8FromTheWorld> maybe instead of doing a config option for the rotting
+[07:25.51] <DV8FromTheWorld> and the icebox thing
+[07:25.56] <DV8FromTheWorld> how about we make it an addon?
+[07:26.08] <allaryin> icebox preservation feature? or icebox itself?
+[07:26.20] <DV8FromTheWorld> the rotting and icepreservation
+[07:26.25] <DV8FromTheWorld> make it 1 thing
+[07:26.36] <DV8FromTheWorld> the icepreservation is the way to slowdown rotting
+[07:26.38] <allaryin> nod, so the awesome cupboard chest still exists
+[07:26.42] <DV8FromTheWorld> so that would be a config option
+[07:26.47] <DV8FromTheWorld> yes, yes it does
+[07:26.49] <allaryin> but feeding it snowballs to slow rot is an addon
+[07:27.01] <DV8FromTheWorld> yes.
+[07:27.09] <allaryin> ... does -anything- in the world use snow blocks?
+[07:27.14] <DV8FromTheWorld> no
+[07:27.16] <allaryin> other than you know, golems
+[07:27.20] <DV8FromTheWorld> besides snow castles
+[07:27.22] <DV8FromTheWorld> idea!
+[07:27.24] <allaryin> mmm
+[07:27.41] <DV8FromTheWorld> if you have IC2 installed, the icebox can run on EU
+[07:27.45] <DV8FromTheWorld> instead of snowballs
+[07:27.46] <DV8FromTheWorld> ?
+[07:27.46] <allaryin> sure
+[07:28.09] <allaryin> we're talking like 1 eu every 20 ticks or something
+[07:28.32] <DV8FromTheWorld> sounds good.
+[07:28.45] <DV8FromTheWorld>  about the same as a solar pannel
+[07:28.53] <allaryin> no, 1/20 a solar panel
+[07:28.58] <allaryin> solar panel is 1 eu per tick
+[07:29.05] <DV8FromTheWorld> 20 ticks = 1 second
+[07:29.10] <allaryin> yes
+[07:29.11] <DV8FromTheWorld> 1 EU/s 
+[07:29.12] <DV8FromTheWorld> is solar
+[07:29.18] <DV8FromTheWorld> up to 2EU/s
+[07:29.30] <allaryin> did they nerf it?
+[07:29.36] <DV8FromTheWorld> from?
+[07:29.37] <DV8FromTheWorld> 1 sec
+[07:29.38] <DV8FromTheWorld>  brb
+[07:30.07] <allaryin> yeah, doc says solar is 1eu/t
+[07:30.11] <DV8FromTheWorld> oh really?
+[07:30.17] <DV8FromTheWorld> wait
+[07:30.18] <allaryin> yeah, nothing measures in seconds on ic2
+[07:30.20] <allaryin> it's all per tick
+[07:30.24] <DV8FromTheWorld> no way..
+[07:30.34] <allaryin> coal is 10eu/t, geothermal is 20...
+[07:30.34] <DV8FromTheWorld> 20 eu per second
+[07:30.39] <DV8FromTheWorld> no way..
+[07:30.39] <allaryin> yeah, sounds about right
+[07:30.45] <DV8FromTheWorld> hmm
+[07:30.51] <DV8FromTheWorld> that seems like alot..
+[07:30.53] <allaryin> watch the batbox
+[07:30.53] <DV8FromTheWorld> ok either way
+[07:30.57] <allaryin> well, when you look at the costs
+[07:31.03] <DV8FromTheWorld> true
+[07:31.05] <DV8FromTheWorld> true
+[07:31.06] <DV8FromTheWorld> i gotcha
+[07:31.13] <allaryin> macerator costs 800
+[07:31.24] <DV8FromTheWorld> either way i agree, 1 eu / 20 ticks(1 second)
+[07:31.30] <allaryin> nod
+[07:31.37] <DV8FromTheWorld> how long is night time?
+[07:31.46] <allaryin> no clue, really
+[07:31.54] <allaryin> hrm...
+[07:31.59] <allaryin> actualyl, might need to be higher
+[07:32.05] <allaryin> luminators use 1 eu every 4 ticks
+[07:32.23] <allaryin> so 1eu/t might need to happen. internal buffer of 32
+[07:32.23] <DV8FromTheWorld> ok so, 1 eu every... 3?
+[07:32.32] <allaryin> shrug, every 1 or 2
+[07:32.32] <DV8FromTheWorld> hmm true
+[07:32.39] <allaryin> . /3 is hard math
+[07:32.41] <allaryin> ;)
+[07:32.47] <DV8FromTheWorld> duh lol
+[07:32.51] <DV8FromTheWorld> i forgot about that :P
+[07:32.59] <DV8FromTheWorld> well the first pull is always 32
+[07:33.12] <DV8FromTheWorld> so it pulls 32, but you can change how much it actually uses
+[07:33.12] <allaryin> sure
+[07:33.19] <DV8FromTheWorld> thats why the luminators stay lit
+[07:33.24] <allaryin> heh, they do NOW
+[07:33.24] <DV8FromTheWorld> even after the wire is removed
+[07:33.29] <DV8FromTheWorld> now?
+[07:33.43] <allaryin> i had a watermill lit by luminators in ic2 1.7
+[07:33.45] <allaryin> it was horrible
+[07:33.59] <DV8FromTheWorld> what do you mean?
+[07:34.02] <allaryin> epilleptic flickery nightmare
+[07:34.19] <DV8FromTheWorld> [07:32.48] <@GadgetTvMan> 7 mins
+[07:34.19] <DV8FromTheWorld> [07:32.53] <@GadgetTvMan> according to the wiki.
+[07:34.19] <DV8FromTheWorld> [07:33.36] <@GadgetTvMan> and 1 minute and a half for sunrise/sunset.
+[07:34.19] <DV8FromTheWorld> [07:33.53] <@GadgetTvMan> according the the wiki.
+[07:34.24] <DV8FromTheWorld> is the time setup
+[07:34.25] <allaryin> nod, saw
+[07:34.33] <allaryin> wonder...
+[07:34.36] <DV8FromTheWorld> so.. 6.5 * 60
+[07:34.44] <DV8FromTheWorld> 390
+[07:34.47] <allaryin> need fridge not to die overnight because of no solar
+[07:34.52] <DV8FromTheWorld> *20
+[07:34.52] <allaryin> 400 eu battery is good
+[07:35.08] <DV8FromTheWorld> 390 seconds in a night
+[07:35.09] <DV8FromTheWorld> roughtly
+[07:35.12] <allaryin> hrm...
+[07:35.23] <allaryin> storing more than a few hundred in a machine is a big deal
+[07:35.23] <DV8FromTheWorld> you know..
+[07:35.29] <DV8FromTheWorld> is it?
+[07:35.30] <allaryin> honestly, that's what batboxes are for
+[07:35.39] <DV8FromTheWorld> what about mass fabs
+[07:35.40] <DV8FromTheWorld> they do it
+[07:35.40] <allaryin> most machines only store enough for one full operation
+[07:35.47] <allaryin> mass fab is a freaking abomination :P
+[07:36.02] <allaryin> so one full mass fab operation is ... like what 100k?
+[07:36.24] <allaryin> ahh, 1 mill
+[07:36.34] <allaryin> and yup. its battery stores exactly 1 million
+[07:36.44] <DV8FromTheWorld> O.o
+[07:36.52] <allaryin> course you can't get it back out again
+[07:37.17] <allaryin> mfsu is 10m eu
+[07:37.20] <allaryin> mfe is 600k
+[07:37.23] <allaryin> batbox is 40k
+[07:37.29] <DV8FromTheWorld> well think about this
+[07:37.36] <DV8FromTheWorld> when the power goes out in your home
+[07:37.45] <DV8FromTheWorld> if you keep the fridge shut
+[07:37.51] <allaryin> your fridge stays cold for an hour or two
+[07:37.51] <DV8FromTheWorld> it stays cold for HOURS
+[07:38.02] <allaryin> because somebody goes to get the icecream
+[07:38.08] <DV8FromTheWorld> :D
+[07:38.16] <allaryin> oh, so here's a thought
+[07:38.25] <allaryin> max drain is 1eu/t
+[07:38.36] <DV8FromTheWorld> sure
+[07:38.37] <allaryin> that's to establish temperature
+[07:38.46] <DV8FromTheWorld> wait..
+[07:38.48] <DV8FromTheWorld> hmm
+[07:38.51] <DV8FromTheWorld> not sure thats smart
+[07:38.59] <allaryin> why? we still make it lossy
+[07:39.01] <DV8FromTheWorld> it takes ALOT of energy to establish temp
+[07:39.05] <allaryin> sure
+[07:39.20] <DV8FromTheWorld> how about the 1eu /t to stay at temp
+[07:39.31] <allaryin> 1eu/t to keep from losing temp
+[07:39.39] <DV8FromTheWorld> yes
+[07:39.39] <allaryin> 400 eu buffer
+[07:39.42] <DV8FromTheWorld> that makes more sense
+[07:39.45] <DV8FromTheWorld> sure
+[07:39.56] <DV8FromTheWorld> how much does a solar put out?
+[07:39.59] <allaryin> 1
+[07:40.02] <DV8FromTheWorld> hmm..
+[07:40.11] <allaryin> generator is 10, geothermal is 20
+[07:40.11] <DV8FromTheWorld> ok
+[07:40.33] <DV8FromTheWorld> i just thought about something
+[07:40.35] <allaryin> make it consume 8eu/t while cooling
+[07:40.42] <DV8FromTheWorld> we say to "keep it at temp"
+[07:40.45] <DV8FromTheWorld> and "cooling"
+[07:40.51] <DV8FromTheWorld> how are we suppose to find those variables
+[07:40.58] <DV8FromTheWorld> without hacking around like crazy
+[07:41.04] <allaryin> what do you mean?
+[07:41.09] <allaryin> they're just state on the chest itself
+[07:41.21] <allaryin> they only matter to us
+[07:41.29] <DV8FromTheWorld> i didnt know you could do that
+[07:41.31] <allaryin> and only when the food rot cycle ticks
+[07:41.31] <DV8FromTheWorld> wait
+[07:41.40] <allaryin> how does a batbox know how much eu it is holding?
+[07:41.45] <DV8FromTheWorld> could you also find the biome?
+[07:41.49] <allaryin> sure
+[07:41.50] <DV8FromTheWorld> so if its the desert
+[07:41.53] <allaryin> i think biomes have temperatures set
+[07:41.57] <DV8FromTheWorld> it takes more to cool it first time
+[07:42.05] <DV8FromTheWorld> and if its snowy, takes less first time
+[07:42.15] <allaryin> nod, some places water freezes, etc...
+[07:42.19] <DV8FromTheWorld> mm
+[07:43.09] <allaryin> either way... this is a side-priority
+[07:43.37] <DV8FromTheWorld> true
+[07:43.48] <DV8FromTheWorld> this would be an addon set
+<---------------------------------------------------------->  (DV8FromTheWorld's  Internet died.)
+[07:48.34] <DV8FromTheWorld> yo
+[07:48.44] <allaryin> heh
+[07:48.44] <DV8FromTheWorld> internet died, you there?
+[07:48.46] <DV8FromTheWorld> ah
+[07:48.55] <allaryin> (6:44:16 PM) DV8FromTheWorld: true
+[07:48.56] <allaryin> (6:44:17 PM) allaryin: icebox ui would have a temperature gauge and a single input slot
+[07:48.56] <allaryin> (6:44:23 PM) allaryin: could put a battery or snow/ice into it
+[07:48.56] <allaryin> (6:44:41 PM) allaryin: in core mod, the gauge is just always pegged at cold
+[07:48.56] <allaryin> (6:48:08 PM) allaryin: does core mod add the grill or is that addon?
+[07:49.15] <DV8FromTheWorld> hmm.
+[07:49.28] <DV8FromTheWorld> well, it really depends on what all you want to use the grill for
+[07:49.37] <DV8FromTheWorld> right now, it would be used for... 
+[07:49.40] <DV8FromTheWorld> wait
+[07:49.45] <DV8FromTheWorld> question
+[07:49.48] <allaryin> cooking food but not in a furnace
+[07:49.55] <DV8FromTheWorld> should be modify base recipes?
+[07:49.59] <DV8FromTheWorld> like not base files
+[07:50.03] <DV8FromTheWorld> but vanilla recipes
+[07:50.08] <allaryin> for what, bread?
+[07:50.14] <DV8FromTheWorld> well, bread, 
+[07:50.15] <allaryin> there are like 4 vanilla food recipes
+[07:50.19] <DV8FromTheWorld> and how you get melons
+[07:50.21] <allaryin> eggs
+[07:50.26] <allaryin> frakkin eggs
+[07:50.37] <DV8FromTheWorld> lol
+[07:50.42] <DV8FromTheWorld> boiled eggs anyone?
+[07:50.52] * DV8FromTheWorld hates boiled eggs
+[07:51.12] <DV8FromTheWorld> what does it take to make pancake batter?
+[07:51.26] <allaryin> pancakes are eggs, flour, sugar, water - maybe oil?
+[07:51.40] <DV8FromTheWorld> we have eggs, sugar, water
+[07:51.41] <DV8FromTheWorld> and!
+[07:51.54] <DV8FromTheWorld> if we took wheat and broke the bread recipe
+[07:52.05] <DV8FromTheWorld> put flour in before bread
+[07:52.09] <allaryin> nod
+[07:52.12] <DV8FromTheWorld> it could be used in pancake batter
+[07:52.15] <allaryin> bread is flour + water + yeast
+[07:52.20] <DV8FromTheWorld> exactly.
+[07:52.23] <allaryin> maybe some salt and sugar
+[07:52.31] <DV8FromTheWorld> cooking people are going to go effing nuts for this mod
+[07:52.32] <DV8FromTheWorld> :D
+[07:52.56] <DV8FromTheWorld> not sure about the salt.
+[07:53.10] <DV8FromTheWorld> stuff needs to make sense
+[07:53.17] <DV8FromTheWorld> but be feasable to put ingame
+[07:53.21] <DV8FromTheWorld> and have more than 1 use
+[07:53.31] <DV8FromTheWorld> and not just be there because it is IRL
+[07:53.37] <DV8FromTheWorld> so maybe not so much on salt :P
+[07:54.27] <allaryin> yeah
+[07:54.30] <allaryin> salt is a preservative
+[07:54.39] <allaryin> salt is a building material
+[07:54.42] <DV8FromTheWorld> sure, 
+[07:54.47] <DV8FromTheWorld> we need a way to get it though
+[07:54.50] <DV8FromTheWorld> hmm
+[07:54.54] <DV8FromTheWorld> get it from water?
+[07:54.55] <allaryin> we would dig it from the desert, would not extract from ocean water
+[07:55.00] <DV8FromTheWorld> LOL
+[07:55.02] <DV8FromTheWorld> k
+[07:55.10] <DV8FromTheWorld> that is twice you have read my mind
+[07:55.12] <DV8FromTheWorld> and denied it
+[07:55.13] <DV8FromTheWorld> XD
+[07:55.18] <allaryin> i don't like the idea of making water buckets come in two colors
+[07:55.27] <DV8FromTheWorld> yea true
+[07:55.41] <DV8FromTheWorld> plus, the code to decide on what is fresh and what isnt is retarted
+[07:55.45] <DV8FromTheWorld> and is invasive
+[07:55.49] <allaryin> yes
+[07:55.53] <DV8FromTheWorld> wait... wait...
+[07:55.54] <allaryin> i'd just make "ocean" biome salty
+[07:55.57] <allaryin> and everything else non
+[07:55.59] <DV8FromTheWorld> wait.
+[07:56.04] <DV8FromTheWorld> there is a mod..
+[07:56.08] <DV8FromTheWorld> i remember a long time ago
+[07:56.15] <DV8FromTheWorld> it was when technic first came out
+[07:56.18] <DV8FromTheWorld> it was in it
+[07:56.25] <DV8FromTheWorld> i was on sand and near water
+[07:56.30] <DV8FromTheWorld> and there was salt on the ground
+[07:56.39] <DV8FromTheWorld> i picked it up and was like wtf is this shit
+[07:56.51] <DV8FromTheWorld> it was like why is this even here? its out of place..
+[07:56.56] <DV8FromTheWorld> we do not need to do that
+[07:57.18] <allaryin> nod
+[07:57.29] <allaryin> salt would be fun but entirely nonessential
+[07:57.43] <allaryin> it's like providing a viable method for getting yeast :P
+[07:57.52] <DV8FromTheWorld> :DD
+[07:58.00] <DV8FromTheWorld> so heres what i think we need to do
+[07:58.16] <DV8FromTheWorld> find a way to actually put these ideas into a way we can see it better
+[07:58.23] <DV8FromTheWorld> like the item, and the path to get to them
+[07:58.26] <DV8FromTheWorld> recipe wise
+[07:58.30] <allaryin> hmm
+[07:58.30] <DV8FromTheWorld> we should start that now
+[07:58.34] <DV8FromTheWorld> for us
+[07:58.34] <allaryin> you know graphviz?
+[07:58.41] <DV8FromTheWorld> ?
+[07:58.44] <DV8FromTheWorld> never heard of it
+[07:58.56] <allaryin> it's a graphing language
+[07:59.01] <allaryin> for drawing arrows between things
+[07:59.09] <allaryin> lemme find an example i did
+[07:59.15] <allaryin> dead easy to learn, btw
+[07:59.29] <DV8FromTheWorld> k
+[07:59.41] <DV8FromTheWorld> i do alot more with visuals
+[08:00.07] <DV8FromTheWorld> when coding, i actually see what is happening through the code.  Like the code translates from the words and numbers to a video that im watchin
+[08:00.15] <DV8FromTheWorld> its really odd, but i can see it.
+[08:00.21] <DV8FromTheWorld> but my memory is VERY VERY bad.
+[08:00.23] <DV8FromTheWorld> so..
+[08:01.48] <allaryin> +http://tiff.simud.org/~ammon/graphviz/biofuel.dot.png,
+[08:02.06] <DV8FromTheWorld> omfg PERFECT
+[08:02.10] <allaryin> +http://tiff.simud.org/~ammon/graphviz/biofuel.dot.txt,
+[08:02.17] <allaryin> is the original source code
+[08:02.21] <DV8FromTheWorld> O.o....
+[08:02.32] <allaryin> go down to the steps section
+[08:02.33] <DV8FromTheWorld> ok let me lay something on you
+[08:02.57] <DV8FromTheWorld> let me introduce you to a program called paint
+[08:02.57] <DV8FromTheWorld> :D
+[08:03.06] <DV8FromTheWorld> not as good looking
+[08:03.09] <allaryin> boggle
+[08:03.10] <DV8FromTheWorld> but still gets it done
+[08:03.10] <DV8FromTheWorld> :D
+[08:03.12] <allaryin> a whole lot slower
+[08:03.15] <DV8FromTheWorld> boggle?
+[08:03.33] <allaryin> +http://dictionary.reference.com/browse/boggle, :P
+[08:03.45] <DV8FromTheWorld> lol
+[08:03.52] <DV8FromTheWorld> i just read through that code again
+[08:03.55] <DV8FromTheWorld> i take back what i said
+[08:03.56] <DV8FromTheWorld> :D
+[08:03.58] <allaryin> it's really really simple
+[08:04.04] <DV8FromTheWorld> yea..kinda.
+[08:04.08] <allaryin> literally drawing arrows between boxes
+[08:04.15] <allaryin> that one's kind of complex because i did coloring and labeling arrows
+[08:04.29] <allaryin> but you don't need all of that formatting initially
+[08:04.44] <DV8FromTheWorld> you know the code right?
+[08:04.51] <allaryin> what code?
+[08:05.00] <DV8FromTheWorld> to make that
+[08:05.02] <DV8FromTheWorld> you made the right?
+[08:05.04] <allaryin> well, yeah
+[08:05.10] <DV8FromTheWorld> thought so
+[08:05.20] <DV8FromTheWorld> ok, heres something that will be easier
+[08:05.21] <allaryin> this is how i make graphs
+[08:05.30] <DV8FromTheWorld> ive got to be learning java while coding
+[08:05.36] <DV8FromTheWorld> even as simple as that is
+[08:05.37] <allaryin> :)
+[08:05.37] <DV8FromTheWorld> trust me
+[08:05.40] <allaryin> java your first language?
+[08:05.43] <DV8FromTheWorld> my memory has gotten bad
+[08:05.45] <DV8FromTheWorld> yes, yes it is
+[08:05.47] <allaryin> nod
+[08:06.04] <DV8FromTheWorld> i dont want pity not am i lying, but i dont remember anything anymore
+[08:06.11] <DV8FromTheWorld> i dont even remember what i did yesterday
+[08:06.29] <DV8FromTheWorld> 3 years ago i could have quoted you 38 places of pi
+[08:06.42] <allaryin> i can do like 6 :P
+[08:06.46] <DV8FromTheWorld> lets just say... im not happy about my position on that
+[08:06.50] <DV8FromTheWorld> i can do 3
+[08:06.52] <DV8FromTheWorld> 3.14
+[08:06.54] <DV8FromTheWorld> thats all..
+[08:06.57] <DV8FromTheWorld> :(
+[08:06.59] <DV8FromTheWorld> anyways
+[08:07.17] <DV8FromTheWorld> so i dont have the time nor resources to do that graphic lang
+[08:07.22] <DV8FromTheWorld> as easy as it look
+[08:07.25] <DV8FromTheWorld> trust me, i dont
+[08:07.25] <allaryin> no worries
+[08:07.36] <DV8FromTheWorld> maybe we can do this
+[08:07.43] <DV8FromTheWorld> i can describe something to you
+[08:07.47] <allaryin> but throwing together charts from text descriptions is easy
+[08:07.48] <DV8FromTheWorld> like this for example
+[08:07.52] <allaryin> take a few seconds
+[08:07.57] <DV8FromTheWorld> yes, let me try for instand
+[08:07.58] <allaryin> afk a sec, brb
+[08:08.01] <DV8FromTheWorld> k
+[08:12.08] <DV8FromTheWorld> water + wheat = flour  >  egg + water + flour + sugar = pancake batter  >  stove&pan(pancake batter) = pancake  > @optional pancake x3 + maple surup = pancake with surup x3
+[08:12.28] <DV8FromTheWorld> could you take that, and make it into a graphic^
+[08:18.11] <allaryin> ok, back
+[08:18.17] <allaryin> hmm...
+[08:18.24] <allaryin> well, this part is easy
+[08:18.24] <allaryin> +http://tiff.simud.org/~ammon/graphviz/pancake.dot.png,
+[08:18.46] <allaryin> if we want the waters to be the same node, it is easier
+[08:19.04] <allaryin> the 3x pancake + syrup is... well, it's a question of how we want to visualise them
+[08:20.03] <DV8FromTheWorld> make an arrow go from pancake to a buble saying pankate and syrup
+[08:20.04] <allaryin> there
+[08:20.07] <allaryin> that's probably easy
+[08:20.08] <DV8FromTheWorld> with an x3 on the arrow
+[08:20.11] <allaryin> nod
+[08:20.23] <DV8FromTheWorld> ok, good
+[08:20.31] <DV8FromTheWorld> so i can just tell you how to do it in text
+[08:20.33] <DV8FromTheWorld> and you can do it?
+[08:20.42] <allaryin> you saw how quick i changed it
+[08:20.49] <DV8FromTheWorld> yep
+[08:20.52] <allaryin> it's not hard as long as we're just visualizing simple things
+[08:20.54] <DV8FromTheWorld> ok, so lets do that then
+[08:21.03] <DV8FromTheWorld> mm
+[08:21.12] <DV8FromTheWorld> harder thing ill show in paint if i have to :P
+[08:21.17] <allaryin> sure ;)
+[08:21.17] <DV8FromTheWorld> btw
+[08:21.20] <allaryin> okay. so i think the first thing we need, of course... is new food items
+[08:21.24] <DV8FromTheWorld> do you know of a program like paint
+[08:21.28] <DV8FromTheWorld> but 2 people can work on
+[08:21.30] <DV8FromTheWorld> at the same time
+[08:21.33] <allaryin> multiplayer paint?
+[08:21.35] <DV8FromTheWorld> but from 2 different PC
+[08:21.38] <DV8FromTheWorld> yes basically
+[08:21.43] <allaryin> maybe
+[08:21.49] <DV8FromTheWorld> i need a program like that :P
+[08:21.51] <allaryin> i wonder if google doc drawings work like that
+[08:22.39] <DV8FromTheWorld> flock draw
+[08:22.42] <DV8FromTheWorld> found it :P
+[08:22.50] <allaryin> ... flock the browser?
+[08:23.05] <DV8FromTheWorld> +http://flockdraw.com/,
+[08:23.36] <DV8FromTheWorld> “No matter how good you are at explaining ideas, sometimes nothing beats a drawing. FlockDraw is an easy to use online whiteboard with all the tools you need to quickly, collaboratively sketch your next big idea and share it with the world....”
+[08:24.15] <allaryin> +http://flockdraw.com/29gesw,
+[08:25.17] <allaryin> kind of clunky, but it doesn't suck
+[08:25.26] <DV8FromTheWorld> yea
+[08:25.29] <allaryin> not great though
+[08:25.33] <DV8FromTheWorld> yep
+[08:25.39] <allaryin> pretty sure googledoc drawings are better
+[08:25.49] <DV8FromTheWorld> lets see
+[08:26.11] <allaryin> no undo button
+[08:26.12] <allaryin> it sucks
+[08:26.19] <DV8FromTheWorld> lol
+[08:26.22] <DV8FromTheWorld> seriously no undo?
+[08:26.32] <allaryin> i couldn't find an undo button
+[08:26.49] <DV8FromTheWorld> ugh yea nvm
+[08:26.59] <DV8FromTheWorld> why cant someone just take paint
+[08:27.01] <DV8FromTheWorld> and make it MP
+[08:27.02] <DV8FromTheWorld> >.>
+[08:27.09] <DV8FromTheWorld> i might do that one day,
+[08:28.03] <allaryin> anyhow. new raw ingredients
+[08:28.13] <DV8FromTheWorld> yea, we need to cover themm
+[08:28.18] <allaryin> or processing existing ones?
+[08:28.24] <DV8FromTheWorld> both
+[08:28.29] <DV8FromTheWorld> we are going to use wheat
+[08:28.31] <allaryin> well, yes, but starting point
+[08:28.36] <DV8FromTheWorld> umm
+[08:28.43] <DV8FromTheWorld> we need to get the bases i think
+[08:28.51] <allaryin> processing in interesting ways implies more tools
+[08:29.05] <DV8FromTheWorld> well you cant really get tomatos from wheat
+[08:29.06] <DV8FromTheWorld> so..
+[08:29.26] <DV8FromTheWorld> im thinking new ingredients
+[08:29.29] <allaryin> first pass: no tools, just recipes. second pass: tools that get returned
+[08:29.30] <allaryin> k
+[08:29.53] <allaryin> so i like carrots and rice and tomatoes as interesting plant types
+[08:30.05] <DV8FromTheWorld> agreed
+[08:30.10] <allaryin> carrot grows identical to vanilla wheat in a farm
+[08:30.15] <DV8FromTheWorld> before we get to far away from from
+[08:30.21] <DV8FromTheWorld> the drawing
+[08:30.25] <allaryin> nod
+[08:30.26] <DV8FromTheWorld> i found one that you will like
+[08:30.27] <DV8FromTheWorld> +http://www.scriblink.com/index.jsp?act=phome&roomid=479&KEY=162FBB8B11F0BEC86522F610184FADF1,
+[08:33.59] <allaryin> so carrot is a reskin of wheat
+[08:34.08] <allaryin> plant it in tilled dirt, it grows
+[08:34.13] <DV8FromTheWorld> it cant be a direct reskin
+[08:34.21] <allaryin> you harvest and get carrot x 1-4 or something
+[08:34.26] <DV8FromTheWorld> carrot tops dont grow that tall..
+[08:34.27] <allaryin> then plant one carrot to make 1-4 more
+[08:34.52] <DV8FromTheWorld> agreed at getting 1/4
+[08:34.56] <DV8FromTheWorld> 1-4
+[08:35.14] <DV8FromTheWorld> are you making a list or something of what we are talking about?
+[08:35.30] <allaryin> yes
+[08:35.37] <DV8FromTheWorld> ok.
+[08:35.42] <DV8FromTheWorld> didnt know if i needed to
+[08:36.06] <allaryin> ok. craft carrot by itself, get seeds
+[08:36.15] <allaryin> plant seeds, get 1-4 carrots
+[08:36.20] <DV8FromTheWorld> yes
+[08:36.22] <DV8FromTheWorld> i like that
+[08:36.23] <allaryin> carrot is edible raw
+[08:36.29] <DV8FromTheWorld> yes
+[08:36.53] <DV8FromTheWorld> we can discuss the food and hunger level and "fillness" levels later
+[08:36.57] <allaryin> yeah
+[08:37.07] <allaryin> probably similar to apple right now
+[08:37.13] <DV8FromTheWorld> yes
+[08:37.21] <DV8FromTheWorld> i kinda want to upgrade apples though
+[08:37.22] <allaryin> second crop type
+[08:37.27] <DV8FromTheWorld> 4 levels is.. >.>
+[08:37.31] <allaryin> ;)
+[08:37.37] <allaryin> just making them come in different colors is win i think
+[08:37.42] <DV8FromTheWorld> yes
+[08:37.54] <allaryin> actually, first
+[08:37.56] <DV8FromTheWorld> should the different colors do different things?
+[08:37.58] <allaryin> wild carrots
+[08:38.02] <DV8FromTheWorld> hmm.
+[08:38.11] <DV8FromTheWorld> i dont know anything about wild carrots
+[08:38.11] <allaryin> we simply seed them in the world like flowers and grass i think
+[08:38.16] <DV8FromTheWorld> yes
+[08:38.23] <allaryin> carrots we eat are highly cultivated
+[08:38.32] <DV8FromTheWorld> i thought so
+[08:38.47] <DV8FromTheWorld> we should limit it to a certain biome i think
+[08:38.59] <allaryin> sure
+[08:39.00] <DV8FromTheWorld> any thoughts on that?
+[08:39.02] <DV8FromTheWorld> k
+[08:39.07] <DV8FromTheWorld> lol i just thought about something
+[08:39.15] <DV8FromTheWorld> onions
+[08:39.16] <allaryin> carrots grow like everywhere i think
+[08:39.17] <DV8FromTheWorld> and cutting them
+[08:39.20] <allaryin> onions rule
+[08:39.23] <DV8FromTheWorld> crying animation
+[08:39.23] <DV8FromTheWorld> XD
+[08:39.28] <allaryin> laugh
+[08:39.37] <DV8FromTheWorld> much much later, just thought it was funny
+[08:39.51] <DV8FromTheWorld> i dont know much about wild carrots
+[08:39.57] <DV8FromTheWorld> i know a bit about wild onions
+[08:40.01] <DV8FromTheWorld> those crow like everwhere
+[08:40.06] <allaryin> yeah
+[08:40.14] <DV8FromTheWorld> but onions arent very used i dont think?
+[08:40.22] <allaryin> huh?
+[08:40.24] <DV8FromTheWorld> (not an onion fan, dont like the taste)
+[08:40.27] <allaryin> heh
+[08:40.31] <DV8FromTheWorld> so i dont know about them
+[08:40.39] <allaryin> onions are ridiculous common
+[08:40.59] <allaryin> much more popular in world cuisine than carrots
+[08:41.15] <DV8FromTheWorld> yes
+[08:41.17] <allaryin> anyhow. i think wild carrots are like an arab thing
+[08:41.21] <DV8FromTheWorld> but i mean, what are they used on?
+[08:41.26] <DV8FromTheWorld> like wait
+[08:41.27] <allaryin> used on?
+[08:41.28] <allaryin> used in
+[08:41.29] <DV8FromTheWorld> before you spam me
+[08:41.43] <DV8FromTheWorld> what are they used in that would be feasable ingame
+[08:41.50] <DV8FromTheWorld> and not totally irrelevant
+[08:42.01] <DV8FromTheWorld> the stuff we add needs to be stuff that people are actually going to use
+[08:42.03] <allaryin> they go into soups and salads and on sandwiches
+[08:42.20] <allaryin> they go with most rice dishes if we're going to go that way
+[08:42.31] <DV8FromTheWorld> i never even thought about rice
+[08:42.35] <DV8FromTheWorld> but it is smart
+[08:42.40] <allaryin> was thinking about other types of grain
+[08:42.53] <allaryin> and we could do something like barley, which is like poor man's wheat
+[08:43.04] <DV8FromTheWorld> my food habits are not exactly the best, so i dont know much about food :D
+[08:43.07] <allaryin> but i like rice because it's more recognizable and has interesting growth properties
+[08:43.14] <DV8FromTheWorld> i like barley that would be smart
+[08:43.21] <DV8FromTheWorld> but lets go with rice
+[08:43.24] <allaryin> so... i think it's inficraft
+[08:43.30] <allaryin> they have barley
+[08:43.37] <allaryin> it just grows like grass
+[08:43.39] <allaryin> and you can pick it
+[08:43.44] <allaryin> and you get the stalks of grain
+[08:43.47] <allaryin> instead of just the seeds
+[08:43.50] <allaryin> it's meant as newbie food
+[08:44.03] <DV8FromTheWorld> well, rice would be hard to program
+[08:44.03] <allaryin> walk through a meadow, pick 3 pieces of barley. blam, bread.
+[08:44.09] <DV8FromTheWorld> wait wait!
+[08:44.16] <DV8FromTheWorld> rice could be like lily pads
+[08:44.19] <DV8FromTheWorld> but you cant stand on it.
+[08:44.22] <allaryin> ...
+[08:44.27] <allaryin> hmmmm
+[08:44.29] <DV8FromTheWorld> isnt that how rice grows?
+[08:44.32] <DV8FromTheWorld> in water?
+[08:45.12] <DV8FromTheWorld> i like the idea of barley
+[08:45.15] <allaryin> yes and no
+[08:45.18] <allaryin> but yeah, i like barley
+[08:45.33] <allaryin> could do oats the same way
+[08:45.34] <DV8FromTheWorld> so a definate yes to barley as another way to get bread
+[08:45.36] <allaryin> basically identical
+[08:45.43] <DV8FromTheWorld> oats makes me think of farm animals
+[08:45.44] <DV8FromTheWorld> :D
+[08:45.46] <allaryin> probably don't want both
+[08:45.51] <allaryin> shrug, and barley is beer
+[08:45.55] <allaryin> or animal feed
+[08:46.00] <allaryin> or like british food
+[08:46.03] <DV8FromTheWorld> lol
+[08:46.33] <allaryin> rice grows like any other grain afaik
+[08:46.44] <DV8FromTheWorld> afaik?
+[08:46.46] <allaryin> but it is harvested in water
+[08:46.48] <allaryin> as far as i know
+[08:47.06] <DV8FromTheWorld> ah ok
+[08:47.25] <DV8FromTheWorld> so yes to barley, no to oats, 
+[08:47.27] <DV8FromTheWorld> what about rice
+[08:47.44] <DV8FromTheWorld> we need to know how to implement it before going on past this point if we say yes
+[08:47.47] <allaryin> anyhow, the thought i was having about rice
+[08:48.02] <allaryin> was we require it grow adjacent to water
+[08:48.08] <allaryin> and require it be planted in a hydrated plot
+[08:48.44] <DV8FromTheWorld> hmm
+[08:48.47] <DV8FromTheWorld> i like that
+[08:49.10] <allaryin> so your rice farm is still all soggy and wet :P
+[08:49.21] <allaryin> but no weird problems like growing rice on the ocean surface
+[08:49.38] <DV8FromTheWorld> mm
+[08:49.47] <DV8FromTheWorld> so basically
+[08:49.54] <DV8FromTheWorld> the properties of sugar cane
+[08:49.59] <DV8FromTheWorld> and flax from RP
+[08:50.06] <allaryin> more like flax than cane, yeah
+[08:50.08] <DV8FromTheWorld> must be touching water, and must be saturated
+[08:50.21] <allaryin> and we make it a single-growth crop just like wheat
+[08:50.37] <DV8FromTheWorld> sure
+[08:50.44] <allaryin> allow cultivation of barley and/or oats just like wheat
+[08:50.47] <allaryin> they'd grow normally
+[08:50.54] <DV8FromTheWorld> barley only
+[08:50.57] <allaryin> nod
+[08:51.11] <allaryin> corn, wheat, rice are the big grains worldwide
+[08:51.17] <allaryin> barley is like 4th
+[08:51.20] <DV8FromTheWorld> we should add corn
+[08:51.32] <allaryin> yes, corn is... similar to tomatoes i think ;)
+[08:51.50] <allaryin> but taller
+[08:52.01] <allaryin> corn would grow to 3 high
+[08:52.11] <allaryin> right click to harvest
+[08:52.13] <DV8FromTheWorld> agreed.
+[08:52.16] <allaryin> leave to regrow
+[08:52.19] <DV8FromTheWorld> umm
+[08:52.25] <DV8FromTheWorld> im not sure about that
+[08:52.33] <DV8FromTheWorld> you harvest all corn at once IRL
+[08:52.38] <allaryin> tomato needs to be multiply harvestable
+[08:52.44] <DV8FromTheWorld> agreed
+[08:52.47] <allaryin> oh my... corn
+[08:52.53] <allaryin> okay, corn... just knock down
+[08:52.59] <DV8FromTheWorld> lol?
+[08:53.08] <DV8FromTheWorld> [08:52.47] <allaryin> oh my... corn
+[08:53.11] <allaryin> :P
+[08:53.13] <allaryin> laugh
+[08:53.13] <DV8FromTheWorld> what was that about?
+[08:53.20] <allaryin> interrupted myself midthought
+[08:53.25] <DV8FromTheWorld> lol
+[08:53.43] <DV8FromTheWorld> i just thought about something 
+[08:53.45] <allaryin> for a second was thinking about requiring people to cut corn down after harvesting - in a separate pass
+[08:53.50] <DV8FromTheWorld> tomatos, you cant just plant them
+[08:53.57] <allaryin> hmm?
+[08:53.57] <DV8FromTheWorld> you need to plant them on something
+[08:54.02] <DV8FromTheWorld> so they can grow up
+[08:54.10] <allaryin> oh, you mean a cage?
+[08:54.19] <allaryin> or... you know, an ic2 crop?
+[08:54.19] <DV8FromTheWorld> or a rod 
+[08:54.23] <DV8FromTheWorld> yes
+[08:54.30] <DV8FromTheWorld> [08:54.19] <allaryin> or... you know, an ic2 crop?
+[08:54.33] <DV8FromTheWorld> basically^
+[08:54.36] <allaryin> tomatoes are the perfect ic2 crops
+[08:54.42] <DV8FromTheWorld> yes, yes they are
+[08:54.45] <DV8FromTheWorld> wait
+[08:54.46] <DV8FromTheWorld> idea!
+[08:54.46] <allaryin> i'm pissed that they didn't ship them
+[08:54.58] <DV8FromTheWorld> we are going to have all kinds of stuff
+[08:55.06] <DV8FromTheWorld> why not just have a rod/cage thing
+[08:55.10] <DV8FromTheWorld> that works for them all?
+[08:55.21] <allaryin> because that's ic2's schtick?
+[08:55.21] <DV8FromTheWorld> basically our version of IC2's crop
+[08:55.30] <DV8FromTheWorld> ?
+[08:55.38] <allaryin> hmm
+[08:55.43] <DV8FromTheWorld> [08:55.21] <allaryin> because that's ic2's schtick? ?
+[08:55.50] <DV8FromTheWorld> schtick?
+[08:55.56] <allaryin> their gig, their thing
+[08:56.03] <DV8FromTheWorld> ah
+[08:56.11] <allaryin> the unique little act they put on when people show up to watch the show
+[08:56.12] <DV8FromTheWorld> i dont want to take it because IC2 has it
+[08:56.18] <DV8FromTheWorld> its just a thing in the world
+[08:56.20] <DV8FromTheWorld> that you need
+[08:56.26] <allaryin> we want to make it compatible with ic2
+[08:56.30] <DV8FromTheWorld> and they happened to implemennt it first
+[08:56.38] <allaryin> we've already discussed like taking eu for the fridge
+[08:56.42] <DV8FromTheWorld> yes
+[08:56.58] <DV8FromTheWorld> but, i dont thing we need to do all the cross breeding stuff
+[08:57.05] <DV8FromTheWorld> just they need to be able to grow on them
+[08:57.09] <allaryin> and it would be criminal not to provide ic2 crop support for these things
+[08:57.20] <DV8FromTheWorld> hmm
+[08:57.28] <DV8FromTheWorld> is there an API for it?
+[08:57.34] <allaryin> hells yes
+[08:57.43] <DV8FromTheWorld> ok, then we can do it :P
+[08:57.55] <DV8FromTheWorld> there is an API for mutations
+[08:57.57] <DV8FromTheWorld> ect?
+[08:59.33] <allaryin> yes, the whole crop system is kind of open i think?
+[08:59.40] <allaryin> well, ic2 provides an api
+[08:59.44] <DV8FromTheWorld> ok
+[08:59.48] <DV8FromTheWorld> we can do that then
+[08:59.58] <DV8FromTheWorld> but first we need to focus on the actual mod
+[09:00.07] <allaryin> nod
+[09:00.11] <DV8FromTheWorld> the support for IC2 can come later
+[09:00.18] <allaryin> so tomato vines are weak
+[09:00.20] <allaryin> naturally, they don't get tall
+[09:00.22] <DV8FromTheWorld> btw, somewhere in your notes
+[09:00.28] <DV8FromTheWorld> right down "juicer"
+[09:00.32] <DV8FromTheWorld> i want to do that
+[09:00.33] <allaryin> yess
+[09:00.42] <DV8FromTheWorld> juicing stuff is VERY VERY VERY health for you
+[09:00.48] <allaryin> and hey, juice
+[09:00.57] <DV8FromTheWorld> yea?
+[09:01.03] <allaryin> juice.
+[09:01.06] <allaryin> just juice, yes.
+[09:01.13] <allaryin> i mean, what other reason is there?
+[09:01.26] <allaryin> HAH i have food in my desk. victory
+[09:01.27] <allaryin> anyway
+[09:01.33] <DV8FromTheWorld> oh
+[09:01.42] <DV8FromTheWorld> you mean for other uses outside of juices?
+[09:01.49] <allaryin> what?
+[09:01.52] <allaryin> juicer?
+[09:01.55] <DV8FromTheWorld> 1 second
+[09:01.58] <DV8FromTheWorld> juicer
+[09:02.02] <DV8FromTheWorld> for making juices
+[09:02.04] <allaryin> juices are great intermediary ingredients
+[09:02.08] <DV8FromTheWorld> yes
+[09:02.19] <DV8FromTheWorld> but not only that, combination drinks
+[09:02.23] <allaryin> and i'd love to see a good liquid mod
+[09:02.26] <DV8FromTheWorld> ie: lots of different vegies
+[09:02.34] <allaryin> nod, there's a good use for carrots
+[09:02.38] <DV8FromTheWorld> yes
+[09:02.43] <allaryin> anyhow. tomatoes
+[09:02.51] <DV8FromTheWorld> remember when i said i got my inspiration from those 2 guys
+[09:02.57] <DV8FromTheWorld> from the lets play?
+[09:02.59] <allaryin> i think tomato would grow to 1 block high by default
+[09:03.08] <allaryin> repickable w/o replanting
+[09:03.09] <DV8FromTheWorld> agreed.
+[09:03.18] <allaryin> provided a lattice or cage of some sort, it could grow to 2 high
+[09:03.20] <DV8FromTheWorld> wait question
+[09:03.21] <allaryin> doubles output
+[09:03.24] <DV8FromTheWorld> yes
+[09:03.30] <DV8FromTheWorld> ok that answers my question
+[09:03.40] <allaryin> both blocks would be harvestable
+[09:03.45] <DV8FromTheWorld> mm
+[09:03.52] <DV8FromTheWorld> ok wheres a question
+[09:03.58] <DV8FromTheWorld> would the cage be 2 blocks high?
+[09:04.04] <DV8FromTheWorld> or 2 blocks that you place on eachother?
+[09:04.05] <allaryin> here's a thought for first pass
+[09:04.14] <allaryin> just put a wall next to it to provide support
+[09:04.48] <allaryin> so tomatoes growing up against a wall climb
+[09:04.55] <DV8FromTheWorld> hmm like vines?
+[09:04.59] <allaryin> but tomatoes out in the middle of nowhere do not
+[09:05.20] <allaryin> tomatoes are a vine type plant
+[09:05.25] <DV8FromTheWorld> true true
+[09:05.37] <DV8FromTheWorld> but their vives cannot support a tomato
+[09:05.41] <DV8FromTheWorld> ive seen it first hand
+[09:05.46] <allaryin> not unless they wrap around something, nod
+[09:05.52] <DV8FromTheWorld> ok heres an idea
+[09:06.03] <DV8FromTheWorld> instead of a way
+[09:06.05] <DV8FromTheWorld> wall*
+[09:06.17] <DV8FromTheWorld> if you plan them without a cage
+[09:06.29] <DV8FromTheWorld> the vines basically do what the melons do
+[09:06.30] <DV8FromTheWorld> but
+[09:06.35] <DV8FromTheWorld> withing its own block
+[09:06.40] <DV8FromTheWorld> within*
+[09:06.52] <allaryin> mmm
+[09:06.56] <DV8FromTheWorld> and it will only grow 1 tomato
+[09:07.08] <allaryin> sure
+[09:07.11] <DV8FromTheWorld> but with the first cage block
+[09:07.17] <DV8FromTheWorld> it will grow the full block
+[09:07.20] <DV8FromTheWorld> and output more
+[09:07.32] <allaryin> that can work
+[09:07.34] <DV8FromTheWorld> and the 2nd cage block, grow to the hieght limit
+[09:07.40] <DV8FromTheWorld> and output more
+[09:07.47] <allaryin> nod
+[09:07.50] <DV8FromTheWorld> k
+[09:08.07] <allaryin> so 1/cycle vs 3-4/cycle vs 6-10/cycle
+[09:08.23] <allaryin> that works well
+[09:08.53] <DV8FromTheWorld> wait
+[09:09.01] <DV8FromTheWorld> 6-8
+[09:09.04] <allaryin> sure
+[09:09.07] <allaryin> either way
+[09:09.08] <DV8FromTheWorld> 10 is a bit... high
+[09:09.13] <allaryin> ;)
+[09:09.15] <DV8FromTheWorld> btw
+[09:09.24] <DV8FromTheWorld> remember, we can only put so much in 1 block space
+[09:09.37] <DV8FromTheWorld> 4 is alot of tomatos
+[09:09.43] <allaryin> huh?
+[09:09.44] <DV8FromTheWorld> to put on a plant
+[09:09.45] <DV8FromTheWorld> on a cage
+[09:09.49] <allaryin> we wouldn't render 4 tomatoes
+[09:09.53] <allaryin> we'd render a bunch of tomatoes
+[09:10.03] <DV8FromTheWorld> small tomatos?
+[09:10.05] <allaryin> and when you click, you get variable number
+[09:10.17] <allaryin> medium tomatoes
+[09:10.17] <DV8FromTheWorld> ok, how will we know if its ripe?
+[09:10.22] <allaryin> they turn red
+[09:10.24] <allaryin> instead of green
+[09:10.36] <allaryin> 3 growth stages
+[09:10.37] <DV8FromTheWorld> normal plant > green tomatos > red tomatos?
+[09:10.41] <allaryin> yes
+[09:10.42] <DV8FromTheWorld> k
+[09:10.45] <DV8FromTheWorld> sounds good.
+[09:10.50] <allaryin> red you can harvest, green we don't allow
+[09:10.54] <DV8FromTheWorld> sure
+[09:11.08] <DV8FromTheWorld> what happens if you break the plant and the cage
+[09:11.12] <DV8FromTheWorld> you get the cage
+[09:11.15] <allaryin> plant dies
+[09:11.16] <DV8FromTheWorld> nothing else?
+[09:11.22] <DV8FromTheWorld> yes, ofcourse it dies
+[09:11.27] <DV8FromTheWorld> im saying, any seeds? or no
+[09:11.29] <allaryin> you get the cage back
+[09:11.31] <DV8FromTheWorld> im thinking no
+[09:11.32] <allaryin> seeds come from tomatoes
+[09:11.37] <DV8FromTheWorld> yes, good
+[09:11.40] <allaryin> craft a tomato by itself to extract the seeds
+[09:11.43] <allaryin> most plants work that way
+[09:11.46] <DV8FromTheWorld> mmk
+[09:11.54] <allaryin> except potatoes
+[09:11.56] <allaryin> potatoes are weird
+[09:12.06] <DV8FromTheWorld> i like potatos :D
+[09:12.09] <allaryin> ;)
+[09:12.29] <DV8FromTheWorld> btw, when did you start chilling in the MCPC irc?
+[09:12.35] <allaryin> heh
+[09:12.37] <DV8FromTheWorld> ive never seen you before like 2 days ago
+[09:12.40] <allaryin> like a week ago?
+[09:12.45] <DV8FromTheWorld> ah, i was at the beach
+[09:13.31] <allaryin> i was looking for answers to a question about... i think it was ee2 and i noticed that a lot of the mc mods had channels on the same irc server
+[09:13.33] <allaryin> so i joined them all
+[09:13.40] <allaryin> and stuck with the ones with actual traffic :P
+[09:13.54] <DV8FromTheWorld> :D
+[09:14.08] <DV8FromTheWorld> yea, esper.net has been taken over by minecraft
+[09:15.15] <allaryin> lettuce/cabbage would grow normally on the ground, one harvest
+[09:15.36] <DV8FromTheWorld> yes
+[09:15.44] <DV8FromTheWorld> btw, which do we pick?
+[09:15.47] <DV8FromTheWorld> or both?
+[09:15.54] <DV8FromTheWorld> not quite sure about the differences
+[09:16.02] <DV8FromTheWorld> lettuce is green
+[09:16.04] <allaryin> pretty wildly different culinarily
+[09:16.12] <allaryin> visibly, they're basically the same
+[09:17.03] <allaryin> lettuce is... hmm
+[09:17.07] <allaryin> seeds come from flowers
+[09:17.11] <allaryin> the leaves are not the flower
+[09:17.26] <allaryin> oh LAUGH
+[09:17.29] <allaryin> this is perfect
+[09:17.34] <allaryin> google rules
+[09:17.41] <allaryin> lettuce is a member of the dandelion family
+[09:17.51] <DV8FromTheWorld> lol
+[09:18.03] <DV8FromTheWorld> *cough* flower *cough*
+[09:18.07] <allaryin> so... we don't put wild lettuces in the world
+[09:18.16] <allaryin> we make lettuce seeds a chance drop off of yellow flowers :)
+[09:18.17] <DV8FromTheWorld> lol
+[09:18.23] <DV8FromTheWorld> i like that!
+[09:18.27] <DV8FromTheWorld> thats smart! :D
+[09:18.33] <DV8FromTheWorld> you know..
+[09:18.40] <DV8FromTheWorld> know one else is gonna get that
+[09:18.41] <DV8FromTheWorld> :P
+[09:18.50] <allaryin> ;)
+[09:18.54] <allaryin> oh they will well enough
+[09:18.57] <DV8FromTheWorld> lol
+[09:19.05] <allaryin> anyhow, when the lettuce grows, it puts out a stalk
+[09:19.20] <allaryin> that stalk flowers and that's where the seeds come from
+[09:19.23] <DV8FromTheWorld> ima watch Red Vs Blue S10:E4, give me 3 minutes, im almost done.
+[09:19.53] <allaryin> they're still making that?!
+[09:21.07] <DV8FromTheWorld> dude
+[09:21.11] <DV8FromTheWorld> its SO fucking good
+[09:21.22] <DV8FromTheWorld> they arent doing a whole lot ingame anymore
+[09:21.23] <allaryin> rvb ended like 6 years ago
+[09:21.29] <DV8FromTheWorld> O.O
+[09:21.31] <DV8FromTheWorld> dude..
+[09:21.35] <allaryin> guess they revived it ;)
+[09:21.37] <DV8FromTheWorld> where have you been
+[09:21.39] <DV8FromTheWorld> it never died..
+[09:21.46] <DV8FromTheWorld> they have put out a season every year
+[09:22.00] <DV8FromTheWorld> company is 10 years old this year
+[09:22.05] <DV8FromTheWorld> this is season 10 this year
+[09:22.07] <DV8FromTheWorld> :D
+[09:22.12] <allaryin> there were 4 seasons of the original rvb
+[09:22.15] <DV8FromTheWorld> 5
+[09:22.32] <allaryin> hmm
+[09:22.36] <DV8FromTheWorld> first 5 were the blood gultch chronicles
+[09:22.39] <allaryin> yeah
+[09:22.49] <allaryin> didn't know they'd done spinoffs
+[09:22.55] <DV8FromTheWorld> not a spinoff
+[09:23.03] <DV8FromTheWorld> all of it is one chronological line
+[09:23.12] <DV8FromTheWorld> :D
+[09:23.17] <allaryin> heh
+[09:23.19] <DV8FromTheWorld> you NEED to watch the new stuff
+[09:23.31] <allaryin> i've not seen anything since like 06-07
+[09:23.31] <DV8FromTheWorld> its SO SO sO much better than the blood gultch chronicals
+[09:23.35] <allaryin> heh
+[09:24.23] <allaryin> ahh. it's all available now
+[09:24.34] <allaryin> in '06, you couldn't just stream the whole thing
+[09:25.07] <allaryin> advent of youtube ftw
+[09:25.53] <allaryin> ok. nobody likes cabbage
+[09:26.01] <DV8FromTheWorld> k episode done
+[09:26.03] <allaryin> people don't really like lettuce, but they eat it anyway
+[09:26.24] <DV8FromTheWorld> only reason i needed lettuce is BLT and salad
+[09:26.29] <allaryin> nod
+[09:26.30] <DV8FromTheWorld> lettuce is in salad right?
+[09:26.35] <DV8FromTheWorld> btw,+http://roosterteeth.com/home.php,
+[09:26.35] <allaryin> ...
+[09:26.44] <allaryin> yeah, i see it
+[09:26.46] <allaryin> oh crap
+[09:26.49] <DV8FromTheWorld> ?
+[09:27.01] <allaryin> oh, my new server
+[09:27.08] <DV8FromTheWorld> ?
+[09:27.20] <allaryin> supposed to be helping players get set up
+[09:27.35] <DV8FromTheWorld> lol i was suppose to be restoring a world
+[09:27.40] <allaryin> ;)
+[09:27.42] <DV8FromTheWorld> and starting a server
+[09:27.50] <DV8FromTheWorld> that was 2 hours ago
+[09:27.51] <DV8FromTheWorld> :P
+[09:27.56] <allaryin> looks like one player is on right now, he seems to have settled about 300m from me
+[09:28.06] <allaryin> he's building a dirt road?
+[09:28.12] <allaryin> i <3 dynmap
+[09:28.46] <allaryin> man is fencing off an ENORMOUS area here
+[09:28.59] <allaryin> i think he turned two entire redwoods into fencing
+[09:29.12] <DV8FromTheWorld> ;p;
+[09:29.16] <DV8FromTheWorld> lol
+[09:29.21] <DV8FromTheWorld> redwoods?
+[09:29.25] <DV8FromTheWorld> i know its a tree
+[09:29.29] <DV8FromTheWorld> but 
+[09:29.35] <DV8FromTheWorld> oh nvm >.>
+[09:29.37] <allaryin> sequoia
+[09:29.41] <DV8FromTheWorld> k
+[09:29.42] <allaryin> BIG tree
+[09:29.45] <DV8FromTheWorld> yes i know
+[09:29.50] <DV8FromTheWorld> ive seen the ones in CA
+[09:29.53] <allaryin> nod
+[09:29.57] <DV8FromTheWorld> General Sherman :D
+[09:32.41] <allaryin> ok, i'm out
+[09:32.53] <DV8FromTheWorld> you gonna be back later?
+[09:33.08] <allaryin> gonna be back online, yes
+[09:33.18] <allaryin> heading home and grabbing food
+[09:33.27] <allaryin> no family for 2 weeks so mostly slacking :P
+[09:34.00] <DV8FromTheWorld> k
+[09:34.07] <DV8FromTheWorld> ill make some food to
+[09:34.12] <DV8FromTheWorld> what time is it for you?
+[09:34.25] <allaryin> 8:30
+[09:35.15] <DV8FromTheWorld> its 930 here
+[09:35.45] <allaryin> ja
+[09:38.58] <DV8FromTheWorld> ok, ill see you later

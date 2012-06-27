@@ -1,0 +1,1346 @@
+[03:12.27] <smbarbour> So what is this mod going to do?
+[03:28.14] <DV8FromTheWorld> you know pam's harvest mod?
+[03:28.19] <DV8FromTheWorld> its similar, but different
+[03:28.40] <DV8FromTheWorld> that is based around alot of end results for food, and not alot of health ones
+[03:28.57] <DV8FromTheWorld> this is going to be a food mod based around more than the normal foods that people eat
+[03:29.09] <DV8FromTheWorld> alot of it will be based around healthy stuff
+[03:29.14] <DV8FromTheWorld> like juicing for example
+[03:29.34] <DV8FromTheWorld> most people dont know that you can juice basically any veggie or fruit
+[03:29.39] <DV8FromTheWorld> literally almost all of them
+[03:29.45] <DV8FromTheWorld> mix a bunch together
+[03:29.53] <DV8FromTheWorld> add a fruit or 2 for sweetness
+[03:30.11] <DV8FromTheWorld> and you have a sweet, extremely health snack
+[03:30.26] <DV8FromTheWorld> and with different juice combinations could come different "perks"
+[03:30.42] <DV8FromTheWorld> kinda like the different potions
+[03:31.03] <DV8FromTheWorld> plus tons of modules
+[03:31.11] <DV8FromTheWorld> so that you dont have to have ALL of them mod
+[03:31.15] <DV8FromTheWorld> you can pick what you want
+[03:31.25] <DV8FromTheWorld> one of these modules is going to be the food preservation module
+[03:31.45] <DV8FromTheWorld> basically, food will be set on a grade of S through D, or something similar
+[03:31.55] <smbarbour> I have one suggestion...  Go the awesome route.  Make them IC2 crop compatible.
+[03:31.59] <DV8FromTheWorld> this will be based on freshness or spoiling
+[03:32.01] <DV8FromTheWorld> of course
+[03:32.12] <DV8FromTheWorld> that was a BIG thing we agreed on
+[03:32.18] <DV8FromTheWorld> we being me and allaryin
+[03:32.25] <DV8FromTheWorld> we want to do full ic2 crop support
+[03:32.46] <DV8FromTheWorld> back onto the module
+[03:32.56] <DV8FromTheWorld> basically, it will be based on freshness and spoiling
+[03:33.20] <DV8FromTheWorld> if you have the module installed, all food (possibly not vanilla food) will have a freshness factor
+[03:33.27] <DV8FromTheWorld> or, how good the food is for you
+[03:33.39] <DV8FromTheWorld> so if you have say  tomato for x amount of time
+[03:33.47] <DV8FromTheWorld> if x > a set number
+[03:33.52] <DV8FromTheWorld> then it drops a grade
+[03:34.02] <DV8FromTheWorld> the lower the grade, the less it does for you
+[03:34.45] <DV8FromTheWorld> we have already agreed that grade D, the lowest, will have a 50% chance of poisoning you, inbetween the 70% and 30% of zombie meat and raw chicken
+[03:35.16] <DV8FromTheWorld> grade C, while not having any chance of poison, wont give you any "satifaction" level
+[03:35.45] <DV8FromTheWorld> basically, that is an invisible meter within minecraft already the decides when to start depleting your hunger bar
+[03:36.00] <DV8FromTheWorld> so while it will fill your hunger bar, it wont 
+[03:36.13] <DV8FromTheWorld> give your character that "fullness" feeling
+[03:36.52] <DV8FromTheWorld> and ofcourse, grade S will give you the full  hunger level for that food, and the full amount of satisfaction for that food
+[03:37.11] <DV8FromTheWorld> idk, we might just do S, C, and D
+[03:37.30] <DV8FromTheWorld> anyways, a really good way to slow down the process of decay is with an Icebox
+[03:37.53] <DV8FromTheWorld> basically, its like a fridge, and when the food item is in it, it "rots" at a much lesser rate
+[03:38.01] <DV8FromTheWorld> now, this icebox has to be cooled somehow
+[03:38.22] <DV8FromTheWorld> if you arent playing with IC2, it can be cooled with snowballs or possibly snowblocks
+[03:38.30] <DV8FromTheWorld> and ice, 
+[03:38.51] <DV8FromTheWorld> if you DO have IC2 installed, it will pull from the EU net
+[03:39.35] <DV8FromTheWorld> this is a module mostly because not everyone wants their food to spoil
+[03:40.00] <DV8FromTheWorld> we will also be redoing some vanilla recipes
+[03:40.05] <DV8FromTheWorld> like bread and melon
+[03:40.15] <DV8FromTheWorld> melon, when you break the melon block, get a melon
+[03:40.25] <DV8FromTheWorld> put the melon in a crafting bench with a knife
+[03:40.35] <DV8FromTheWorld> get melon slices and a knife back
+[03:40.40] <DV8FromTheWorld> similar to the RP saw
+[03:41.05] <DV8FromTheWorld> for bread, you take wheat and make flour or something 
+[03:41.13] <DV8FromTheWorld> i dont remember what we said the recipe was
+[03:41.41] <DV8FromTheWorld> im also considering doing a "liquid" module
+[03:41.48] <DV8FromTheWorld> with a thirst meter
+[03:42.16] <DV8FromTheWorld> it ofcourse, would deplete more in dryer and hoter areas
+[03:42.33] <DV8FromTheWorld> Smbarbour, you still here? or am i talking to myself?
+[03:46.53] <DV8FromTheWorld> sigh,,,
+[03:54.49] <smbarbour> You are talking to yourself, but I'm listening.
+[03:56.28] <DV8FromTheWorld> :o...
+<--------------------------------------------------------------> 
+[08:45.51] <DV8FromTheWorld> :D
+[08:46.09] <@allaryin> morning
+[08:46.15] <DV8FromTheWorld> time is it for you?
+[08:46.20] <DV8FromTheWorld> 746pm?
+[08:46.40] <@allaryin> yes
+[08:46.54] <DV8FromTheWorld> what happened last night?
+[08:46.59] <DV8FromTheWorld> i thought you were headed hom/
+[08:47.00] <DV8FromTheWorld> ?
+[08:47.36] <DV8FromTheWorld> .showtells
+[08:47.39] <DV8FromTheWorld> .showtells
+[08:47.44] <@allaryin> i did head home?
+[08:47.57] * DV8FromTheWorld thought you were gonna get on once you got home XD
+[08:48.03] <@allaryin> i did
+[08:48.09] <DV8FromTheWorld> you did? O.o
+[08:48.12] <@allaryin> yup
+[08:48.14] <DV8FromTheWorld> when?
+[08:48.25] <@allaryin> no idea, it was late
+[08:48.27] <DV8FromTheWorld> lol
+[08:48.39] <DV8FromTheWorld> i was up till 7AM this morning :P
+[08:48.53] <DV8FromTheWorld> anyways, ive brought Silentspy up to speed with our logs
+[08:49.02] <DV8FromTheWorld> you dont have a problem with him joining do you?
+[08:49.37] <@allaryin> of course not
+[08:49.45] <DV8FromTheWorld> cool
+[08:50.05] <DV8FromTheWorld> ima clone the repo on my PC, and add our PM log in a sec
+[08:50.16] <@allaryin> k
+[08:50.25] <DV8FromTheWorld> You gonna have some time to discuss about the mod tonight?
+[08:50.33] <@allaryin> sure
+[08:50.44] <DV8FromTheWorld> k, sounds good.
+[08:50.51] <DV8FromTheWorld> just when ever you have time.
+[08:51.38] <@allaryin> i thought i replied to you via the crowbot
+[08:51.52] <@allaryin> shrug
+[08:52.44] <DV8FromTheWorld> i saw the one from uhh
+[08:52.50] <DV8FromTheWorld> the one about Pam's mod
+[08:52.57] <@allaryin> nod
+[08:53.01] <DV8FromTheWorld> mm
+[08:53.18] <DV8FromTheWorld> we just need to talk more about the ideas about the mod, similar to lastnight
+[08:53.28] <DV8FromTheWorld> i want to make a "stew" pot
+[08:53.39] <DV8FromTheWorld> meat, potatos, carrots
+[08:53.52] <@allaryin> block in world or tool?
+[08:53.55] <DV8FromTheWorld> 4 bowls worth 
+[08:53.58] <DV8FromTheWorld> umm
+[08:54.04] <DV8FromTheWorld> good question
+[08:54.16] <DV8FromTheWorld> i was thinking something like the caldron
+[08:54.28] <DV8FromTheWorld> you know, keeping it with the theme of MC
+[08:54.29] <DV8FromTheWorld> :D
+[08:54.40] <@allaryin> i've NEVER done any vanilla alchemy
+[08:54.47] <@allaryin> only ever crafted cauldron for thaumcraft
+[08:54.49] <DV8FromTheWorld> potions? yea me neither
+[08:54.50] <DV8FromTheWorld> :D
+[08:55.04] <DV8FromTheWorld> idk, i just want the ability to make stews
+[08:55.08] <DV8FromTheWorld> i LOVE stews
+[08:55.48] <@allaryin> depending on how much metadata we want
+[08:55.54] <@allaryin> stew has two very interesting properties
+[08:56.02] <@allaryin> 1) you can make it last forever if you keep adding new things to it
+[08:56.08] <@allaryin> 2) it can contain anything
+[08:56.33] * DV8FromTheWorld changes topic to: <<<<< Hacksaw Watermelon! Food-mod Extraordinare!  |   Github Repo: +http://bit.ly/MIHTEn, >>>>>
+[08:56.40] * DV8FromTheWorld changes topic to: <<<<< Hacksaw Watermelon! Food-mod Extraordinare!  |  Github Repo: +http://bit.ly/MIHTEn, >>>>>
+[08:56.50] <DV8FromTheWorld> sorry about the spam
+[08:57.07] <@allaryin> you could keep a stewpot simmering in the hearth for months, tossing in whatever fruit or veggies or meat you scavenge every time you come home
+[08:57.13] <DV8FromTheWorld> exactly
+[08:57.19] <DV8FromTheWorld> that would be HARD to code
+[08:57.23] <DV8FromTheWorld> but cool
+[08:57.25] <@allaryin> yes and no
+[08:57.41] <DV8FromTheWorld> geez, im hungry now >.>
+[08:57.46] <@allaryin> i would not want to keep a list of precisely what is in the pot
+[08:58.03] <@allaryin> just the value of the ingredients and its volume
+[08:58.07] <DV8FromTheWorld> mm
+[08:58.18] <@allaryin> example
+[08:58.28] <DV8FromTheWorld> also, silent and i talked about using multiple items on 1 id
+[08:58.34] <DV8FromTheWorld> but came to the conclusion not to
+[08:58.42] <@allaryin> k
+[08:58.47] <@allaryin> item id's are cheap
+[08:58.51] <@allaryin> it's only block id's to worry about
+[08:58.53] <DV8FromTheWorld> because we need the meta data for the food preserve module
+[08:59.11] <DV8FromTheWorld> actually, Forge now supports 4096 block id's :D
+[08:59.16] <@allaryin> preserve status is meta flags, nod
+[08:59.17] <@allaryin> ;)
+[08:59.21] <DV8FromTheWorld> :D
+[08:59.22] <@allaryin> anyhow. scenario
+[08:59.26] <@allaryin> empty pot has capacity of 8 buckets
+[08:59.30] <@allaryin> i add 4 buckets of water
+[08:59.39] <@allaryin> it is now water stew
+[08:59.49] <@allaryin> there is zero nutrition in it
+[08:59.50] <DV8FromTheWorld> we need a way to heat it
+[09:00.00] <@allaryin> sure, but that's later
+[09:00.02] <DV8FromTheWorld> sure
+[09:00.17] <@allaryin> i click my bowl on the pot and get .25 buckets worth of water stew
+[09:00.17] <DV8FromTheWorld> continue
+[09:00.22] <@allaryin> if i eat it, i get no benefit
+[09:00.44] <@allaryin> i toss a single carrot in and wait for it to cook (whatever that mechanism is)
+[09:00.50] <@allaryin> a carrot is worth 1 nutrition
+[09:01.24] <@allaryin> thus a bowl of weak as crap carrot stew is worth 1/15 food
+[09:01.34] <@allaryin> (there were 16 bowls worth and i wasted one)
+[09:01.41] <DV8FromTheWorld> hmm
+[09:01.50] <@allaryin> i toss 12 beef in
+[09:01.58] <@allaryin> beef is worth 4 nutrition
+[09:02.07] <@allaryin> now we add 48 nutrition
+[09:02.16] <DV8FromTheWorld> 48 / 16
+[09:02.21] <@allaryin> yup
+[09:02.26] <@allaryin> up to some theoretical cap
+[09:02.28] <DV8FromTheWorld> thats actually a really smart machanic
+[09:02.33] <@allaryin> possibly make certain ingredients count for volume
+[09:02.44] <DV8FromTheWorld> also
+[09:02.53] <DV8FromTheWorld> if you add carottos
+[09:02.55] <@allaryin> milk would add both volume and value
+[09:02.56] <DV8FromTheWorld> or potatos
+[09:03.01] <DV8FromTheWorld> they need to be diced
+[09:03.03] <DV8FromTheWorld> or sliced
+[09:03.05] <DV8FromTheWorld> with the knife
+[09:03.06] <@allaryin> maybe
+[09:03.18] <@allaryin> that's a whole separate mechanic
+[09:03.25] <DV8FromTheWorld> mm
+[09:03.34] <DV8FromTheWorld> btw, before i forget to mention it
+[09:03.45] <DV8FromTheWorld> i think it would be smart to have a "thirst/drink" module
+[09:04.02] <DV8FromTheWorld> that would add a thirst meter similar to the hunger meter
+[09:04.08] <DV8FromTheWorld> and drinks to satisfy it
+[09:04.44] <DV8FromTheWorld> any thoughts?
+[09:06.06] <@allaryin> it would be interesting
+[09:06.24] <@allaryin> it would be good for a hardcore survival mode
+[09:06.30] <@allaryin> but annoying for anything else
+[09:06.39] <DV8FromTheWorld> agreed, hence, module
+[09:06.40] <@allaryin> and i don't know how much extra effort it would be
+[09:06.48] <@allaryin> nod
+[09:06.55] <DV8FromTheWorld> well, its not for right now :D its an idea to remember
+[09:07.16] <@allaryin> nod
+[09:09.38] <DV8FromTheWorld> k, ill be back, you gonna still be on in about 30 minutes?
+[09:10.06] <@allaryin> yeah, just building a wall around newbie spawnpoint ;)
+[09:10.19] <DV8FromTheWorld> lol k
+[09:10.35] <DV8FromTheWorld> headed to my mothers house, not to far away, i shouldnt be long
+[09:11.02] <DV8FromTheWorld> btw, what ever list you have, you should post to github, we can update it as we discuss more :P
+[09:11.20] <DV8FromTheWorld> ok, got to run
+<--------------------------------------------------------------------->
+[09:56.23] <DV8FromTheWorld> ok im back
+[09:56.25] <DV8FromTheWorld> :D
+[10:07.07] <DV8FromTheWorld> you there mate?
+[10:07.14] <DV8FromTheWorld> allaryin
+[10:07.31] <@allaryin> yup
+[10:09.59] <DV8FromTheWorld> ok, what was the last thing that was said?
+[10:10.04] <DV8FromTheWorld> need to get back into the mindset
+[10:10.11] <DV8FromTheWorld> something about stews i believe?
+[10:11.13] <@allaryin> yeah
+[10:11.25] <DV8FromTheWorld> do you have your list ready? or are you busy?
+[10:11.25] <@allaryin> you had suggested processing first
+[10:11.43] <@allaryin> not accessible, it's on my office machine atm :(
+[10:11.55] <DV8FromTheWorld> hmm, ok
+[10:12.04] <DV8FromTheWorld> your at home?
+[10:12.33] <@allaryin> yes
+[10:12.54] <@allaryin> anyhow. we're saving chatlogs
+[10:12.55] <DV8FromTheWorld> ok, should i try to make notes or do you want to start a new list and just combine them later?
+[10:13.07] <DV8FromTheWorld> true, we can just surf through them later i guess :D
+[10:13.08] <@allaryin> i'll combine from chatlog
+[10:13.12] <DV8FromTheWorld> k sounds good
+[10:13.15] <@allaryin> so anyhow. recap on stew
+[10:13.20] <DV8FromTheWorld> go for it
+[10:13.24] <@allaryin> i like this idea - it is a whole mod unto itself
+[10:13.29] <@allaryin> honestly, StewCraft is kind of funny
+[10:13.33] <DV8FromTheWorld> lol
+[10:13.48] <@allaryin> so pot has capacity for liquid
+[10:13.55] <@allaryin> liquid has a maximum saturation of nutrition
+[10:13.58] <DV8FromTheWorld> yes
+[10:14.08] <@allaryin> as food is added to the pot, it increases the nutrition and maybe the volume
+[10:14.26] <@allaryin> water or milk (or juice or whatever) may be added to increase volume and maybe nutrition
+[10:14.36] <DV8FromTheWorld> silentspy, you need to be here now... we are talking  :D
+[10:14.48] <@allaryin> one bucket of volume = 4 bowls worth of stew
+[10:14.56] <DV8FromTheWorld> that makes sense
+[10:15.08] <@allaryin> eating a bowl returns the bowl to you, etc...
+[10:15.14] <DV8FromTheWorld> yes.
+[10:15.16] <@allaryin> using an empty bowl on the cookpot will fill it
+[10:15.24] <DV8FromTheWorld> maybe we use the bowls from vanilla MC?
+[10:15.28] <@allaryin> yes
+[10:15.31] <@allaryin> vanilla wood bowl
+[10:15.32] <DV8FromTheWorld> k
+[10:15.55] <GadgetTvMan> You guys gonna add a canaster?
+[10:16.04] <@allaryin> a thermos sort of thing?
+[10:16.21] <DV8FromTheWorld> oh wow, i just thought of something
+[10:16.22] <GadgetTvMan> yes.
+[10:16.24] <DV8FromTheWorld> tomato soup
+[10:16.28] <DV8FromTheWorld> and grilled cheese
+[10:16.29] <DV8FromTheWorld> :D
+[10:16.49] <DV8FromTheWorld> anyways, what would this "thermos" do?
+[10:16.57] <DV8FromTheWorld> (i know what it does IRL)
+[10:17.14] <DV8FromTheWorld> but what would it have over a vanilla bowl, that would mean someone would want to use it?
+[10:17.17] <@allaryin> just a high volume carrying device so you don't walk around with 16 bowls?
+[10:17.30] <DV8FromTheWorld> hmm, maybe 3 bowls worth?
+[10:17.41] <@allaryin> if it were to happen, make it an even four
+[10:17.47] <DV8FromTheWorld> right
+[10:17.48] <DV8FromTheWorld> simple mate
+[10:17.49] <@allaryin> it's a bucket wrapped in wool or tin or something
+[10:17.51] <DV8FromTheWorld> math*
+[10:17.53] <GadgetTvMan> i was thinking 6
+[10:17.58] <DV8FromTheWorld> to high gadget
+[10:18.04] <DV8FromTheWorld> a bit OP
+[10:18.05] <@allaryin> shrug
+[10:18.12] <@allaryin> it wouldn't stack
+[10:18.14] <DV8FromTheWorld> i would go with 4 - 5
+[10:18.25] <DV8FromTheWorld> 5 sounds like a good compromise
+[10:18.28] <@allaryin> anyhow, moving on ;)
+[10:18.33] <DV8FromTheWorld> yep
+[10:18.38] <DV8FromTheWorld> thanks for the idea gadget
+[10:18.49] <DV8FromTheWorld> ok, so, i think there needs to be some kind of processing
+[10:18.51] <GadgetTvMan> it k, you guys can worshop me later.
+[10:18.54] <@allaryin> ;)
+[10:18.54] <DV8FromTheWorld> before you put stuff in
+[10:19.01] <@allaryin> i think before you can take out
+[10:19.08] <DV8FromTheWorld> ?
+[10:19.10] <@allaryin> any time you add ingredients it needs to... stew
+[10:19.13] <DV8FromTheWorld> yes
+[10:19.16] <DV8FromTheWorld> i agree
+[10:19.19] <@allaryin> can't scoop yet, it's NOT DONE
+[10:19.26] <@allaryin> wooden spoon to the hands, etc
+[10:19.32] <DV8FromTheWorld> but when you add ingredients
+[10:19.39] <DV8FromTheWorld> like say..
+[10:19.42] <@allaryin> stew is stew, you can always just toss things in
+[10:19.46] <DV8FromTheWorld> carrots or potatos
+[10:19.51] <DV8FromTheWorld> need to be diced or something
+[10:19.53] <@allaryin> the more nutrition points you add, the longer it'll take to cook down
+[10:19.59] <DV8FromTheWorld> no one puts in a whole potato uncut
+[10:20.02] <@allaryin> let a potato cook for long enough, no cutting required
+[10:20.09] <DV8FromTheWorld> hmm..
+[10:20.16] <@allaryin> i think cutting is phase two
+[10:20.20] <@allaryin> or part of some other component
+[10:20.29] <@allaryin> the whole hacksaw vs melon deal
+[10:20.41] <DV8FromTheWorld> true, but its going to be in the main part of the mod
+[10:20.44] <@allaryin> nod
+[10:20.50] <DV8FromTheWorld> so might as well use it
+[10:20.54] <@allaryin> sure
+[10:20.55] <DV8FromTheWorld> i mean, it makes sense
+[10:21.02] <DV8FromTheWorld> no one puts a whole potato in a stew
+[10:21.03] <@allaryin> so maybe diced ingredients stew faster
+[10:21.05] <DV8FromTheWorld> without cutting :D
+[10:21.13] <@allaryin> same nutritional value
+[10:21.21] <DV8FromTheWorld> that might get tricky to code
+[10:21.29] <DV8FromTheWorld> whether or not stuff is diced or not
+[10:21.33] <@allaryin> why?
+[10:21.36] <@allaryin> it's a separate item
+[10:21.39] <DV8FromTheWorld> hmm
+[10:21.55] <DV8FromTheWorld> so when added, if its a potato, add X amout of time to stew
+[10:22.10] <DV8FromTheWorld> if potato_diced add Y amount of time to stew?
+[10:22.18] <DV8FromTheWorld> because they are different items?
+[10:22.21] <@allaryin> nod
+[10:22.24] <DV8FromTheWorld> hmm, ok
+[10:22.33] <DV8FromTheWorld> yea, i like that
+[10:22.41] <DV8FromTheWorld> means that you "can" bypass making the knife
+[10:22.48] <DV8FromTheWorld> but it is encouraged to use it
+[10:22.57] <GadgetTvMan> well, how about a cook book that keeps track of how long it takes to cook X item?
+[10:23.07] <DV8FromTheWorld> actually, thats smart
+[10:23.14] <DV8FromTheWorld> we need some kind of "Cook book" ingame
+[10:23.20] <DV8FromTheWorld> instead of constantly looking at a wiki
+[10:23.37] <@allaryin> some sort of cookbook is awesome
+[10:23.40] <GadgetTvMan> yes, also. Is there going to be some potion like soups if you add a mineral?
+[10:23.41] <@allaryin> whatever it does, who knows ;)
+[10:23.41] <DV8FromTheWorld> agreed.
+[10:23.55] <DV8FromTheWorld> eh.. idk
+[10:23.59] <GadgetTvMan> IE: Gold
+[10:24.02] <DV8FromTheWorld> probably not
+[10:24.07] <DV8FromTheWorld> well, you have a point
+[10:24.07] <@allaryin> adding a meta-effect to the stew is interesting but i don't know enough about the item model to make it work
+[10:24.12] <DV8FromTheWorld> maybe fruits
+[10:24.23] <DV8FromTheWorld> fruits have a history in MC to have special powers with gold in them
+[10:24.25] <@allaryin> i mean adding gold or polen or spider eyes to your soup...
+[10:24.40] <DV8FromTheWorld> spider eyes hurts you if eaten
+[10:24.41] <@allaryin> maybe
+[10:24.48] <DV8FromTheWorld> how about no gold to soup
+[10:24.53] <DV8FromTheWorld> maybe to fruit
+[10:24.53] <@allaryin> sounds increasingly similar to ic2 boozeception
+[10:24.59] <DV8FromTheWorld> [10:24.23] <DV8FromTheWorld> fruits have a history in MC to have special powers with gold in them
+[10:25.09] <DV8FromTheWorld> i say if we do gold, we do that^
+[10:25.20] <DV8FromTheWorld> keep it kinda inline with MC
+[10:25.27] <GadgetTvMan> fyi, there is gold flakes that are used on some dishs. (dishs as in food. not a "dish">)
+[10:25.34] <@allaryin> sure, golden apple is a hot effect, etc
+[10:25.36] <DV8FromTheWorld> mm
+[10:25.44] <DV8FromTheWorld> or the melon with gold in it
+[10:25.48] <DV8FromTheWorld> thats vanilla right?
+[10:25.50] <@allaryin> gold is 100% edible, just worthless nutritionally
+[10:25.51] <@allaryin> yes
+[10:25.57] <DV8FromTheWorld> k
+[10:26.04] <DV8FromTheWorld> smbarbour, you there?
+[10:26.14] <@allaryin> but yeah, the gold melon or gold apple are going to have to be valid ingredients
+[10:26.15] <DV8FromTheWorld> he had some good suggestions 
+[10:26.20] <@allaryin> proccing a regen makes sense
+[10:26.26] <DV8FromTheWorld> ?
+[10:26.38] <DV8FromTheWorld>  ok
+[10:26.41] <DV8FromTheWorld> gotcha
+[10:26.42] <@allaryin> similar, could play nice with ic2 coffee, etc...
+[10:26.48] <@allaryin> but those are ancillary
+[10:26.55] <smbarbour> I'm never here, but I'm always listening.
+[10:26.59] <@allaryin> mmm
+[10:27.06] <DV8FromTheWorld> ic2 drinks should be supported by the thirst module
+[10:27.08] <DV8FromTheWorld> i should think
+[10:27.21] <DV8FromTheWorld> fulls support
+[10:27.22] <smbarbour> I'm working on MCUpdater changes
+[10:27.33] <DV8FromTheWorld> pack versioning?!
+[10:27.34] <DV8FromTheWorld> :DD?
+[10:27.55] * DV8FromTheWorld crosses his fingers
+[10:28.00] <DV8FromTheWorld> ok anyways, back on topic
+[10:28.04] <smbarbour> That will be one of the things.
+[10:28.07] <DV8FromTheWorld> awesome
+[10:28.12] <@allaryin> i'm gonna have a major use case for mcupdater in a couple of weeks i think
+[10:28.15] <smbarbour> It's not the top priority though.
+[10:28.25] <@allaryin> so that'll be fun
+[10:28.27] <DV8FromTheWorld> :D
+[10:28.52] <DV8FromTheWorld> ok, lets continue
+[10:29.06] <@allaryin> so stewpot
+[10:29.09] <@allaryin> that's a whole machine
+[10:29.21] <GadgetTvMan> why not use MCs brewing pot?
+[10:29.29] <DV8FromTheWorld> because its for potions
+[10:29.36] <DV8FromTheWorld> its.. idk
+[10:29.43] <DV8FromTheWorld> i want to have something that WE control
+[10:29.45] <@allaryin> i think using the cauldron as an ingredient in the machine recipe makes sense
+[10:29.45] <GadgetTvMan> actually, it just holds water.
+[10:30.08] <DV8FromTheWorld> allaryin i agree
+[10:30.14] <@allaryin> then we're talking like cauldron suspended by sticks over a fire
+[10:30.16] <DV8FromTheWorld> an ingredient makes sense
+[10:30.22] <DV8FromTheWorld> yes, i like that
+[10:30.27] <DV8FromTheWorld> or maybe
+[10:30.36] <DV8FromTheWorld> wait
+[10:30.40] <DV8FromTheWorld> nvm continue :D
+[10:30.52] <@allaryin> whatever "fire" is in the recipe, shrug
+[10:30.55] <@allaryin> doesn't matter atm
+[10:31.01] <DV8FromTheWorld> wait
+[10:31.13] <DV8FromTheWorld> maybe we put an iron bar in the recipse
+[10:31.16] <DV8FromTheWorld> recipe
+[10:31.18] <@allaryin> sure
+[10:31.24] <DV8FromTheWorld> and it makes a "floor" for logs
+[10:31.30] <@allaryin> nod, something like that
+[10:31.33] <DV8FromTheWorld> and you rightclick on the machine with logs
+[10:31.37] <DV8FromTheWorld> it places them under
+[10:31.44] <@allaryin> log or charcoal and that gives it fuel
+[10:31.48] <DV8FromTheWorld> then rightclick with flint and steal
+[10:31.52] <DV8FromTheWorld> mm
+[10:31.54] <@allaryin> ... nah
+[10:31.59] <DV8FromTheWorld> naw?
+[10:32.03] <@allaryin> that's tfcraft :P
+[10:32.07] <DV8FromTheWorld> O.o?
+[10:32.10] <DV8FromTheWorld> tfcraft?
+[10:32.11] <@allaryin> way too much micromanaging your campfire heat
+[10:32.14] <@allaryin> terrafirmacraft
+[10:32.17] <GadgetTvMan> could you add a random effect of fire spread to the campfire thing?
+[10:32.19] <DV8FromTheWorld> ok, nvm
+[10:32.27] <DV8FromTheWorld> no gadget
+[10:32.31] <GadgetTvMan> so you would need a dirt area to cook?
+[10:32.34] <DV8FromTheWorld> food mod, thinking WAY to far into this
+[10:32.37] <GadgetTvMan> ok.
+[10:32.48] <DV8FromTheWorld> ok heres an idea
+[10:32.59] <DV8FromTheWorld> instead of it being suspended over a fire
+[10:33.06] <DV8FromTheWorld> we use a furnace in the recipe
+[10:33.11] <@allaryin> sure, same deal
+[10:33.16] <@allaryin> i think it should function as a furnace
+[10:33.21] <@allaryin> start burning once something new is added
+[10:33.25] <DV8FromTheWorld> yes
+[10:33.30] <@allaryin> then go into simmer mode once ready
+[10:33.35] <DV8FromTheWorld> i wonder..
+[10:33.43] <DV8FromTheWorld> maybe IC2 EU net compat?
+[10:33.47] <@allaryin> noes
+[10:33.51] <DV8FromTheWorld> noes?
+[10:33.56] <DV8FromTheWorld> why not?
+[10:34.09] <@allaryin> maybe second pass?
+[10:34.17] <@allaryin> kind of like icebox vs refrigerator
+[10:34.23] <DV8FromTheWorld> what is first and second pass btw?
+[10:34.30] <DV8FromTheWorld> never heard of that term before
+[10:34.48] <@allaryin> one does not sit down and just belch out a finished product
+[10:34.52] <@allaryin> you iterate
+[10:34.59] <@allaryin> go over things again and again and again
+[10:35.10] <DV8FromTheWorld> ok, so develop the initial model
+[10:35.11] <DV8FromTheWorld> review
+[10:35.13] <DV8FromTheWorld> then add more
+[10:35.15] <@allaryin> yeah
+[10:35.17] <@allaryin> v0.2
+[10:35.18] <DV8FromTheWorld> = second pass
+[10:35.25] <DV8FromTheWorld> ok, yea, 
+[10:35.30] <DV8FromTheWorld> next time we can consider
+[10:35.38] <DV8FromTheWorld> maybe after we have a working product
+[10:35.45] <DV8FromTheWorld> use EU might be slightly OP
+[10:35.53] <@allaryin> i think an electric stewpot would be a separate machine
+[10:36.05] <@allaryin> if it plugged into the eu grid, i'd make it drain constantly
+[10:36.05] <DV8FromTheWorld> maybe base it off the electric furnace?
+[10:36.10] <@allaryin> sort of like a spun up induction furnace
+[10:36.12] <@allaryin> sure
+[10:36.18] <@allaryin> electric furnace vs stone furnace for the recipe
+[10:36.22] <@allaryin> and that's the difference
+[10:36.23] <DV8FromTheWorld> actually, 
+[10:36.34] <DV8FromTheWorld> induction might be better, its the only furnace that can be on constantly
+[10:36.37] <DV8FromTheWorld> it would make more sense
+[10:36.46] <@allaryin> too expensive for a glorified campfire
+[10:36.52] <DV8FromTheWorld> hmm true
+[10:37.03] <DV8FromTheWorld> ok, your right
+[10:37.06] <@allaryin> ok, so other cooking things
+[10:37.14] <@allaryin> we've discussed two major machines
+[10:37.21] <@allaryin> the icebox - 3 iterations of it
+[10:37.28] <DV8FromTheWorld> the stew-er and the icebox?
+[10:37.29] <@allaryin> and the stewpot - 2 versions of that
+[10:37.38] <DV8FromTheWorld> ok, lets leave those for now
+[10:37.43] <DV8FromTheWorld> how about the juicer
+[10:37.45] <@allaryin> we've got the concept of preparing ingredients
+[10:37.48] <@allaryin> we've got the juicer
+[10:37.52] <@allaryin> we've got the grilltop
+[10:38.01] <DV8FromTheWorld> we need to discuss the grilltop
+[10:38.05] <DV8FromTheWorld> how we want it to setup
+[10:38.13] <GadgetTvMan> +http://pastebin.com/PEJ1wkgq,
+[10:38.14] <@allaryin> and possibly some sort of mechanical mincing machine
+[10:38.20] <DV8FromTheWorld> yep
+[10:38.31] <DV8FromTheWorld> lol gadget
+[10:38.33] <@allaryin> sausages :)
+[10:38.41] <@allaryin> something like that, yeah
+[10:39.10] <DV8FromTheWorld> you never definded develop() and review()
+[10:39.16] <@allaryin> it inherited them
+[10:39.20] <GadgetTvMan> I extended somthing.
+[10:39.21] <DV8FromTheWorld> ah right
+[10:39.22] <DV8FromTheWorld> :D
+[10:39.23] <@allaryin> pseudocode is pseudocode
+[10:39.25] <@allaryin> anyhow
+[10:39.32] <DV8FromTheWorld> mm
+[10:39.39] <@allaryin> ok, juicer.
+[10:39.53] <GadgetTvMan> Use a piston in the recipe?
+[10:39.55] <@allaryin> this is like a carpenter for fruit drinks
+[10:40.02] <DV8FromTheWorld> yes
+[10:40.05] <@allaryin> i like
+[10:40.06] <@allaryin> yes
+[10:40.09] <DV8FromTheWorld> i think the piston is smart
+[10:40.29] <GadgetTvMan> and use the already in game glass bottles for, well, bottles.
+[10:40.33] <@allaryin> juicer: +http://questionablecontent.net/view.php?comic=2210,
+[10:40.40] <DV8FromTheWorld> glass bottles?
+[10:40.45] <@allaryin> potion bottles
+[10:40.47] <DV8FromTheWorld> for poitions?
+[10:40.54] <@allaryin> for delicious fruit juices
+[10:40.57] <DV8FromTheWorld> hmm
+[10:41.04] <DV8FromTheWorld> im not sure about that..
+[10:41.21] <DV8FromTheWorld> potions are usually like a few ounces of liquid
+[10:41.30] <DV8FromTheWorld> hence they fit into a vial very well
+[10:41.45] <@allaryin> trees++ makes glass cups... then they are consumed when you drink the juice
+[10:41.50] <DV8FromTheWorld> a juice drink, whether its apple juice, or a healthy multijuice
+[10:41.50] <@allaryin> *shudder*
+[10:41.56] <DV8FromTheWorld> no, not consumed
+[10:41.57] <DV8FromTheWorld> >.>
+[10:42.13] <@allaryin> tin cups?
+[10:42.14] <DV8FromTheWorld> but it wont fit in a Vanilla vial/bottle
+[10:42.14] <@allaryin> clay?
+[10:42.16] <GadgetTvMan> lol, trees++ makes you into a man.
+[10:42.18] <DV8FromTheWorld> umm.
+[10:42.30] <@allaryin> trees++ makes my daughter the queen of fruit smoothie crafting ;)
+[10:42.34] <DV8FromTheWorld> lol
+[10:42.42] <DV8FromTheWorld> you know..
+[10:42.48] <DV8FromTheWorld> maybe we should have some kind of API
+[10:42.54] <DV8FromTheWorld> for other mods to use our machines
+[10:42.57] <@allaryin> well
+[10:42.59] <GadgetTvMan> if you use clay for cups. how will you add color for the juice?
+[10:42.59] <DV8FromTheWorld> just a thought
+[10:43.17] <@allaryin> if it's 100% open and it's documented, it wouldn't be hard
+[10:43.19] <GadgetTvMan> *colour
+[10:43.27] <@allaryin> especially if we implement many of the subcomponents as addons themselves
+[10:43.43] <@allaryin> color = top disc
+[10:43.53] <@allaryin> afk phone
+[10:43.55] <DV8FromTheWorld> true allaryin
+[10:44.14] <DV8FromTheWorld> but still, an API for use is kinda better, that way they can include the "api" files
+[10:44.23] <DV8FromTheWorld> so they dont have to directly include our files
+[10:44.26] <DV8FromTheWorld> open source or not
+[10:44.32] <GadgetTvMan> yeah, male a API. and build a mod off of said API.
+[10:44.37] <GadgetTvMan> *make
+[10:44.38] <DV8FromTheWorld> kinda like how BC has an API
+[10:44.55] <DV8FromTheWorld> its an open source mod, with an API
+[10:45.08] <DV8FromTheWorld> just something to keep inmind
+[10:46.05] <@allaryin> sure
+[10:46.22] <@allaryin> so you just make dead sure to organize things sanely into packages
+[10:47.13] <DV8FromTheWorld> oh corse
+[10:47.16] <DV8FromTheWorld> course*
+[10:47.27] <@allaryin> et api
+[10:47.47] <DV8FromTheWorld> et?
+[10:49.04] <DV8FromTheWorld> where did everyone go? O.o
+[10:49.20] <GadgetTvMan> im wanting to know what "et" is.
+[10:49.27] <DV8FromTheWorld> as am i
+[10:49.48] <GadgetTvMan> so, what time do you think we can l4d2 tonight>
+[10:49.51] <GadgetTvMan> ?
+[10:50.02] <DV8FromTheWorld> im actually downloading that game you showed me
+[10:50.19] <GadgetTvMan> its, like, 5 MB.
+[10:50.26] <GadgetTvMan> 5.5
+[10:51.09] <DV8FromTheWorld> ima test the game, then after we are done here, ill play
+[10:51.10] <DV8FromTheWorld> :D
+[10:51.15] <DV8FromTheWorld> you did download the map right?
+[10:51.19] <DV8FromTheWorld> from last time?
+[10:51.27] <@allaryin> back
+[10:51.33] <@allaryin> laugh, what map?
+[10:51.41] <DV8FromTheWorld> for L4D2
+[10:51.45] <DV8FromTheWorld> custom map
+[10:51.49] <@allaryin> nod, i gathered that
+[10:51.51] <DV8FromTheWorld> umm.. i dont remember the name
+[10:51.52] <DV8FromTheWorld> :o
+[10:51.57] <DV8FromTheWorld> 1 sec
+[10:52.05] <DV8FromTheWorld> its a 7 map campaign
+[10:52.08] <@allaryin> egad
+[10:52.11] <DV8FromTheWorld> do you play L4D2?
+[10:52.19] <@allaryin> yes, but it's been a few months
+[10:52.23] <DV8FromTheWorld> mm
+[10:52.51] <DV8FromTheWorld> i only can play when im at my mom's she has a "ok" laptop, get about 28-32FPS on smaller maps
+[10:52.54] <DV8FromTheWorld> so its "ok"
+[10:53.03] <DV8FromTheWorld> otherwise i play on Xbox360
+[10:53.10] <@allaryin> nod
+[10:53.21] <GadgetTvMan> sorry, whent to get some CAKE!
+[10:53.22] <@allaryin> my work machine plays it decently but chugs trying to run minecraft :P
+[10:53.22] <DV8FromTheWorld> trying to get a job to save to build my own
+[10:53.43] <DV8FromTheWorld> you want to join us later tonight?
+[10:53.57] <GadgetTvMan> If he does, i get to be graphics guy.
+[10:54.03] <DV8FromTheWorld> lol.
+[10:54.08] <GadgetTvMan> ...
+[10:54.15] <DV8FromTheWorld> gadget is gung ho on that
+[10:54.15] <GadgetTvMan> i wasnt joking.
+[10:54.15] <DV8FromTheWorld> :D
+[10:54.40] <DV8FromTheWorld> gadget, we will see ok? im not saying no, but i want to see what i can do too
+[10:54.51] <DV8FromTheWorld> how about we work TOGETHER on graphics?
+[10:54.54] <GadgetTvMan> yeah, i cant do ALL the graphics.
+[10:54.55] <DV8FromTheWorld> all of us
+[10:55.00] <GadgetTvMan> Sure.
+[10:55.23] <GadgetTvMan> We have atleast 10 items to graphics. and to get them all good. i cant do them all.
+[10:55.26] <DV8FromTheWorld> allaryin, did you leave again? :D
+[10:55.37] <GadgetTvMan> Well, i could. being the perfect man i am.
+[10:55.45] <DV8FromTheWorld> dude, we are going to have like.. over a hundred
+[10:55.48] <DV8FromTheWorld> plus machines :D
+[10:55.54] <GadgetTvMan> lol, i know.
+[10:55.59] <@allaryin> sorry, enderman
+[10:56.03] * GadgetTvMan didnt actually know
+[10:56.17] <DV8FromTheWorld> ah k
+[10:56.27] <DV8FromTheWorld> allaryin, the map is called "Outbreak"
+[10:56.35] <DV8FromTheWorld> make sure you have it downloaded gadget
+[10:56.48] <GadgetTvMan> I cant find the ;4d2 install DIR.
+[10:56.51] <GadgetTvMan> WDF IS IT?!?!?
+[10:56.58] <DV8FromTheWorld> lol
+[10:56.59] <@allaryin> steam/steamapps/common
+[10:57.11] <GadgetTvMan> Oh, so it is.
+[10:57.14] <DV8FromTheWorld> l4d2/l4d2/addons
+[10:57.15] * exphc (~sername@c-107-3-130-59.hsd1.ca.comcast.net) Quit (Quit: be back in a week)
+[10:57.18] <DV8FromTheWorld> afterwards
+[10:57.18] <@allaryin> outbreak as in residentevil?
+[10:57.21] <DV8FromTheWorld> yes
+[10:57.33] <DV8FromTheWorld> it looked nice, plus 7 levels
+[10:57.37] <DV8FromTheWorld> thought we would give it a go
+[10:57.40] <GadgetTvMan> i have outbreak.
+[10:57.45] <DV8FromTheWorld> good
+[10:57.54] <DV8FromTheWorld> i really need a zoey mod
+[10:57.57] <GadgetTvMan> brb, gonna see if its corrupted or not.
+[10:58.13] * DV8FromTheWorld favorite character to play is zoey, no idea why, but it is
+[10:58.22] <DV8FromTheWorld> zoey just kicks ass :P
+[10:58.22] <@allaryin> ... zoey mod?
+[10:58.32] <GadgetTvMan> fan service. thats why.
+[10:58.32] <DV8FromTheWorld> put zoey in L4D2
+[10:58.37] <@allaryin> they did
+[10:58.42] <@allaryin> on all of the ported l4d1 maps ;)
+[10:58.51] <DV8FromTheWorld> replace a L4D2 character i mean
+[10:58.56] <@allaryin> yes
+[10:59.00] <DV8FromTheWorld> like, so on non L
+[10:59.06] <@allaryin> nod
+[10:59.06] <DV8FromTheWorld> like, so on non L4D1 maps
+[10:59.08] <@allaryin> i understand
+[10:59.16] <@allaryin> but that's... like 
+[10:59.26] <@allaryin> that's a server mod
+[10:59.37] <DV8FromTheWorld> not nessesarly
+[10:59.43] <@allaryin> ?
+[10:59.43] <DV8FromTheWorld> its a client thing
+[10:59.53] <@allaryin> then to everyone else you look like coach
+[11:00.00] <@allaryin> just zoey on your screen
+[11:00.06] <DV8FromTheWorld> yea :\
+[11:00.10] <DV8FromTheWorld> but it changes the audio
+[11:00.21] <DV8FromTheWorld> if others also install the mod, then they see it too :P
+[11:00.28] <@allaryin> yeah. server mod
+[11:00.32] <@allaryin> it's the only way to be sure
+[11:00.40] <DV8FromTheWorld> idk, i can live without it for now :D  i play coach when not zoey
+[11:00.46] <@allaryin> heh
+[11:00.49] <DV8FromTheWorld> running joke between a friend of mine
+[11:00.52] <@allaryin> hey, I am the jolly fatman
+[11:01.06] <DV8FromTheWorld> hes black, and im a"redneck" 
+[11:01.12] <@allaryin> heh
+[11:01.13] <DV8FromTheWorld> but he playes ellis and i play coach
+[11:01.14] <DV8FromTheWorld> XD
+[11:01.39] <DV8FromTheWorld> so im assuming you are joining us/
+[11:01.41] <DV8FromTheWorld> ?
+[11:01.50] <@allaryin> umm? sure
+[11:01.53] <DV8FromTheWorld> lol
+[11:01.56] <@allaryin> looking at the map details
+[11:02.00] <DV8FromTheWorld> mm
+[11:02.00] <@allaryin> is not normal l4d?
+[11:02.04] <DV8FromTheWorld> ?
+[11:02.28] <DV8FromTheWorld> no, its L4D2
+[11:02.30] <@allaryin> the mod i'm seeing is a conversion of re outbreak
+[11:02.32] <DV8FromTheWorld> at the top
+[11:02.40] <GadgetTvMan> its a custom campaign.
+[11:02.42] <@allaryin> nod
+[11:02.46] <GadgetTvMan> +http://www.l4dmaps.com/details.php?file=5286,
+[11:02.48] <DV8FromTheWorld> +http://www.l4dmaps.com/details.php?file=5286,
+[11:02.53] <@allaryin> yeah, that's the one i'm looking at
+[11:02.55] <@allaryin> was just making sure
+[11:02.58] <DV8FromTheWorld> thats L4D2
+[11:03.01] <DV8FromTheWorld> :D
+[11:03.05] <@allaryin> not what i meant
+[11:03.16] <@allaryin> have you played the dawn of the dead map?
+[11:03.22] <DV8FromTheWorld> no, no i havent
+[11:03.26] <DV8FromTheWorld> is it based on the movie?
+[11:03.37] <@allaryin> yes
+[11:03.40] <DV8FromTheWorld> the movie which i still havent seen :(
+[11:03.45] <@allaryin> meh, is optional
+[11:03.54] <@allaryin> it has a zoey shrine in the mall :P
+[11:03.59] <DV8FromTheWorld> wait
+[11:04.10] <DV8FromTheWorld> the zoey "strip club"?
+[11:04.12] <GadgetTvMan> talking about movies, have you guys seen the "28 weeks later" made in minecraft?
+[11:04.22] <@allaryin> no, it's a clothing store
+[11:04.31] <DV8FromTheWorld> is it dawn of the dead
+[11:04.36] <DV8FromTheWorld> or dead before dawn?
+[11:04.39] <DV8FromTheWorld> 2
+[11:05.13] <DV8FromTheWorld> we played 1 map, in a mall, that had a zoey thing
+[11:05.26] <DV8FromTheWorld> do you remember gadget?
+[11:05.34] <@allaryin> map is called dead before dawn
+[11:05.38] <@allaryin> but i think it's based on dawn of the dead?
+[11:05.38] <@allaryin> shrug
+[11:05.47] <DV8FromTheWorld> ah, then yes, we have played it
+[11:05.52] <DV8FromTheWorld> dead before dawn 2 i believe
+[11:06.01] <GadgetTvMan> idk. words get jumbled in my head.
+[11:06.08] <GadgetTvMan> brb, cake time.
+[11:06.15] <DV8FromTheWorld> lol
+[11:06.16] <DV8FromTheWorld> k
+[11:06.21] <@allaryin> caaaaaake
+[11:06.26] <@allaryin> ooh.
+[11:06.27] <@allaryin> i have pie
+[11:06.41] <DV8FromTheWorld> im eating a brownie :P
+[11:07.00] <DV8FromTheWorld> +http://www.l4dmaps.com/details.php?file=7774,
+[11:07.03] <DV8FromTheWorld> that is what we played
+[11:07.17] <@allaryin> ahh, cool
+[11:07.22] <@allaryin> i played the original version
+[11:08.18] <DV8FromTheWorld> ah ok
+[11:08.29] <GadgetTvMan> back.
+[11:08.32] <DV8FromTheWorld> ok, just get outbreak downloading
+[11:08.34] <DV8FromTheWorld> back on topic :D
+[11:08.41] <GadgetTvMan> cake has been eaten.
+[11:08.46] <@allaryin> omnomnomnom
+[11:08.48] <DV8FromTheWorld> lol
+[11:08.57] <DV8FromTheWorld> we were talking about something to hold drinks in
+[11:09.00] <DV8FromTheWorld> how does IC2 do it?
+[11:09.02] <GadgetTvMan> .youtube omnomnom peyy grip
+[11:09.06] <@allaryin> coffee cups
+[11:09.09] <@allaryin> haha
+[11:09.11] <DV8FromTheWorld> for everything
+[11:09.12] <DV8FromTheWorld> ?
+[11:09.24] <@allaryin> ic2... i don't know what they put the beer in
+[11:09.27] <@allaryin> they only have 2 beverages
+[11:09.30] <@allaryin> coffee and beer
+[11:09.32] <DV8FromTheWorld> true
+[11:09.47] <@allaryin> come to think of it, i don't know what forestry puts mead in :P
+[11:09.51] <GadgetTvMan> coffee is in a ceramic cup.
+[11:10.03] <@allaryin> nod
+[11:10.08] <DV8FromTheWorld> we need a universal cup
+[11:10.22] <@allaryin> is why i suggested a battered old tin cup
+[11:10.23] <DV8FromTheWorld> one that can be used for juicing
+[11:10.23] <GadgetTvMan> uni-cup 300.1
+[11:10.32] <@allaryin> like what one takes camping
+[11:10.34] <DV8FromTheWorld> and for the thirst module
+[11:10.50] <DV8FromTheWorld> hmm i like that idea
+[11:10.52] <DV8FromTheWorld> it makes sense
+[11:10.55] <@allaryin> thermos for juice is also option
+[11:11.03] <@allaryin> suddenly gives canister thingy a reason for being
+[11:11.08] <DV8FromTheWorld> true
+[11:11.11] <@allaryin> and i like making tin less useless
+[11:11.25] <DV8FromTheWorld> so, we use the thermos?
+[11:11.27] <DV8FromTheWorld> i like that
+[11:11.40] <DV8FromTheWorld> makes more sense about why you can swim, and still have a cut of tea
+[11:11.41] <DV8FromTheWorld> :D
+[11:11.44] <@allaryin> it keeps hot things hot and cold things cold
+[11:11.44] <DV8FromTheWorld> cup*
+[11:11.47] <DV8FromTheWorld> mm
+[11:11.48] <@allaryin> HOW DOES IT KNOW THE DIFFERENCE?!?!
+[11:11.49] <GadgetTvMan> btw, fyi, my thermos's lid is also a cup.
+[11:11.51] <DV8FromTheWorld> lol
+[11:12.12] <DV8FromTheWorld> true gadget, but lets assume its like an insulated bottle
+[11:12.19] <DV8FromTheWorld> make things easier
+[11:12.26] <@allaryin> bucket wrapped in tin ;)
+[11:12.32] <DV8FromTheWorld> lol 
+[11:12.33] <@allaryin> it makes the vacuum :)
+[11:12.46] <DV8FromTheWorld> lets actually make it look like a thermos
+[11:12.47] <DV8FromTheWorld> :P
+[11:12.47] <@allaryin> and it holds one bucket's worth of soup/juice
+[11:12.53] <@allaryin> oh sure
+[11:12.59] <@allaryin> require rose red in the recipe? :P
+[11:13.02] <DV8FromTheWorld> lol
+[11:13.06] <DV8FromTheWorld> why?
+[11:13.17] <DV8FromTheWorld> oh man, colorable thermos would be kinda cool
+[11:13.22] <DV8FromTheWorld> that way you could organise them
+[11:13.27] <@allaryin> heh
+[11:13.38] <DV8FromTheWorld> kinda pointless, but hey :D
+[11:13.43] <@allaryin> ok, second pass is dying the things, sure
+[11:13.49] <@allaryin> ;)
+[11:14.08] <DV8FromTheWorld> k
+[11:14.10] <GadgetTvMan> or wool.
+[11:14.11] <@allaryin> ...
+[11:14.14] <GadgetTvMan> how much is a "buckets" worth?
+[11:14.17] <GadgetTvMan> yes. specially for servers.
+[11:14.17] <GadgetTvMan> personal ones.
+[11:14.18] <DV8FromTheWorld> 3 iron
+[11:14.22] <@allaryin> 4 bowls of soup
+[11:14.35] <DV8FromTheWorld> so in the recipe, you use a bucket
+[11:14.39] <DV8FromTheWorld> and...?
+[11:14.43] <@allaryin> and 8 tin :P
+[11:14.43] <DV8FromTheWorld> wool
+[11:14.51] <DV8FromTheWorld> 8 tin? without a tin ore?
+[11:14.51] <@allaryin> it's insulated with a vacuum, not wool
+[11:14.57] <@allaryin> what without a tin ore?
+[11:15.05] <DV8FromTheWorld> how do you get tin without tin ore?
+[11:15.13] <@allaryin> umm, forge?
+[11:15.26] <DV8FromTheWorld> what if you arnt playing with a mod with tin?
+[11:15.27] <@allaryin> in lieu of tin, use wool sure
+[11:15.42] <DV8FromTheWorld> k
+[11:16.13] <DV8FromTheWorld> and it hold 4 soup/juice servings?
+[11:16.16] <@allaryin> ... i still have the l4d2 demo on this hard drive :P
+[11:16.17] <@allaryin> yes
+[11:16.19] <DV8FromTheWorld> so 4 uses?
+[11:16.22] <@allaryin> yes
+[11:16.29] <DV8FromTheWorld> LOL i forgot there even was a demo
+[11:16.32] <@allaryin> and it must be emptied before it can be refilled
+[11:16.41] <DV8FromTheWorld> geez, i think i played it.. 40 times or so?
+[11:16.44] <@allaryin> :)
+[11:16.46] <@allaryin> parish...
+[11:16.48] <DV8FromTheWorld> mm
+[11:16.53] <@allaryin> but yeah
+[11:16.57] <@allaryin> played that demo into the ground
+[11:16.59] <DV8FromTheWorld> agreed
+[11:17.01] <@allaryin> then i bought the game
+[11:17.09] <DV8FromTheWorld> it must be empty
+[11:17.15] <GadgetTvMan> i got the game in some bundle i think.
+[11:17.15] <DV8FromTheWorld> but wait
+[11:17.23] <DV8FromTheWorld> what if your stew only has 3 servings?
+[11:17.26] <DV8FromTheWorld> what do you do then?
+[11:17.38] <DV8FromTheWorld> only pick up 3?
+[11:17.39] <@allaryin> then you only get 3
+[11:17.42] <DV8FromTheWorld> k
+[11:17.47] <@allaryin> but you can only fill it from empty
+[11:17.57] <DV8FromTheWorld> btw, we also need to account for diluting the stew
+[11:18.04] <@allaryin> what do you mean?
+[11:18.11] <DV8FromTheWorld> ie: if i have 50 nutrition, but 1 serving
+[11:18.12] <@allaryin> when you add something, it recalculates over time
+[11:18.13] <DV8FromTheWorld> and i add more
+[11:18.24] <DV8FromTheWorld> (add more water)
+[11:18.32] <DV8FromTheWorld> to raise the serving level
+[11:18.50] <DV8FromTheWorld> it shouldnt still be 50 nutrition for all of those servings
+[11:18.50] <@allaryin> i think we have a cap of like 16 half-meats from a single serving of stew
+[11:18.58] <@allaryin> max saturation
+[11:19.14] <@allaryin> don't want to discuss the possibility of burning the stew
+[11:19.19] <DV8FromTheWorld> no
+[11:19.22] <DV8FromTheWorld> we are NOT doing that
+[11:19.24] <DV8FromTheWorld> period
+[11:19.34] <@allaryin> but could either make it cap out when too much is added w/o water
+[11:19.35] <DV8FromTheWorld> (burning)
+[11:19.45] <@allaryin> or just refuse to take extra dry food beyond limit to absorb
+[11:19.46] <DV8FromTheWorld> maybe like if you have 15 servings
+[11:19.56] <DV8FromTheWorld> and you add more water
+[11:20.03] <@allaryin> max saturation of 16
+[11:20.06] <DV8FromTheWorld> mm
+[11:20.25] <@allaryin> so 64 food to 1 bucket of water = super dense stew of death
+[11:20.46] <@allaryin> it's like a whole potato in every bite
+[11:20.50] <@allaryin> because you're not sipping that
+[11:21.05] <DV8FromTheWorld> lol
+[11:21.11] <DV8FromTheWorld> wait
+[11:21.12] <@allaryin> outbreak download doesn't unzip
+[11:21.13] <DV8FromTheWorld> back up
+[11:21.21] <DV8FromTheWorld> you need to redownload
+[11:21.29] <DV8FromTheWorld> it messes up sometimes
+[11:21.37] <DV8FromTheWorld> i can send you mine through DB is you want?
+[11:22.07] <DV8FromTheWorld> actually, we need to setup a shared folder on DB
+[11:22.14] <DV8FromTheWorld> ill do that now
+[11:22.22] <DV8FromTheWorld> do you use Dropbox allaryin?
+[11:22.36] <@allaryin> nod
+[11:23.35] <DV8FromTheWorld> k, ill add ya
+[11:23.37] <DV8FromTheWorld> give me asec
+[11:24.25] <DV8FromTheWorld> i need email
+[11:24.29] <DV8FromTheWorld> gadget, yours too
+[11:24.30] <@allaryin> allaryin@gmail
+[11:24.47] <GadgetTvMan> you dont have mine? Gadgettvman@gmail.com
+[11:25.01] <GadgetTvMan> mine is a bit to pradictable.
+[11:25.12] <DV8FromTheWorld> ill lol
+[11:25.21] <@allaryin> ;)
+[11:25.35] <DV8FromTheWorld> done
+[11:25.39] <@allaryin> i <3 dynmap
+[11:25.42] <DV8FromTheWorld> lol
+[11:25.52] <DV8FromTheWorld> i still wonder to this day how it works
+[11:25.59] <@allaryin> blackest voodoo
+[11:26.02] <DV8FromTheWorld> lol
+[11:26.04] <@allaryin> also an embedded web server
+[11:26.07] <DV8FromTheWorld> mm
+[11:26.11] <DV8FromTheWorld> crazy stuff
+[11:27.06] <DV8FromTheWorld> that code that i just put in DB makes a circle
+[11:27.07] <DV8FromTheWorld> in MC
+[11:27.11] <DV8FromTheWorld> i made it today
+[11:27.30] <DV8FromTheWorld> it needs some fine tuning, but it makes it "roughly"
+[11:27.43] <GadgetTvMan> take a screen cap.
+[11:27.45] <GadgetTvMan> I wanna see.
+[11:27.45] <DV8FromTheWorld> k
+[11:28.02] <GadgetTvMan> I also added somthing in DB.
+[11:28.09] <DV8FromTheWorld> teche isnt starting up
+[11:28.11] <DV8FromTheWorld> so i cant
+[11:28.12] <DV8FromTheWorld> sorry :P
+[11:28.29] <GadgetTvMan> use MCs screencap.
+[11:28.34] <GadgetTvMan> f2 i think,
+[11:28.37] <DV8FromTheWorld> lol
+[11:28.43] <@allaryin> it's... hard coded :(
+[11:28.45] <DV8FromTheWorld> i havent wrote all the code to make it work >.>
+[11:28.52] <DV8FromTheWorld> yes, yes it allaryin
+[11:29.13] <DV8FromTheWorld> i used a program to autogenerate it, i move the stuff where i want it, the shape i want it, and the orientation
+[11:29.19] <DV8FromTheWorld> it spits out the java code needed
+[11:29.30] <DV8FromTheWorld> even supports turbo model thingy mod
+<-------------------------------------------------------------------------> (DV8FromTheWorld's Internet Died)
+[11:30.51] <@allaryin> shhh
+[11:30.57] <GadgetTvMan> ^
+[11:31.22] <GadgetTvMan> i feel so nekkid without me @
+[11:31.27] <@allaryin> heh
+[11:31.37] <DV8FromTheWorld> lol
+[11:31.49] <GadgetTvMan> i just noticed.
+[11:32.04] <GadgetTvMan> Oh wll. IM MORE SPECIAL THEN THE @s!
+[11:32.06] <DV8FromTheWorld> anyways,
+[11:32.07] <GadgetTvMan> *well
+[11:32.15] <DV8FromTheWorld> [11:28.43] <@allaryin> it's... hard coded :(
+[11:32.15] <DV8FromTheWorld> [11:28.45] <DV8FromTheWorld> i havent wrote all the code to make it work >.>
+[11:32.16] <DV8FromTheWorld> [11:28.52] <DV8FromTheWorld> yes, yes it allaryin
+[11:32.16] <DV8FromTheWorld> [11:29.13] <DV8FromTheWorld> i used a program to autogenerate it, i move the stuff where i want it, the shape i want it,and the orientation
+[11:32.16] <DV8FromTheWorld> [11:29.19] <DV8FromTheWorld> it spits out the java code needed
+[11:32.16] <DV8FromTheWorld> [11:29.30] <DV8FromTheWorld> even supports turbo model thingy mod
+[11:32.21] <DV8FromTheWorld> thats what i said before i got DC'd
+[11:32.33] <@allaryin> heh
+[11:32.48] <GadgetTvMan> cool.
+[11:33.47] <GadgetTvMan> whats the programs name?
+[11:34.15] <DV8FromTheWorld> Techne
+[11:34.25] <DV8FromTheWorld> LONGEST TURD
+[11:34.25] <DV8FromTheWorld> The longest dump ever verified was produced by an American, who produced a 'staggering turd' over a period of 2 hr 12 mins which was officially measured at 12 ft 2in. The offender is banned from 134 washrooms
+[11:34.25] <DV8FromTheWorld> in his state.
+[11:34.27] <DV8FromTheWorld> ummmm wot
+[11:35.03] <@allaryin> ...
+[11:35.14] <DV8FromTheWorld> :S?
+[11:35.46] <GadgetTvMan> brb, gonna go eat.
+[11:36.09] <DV8FromTheWorld> k
+[11:36.15] <DV8FromTheWorld> anyways back on topic
+[11:36.22] <DV8FromTheWorld> what were we discussing, thermos?
+[11:36.22] <@allaryin> juicer
+[11:36.24] <@allaryin> makes juice
+[11:36.25] <DV8FromTheWorld> right
+[11:36.32] <@allaryin> juice requires no liquid added
+[11:36.39] <DV8FromTheWorld> yes
+[11:36.42] <@allaryin> so...
+[11:36.44] <GadgetTvMan> techne looks awesome!
+[11:36.48] <@allaryin> fruits that make juice make juice
+[11:36.56] <DV8FromTheWorld> well, actually
+[11:36.57] <@allaryin> it's like honey drops in a squeezer
+[11:37.09] <@allaryin> several apples to make one bucket's worth of juice
+[11:37.21] <DV8FromTheWorld> the stuff that you traditionally think to juice are not the only stuff
+[11:37.36] <@allaryin> if it has liquid, you can juice it
+[11:37.42] <DV8FromTheWorld> yes
+[11:37.49] <@allaryin> celery is a good ingredient, etc...
+[11:37.50] <DV8FromTheWorld> so basically all vegies
+[11:38.00] <DV8FromTheWorld> celery is great for you
+[11:38.18] <DV8FromTheWorld> eat 50 pounds, you WILL lose weight
+[11:38.31] <DV8FromTheWorld> more energy to chew than you get from the celery
+[11:38.36] <@allaryin> ;)
+[11:39.59] <@allaryin> is juicer an ic2 only thing?
+[11:40.19] <DV8FromTheWorld> huh?
+[11:40.22] <DV8FromTheWorld> what do you mean?
+[11:40.27] <DV8FromTheWorld> only if IC2 is installed?
+[11:40.29] <@allaryin> how do you run it w/o ic2?
+[11:40.36] <DV8FromTheWorld> a machine.
+[11:40.54] <DV8FromTheWorld> we would need to make a new one
+[11:41.03] <@allaryin> not going to write a power grid
+[11:41.08] <DV8FromTheWorld> ?
+[11:41.21] <DV8FromTheWorld> a power grid?
+[11:41.25] <@allaryin> there are already too many separate power systems
+[11:41.52] <DV8FromTheWorld> maybe it doesnt use power?
+[11:41.57] <DV8FromTheWorld> if we use a piston
+[11:42.03] <DV8FromTheWorld> make it be powered by a lever?
+[11:42.06] <@allaryin> oh laugh
+[11:42.08] <DV8FromTheWorld> :D
+[11:42.08] <@allaryin> redstone pulses?
+[11:42.12] <@allaryin> that's just pure evil
+[11:42.14] <DV8FromTheWorld> lolol
+[11:42.22] <@allaryin> require people to mash a button or set up a timer :P
+[11:42.40] <DV8FromTheWorld> idk then
+[11:42.41] <@allaryin> it's like tapping the pulse button on your blender, i like it
+[11:42.44] <@allaryin> it's evil and funny
+[11:42.46] <DV8FromTheWorld> :D
+[11:42.54] <@allaryin> and the real version of the machine just uses eu and is done
+[11:42.59] <DV8FromTheWorld> mm
+[11:43.06] <@allaryin> like 20 eu to juice a thing
+[11:43.17] <@allaryin> so throw in 12 carrots and it's 600 eu
+[11:43.19] <DV8FromTheWorld> agreed, but what if you want multiple juices?
+[11:43.38] <@allaryin> have you done much forestry?
+[11:43.39] <DV8FromTheWorld> like carrot juice with tomato juice 
+[11:43.46] <DV8FromTheWorld> i dont get good FPS in MC
+[11:43.51] <GadgetTvMan> back..
+[11:43.51] <DV8FromTheWorld> so no, i havent had time
+[11:43.55] <DV8FromTheWorld> nor patcients
+[11:44.07] <@allaryin> ok. most of his machines have liquid gagues
+[11:44.12] <@allaryin> gauges?
+[11:44.18] <DV8FromTheWorld> gauges
+[11:44.37] <@allaryin> when you're processing honey you get little droplets
+[11:44.42] <@allaryin> you then squeeze them
+[11:44.52] <@allaryin> it takes like 10 droplets to get one can of liquid honey
+[11:45.10] <@allaryin> i think the stewpot and juicer are very similar
+[11:45.22] <@allaryin> the juicer is if anything a simpler version of the stewpot
+[11:45.29] <DV8FromTheWorld> agreed
+[11:45.30] <@allaryin> it can't take as many things
+[11:45.42] <DV8FromTheWorld> but it also doesnt use water
+[11:45.43] <@allaryin> and everything you add provides its own liquid
+[11:45.49] <DV8FromTheWorld> mm
+[11:45.50] <@allaryin> yeah it's static density
+[11:46.03] <@allaryin> one tomato in the juice always adds the same value
+[11:46.17] <DV8FromTheWorld> mm'
+[11:47.35] <@allaryin> 26m eta on this download
+[11:47.40] <@allaryin> it hasn't stalled this time
+[11:48.30] <DV8FromTheWorld> k
+[11:48.37] <@allaryin> stupid slow mirrors
+[11:48.50] <DV8FromTheWorld> here, let me just dropbox it
+[11:48.54] <DV8FromTheWorld> SO much faster
+[11:49.05] <@allaryin> how long will it take you to upload? :P
+[11:49.15] <DV8FromTheWorld> thats a good question
+[11:49.22] <DV8FromTheWorld> at home, a few minutes, here...
+[11:49.23] <DV8FromTheWorld> O.o
+[11:49.53] <@allaryin> i think thermos is a bit complicated as a prereq for juicer
+[11:50.13] <@allaryin> so i think a single-serving cup ala soup in bowls makes sense
+[11:51.16] <@allaryin> oh my goodness
+[11:51.23] <DV8FromTheWorld> ?
+[11:51.39] <@allaryin> there is already some knockoff "BRAVE" movie on netflix
+[11:51.49] <DV8FromTheWorld> lol... seriously
+[11:51.50] <DV8FromTheWorld> ?
+[11:51.55] <DV8FromTheWorld> whats it called? courage?
+[11:51.56] <DV8FromTheWorld> XD
+[11:52.02] <@allaryin> "kiara the BRAVE"
+[11:52.06] <@allaryin> in big similar looking font
+[11:52.14] <@allaryin> redhaired girl with a sword
+[11:52.14] <DV8FromTheWorld> OH FUCK, 4hr upload
+[11:52.17] <DV8FromTheWorld> fuck dat
+[11:52.17] <@allaryin> yeah.
+[11:52.24] <@allaryin> 21m to go
+[11:52.28] <DV8FromTheWorld> lol
+[11:52.34] <DV8FromTheWorld> if i was at home it would be fine
+[11:52.39] <@allaryin> heh nod
+[11:52.39] <DV8FromTheWorld> wait, nvm
+[11:52.47] <DV8FromTheWorld> thats download >.> still would have been slow
+[11:52.52] <@allaryin> ;)
+[11:53.26] <DV8FromTheWorld> .4 Mb upload O.o
+[11:53.38] <DV8FromTheWorld> its 4.2 Mb upload at hime
+[11:53.42] <DV8FromTheWorld> geez
+[11:53.45] <@allaryin> grin
+[11:54.53] <DV8FromTheWorld> gadget, i REALY want to play this game
+[11:54.53] <DV8FromTheWorld> :P
+[11:54.59] <@allaryin> heh
+[11:55.00] <DV8FromTheWorld> Ace of Spades
+[11:55.01] <GadgetTvMan> ace of spades?
+[11:55.16] <GadgetTvMan> I knew of it the day it came out. just remembered about it today.
+[11:55.18] <DV8FromTheWorld> FPS minecraft :D
+[11:55.41] <GadgetTvMan> And i remember the system req where (your grandmas rig could run this)
+[11:55.46] <GadgetTvMan> *were
+[11:55.46] <DV8FromTheWorld> lol
+[11:56.05] <GadgetTvMan> for real, thats what it was. IDK what it says now.
+[11:56.46] <GadgetTvMan> also, bookmark the ace of spades website.
+[11:56.58] <GadgetTvMan> the website is the server browser.
+[11:57.17] <DV8FromTheWorld> yea, it still says that
+[11:58.11] <DV8FromTheWorld> n topic
+[11:58.13] <DV8FromTheWorld> on&
+[11:58.19] <DV8FromTheWorld> i think we should keep the thermos
+[11:58.24] <GadgetTvMan> well, in that case. im not sure your pc wll run it...
+[11:58.26] <DV8FromTheWorld> but what did you say about the cup thing?
+[11:58.38] <DV8FromTheWorld> allaryin?
+[11:58.44] <GadgetTvMan> cup for the thermos? or cup ingeneral?
+[11:58.52] <DV8FromTheWorld> no, no cup for thermos
+[11:59.01] <DV8FromTheWorld> he said something about a cup
+[11:59.10] <GadgetTvMan> you coulda just said "2"
+[11:59.55] <@allaryin> hmm...
+<---------------------------------------------------------------------->
+[12:00.10] <@allaryin> was thinking that the thermos might be more code to get off the ground than a simple cup
+[12:00.20] <@allaryin> the cup can only hold one dose of juice
+[12:00.30] <@allaryin> it is either full or it is empty
+[12:00.45] <@allaryin> thermos would extend cup
+[12:00.51] <GadgetTvMan> You gonna use the MC tool damage system?
+[12:00.54] <@allaryin> having variable quantity
+[12:01.02] <@allaryin> that kind of makes sense
+[12:01.09] <@allaryin> not entirely sure what our options are on that front
+[12:01.41] <GadgetTvMan> tbh, its the only way i see of doing it. But then again, i aint no coder.
+[12:03.26] <@allaryin> but yeah, i'm going to have to see what's possible
+[12:03.39] <@allaryin> the tool damage display makes a great indicator of fullness
+[12:04.00] <@allaryin> it's what people sort of expect as well
+[12:04.02] <@allaryin> so shrug
+[12:05.44] <@allaryin> hmm
+[12:06.03] <@allaryin> so for most food items, we'll probably have slightly processed versions
+[12:06.30] <@allaryin> grain turns to flour, veggies turn to piles of chopped veggies
+[12:07.24] <@allaryin> chef's knife makes a good tool for most of these tasks
+[12:07.43] <@allaryin> standard craft with the knife in the recipe, knife takes a hit of durability
+[12:08.01] <@allaryin> or just make a knife that doesn't break, shrug
+[12:08.03] <DV8FromTheWorld> k im back 
+[12:08.52] <@allaryin> most ingredients i can think of having the unprocessed and processed states
+[12:09.00] <DV8FromTheWorld> agreed
+[12:09.09] <@allaryin> can't think of anything that really has multiple processed states - where those additional states aren't just finished recipes
+[12:10.06] <GadgetTvMan> just wondering, have any of you two know about harvest moons cooking?
+[12:10.14] <@allaryin> of course
+[12:10.37] <GadgetTvMan> ok, then in that case. I shall shutup now.
+[12:12.10] <@allaryin> don't want to do full hm:btn cooking system
+[12:12.19] <GadgetTvMan> btn?
+[12:12.38] <GadgetTvMan> no, just saying that HM have some good ideas when it comes to food.
+[12:12.50] <@allaryin> harvest moon back to nature
+[12:13.13] <@allaryin> back to nature works...
+[12:13.29] <@allaryin> kitchen has various workstations
+[12:13.38] <@allaryin> cutting board, cookpot, frying pan, blender
+[12:14.09] <@allaryin> every workstation, throw list of items at workstation, wait a few seconds, get item
+[12:16.08] <@allaryin> btn also has like 120 different ingredient types
+[12:18.11] <@allaryin> there is a project on the mc forum where they've been talking a harvest moon implementation
+[12:18.16] <@allaryin> they're been discussing it for ages
+[12:19.11] <@allaryin> mod downloaded
+[12:20.42] <GadgetTvMan> sorry if im not really responding. just dont know what to say exactly.
+[12:20.57] <GadgetTvMan> Oh, l2d2?
+[12:21.17] <GadgetTvMan> *l4d2
+[12:21.36] <@allaryin> yeah
+[12:21.40] <@allaryin> r2d2
+[12:22.12] <GadgetTvMan> dv8fromtheworld, where are you?
+[12:22.26] <GadgetTvMan> Do you know how to install it?
+[12:22.35] <@allaryin> yeah
+[12:23.04] <DV8FromTheWorld> sorry, i was playing AoS
+[12:23.06] <DV8FromTheWorld> im done now
+[12:23.07] <@allaryin> ;)
+[12:23.13] <DV8FromTheWorld> couldnt resisit
+[12:23.17] <DV8FromTheWorld> its ALOT of fun
+[12:23.20] <GadgetTvMan> lol, you be playing game?
+[12:23.22] <GadgetTvMan> on which pc?
+[12:23.23] <@allaryin> :P
+[12:23.29] <DV8FromTheWorld> my main one, the terrible one
+[12:23.33] <GadgetTvMan> btw, i have never played AoS.
+[12:23.36] <GadgetTvMan> How was it?
+[12:23.38] <DV8FromTheWorld> great
+[12:23.44] <GadgetTvMan> How was it?
+[12:23.51] <DV8FromTheWorld> fun
+[12:23.54] <DV8FromTheWorld> lots of fun :D
+[12:24.01] <DV8FromTheWorld> ok let me read
+[12:24.02] <DV8FromTheWorld> up
+[12:24.15] <GadgetTvMan> I see. first awnser was unbelievable.
+[12:24.35] <@allaryin> laugh
+[12:25.46] <DV8FromTheWorld> ok im done reading
+[12:25.50] <DV8FromTheWorld> what is harvest moon?
+[12:25.55] <@allaryin> ...
+[12:26.00] <DV8FromTheWorld> ive heard the name
+[12:26.01] <GadgetTvMan> GET THE FUCK OUT SON!
+[12:26.04] <DV8FromTheWorld> but i dont know what it is :D
+[12:26.15] <@allaryin> stop
+[12:26.18] <@allaryin> we do the quiz first
+[12:26.22] <@allaryin> do you know what xcom is?
+[12:26.25] <DV8FromTheWorld> no
+[12:26.29] <@allaryin> do you know what master of orion is?
+[12:26.34] <DV8FromTheWorld> nope,
+[12:26.46] <DV8FromTheWorld> never heard of either before
+[12:26.53] <DV8FromTheWorld> can i google harvest moon now?
+[12:26.54] <DV8FromTheWorld> :D
+[12:26.57] <@allaryin> yes
+[12:27.09] <DV8FromTheWorld> wait.. are you referin to the actually thing
+[12:27.10] <DV8FromTheWorld> or a game?
+[12:27.21] <@allaryin> game.
+[12:27.22] <GadgetTvMan> game
+[12:27.33] <GadgetTvMan> its from the SNES days to today.
+[12:27.34] <@allaryin> game franchise that started on teh snes
+[12:27.34] <DV8FromTheWorld> k
+[12:28.11] <DV8FromTheWorld> ive seriously never heard of this
+[12:28.12] <DV8FromTheWorld> O.o
+[12:28.27] <GadgetTvMan> See 2nd last post i made.
+[12:28.43] <DV8FromTheWorld> [12:26.01] <GadgetTvMan> GET THE FUCK OUT SON!?
+[12:28.48] <@allaryin> !
+[12:28.51] <GadgetTvMan> yes.
+[12:28.53] <DV8FromTheWorld> lol
+[12:29.46] <DV8FromTheWorld> i cant take it...
+[12:29.50] <DV8FromTheWorld> need..more..AoS
+[12:30.03] <DV8FromTheWorld> finally found a game i can run...need...to..play..
+[12:30.13] <GadgetTvMan> haha. Can i play with you tomorrow?
+[12:30.17] <DV8FromTheWorld> what have you done gadget...what have you done!
+[12:30.21] <DV8FromTheWorld> sure. 
+[12:30.31] <GadgetTvMan> brougght light to your life.
+[12:30.36] <@allaryin> ;)
+[12:30.37] <DV8FromTheWorld> ok, seriously though, lets talk about the mod
+[12:30.41] <DV8FromTheWorld> what about that cup thing
+[12:30.46] <GadgetTvMan> all has the map DL'ed
+[12:30.51] <DV8FromTheWorld> something about not needing the thermos for a prerec?
+[12:30.55] <DV8FromTheWorld> k
+[12:31.15] <DV8FromTheWorld> allaryin, do you mind voice chat? gadget and I do it during L4D2
+[12:31.25] <DV8FromTheWorld> you dont have to talk, but if you want to hear us, :D
+[12:31.28] <@allaryin> :P
+[12:31.31] <DV8FromTheWorld> we dont like typing ingame
+[12:31.38] <@allaryin> i sprech teh english well enough
+[12:31.47] <DV8FromTheWorld> lol
+[12:31.48] <GadgetTvMan> lol.
+[12:31.54] <DV8FromTheWorld> btw, guestimate ages, go
+[12:32.05] <@allaryin> both of you <20.
+[12:32.07] <GadgetTvMan> :3
+[12:32.08] <DV8FromTheWorld> mm
+[12:32.10] <DV8FromTheWorld> :3
+[12:32.26] <GadgetTvMan> you, <20
+[12:32.28] <DV8FromTheWorld> gadget you are...14 15? i cant remember, hes mature though :D
+[12:32.33] <@allaryin> heh
+[12:32.39] <GadgetTvMan> turned 15 this june
+[12:32.39] <@allaryin> no, me freaking old man
+[12:32.42] <GadgetTvMan> on the 14
+[12:32.53] <DV8FromTheWorld> im a lil less than than a month from 17
+[12:32.54] <GadgetTvMan> b day is in the middle of year.
+[12:33.04] <GadgetTvMan> You're that old dv?
+[12:33.06] <DV8FromTheWorld> mm
+[12:33.19] <DV8FromTheWorld> we are 2 apart, you knew that :P
+[12:33.21] <DV8FromTheWorld> almost exact
+[12:33.26] <GadgetTvMan> i didnt.
+[12:33.29] <DV8FromTheWorld> oh :P
+[12:33.37] <GadgetTvMan> i feel... young.
+[12:33.41] <DV8FromTheWorld> allaryin, do you beat scratch? hes 50 :P
+[12:33.43] <GadgetTvMan> IM OUT OLDIES!
+[12:33.46] <@allaryin> heh
+[12:34.00] * GadgetTvMan jumps through window.
+[12:34.03] <DV8FromTheWorld> ol
+[12:34.22] <DV8FromTheWorld> tried to do a back bend today
+[12:34.30] <DV8FromTheWorld> my back wont stop hurting :')
+[12:34.42] <GadgetTvMan> LAWL!
+[12:37.18] <DV8FromTheWorld> anyways guys
+[12:37.26] <DV8FromTheWorld> allaryin, what did you say about the cup
+[12:37.28] <DV8FromTheWorld> and the thermos
+[12:37.30] <DV8FromTheWorld> and the juice
+[12:37.34] <DV8FromTheWorld> juicer*
+[12:37.55] <@allaryin> hang on
+[12:38.27] <@allaryin> steam just screwed with my machine
+[12:38.30] <@allaryin> ok
+[12:38.50] <@allaryin> oh, i was just saying that a cup with one charge might be a hair simpler to make than a thermos with variable uses
+[12:39.09] <DV8FromTheWorld> sure
+[12:39.19] <DV8FromTheWorld> maybe we do something like
+[12:39.23] <DV8FromTheWorld> the cup is the first tier
+[12:39.30] <DV8FromTheWorld> and thermos is the better version
+[12:39.31] <DV8FromTheWorld> ?
+[12:40.28] <@allaryin> yes
+[12:40.34] <@allaryin> same as bowl vs thermos
+[12:40.38] <@allaryin> thermos also holds more than juice
+[12:40.44] <@allaryin> but cup would only hold juice
+[12:41.16] <@allaryin> but now i need to shoot zombies
+[12:41.20] <DV8FromTheWorld> lol
+[12:41.24] <DV8FromTheWorld> L4D2 time?
+[12:41.28] <@allaryin> yeah
+[12:41.31] <@allaryin> i've got a lobby created
+[12:41.33] <@allaryin> steam name?
+[12:41.55] <GadgetTvMan> we using skype for VOIP?\
+[12:42.02] <@allaryin> l4d's builtin voice is fine
+[12:42.16] <GadgetTvMan> i never liked it personally.
+[12:42.25] <@allaryin> better than most games
+[12:42.32] <@allaryin> skype screws with my mic
+[12:42.53] <GadgetTvMan> ah.
+[12:43.06] <@allaryin> steam name?
+[12:43.13] <GadgetTvMan> DV8 GET OF OFF AoS
+[12:43.22] <GadgetTvMan> Mine is, light wing
+[12:43.32] <GadgetTvMan> im the guy with the wing sword.
+[12:43.36] <@allaryin> toronto?
+[12:43.40] <GadgetTvMan> yes.
+[12:43.46] <@allaryin> k
+[12:43.52] <DV8FromTheWorld> lol i cant its SO hard
+[12:44.00] <GadgetTvMan> Panguin?
+[12:44.15] <@allaryin> gmm?
+[12:44.19] <DV8FromTheWorld> im DV8FromTheWorld, im not online yet, 1 sec
+[12:44.21] <@allaryin> my avatar is a demon penguin, yes
+[12:44.24] <GadgetTvMan> gmm?
+[12:44.46] <GadgetTvMan> anyways, we gotta wait for dv8 to get his better pc.
+[12:45.21] <GadgetTvMan> dv8, just wondering, what mic do yo have?
+[12:49.44] <DV8FromTheWorld> lol
+[12:49.55] <DV8FromTheWorld> holy crap
+[12:50.01] <DV8FromTheWorld> this is SO addicting
+[12:50.02] <DV8FromTheWorld> fuck
+[12:52.59] <DV8FromTheWorld> joining now
+[02:33.10] <@Silentspy> noo
+[02:33.12] <@Silentspy> another wall of text
+[02:37.47] <@allaryin> muahaha
+[02:37.54] <@allaryin> also, that l4d map is teh craps
+[02:40.17] <DV8FromTheWorld> lol
+[02:40.22] <DV8FromTheWorld> yea that map is SHIT
+[02:40.26] <GadgetTvMan> that was poop
+[02:40.29] <@allaryin> worst highl;y rated map ever
+[02:40.33] <DV8FromTheWorld> agreed
+[02:41.12] <GadgetTvMan> im going to downvote ir.
+[02:42.24] <GadgetTvMan> nvm, cant.
+[02:42.32] <@allaryin> man, i don't want to register to downvote it
+[02:42.42] <GadgetTvMan> you need to right a review.
+[02:42.51] <GadgetTvMan> to much work for me.
+[02:46.57] <@Silentspy> play helm's deep one
+[02:46.58] <@Silentspy> a lot of fun
+[02:47.46] <GadgetTvMan> +http://www.l4dmaps.com/details.php?file=7302?,
+[02:47.50] <GadgetTvMan> +http://www.l4dmaps.com/details.php?file=7302, ?
+[02:56.37] <@Silentspy> yea thats the one
+[02:57.01] <@Silentspy> so DV8FromTheWorld  and allaryin 
+[02:57.03] <@Silentspy> can i get a round up
+[02:57.04] <@Silentspy> :D
+[02:57.17] <@Silentspy> like a list of feature plans etc
+[02:58.13] <GadgetTvMan> i think dv8 is away.
+[02:58.18] <GadgetTvMan> on phone with gf.
+[02:58.40] <GadgetTvMan> idk about allarin
+[02:58.47] <GadgetTvMan> *allaryin
+[02:59.00] <@Silentspy> aight
+[03:02.33] <DV8FromTheWorld> oh man dude
+[03:02.40] <DV8FromTheWorld> i feel like throwing up
+[03:02.46] <GadgetTvMan> hm?
+[03:02.57] <DV8FromTheWorld> these pants just bunched up
+[03:03.03] <DV8FromTheWorld> and i couldnt move on my bad
+[03:03.05] <DV8FromTheWorld> bed*
+[03:03.12] <DV8FromTheWorld> my back was in to much pain
+[03:03.20] <DV8FromTheWorld> so now i feel like throwing up
+[03:03.22] <GadgetTvMan> :3
+[03:03.33] <GadgetTvMan> ^my face as you are typing those words.
+[03:03.50] <DV8FromTheWorld> silent, did you read through the irc thing?
+[03:04.55] <GadgetTvMan> hey, do you think we will be playing any more games tonight?
+[03:05.05] <DV8FromTheWorld> no, im to tired
+[03:05.08] <DV8FromTheWorld> and my back hurts
+[03:05.16] <GadgetTvMan> kk, then im heading off old man./
+[03:05.18] <DV8FromTheWorld> and i feel like throwing up
+[03:05.21] <GadgetTvMan> :3
+[03:05.25] <DV8FromTheWorld> stfu
+[03:05.28] <GadgetTvMan> :3
+[03:05.38] <DV8FromTheWorld> Silentspy, did you read the logs?
+[03:05.49] <GadgetTvMan> night all. the canadian is asleep.
+[03:05.56] <DV8FromTheWorld> lol night
+[03:06.00] * GadgetTvMan is now known as [AWAY]GadgetTvMan
+[03:07.38] <@Silentspy> the logs you gave me yesterday?
+[03:07.38] <@Silentspy> yea
+[03:07.46] <@Silentspy> im not gonna read through this today
+[03:07.47] <@Silentspy> :P
+[03:07.51] <@Silentspy> too much, better to do a round up
+[03:07.55] <@Silentspy> or make a feature list of plans
+[03:08.09] <DV8FromTheWorld> ok, actually, today we came up with 2 REALLY big parts
+[03:08.15] <DV8FromTheWorld> you might wana read..
+[03:08.26] <@Silentspy> just tell me
+[03:08.33] <DV8FromTheWorld> oh well, allaryin and I will tell you later
+[03:08.33] <@Silentspy> :P
+[03:08.38] <DV8FromTheWorld> its 3AM here
+[03:08.39] <@Silentspy> make al ist
+[03:08.41] <@Silentspy> list*
+[03:08.41] <DV8FromTheWorld> what time is it for you
+[03:08.42] <DV8FromTheWorld> ?
+[03:10.50] <DV8FromTheWorld> nvm
+[03:10.53] <DV8FromTheWorld> im going to bed
+[03:10.55] <DV8FromTheWorld> good night
+[03:11.04] * DV8FromTheWorld is set as away : Reason(ZzzzZz)
+[03:11.04] * You are now known as [AWAY]DV8FromTheWorld
+[03:11.28] <@Silentspy> its 9 am
+[03:11.35] <@Silentspy> night :P
+[03:11.41] <[AWAY]DV8FromTheWorld> O.o Europe?
+[03:12.03] <[AWAY]DV8FromTheWorld> we can talk later
+[03:12.05] <[AWAY]DV8FromTheWorld> night
+[12:33.52] <[AWAY]DV8FromTheWorld> yo allaryin, you still away?
+[01:22.00] * [AWAY]DV8FromTheWorld is no longer away : Gone for 10 hrs 10 mins 56 secs
+[01:22.00] * You are now known as DV8FromTheWorld
+[01:31.32] * [AWAY]GadgetTvMan is now known as GadgetTvMan
+[01:50.29] * GadgetTvMan is now known as [AWAY]GadgetTvMan
+[05:10.21] * [AWAY]GadgetTvMan is now known as GadgetTvMan
+[05:31.29] <DV8FromTheWorld> is anyone here?
+[05:31.42] <DV8FromTheWorld> GadgetTvMan
+[05:31.50] <GadgetTvMan> hey
+[05:31.59] <DV8FromTheWorld> ok anyways
+[05:32.02] <DV8FromTheWorld> make a mapping,
+[05:32.16] <DV8FromTheWorld> it should contain the id/name
+[05:32.19] <DV8FromTheWorld> the simmer time
+[05:32.20] <GadgetTvMan> idk what mapping is.
+[05:32.31] <DV8FromTheWorld> and the volume if applicable
+[05:33.03] <DV8FromTheWorld> thing of the EEmaps file
+[05:34.09] <GadgetTvMan> ok.
+[05:34.14] <GadgetTvMan> i understand.
+[05:34.43] <DV8FromTheWorld> :D
+[05:34.53] <DV8FromTheWorld> btw, you wana play AoS now? :D
+[05:37.41] <GadgetTvMan> in a sec.
+[05:37.48] <GadgetTvMan> well, 15 mins.
+[05:37.51] <GadgetTvMan> eating.
+[05:38.24] <DV8FromTheWorld> k
+[05:43.01] <DV8FromTheWorld> HURRRRRRY
+[05:46.16] <GadgetTvMan> k, ready, shall we skype?
+[05:54.00] <@Silentspy> hey
+[05:54.10] <@Silentspy> AoS?
+[05:54.12] <GadgetTvMan> Het.
+[05:54.16] <GadgetTvMan> Ace of Spades
+[05:55.08] <GadgetTvMan> well, i havent played yet. because SOMEONE isnt responding here.
+[05:55.24] <@Silentspy> :P
+[05:59.20] <DV8FromTheWorld> sowie
+[05:59.21] <DV8FromTheWorld> :D
+[05:59.23] <DV8FromTheWorld> i was playing
+[05:59.30] <GadgetTvMan> i know...
+[05:59.38] <DV8FromTheWorld> sure skype
+[05:59.44] <DV8FromTheWorld> silent, you joinin us?
+[05:59.54] <GadgetTvMan> Ohhhhh, silent, wanna join?
+[06:00.02] <GadgetTvMan> HHHHHMMMmmmm?
+[06:02.12] <DV8FromTheWorld> silent
+[06:05.50] <@Silentspy> write my entire name
+[06:05.50] <@Silentspy> hha
+[06:05.56] <@Silentspy> i dont get a ping when you only write silent
+[06:05.57] <@Silentspy> :P
+[06:06.29] <@Silentspy> not sure if i can right now :(
+[06:06.44] <@Silentspy> a friend of mine is eager to play something and im talking to him on teamspeak
