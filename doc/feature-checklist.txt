@@ -3,16 +3,24 @@ Hacksaw Watermelon
 Misc Ideas
 ----------
 * shouldn't turn wheat directly into bread
+  - remove vanilla recipe
+  - config option to overwrite bread item id (default) or use another id
 * melon drops block itself, have to cut it into slices with a knife (ergo mod name)
 * milk needs to be less useless, as do eggs, pumpkins, and sheep
 * implement mod as a basic api with several separate addons
   - config options to toggle as many behaviors as possible
   - plan for IC2 integration in some addons, but not all
 * food quality
+  - S > A > B > C > D
   - high grade food lasts longer, provides more saturation
+    - B provides some saturation, C provides none
   - eventually food decays in grade - unless preserved somehow
+    - grade D food has a chance (~50%) of poisoning you mildly
   - seeds may produce food of grade 0-1 higher than their parent fruit
+  - crops in the ground do not decay
 ? what do we do about fertilizer/bonemeal
+* potion-like effects for some foods/juices
+* cookbook
 
 Resources
 ---------
@@ -30,6 +38,8 @@ Resources
   - lettuce - seeds drop from dandelions
   ! barley - naturally occurring in the wild
   - ginger
+  - potato
+  - celery
 * special
   + strawberry - spread kind of like groundcover?
   + tomato - double high, regrowing, needs cage/support to reach potential
@@ -82,9 +92,24 @@ Machines
   - at the very least, it provides both grilltop and baking capabilities
 ? fryer
   - possibly implement as an option on a grilltop somehow
+? millstone
+  - later addition to automate flour production
 
 Recipes
 -------
+* flour
+  - wheat and barley flour are distinct
+  - cobble + grain = cobble + 2 flour 
+    - eventually add recipes to produce multiple flour at once
+  - 2 wheat flour + 2 white flour = 4 multigrain flour
+* dough
+  - 4 flour around 1 water = 1 dough (yes, cheaper than vanilla)
+  - 4 wheat flour + oil + 1 water = bread dough
+  - 4 multigrain flour + oil + 1 water = multigrain bread dough
+* bread
+  - 1 dough + fire = flatbread (3 hunger)
+  - 1 bread dough + fire = bread (new "vanilla" bread, 4 hunger)
+  - 1 multigrain dough + fire = multigrain bread (>regular)
 * cheese
 * vegetable oil
 * salad
@@ -93,6 +118,9 @@ Recipes
   - 2x sliced bread + filling
 * fudge
   - sets in icebox
+* pie
+  - flour + sugar + butter + water = pie dough
+  - pie dough must chill
 
 Addons
 ------
@@ -101,6 +129,8 @@ Addons
   - no values for machines, tools, processed ingredients, or fancy recipes
 - Thaumcraft integration (SSP only, of course)
   - give Vis values for all things with EMC value
+- Thirst system
+  - similar to hunger, depletion rate considers humidity and temperature
 
 Version Map
 -----------
@@ -115,3 +145,16 @@ Version Map
   - salad recipe
 - 0.2.1
   - tomato, pea
+- 0.2.2
+  - celery
+- 0.3.0
+  - barley
+  - remove vanilla bread recipe
+  - wheat flour, barley flour
+  - flatbread
+  - sandwich
+- 0.4.0
+  - stew
+- 0.4.1
+  - potato
+  - slice pumpkin
