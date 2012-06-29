@@ -22,16 +22,18 @@ Resources
   ? vanilla bean
   + durian
   - lime, lemon, orange
+  - olive
 * ground crop
   - pineapple
   ! carrot - naturally occurring in the wild
-  - peas
+  - peas - regrow
   - lettuce - seeds drop from dandelions
   ! barley - naturally occurring in the wild
   - ginger
 * special
   + strawberry - spread kind of like groundcover?
   + tomato - double high, regrowing, needs cage/support to reach potential
+  + corn - triple high, not harvestable until max height
 * vanilla
   - milk
   - eggs
@@ -46,6 +48,7 @@ Tools
   - works similar to crafting with an rp2 handsaw
   - mince vegetables, chop/grind meat
     - all new crop types would have a chopped ingredient version
+  - recipe: stick + iron + clay
 * thermos
   - can hold either juice or soup
   - preserves contents
@@ -98,3 +101,17 @@ Addons
   - no values for machines, tools, processed ingredients, or fancy recipes
 - Thaumcraft integration (SSP only, of course)
   - give Vis values for all things with EMC value
+
+Version Map
+-----------
+- 0.1.0
+  - modify watermelon to drop whole w/o silk touch
+  - chef's knife
+  - chop watermelon recipe
+- 0.1.1
+  - sharpen knife (knife + cobble)
+- 0.2.0
+  - carrot, lettuce
+  - salad recipe
+- 0.2.1
+  - tomato, pea
