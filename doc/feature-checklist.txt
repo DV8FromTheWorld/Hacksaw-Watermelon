@@ -2,7 +2,7 @@ Hacksaw Watermelon
 
 Misc Ideas
 ----------
-* shouldn't turn wheat directly into bread
+* shouldn't turn wheat directly into bread, cake
   - remove vanilla recipe
   - config option to overwrite bread item id (default) or use another id
 * melon drops block itself, have to cut it into slices with a knife (ergo mod name)
@@ -20,7 +20,9 @@ Misc Ideas
   - crops in the ground do not decay
 ? what do we do about fertilizer/bonemeal
 * potion-like effects for some foods/juices
-* cookbook
+  - adding gold nuggets, using gold melon/apple as ingredients
+* not going to add salt
+? multicolored apples
 
 Resources
 ---------
@@ -31,19 +33,24 @@ Resources
   + durian
   - lime, lemon, orange
   - olive
-* ground crop
+* ground cropOA
   - pineapple
   ! carrot - naturally occurring in the wild
+    - 1-4 per harvest, 1 carrot -> seed
+    - edible raw, largely equivalent to apple
   - peas - regrow
   - lettuce - seeds drop from dandelions
   ! barley - naturally occurring in the wild
   - ginger
   - potato
+  - onion
   - celery
 * special
   + strawberry - spread kind of like groundcover?
   + tomato - double high, regrowing, needs cage/support to reach potential
-  + corn - triple high, not harvestable until max height
+    - 1/growth cycle unsupported, 4/block/cycle supported
+  - corn - triple high, not harvestable until max height
+  - rice - requires hydrated plot, adjacent to water
 * vanilla
   - milk
   - eggs
@@ -63,6 +70,15 @@ Tools
   - can hold either juice or soup
   - preserves contents
   - capacity of 4 servings
+  - bucket wrapped in insulation (ideally tin, wool if we have to)
+    - dye thermos to quick id them
+  - display fullness using the damage/charge meter
+* tin cup
+  - use forge tin ingots if available
+* cookbook
+  - ingame tutorial on the system
+    - show you recipes using an ingredient
+  - recipe: book + wheat?
 
 Machines
 --------
@@ -73,23 +89,30 @@ Machines
   - burns charcoal or wood, not coal
 * juicer
   - convert fruit/veg into juice
+  - use piston in recipe
 * stewpot
   - convert food + liquid into stew
   - continual cooking
   - recipe includes cauldron + furnace
   - value = nutrition / liquid
+    - if nutrition to liquid ratio gets out of whack (too dry), require more liquid before scoopable
   - cooks slowly
     - whenever an item is added, it must integrate before the newly reconstituted stew may be removed in bowls/thermos
     - chopped ingredients add same nutritional value as raw but integrate much more quickly
+  - second tier is electric
 * icebox
   - large chest that only holds food items (extra whitelist in config file)
   - front-opening (so stackable)
   - doubles as a crafting machine - certain recipes require chilling perhaps
   - fuel either with snowballs or ic2 or nothing at all
+    - 400 eu battery, 8 eu/t to establish temperature, 1 eu/t afterward to maintain
+    - when placed, icebox has temperature based on containing biome
   - preserves food
 * stove
   - ultimate in kitchen awesome, combines several machines into one
   - at the very least, it provides both grilltop and baking capabilities
+    - somehow, we want to encourage using a stove for baking instead of a furnace
+  - second tier is electric
 ? fryer
   - possibly implement as an option on a grilltop somehow
 ? millstone
@@ -121,6 +144,8 @@ Recipes
 * pie
   - flour + sugar + butter + water = pie dough
   - pie dough must chill
+* sausage
+* pancake
 
 Addons
 ------
@@ -129,8 +154,16 @@ Addons
   - no values for machines, tools, processed ingredients, or fancy recipes
 - Thaumcraft integration (SSP only, of course)
   - give Vis values for all things with EMC value
+- IC2 integration
+  - electric machines
+  - cropcard support
 - Thirst system
   - similar to hunger, depletion rate considers humidity and temperature
+  - running, taking damage also deplete
+  - all food items have a potential thirst value
+  - one bucket of water = 10 units of thirst (full meter)
+    - one serving of juice = 1/4 of a bucket = 2.5 thirst
+- Preservation
 
 Version Map
 -----------
