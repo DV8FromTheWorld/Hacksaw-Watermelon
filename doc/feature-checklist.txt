@@ -85,4 +85,16 @@ Recipes
 * cheese
 * vegetable oil
 * salad
+  - 1x sliced lettuce + 2x other vegetable + bowl
 * sandwich
+  - 2x sliced bread + filling
+* fudge
+  - sets in icebox
+
+Addons
+------
+- EE2 integration
+  - give EMC values to all new raw ingredients
+  - no values for machines, tools, processed ingredients, or fancy recipes
+- Thaumcraft integration (SSP only, of course)
+  - give Vis values for all things with EMC value
