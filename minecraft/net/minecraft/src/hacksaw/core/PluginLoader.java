@@ -1,60 +1,66 @@
 package net.minecraft.src.hacksaw.core;
 
+import net.minecraft.src.forge.NetworkMod;
 import net.minecraft.src.ModLoader;
 
 public class PluginLoader {
-	public static boolean IC2exists;
-	public static boolean EE2exists;
-	public static boolean ThaumcraftExists;
+	private static Class<NetworkMod> mod_IC2 = null;
+	private static Class<NetworkMod> mod_EE = null;
+	private static Class<NetworkMod> mod_ThaumCraft = null;
 	
 	public static void loadPlugins(){
-		loadIc2Integration();
-		loadEquivalentExchangeIntegration();
-		loadThaumcraftIntegration();
+		loadIC2();
+		loadEE();
+		loadThaumCraft();
 	}
-	
-	public static void loadIc2Integration(){
-		try{
-			ModLoader.getLogger().info("Trying to load Industrialcraft 2 integration.");
-			Class<?> IC2 = Class.forName("mod_IC2");
-			IC2exists = true;//not really needed, but here if needed in future.
-			//insert code to load IC2 integration here
-			
-			ModLoader.getLogger().info("IC2 integration was successfully loaded.");
-			
-		}catch(ClassNotFoundException e){
-			ModLoader.getLogger().info("IC2 was not found.");
-			IC2exists = false;//not really needed, but here if needed in future.
+
+	private static Class<NetworkMod> loadMod( String className ) {
+		//ModLoader.getLogger().info( "[Hacksaw] Looking for "+className );
+		final Class<NetworkMod> clazz;
+		try {
+			clazz = Class.forName( className );
+		} catch( ClassNotFoundException e ) {
+		}
+		return clazz;
+	}
+
+	private static void loadIC2() {
+		mod_IC2 = loadMod( "mod_IC2" );
+		if( gotIC2() ) {
+			// TODO: load IC2 integration
+			ModLoader.getLogger().info( "[Hacksaw] Loading IC2 integration plugin" );
+		} else {
+			ModLoader.getLogger().info( "[Hacksaw] Not loading IC2 integration" );
 		}
 	}
-	
-	public static void loadEquivalentExchangeIntegration(){
-		try{
-			ModLoader.getLogger().info("Trying to load Equivalent Exchange Integration.");
-			Class <?> EE2 = Class.forName("mod_EE");
-			EE2exists = true;//not really needed, but here if needed in future.
-			//insert code to load EE2 integration here
-			
-			ModLoader.getLogger().info("Equivalent Exchange Integration was successfully loaded.");
-			
-		}catch(ClassNotFoundException e){
-			ModLoader.getLogger().info("Equivalent Exchange was not found.");
-			EE2exists = false;//not really needed, but here if needed in future.
+	public static boolean gotIC2() {
+		return mod_IC2 != null;
+	}
+
+	private static void loadEE() {
+		mod_EE = loadMod( "mod_EE" );
+		if( gotEE() ) {
+			// TODO: load Equivalent Exchange integration
+			ModLoader.getLogger().info( "[Hacksaw] Loading Equivalent Exchange integration plugin" );
+		} else {
+			ModLoader.getLogger().info( "[Hacksaw] Not loading Equivalent Exchange integration" );
 		}
 	}
-	
-	public static void loadThaumcraftIntegration(){
-		try{
-			ModLoader.getLogger().info("Trying to load Thaumcaft Integration.");
-			Class <?> Thaumcraft = Class.forName("mod_ThaumCraft");
-			ThaumcraftExists = true;//not really needed, but here if needed in future.
-			//insert code to load Thaumcraft integration here
-			
-			ModLoader.getLogger().info("Thaumcraft Integration was successfully loaded.");
-			
-		}catch(ClassNotFoundException e){
-			ModLoader.getLogger().info("Thaumcraft was not found.");
-			ThaumcraftExists = false;//not really needed, but here if needed in future.
+	public static boolean gotEE() {
+		return mod_EE != null;
+	}
+
+	private static void loadThaumCraft() {
+		mod_ThaumCraft = loadMod( "mod_ThaumCraft" );
+		if( gotThaumCraft() ) {
+			// TODO: load ThaumCraft integration
+			ModLoader.getLogger().info( "[Hacksaw] Loading ThaumCraft integration plugin" );
+		} else {
+			ModLoader.getLogger().info( "[Hacksaw] Not loading ThaumCraft integration" );
 		}
 	}
+	public static boolean gotThaumCraft() {
+		return mod_ThaumCraft != null;
+	}
+	
 }
