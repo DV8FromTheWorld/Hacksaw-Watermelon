@@ -13,15 +13,15 @@ public enum PluginLoader {
 
 	private PluginLoader() {
 		plugins = new HashMap<String,HacksawPlugin>();
+	}
 
+	public static void checkPlugins() {
 		ModLoader.getLogger().info( "[Hacksaw] PluginLoader scanning for integration plugins..." );
 
 		addPlugin( "IC2", new Plugin_IC2("mod_IC2", "IC2") );
 		addPlugin( "EE", new Plugin_EE("mod_EE", "EquivalentExchange") );
 		addPlugin( "ThaumCraft", new Plugin_ThaumCraft("mod_ThaumCraft", "ThaumCraft") );
-	}
 
-	public static void checkPlugins() {
 		final int numPlugins = INSTANCE.plugins.size();
 		ModLoader.getLogger().info( "[Hacksaw] PluginLoader has checked "+numPlugins+" plugins." );
 	}
