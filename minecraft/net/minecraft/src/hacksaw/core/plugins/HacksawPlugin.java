@@ -1,4 +1,4 @@
-package net.minecraft.src.hacksaw.core.plugin;
+package net.minecraft.src.hacksaw.core.plugins;
 
 import net.minecraft.src.ModLoader;
 import net.minecraft.src.forge.NetworkMod;
@@ -21,9 +21,9 @@ public abstract class HacksawPlugin {
 	}
 
 	private Class<NetworkMod> loadMod( String className ) {
-		final Class<NetworkMod> clazz;
+		Class<NetworkMod> clazz = null;
 		try {
-			clazz = Class.forName( className );
+			clazz = (Class<NetworkMod>) Class.forName( className );
 		} catch( ClassNotFoundException e ) {
 		}
 		return clazz;
@@ -33,6 +33,6 @@ public abstract class HacksawPlugin {
 		return loaded;
 	}
 
-	public abstract void init() {}
+	public void init() {}
 
 }

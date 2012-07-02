@@ -1,5 +1,8 @@
 package net.minecraft.src.hacksaw.core;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import net.minecraft.src.hacksaw.core.plugins.*;
 import net.minecraft.src.ModLoader;
 

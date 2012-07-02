@@ -1,8 +1,7 @@
-package net.minecraft.src.hacksaw.core.plugin;
+package net.minecraft.src.hacksaw.core.plugins;
 
 public class Plugin_ThaumCraft {
 
-	@Override
 	public void init() {}
 
 }
