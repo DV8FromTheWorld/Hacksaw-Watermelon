@@ -26,7 +26,7 @@ public enum PluginLoader {
 		ModLoader.getLogger().info( "[Hacksaw] PluginLoader has checked "+numPlugins+" plugins." );
 	}
 
-	private void addPlugin( String pluginName, HacksawPlugin plugin ) {
+	private static void addPlugin( String pluginName, HacksawPlugin plugin ) {
 		INSTANCE.plugins.put( pluginName, plugin );
 	}
 
