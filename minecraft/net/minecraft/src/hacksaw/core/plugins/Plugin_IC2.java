@@ -4,7 +4,7 @@ import net.minecraft.src.hacksaw.core.plugins.HacksawPlugin;
 
 public class Plugin_IC2 extends HacksawPlugin {
 
-	public Plugin_EE( String className, String pluginName ) {
+	public Plugin_IC2( String className, String pluginName ) {
 		super( className, pluginName );
 	}
 	
