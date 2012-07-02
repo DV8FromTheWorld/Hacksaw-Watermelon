@@ -79,6 +79,10 @@ Tools
   - ingame tutorial on the system
     - show you recipes using an ingredient
   - recipe: book + wheat?
+* flour sack
+  - put flour in, take flour out
+  - use directly in crafting recipes (instead of having to scoop out)
+  - keyed to a specific type of grain (can only hold one type of flour)
 
 Machines
 --------
@@ -157,6 +161,7 @@ Addons
 - IC2 integration
   - electric machines
   - cropcard support
+  - fancy canning machine support for preservation
 - Thirst system
   - similar to hunger, depletion rate considers humidity and temperature
   - running, taking damage also deplete
