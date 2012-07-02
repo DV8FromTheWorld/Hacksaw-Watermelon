@@ -9,16 +9,14 @@ import net.minecraft.src.hacksaw.core.CoreConfiguration;
 import net.minecraft.src.hacksaw.core.PluginLoader;
 import net.minecraft.src.hacksaw.core.RecipeRemover;
 
-public class mod_Hacksaw extends NetworkMod{
+public class mod_Hacksaw extends NetworkMod {
 
-	//config moved to "CoreConfiguration" 
-	
 	@Override
 	public String getVersion() {
 		return version();
 	}
 	
-	public static String version(){
+	public static String version() {
 		return "0.0";
 	}
 
@@ -26,18 +24,16 @@ public class mod_Hacksaw extends NetworkMod{
 	public void load() {
 		System.out.println("[Hacksaw] loading hacksaw "+getVersion());
 		CoreConfiguration.configurationProperties();
-		PluginLoader.loadPlugins();  //doesn't work yet, still working on it.
+		PluginLoader.checkPlugins();
 		RecipeRemover.removeVanillaRecipes();
 	}
 
-	public boolean clientSideRequired()
-	{
+	public boolean clientSideRequired() {
 		return true;
 	}
 
 	
-	public boolean serverSideRequired()
-	{
+	public boolean serverSideRequired() {
 		return false;
 	}
 	

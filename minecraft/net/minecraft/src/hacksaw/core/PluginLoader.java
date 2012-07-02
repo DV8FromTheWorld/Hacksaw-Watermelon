@@ -1,66 +1,41 @@
 package net.minecraft.src.hacksaw.core;
 
-import net.minecraft.src.forge.NetworkMod;
+import net.minecraft.src.hacksaw.core.plugins.*;
 import net.minecraft.src.ModLoader;
 
-public class PluginLoader {
-	private static Class<NetworkMod> mod_IC2 = null;
-	private static Class<NetworkMod> mod_EE = null;
-	private static Class<NetworkMod> mod_ThaumCraft = null;
-	
-	public static void loadPlugins(){
-		loadIC2();
-		loadEE();
-		loadThaumCraft();
+public enum PluginLoader {
+	INSTANCE;
+
+	protected Map<String,HacksawPlugin> plugins;
+
+	private PluginLoader() {
+		plugins = new HashMap<String,HacksawPlugin>();
+
+		ModLoader.getLogger().info( "[Hacksaw] PluginLoader scanning for integration plugins..." );
+
+		addPlugin( "IC2", new Plugin_IC2("mod_IC2", "IC2") );
+		addPlugin( "EE", new Plugin_EE("mod_EE", "EquivalentExchange") );
+		addPlugin( "ThaumCraft", new Plugin_ThaumCraft("mod_ThaumCraft", "ThaumCraft") );
 	}
 
-	private static Class<NetworkMod> loadMod( String className ) {
-		//ModLoader.getLogger().info( "[Hacksaw] Looking for "+className );
-		final Class<NetworkMod> clazz;
-		try {
-			clazz = Class.forName( className );
-		} catch( ClassNotFoundException e ) {
-		}
-		return clazz;
+	public static void checkPlugins() {
+		final int numPlugins = INSTANCE.plugins.size();
+		ModLoader.getLogger().info( "[Hacksaw] PluginLoader has checked "+numPlugins+" plugins." );
 	}
 
-	private static void loadIC2() {
-		mod_IC2 = loadMod( "mod_IC2" );
-		if( gotIC2() ) {
-			// TODO: load IC2 integration
-			ModLoader.getLogger().info( "[Hacksaw] Loading IC2 integration plugin" );
-		} else {
-			ModLoader.getLogger().info( "[Hacksaw] Not loading IC2 integration" );
-		}
-	}
-	public static boolean gotIC2() {
-		return mod_IC2 != null;
+	private void addPlugin( String pluginName, HacksawPlugin plugin ) {
+		INSTANCE.plugins.put( pluginName, plugin );
 	}
 
-	private static void loadEE() {
-		mod_EE = loadMod( "mod_EE" );
-		if( gotEE() ) {
-			// TODO: load Equivalent Exchange integration
-			ModLoader.getLogger().info( "[Hacksaw] Loading Equivalent Exchange integration plugin" );
-		} else {
-			ModLoader.getLogger().info( "[Hacksaw] Not loading Equivalent Exchange integration" );
+	public static HacksawPlugin getPlugin( String pluginName ) {
+		return INSTANCE.plugins.get( pluginName );
+	}
+	public static boolean pluginLoaded( String pluginName ) {
+		final HacksawPlugin plugin = getPlugin( pluginName );
+		if( plugin != null ) {
+			return plugin.isLoaded();
 		}
-	}
-	public static boolean gotEE() {
-		return mod_EE != null;
-	}
-
-	private static void loadThaumCraft() {
-		mod_ThaumCraft = loadMod( "mod_ThaumCraft" );
-		if( gotThaumCraft() ) {
-			// TODO: load ThaumCraft integration
-			ModLoader.getLogger().info( "[Hacksaw] Loading ThaumCraft integration plugin" );
-		} else {
-			ModLoader.getLogger().info( "[Hacksaw] Not loading ThaumCraft integration" );
-		}
-	}
-	public static boolean gotThaumCraft() {
-		return mod_ThaumCraft != null;
+		return false;
 	}
 	
 }
