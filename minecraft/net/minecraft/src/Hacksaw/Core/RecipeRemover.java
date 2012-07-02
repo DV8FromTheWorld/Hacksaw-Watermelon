@@ -1,7 +1,6 @@
-package net.minecraft.src.Hacksaw.Core;
+package net.minecraft.src.hacksaw.core;
 
 public class RecipeRemover {
-
 	
 	public static void removeVanillaRecipes(){
 		if(CoreConfiguration.useVanillaRecipes == false){
@@ -17,12 +16,9 @@ public class RecipeRemover {
 		//Code for removing the crafting of certain food recipes goes here
 	}
 		
-	
-		
 	private static void removeSmelting() {
 		System.out.println("hi, i removed smelting"); //placeholder for testing
 		//Code for removing food and other things from being made in the furnace goes here
 	}
-	
 	
 }

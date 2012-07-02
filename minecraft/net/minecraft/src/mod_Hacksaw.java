@@ -5,9 +5,9 @@ import java.io.File;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.forge.Configuration;
 import net.minecraft.src.forge.NetworkMod;
-import net.minecraft.src.Hacksaw.Core.CoreConfiguration;
-import net.minecraft.src.Hacksaw.Core.PluginLoader;
-import net.minecraft.src.Hacksaw.Core.RecipeRemover;
+import net.minecraft.src.hacksaw.core.CoreConfiguration;
+import net.minecraft.src.hacksaw.core.PluginLoader;
+import net.minecraft.src.hacksaw.core.RecipeRemover;
 
 public class mod_Hacksaw extends NetworkMod{
 
@@ -24,21 +24,21 @@ public class mod_Hacksaw extends NetworkMod{
 
 	@Override
 	public void load() {
-		System.out.println("Hey, i got loaded right yo!"); //for testing purposes only
+		System.out.println("[Hacksaw] loading hacksaw "+getVersion());
 		CoreConfiguration.configurationProperties();
 		PluginLoader.loadPlugins();  //doesn't work yet, still working on it.
 		RecipeRemover.removeVanillaRecipes();
 	}
 
 	public boolean clientSideRequired()
-    {
-        return true;
-    }
+	{
+		return true;
+	}
 
 	
 	public boolean serverSideRequired()
-    {
-        return false;
-    }
+	{
+		return false;
+	}
 	
 }

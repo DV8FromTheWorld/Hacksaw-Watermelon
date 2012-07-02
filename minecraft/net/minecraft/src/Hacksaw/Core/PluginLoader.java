@@ -1,4 +1,4 @@
-package net.minecraft.src.Hacksaw.Core;
+package net.minecraft.src.hacksaw.core;
 
 import net.minecraft.src.ModLoader;
 
@@ -6,7 +6,6 @@ public class PluginLoader {
 	public static boolean IC2exists;
 	public static boolean EE2exists;
 	public static boolean ThaumcraftExists;
-	
 	
 	public static void loadPlugins(){
 		loadIc2Integration();
@@ -23,11 +22,10 @@ public class PluginLoader {
 			
 			ModLoader.getLogger().info("IC2 integration was successfully loaded.");
 			
-			}catch(ClassNotFoundException e){
-				ModLoader.getLogger().info("IC2 was not found.");
-				IC2exists = false;//not really needed, but here if needed in future.
-			}
-		
+		}catch(ClassNotFoundException e){
+			ModLoader.getLogger().info("IC2 was not found.");
+			IC2exists = false;//not really needed, but here if needed in future.
+		}
 	}
 	
 	public static void loadEquivalentExchangeIntegration(){
@@ -39,11 +37,10 @@ public class PluginLoader {
 			
 			ModLoader.getLogger().info("Equivalent Exchange Integration was successfully loaded.");
 			
-			}catch(ClassNotFoundException e){
-				ModLoader.getLogger().info("Equivalent Exchange was not found.");
-				EE2exists = false;//not really needed, but here if needed in future.
-			}
-			
+		}catch(ClassNotFoundException e){
+			ModLoader.getLogger().info("Equivalent Exchange was not found.");
+			EE2exists = false;//not really needed, but here if needed in future.
+		}
 	}
 	
 	public static void loadThaumcraftIntegration(){
@@ -55,9 +52,9 @@ public class PluginLoader {
 			
 			ModLoader.getLogger().info("Thaumcraft Integration was successfully loaded.");
 			
-			}catch(ClassNotFoundException e){
-				ModLoader.getLogger().info("Thaumcraft was not found.");
-				ThaumcraftExists = false;//not really needed, but here if needed in future.
-			}
+		}catch(ClassNotFoundException e){
+			ModLoader.getLogger().info("Thaumcraft was not found.");
+			ThaumcraftExists = false;//not really needed, but here if needed in future.
+		}
 	}
 }
