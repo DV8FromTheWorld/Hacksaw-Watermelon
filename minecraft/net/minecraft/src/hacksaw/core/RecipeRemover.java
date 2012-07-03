@@ -1,10 +1,23 @@
 package net.minecraft.src.hacksaw.core;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import net.minecraft.src.CraftingManager;
+import net.minecraft.src.FurnaceRecipes;
+import net.minecraft.src.IRecipe;
+import net.minecraft.src.Item;
+import net.minecraft.src.ItemStack;
+import net.minecraft.src.ModLoader;
+
 public class RecipeRemover {
 	
 	public static void removeVanillaRecipes(){
 		if(CoreConfiguration.useVanillaRecipes == false){
-			System.out.println("hi, ill be removing the recipes now."); //placeholder for testing
+			ModLoader.getLogger().fine("[Hacksaw] Removing vanilla recipes");
 			removeCrafting();
 			removeSmelting();
 		}
@@ -12,13 +25,29 @@ public class RecipeRemover {
 	}
 
 	private static void removeCrafting() {
-		System.out.println("hi, i removed crafting"); //placeholder for testing
-		//Code for removing the crafting of certain food recipes goes here
+		// set of recipes to remove
+		Set<Integer> itemSet = new HashSet<Integer>();
+		itemSet.add(Item.bread.shiftedIndex);
+		
+		// remove everything from the list
+		List<IRecipe> recipes = (List)CraftingManager.getInstance().getRecipeList();
+		Iterator<IRecipe> it = recipes.iterator();
+		List<IRecipe> matches = new ArrayList<IRecipe>();	// recipes to remove
+		while( it.hasNext() ) {
+			IRecipe recipe = it.next();
+			ItemStack output = recipe.getRecipeOutput();
+			if( itemSet.contains(output.itemID)) {
+				matches.add(recipe);
+			}
+		}
+		for( IRecipe recipe : matches ) {
+			ModLoader.getLogger().finer("[Hacksaw] Removing recipe for "+recipe);
+			recipes.remove(recipe);
+		}
 	}
 		
 	private static void removeSmelting() {
-		System.out.println("hi, i removed smelting"); //placeholder for testing
-		//Code for removing food and other things from being made in the furnace goes here
+		// TODO: repeat above but with FurnaceRecipes
 	}
 	
 }
