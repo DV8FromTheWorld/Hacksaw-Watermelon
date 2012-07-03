@@ -1,5 +1,6 @@
 package net.minecraft.src.hacksaw.core.plugins;
 
+import net.minecraft.src.ModLoader;
 import net.minecraft.src.hacksaw.core.plugins.HacksawPlugin;
 
 public class Plugin_ThaumCraft extends HacksawPlugin {
@@ -8,6 +9,7 @@ public class Plugin_ThaumCraft extends HacksawPlugin {
 		super( className, pluginName );
 	}
 
-	public void init() {}
-
+	public void init() {
+		// TODO: mod-specific integration goes here
+	}
 }

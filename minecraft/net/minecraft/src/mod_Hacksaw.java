@@ -16,13 +16,17 @@ public class mod_Hacksaw extends NetworkMod {
 		return version();
 	}
 	
+	@Override
+	public String getName() {
+		return "Hacksaw Watermelon";
+	}
+	
 	public static String version() {
-		return "0.0";
+		return "0.0.1";
 	}
 
 	@Override
 	public void load() {
-		System.out.println("[Hacksaw] loading hacksaw "+getVersion());
 		CoreConfiguration.configurationProperties();
 		PluginLoader.checkPlugins();
 		RecipeRemover.removeVanillaRecipes();

@@ -23,7 +23,12 @@ public enum PluginLoader {
 		addPlugin( "ThaumCraft", new Plugin_ThaumCraft("mod_ThaumCraft", "ThaumCraft") );
 
 		final int numPlugins = INSTANCE.plugins.size();
-		ModLoader.getLogger().info( "[Hacksaw] PluginLoader has checked "+numPlugins+" plugins." );
+		int loadedPlugins = 0;
+		for( HacksawPlugin plugin : INSTANCE.plugins.values() ) {
+			if( plugin.isLoaded() )
+				loadedPlugins++;
+		}
+		ModLoader.getLogger().info( "[Hacksaw] PluginLoader has loaded "+loadedPlugins+"/"+numPlugins+" plugins." );
 	}
 
 	private static void addPlugin( String pluginName, HacksawPlugin plugin ) {
