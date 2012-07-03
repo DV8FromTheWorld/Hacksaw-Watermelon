@@ -38,8 +38,11 @@ public class CoreConfiguration extends Configuration {
 		prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
 		
 		// TODO: read default id's from a separate file?
-		getOrCreateIntProperty("multigrain.bread", Configuration.CATEGORY_ITEM, 384);
-		getOrCreateIntProperty("flat.bread", Configuration.CATEGORY_ITEM, 385);
+		prop = getOrCreateIntProperty("multigrain.bread", Configuration.CATEGORY_ITEM, 384);
+		HacksawItems.multigrainBread.itemId = prop.getInt();
+		
+		prop = getOrCreateIntProperty("flat.bread", Configuration.CATEGORY_ITEM, 385);
+		HacksawItems.flatBread.itemId = prop.getInt();
 	}
 	
 	public static boolean getPreference( String propName ) {
@@ -52,20 +55,6 @@ public class CoreConfiguration extends Configuration {
 	
 	@Override
 	public void save() {
-		/*
-		 * BC does it this way
-		 * 
-		Property version = null;
-		if( !generalProperties.containsKey("version") ) {
-			version = new Property();
-			version.name = "version";
-			generalProperties.put("version", version);
-		} else {
-			version = generalProperties.get("version");
-		}
-		version.value = mod_Hacksaw.version();
-		*/
-		// i'm doing it this way
 		Property version = getOrCreateProperty("version", Configuration.CATEGORY_GENERAL, mod_Hacksaw.version());
 		super.save();
 	}
