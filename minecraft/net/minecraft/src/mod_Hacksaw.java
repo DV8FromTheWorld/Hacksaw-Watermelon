@@ -27,7 +27,7 @@ public class mod_Hacksaw extends NetworkMod {
 
 	@Override
 	public void load() {
-		CoreConfiguration.configurationProperties();
+		CoreConfiguration.init( "config/hacksaw/core.cfg" );
 		PluginLoader.checkPlugins();
 		RecipeRemover.removeVanillaRecipes();
 	}
@@ -36,7 +36,6 @@ public class mod_Hacksaw extends NetworkMod {
 		return true;
 	}
 
-	
 	public boolean serverSideRequired() {
 		return false;
 	}

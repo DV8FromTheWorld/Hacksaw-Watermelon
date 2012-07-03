@@ -16,12 +16,11 @@ import net.minecraft.src.ModLoader;
 public class RecipeRemover {
 	
 	public static void removeVanillaRecipes(){
-		if(CoreConfiguration.useVanillaRecipes == false){
+		if(CoreConfiguration.getPreference(CoreConfiguration.USE_VANILLA_RECIPES) == false){
 			ModLoader.getLogger().fine("[Hacksaw] Removing vanilla recipes");
 			removeCrafting();
 			removeSmelting();
-		}
-		
+		}	
 	}
 
 	private static void removeCrafting() {
