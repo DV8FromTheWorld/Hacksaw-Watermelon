@@ -12,6 +12,7 @@ import net.minecraft.src.IRecipe;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.ModLoader;
+import net.minecraft.src.hacksaw.core.util.CoreConfiguration;
 
 public class RecipeRemover {
 	

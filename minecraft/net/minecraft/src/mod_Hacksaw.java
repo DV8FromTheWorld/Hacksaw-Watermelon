@@ -5,9 +5,9 @@ import java.io.File;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.forge.Configuration;
 import net.minecraft.src.forge.NetworkMod;
-import net.minecraft.src.hacksaw.core.CoreConfiguration;
 import net.minecraft.src.hacksaw.core.PluginLoader;
 import net.minecraft.src.hacksaw.core.RecipeRemover;
+import net.minecraft.src.hacksaw.core.util.CoreConfiguration;
 
 public class mod_Hacksaw extends NetworkMod {
 

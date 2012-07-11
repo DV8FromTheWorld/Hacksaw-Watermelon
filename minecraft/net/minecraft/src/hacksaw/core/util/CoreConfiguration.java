@@ -1,4 +1,4 @@
-package net.minecraft.src.hacksaw.core;
+package net.minecraft.src.hacksaw.core.util;
 
 import java.io.File;
 
@@ -7,6 +7,7 @@ import net.minecraft.src.ModLoader;
 import net.minecraft.src.mod_Hacksaw;
 import net.minecraft.src.forge.Configuration;
 import net.minecraft.src.forge.Property;
+import net.minecraft.src.hacksaw.core.HacksawItems;
 
 public class CoreConfiguration extends Configuration {
 	public static final String USE_VANILLA_RECIPES = "useVanillaRecipes";
