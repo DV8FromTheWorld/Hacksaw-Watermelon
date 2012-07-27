@@ -3,10 +3,10 @@ package net.minecraft.src;
 import hacksaw.core.HacksawItems;
 import hacksaw.core.PluginLoader;
 import hacksaw.core.RecipeRemover;
-import hacksaw.core.Test;
-import hacksaw.core.items.ItemChefKnife;
+import hacksaw.core.Register;
+import hacksaw.core.items.ItemSharpChefKnife;
 import hacksaw.core.util.CoreConfiguration;
-import hacksaw.core.util.Test2;
+import hacksaw.core.util.CraftingStuff;
 
 import java.io.File;
 
@@ -39,13 +39,13 @@ public class mod_Hacksaw extends NetworkMod {
 	public void load() {
 		MinecraftForgeClient.preloadTexture("/hacksaw/textures/items.png");
 		CoreConfiguration.init( "config/hacksaw/core.cfg" );
-		Test.registerItemsAndBlocks();
+		Register.registerItemsAndBlocksAndRecipes();
 		PluginLoader.checkPlugins();
 		RecipeRemover.removeVanillaRecipes();
 	}
 	
 	public void modsLoaded(){
-		Test2.CrazyCraftingSetup();
+		CraftingStuff.init();
 	}
 
 	public boolean clientSideRequired() {

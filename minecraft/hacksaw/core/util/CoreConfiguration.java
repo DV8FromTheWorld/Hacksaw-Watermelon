@@ -40,13 +40,16 @@ public class CoreConfiguration extends Configuration {
 		prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
 		
 		// TODO: read default id's from a separate file?
-		prop = getOrCreateIntProperty("chef.knife", Configuration.CATEGORY_ITEM, 1000);
-		HacksawItems.chefKnife.itemId = prop.getInt();
+		prop = getOrCreateIntProperty("sharp.chef.knife", Configuration.CATEGORY_ITEM, 1000);
+		HacksawItems.sharpChefKnife.itemId = prop.getInt();
 		
-		prop = getOrCreateIntProperty("multigrain.bread", Configuration.CATEGORY_ITEM, 1001);
+		prop = getOrCreateIntProperty("dull.chef.knife", Configuration.CATEGORY_ITEM, 1001);
+		HacksawItems.dullChefKnife.itemId = prop.getInt();
+		
+		prop = getOrCreateIntProperty("multigrain.bread", Configuration.CATEGORY_ITEM, 1002);
 		HacksawItems.multigrainBread.itemId = prop.getInt();
 		
-		prop = getOrCreateIntProperty("flat.bread", Configuration.CATEGORY_ITEM, 1002);
+		prop = getOrCreateIntProperty("flat.bread", Configuration.CATEGORY_ITEM, 1003);
 		HacksawItems.flatBread.itemId = prop.getInt();
 	}
 	

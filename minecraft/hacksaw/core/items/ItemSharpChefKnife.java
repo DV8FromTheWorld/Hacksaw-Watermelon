@@ -6,20 +6,14 @@ import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.forge.ITextureProvider;
 
-public class ItemChefKnife extends Item implements ITextureProvider{
-
-	//public int Sharpness;
+public class ItemSharpChefKnife extends Item implements ITextureProvider{
 	
-	public ItemChefKnife(int i) {
+	public ItemSharpChefKnife(int i) {
 		super(i);
 		this.setMaxStackSize(1);
-		
-		//Sharpness = j;
+		this.setMaxDamage(100);
 	}
 	
-	/*public int getKnifeSharpness(){
-		return Sharpness;
-	}*/
 
 	public boolean shouldRotateAroundWhenRendering(){
 		return true;

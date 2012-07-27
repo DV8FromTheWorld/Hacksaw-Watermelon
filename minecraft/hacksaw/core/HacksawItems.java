@@ -3,7 +3,8 @@ package hacksaw.core;
 import net.minecraft.src.Item;
 
 public enum HacksawItems {
-	chefKnife,
+	sharpChefKnife,
+	dullChefKnife,
 	multigrainBread,
 	flatBread;
 	
