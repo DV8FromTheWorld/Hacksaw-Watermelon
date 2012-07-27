@@ -1,4 +1,6 @@
-package net.minecraft.src.hacksaw.core;
+package hacksaw.core;
+
+import hacksaw.core.util.CoreConfiguration;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -12,7 +14,6 @@ import net.minecraft.src.IRecipe;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.ModLoader;
-import net.minecraft.src.hacksaw.core.util.CoreConfiguration;
 
 public class RecipeRemover {
 	

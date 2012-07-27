@@ -1,4 +1,4 @@
-package net.minecraft.src.hacksaw.core;
+package hacksaw.core;
 
 import net.minecraft.src.Item;
 

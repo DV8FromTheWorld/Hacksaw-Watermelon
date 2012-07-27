@@ -1,4 +1,4 @@
-package net.minecraft.src.hacksaw.core.plugins;
+package hacksaw.core.plugins;
 
 import net.minecraft.src.ModLoader;
 import net.minecraft.src.forge.NetworkMod;

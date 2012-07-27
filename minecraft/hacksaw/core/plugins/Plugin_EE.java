@@ -1,7 +1,7 @@
-package net.minecraft.src.hacksaw.core.plugins;
+package hacksaw.core.plugins;
 
+import hacksaw.core.plugins.HacksawPlugin;
 import net.minecraft.src.ModLoader;
-import net.minecraft.src.hacksaw.core.plugins.HacksawPlugin;
 
 public class Plugin_EE extends HacksawPlugin {
 

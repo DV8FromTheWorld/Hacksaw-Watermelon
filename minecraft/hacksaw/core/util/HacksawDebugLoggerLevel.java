@@ -1,4 +1,4 @@
-package net.minecraft.src.hacksaw.core.util;
+package hacksaw.core.util;
 
 import java.util.logging.Level;
 

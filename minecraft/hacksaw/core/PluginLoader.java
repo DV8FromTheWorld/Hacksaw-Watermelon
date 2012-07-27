@@ -1,9 +1,13 @@
-package net.minecraft.src.hacksaw.core;
+package hacksaw.core;
+
+import hacksaw.core.plugins.HacksawPlugin;
+import hacksaw.core.plugins.Plugin_EE;
+import hacksaw.core.plugins.Plugin_IC2;
+import hacksaw.core.plugins.Plugin_ThaumCraft;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import net.minecraft.src.hacksaw.core.plugins.*;
 import net.minecraft.src.ModLoader;
 
 public enum PluginLoader {

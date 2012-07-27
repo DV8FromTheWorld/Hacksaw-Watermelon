@@ -1,4 +1,6 @@
-package net.minecraft.src.hacksaw.core.util;
+package hacksaw.core.util;
+
+import hacksaw.core.HacksawItems;
 
 import java.io.File;
 
@@ -7,7 +9,6 @@ import net.minecraft.src.ModLoader;
 import net.minecraft.src.mod_Hacksaw;
 import net.minecraft.src.forge.Configuration;
 import net.minecraft.src.forge.Property;
-import net.minecraft.src.hacksaw.core.HacksawItems;
 
 public class CoreConfiguration extends Configuration {
 	public static final String USE_VANILLA_RECIPES = "useVanillaRecipes";
@@ -39,13 +40,13 @@ public class CoreConfiguration extends Configuration {
 		prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
 		
 		// TODO: read default id's from a separate file?
-		prop = getOrCreateIntProperty("chef.knife", Configuration.CATEGORY_ITEM, 383);
+		prop = getOrCreateIntProperty("chef.knife", Configuration.CATEGORY_ITEM, 1000);
 		HacksawItems.chefKnife.itemId = prop.getInt();
 		
-		prop = getOrCreateIntProperty("multigrain.bread", Configuration.CATEGORY_ITEM, 384);
+		prop = getOrCreateIntProperty("multigrain.bread", Configuration.CATEGORY_ITEM, 1001);
 		HacksawItems.multigrainBread.itemId = prop.getInt();
 		
-		prop = getOrCreateIntProperty("flat.bread", Configuration.CATEGORY_ITEM, 385);
+		prop = getOrCreateIntProperty("flat.bread", Configuration.CATEGORY_ITEM, 1002);
 		HacksawItems.flatBread.itemId = prop.getInt();
 	}
 	

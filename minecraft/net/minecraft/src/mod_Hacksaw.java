@@ -1,16 +1,25 @@
 package net.minecraft.src;
 
+import hacksaw.core.HacksawItems;
+import hacksaw.core.PluginLoader;
+import hacksaw.core.RecipeRemover;
+import hacksaw.core.Test;
+import hacksaw.core.items.ItemChefKnife;
+import hacksaw.core.util.CoreConfiguration;
+
 import java.io.File;
+
+import cpw.mods.fml.common.modloader.BaseMod;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.forge.Configuration;
+import net.minecraft.src.forge.MinecraftForgeClient;
 import net.minecraft.src.forge.NetworkMod;
-import net.minecraft.src.hacksaw.core.PluginLoader;
-import net.minecraft.src.hacksaw.core.RecipeRemover;
-import net.minecraft.src.hacksaw.core.util.CoreConfiguration;
 
 public class mod_Hacksaw extends NetworkMod {
 
+	//public static final Item knife = new ItemChefKnife(HacksawItems.chefKnife.itemId).setItemName("Knife");
+	
 	@Override
 	public String getVersion() {
 		return version();
@@ -27,7 +36,9 @@ public class mod_Hacksaw extends NetworkMod {
 
 	@Override
 	public void load() {
+		MinecraftForgeClient.preloadTexture("/hacksaw/textures/items.png");
 		CoreConfiguration.init( "config/hacksaw/core.cfg" );
+		Test.registerItemsAndBlocks();
 		PluginLoader.checkPlugins();
 		RecipeRemover.removeVanillaRecipes();
 	}
