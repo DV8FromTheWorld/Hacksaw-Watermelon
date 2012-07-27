@@ -6,6 +6,7 @@ import hacksaw.core.RecipeRemover;
 import hacksaw.core.Test;
 import hacksaw.core.items.ItemChefKnife;
 import hacksaw.core.util.CoreConfiguration;
+import hacksaw.core.util.Test2;
 
 import java.io.File;
 
@@ -41,6 +42,10 @@ public class mod_Hacksaw extends NetworkMod {
 		Test.registerItemsAndBlocks();
 		PluginLoader.checkPlugins();
 		RecipeRemover.removeVanillaRecipes();
+	}
+	
+	public void modsLoaded(){
+		Test2.CrazyCraftingSetup();
 	}
 
 	public boolean clientSideRequired() {
