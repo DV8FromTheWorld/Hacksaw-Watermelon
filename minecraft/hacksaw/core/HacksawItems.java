@@ -5,6 +5,7 @@ import net.minecraft.src.Item;
 public enum HacksawItems {
 	sharpChefKnife,
 	dullChefKnife,
+	knifeSharpener,
 	multigrainBread,
 	flatBread;
 	

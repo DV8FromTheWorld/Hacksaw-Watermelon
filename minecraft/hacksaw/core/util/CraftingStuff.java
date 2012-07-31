@@ -56,7 +56,7 @@ public class CraftingStuff {
                     //gets the item we added as a "replacement" if it should break
                     Integer integer = containers.get(Integer.valueOf(itemstack1.itemID));
                     
-                    //makes sure that it isnt null
+                    //makes sure that it isnt null(otherwise it would crash on items like the "Knife Sharpener" because it doesnt have a "replacement" item in the "containers" hashmap 
                     if (integer != null)
                     {	
                     	//sets the same slot that held the item that broke to contain the "replacement" item.  Mostlikely the "empty" or used-up version.
@@ -76,6 +76,7 @@ public class CraftingStuff {
 			 * Note: Note: you need to use .item.shiftedIndex instead of .itemId because MC wont understand the ID correctly.
 			 */		
 		craftDamage.add(HacksawItems.sharpChefKnife.item.shiftedIndex);
+		craftDamage.add(HacksawItems.knifeSharpener.item.shiftedIndex);
 					
 			/*
 			 * @para1 int: Item that has durability,  EX: Ic2 charged battery.

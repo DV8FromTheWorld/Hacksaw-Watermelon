@@ -36,21 +36,22 @@ public class CoreConfiguration extends Configuration {
 	}
 	
 	private void populateDefaults() {
+			//
 		Property prop = getOrCreateBooleanProperty(USE_VANILLA_RECIPES, Configuration.CATEGORY_GENERAL, false);
 		prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
 		
 		// TODO: read default id's from a separate file?
+			//Gets the ID for the "Sharp Chef Knife"
 		prop = getOrCreateIntProperty("sharp.chef.knife", Configuration.CATEGORY_ITEM, 1000);
 		HacksawItems.sharpChefKnife.itemId = prop.getInt();
-		
+			
+			//Gets the ID for the "Dull Chef Knife"
 		prop = getOrCreateIntProperty("dull.chef.knife", Configuration.CATEGORY_ITEM, 1001);
 		HacksawItems.dullChefKnife.itemId = prop.getInt();
 		
-		prop = getOrCreateIntProperty("multigrain.bread", Configuration.CATEGORY_ITEM, 1002);
-		HacksawItems.multigrainBread.itemId = prop.getInt();
-		
-		prop = getOrCreateIntProperty("flat.bread", Configuration.CATEGORY_ITEM, 1003);
-		HacksawItems.flatBread.itemId = prop.getInt();
+			//Gets the ID for the "Knife Sharpener"
+		prop = getOrCreateIntProperty("knife.sharpener", Configuration.CATEGORY_ITEM, 1002);
+		HacksawItems.knifeSharpener.itemId = prop.getInt();
 	}
 	
 	public static boolean getPreference( String propName ) {
