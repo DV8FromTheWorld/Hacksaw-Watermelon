@@ -12,6 +12,8 @@ public class ItemSharpChefKnife extends Item implements ITextureProvider{
 		super(i);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(100);
+		this.setItemName("sharp.chef.knife");
+		this.setIconIndex(1);
 	}
 	
 

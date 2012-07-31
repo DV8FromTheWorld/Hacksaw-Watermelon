@@ -11,7 +11,9 @@ public class ItemDullChefKnife extends Item implements ITextureProvider{
 	public ItemDullChefKnife(int i) {
 		super(i);
 		this.setMaxStackSize(8);
-		this.setMaxDamage(0);
+		this.setMaxDamage(100);
+		this.setIconIndex(0);
+		this.setItemName("dull.chef.knife");
 	}
 	
 
@@ -19,13 +21,14 @@ public class ItemDullChefKnife extends Item implements ITextureProvider{
 		return true;
 	}
 	
-	public int getIconFromDamage(){
-		return iconIndex;
-	}
 	
 	public String getTextureFile(){
 		return "/hacksaw/textures/items.png";
 		
+	}
+	
+	public int getIconFromDamage(){
+		return getMaxDamage();
 	}
 	
 	
