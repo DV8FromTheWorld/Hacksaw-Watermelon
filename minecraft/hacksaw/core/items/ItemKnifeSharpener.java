@@ -11,7 +11,7 @@ public class ItemKnifeSharpener extends Item{
 		super(i);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(10);
-		this.setIconIndex(4);
+		this.setIconIndex(2);
 		this.setItemName("knife.sharpener");
 	}
 	

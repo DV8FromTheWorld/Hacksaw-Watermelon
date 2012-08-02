@@ -25,7 +25,7 @@ public class mod_Hacksaw extends NetworkMod {
 	}
 	
 	public static String version() {
-		return "0.0.1";
+		return "0.1";
 	}
 
 	@Override
