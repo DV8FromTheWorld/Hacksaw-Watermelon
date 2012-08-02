@@ -15,8 +15,8 @@ import net.minecraft.src.IInventory;
 public class CraftingStuff {
 	
 	public static HashMap<Integer,Integer> containers = new HashMap<Integer,Integer>();
+	public static HashMap<Integer,Integer> damage = new HashMap<Integer,Integer>();
 	public static HashSet<Integer> craftDamage = new HashSet<Integer>();
-
 	
 	public static void init(){
 		AddItemsForCrazyCraftingSetup();
@@ -25,48 +25,69 @@ public class CraftingStuff {
 	
 	public static void CrazyCraftingSetup()
     {
-        ICraftingHandler icraftinghandler = new ICraftingHandler()
+        ICraftingHandler ich = new ICraftingHandler()
         {
-            public void onTakenFromCrafting(EntityPlayer entityplayer, ItemStack itemstack, IInventory iinventory)
+            public void onTakenFromCrafting(EntityPlayer playerCrafting, ItemStack itemstack, IInventory craftingInventory)
             {
             	//the for loop loops through all the slots in the inventory
-                for (int i = 0; i < iinventory.getSizeInventory(); i++)
+                for (int totalInventorySize = 0; totalInventorySize < craftingInventory.getSizeInventory(); totalInventorySize++)
                 {
 
-                    ItemStack itemstack1 = iinventory.getStackInSlot(i);
+                    ItemStack itemInSlot = craftingInventory.getStackInSlot(totalInventorySize);
                     
                     //the first if checks that you actually have an item in that slot, and that it's one of yours that can be damaged
-                    if (itemstack1 == null || !craftDamage.contains(Integer.valueOf(itemstack1.itemID)))
+                    if (itemInSlot == null || !craftDamage.contains(Integer.valueOf(itemInSlot.itemID)))
                     {
                     	
                         continue;
                     }
                     
                     //Increases the stack size (because crafting decrease the stack size)
-                    itemstack1.stackSize++;
+                    itemInSlot.stackSize++;
                     
                     //Damages the item, this could break the item if it only had a durability of 1 remaining
-                    itemstack1.damageItem(1, entityplayer);
+                    itemInSlot.damageItem(1, playerCrafting);
 
                     //Checks to see if there is still an item.  If it broke because of the previous method, then it will continue, if not, then we're done.
-                    if (itemstack1.stackSize != 1)
+                    if (itemInSlot.stackSize != 1)
                     {
                         continue;
                     }
-                    //gets the item we added as a "replacement" if it should break
-                    Integer integer = containers.get(Integer.valueOf(itemstack1.itemID));
                     
-                    //makes sure that it isnt null(otherwise it would crash on items like the "Knife Sharpener" because it doesnt have a "replacement" item in the "containers" hashmap 
-                    if (integer != null)
+                    /*
+                     * replacementItemId:   Gets the ID of the current item (itemInSlot.itemID) and matches that against the "containers" hashmap.
+                     * if it finds a entry that corresponds with the ID (provided by the containers.put() method), it sets "replacementItemId" to that entry for later use in the craftingInventory.setInventorySlotContents() method below
+                     * 
+                     * damageValue:   Gets the ID of the current item (itemInSlot.itemID) and matches that against the "damage" hashmap.
+                     * if it finds and entry that corresponds with the ID (provided by the damage.put() method), it sets the "damageValue" to that entry for later use in the craftingInventory.setInventorySlotContents() method below
+                     */
+                    Integer replacementItemId = containers.get(Integer.valueOf(itemInSlot.itemID));
+                    Integer damageValue = damage.get(Integer.valueOf(itemInSlot.itemID));
+                    
+                    //checks if the variable "replacementItemId" isn't null(otherwise it would crash on items like the "Knife Sharpener" because it doesnt have a "replacement" item in the "containers" hashmap 
+                    if (replacementItemId != null)
                     {	
-                    	//sets the same slot that held the item that broke to contain the "replacement" item.  Mostlikely the "empty" or used-up version.
-                        iinventory.setInventorySlotContents(i, new ItemStack(integer.intValue(), 2, 0));
+                    	//checks if there is a damageValue specified, if not, it uses the default "0" as the damage value (hence the if else statment)
+                    	if(damageValue != null){                         		
+                    		/*
+                    		 * Sets the Item ID based on the variable "replacementItemId" 
+                    		 * Sets the damage value based on the variable "damageValue"
+                    		 */
+                    		craftingInventory.setInventorySlotContents(totalInventorySize, new ItemStack(replacementItemId.intValue(), 2, damageValue.intValue()));
+                    		
+                    	}else{
+                    		/*
+                    		 * Sets the Item ID based on the variable "replacementItemId"
+                    		 * Doesnt not set a specific Damage value because one was not specified, instead it sets it to a default of 0
+                    		 */
+                    		craftingInventory.setInventorySlotContents(totalInventorySize, new ItemStack(replacementItemId.intValue(), 2, 0));
+                    	}
+                    	
                     }
                 }
             }
-        }
-        ;
-        MinecraftForge.registerCraftingHandler(icraftinghandler);
+        };
+        MinecraftForge.registerCraftingHandler(ich);
     }
 	
 	public static void AddItemsForCrazyCraftingSetup(){
@@ -75,7 +96,7 @@ public class CraftingStuff {
 			 * @para1 int: Item that can be damaged in crafting recipe
 			 * Note: Note: you need to use .item.shiftedIndex instead of .itemId because MC wont understand the ID correctly.
 			 */		
-		craftDamage.add(HacksawItems.sharpChefKnife.item.shiftedIndex);
+		craftDamage.add(HacksawItems.chefKnifeSharp.item.shiftedIndex);
 		craftDamage.add(HacksawItems.knifeSharpener.item.shiftedIndex);
 					
 			/*
@@ -85,7 +106,16 @@ public class CraftingStuff {
 			 * Note:  Item from @para1 will be replaced by Item from @para2 if it breaks in recipe
 			 * Note: you need to use .item.shiftedIndex instead of .itemId because MC wont understand the ID correctly.
 			 */
-		containers.put(HacksawItems.sharpChefKnife.item.shiftedIndex, HacksawItems.dullChefKnife.item.shiftedIndex);
+		containers.put(HacksawItems.chefKnifeSharp.item.shiftedIndex, HacksawItems.chefKnifeDull.item.shiftedIndex);
+		
+		
+			/*
+			 * @para1 int:  Item that will break
+			 * @para2 int:  Damage value that will be set on the item that replaces the broken item
+			 * 
+			 * Note: Item from @para1 will be replaced by Item from @para2 if it breaks in recipe 
+			 */
+		damage.put(HacksawItems.chefKnifeSharp.item.shiftedIndex, 99);
 	}
 	
 }

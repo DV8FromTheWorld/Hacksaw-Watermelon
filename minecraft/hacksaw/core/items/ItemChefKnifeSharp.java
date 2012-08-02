@@ -4,15 +4,21 @@ import java.util.ArrayList;
 
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
+import net.minecraft.src.forge.ITextureProvider;
 
-public class ItemKnifeSharpener extends Item{
-
-	public ItemKnifeSharpener(int i) {
+public class ItemChefKnifeSharp extends Item implements ITextureProvider{
+	
+	public ItemChefKnifeSharp(int i) {
 		super(i);
 		this.setMaxStackSize(1);
-		this.setMaxDamage(10);
-		this.setIconIndex(4);
-		this.setItemName("knife.sharpener");
+		this.setMaxDamage(100);
+		this.setItemName("sharp.chef.knife");
+		this.setIconIndex(0);
+	}
+	
+
+	public boolean shouldRotateAroundWhenRendering(){
+		return true;
 	}
 	
 	public String getTextureFile(){
@@ -25,7 +31,6 @@ public class ItemKnifeSharpener extends Item{
 		
 	}
 	
-	
 	public boolean doesContainerItemLeaveCraftingGrid(){
 		return false;
 	}
@@ -33,5 +38,4 @@ public class ItemKnifeSharpener extends Item{
 	public void addCreativeItems(ArrayList itemList){
 		itemList.add(new ItemStack(this, 1));
 	}
-
 }

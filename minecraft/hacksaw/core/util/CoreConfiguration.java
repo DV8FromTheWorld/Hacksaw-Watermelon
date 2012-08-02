@@ -43,11 +43,11 @@ public class CoreConfiguration extends Configuration {
 		// TODO: read default id's from a separate file?
 			//Gets the ID for the "Sharp Chef Knife"
 		prop = getOrCreateIntProperty("sharp.chef.knife", Configuration.CATEGORY_ITEM, 1000);
-		HacksawItems.sharpChefKnife.itemId = prop.getInt();
+		HacksawItems.chefKnifeSharp.itemId = prop.getInt();
 			
 			//Gets the ID for the "Dull Chef Knife"
 		prop = getOrCreateIntProperty("dull.chef.knife", Configuration.CATEGORY_ITEM, 1001);
-		HacksawItems.dullChefKnife.itemId = prop.getInt();
+		HacksawItems.chefKnifeDull.itemId = prop.getInt();
 		
 			//Gets the ID for the "Knife Sharpener"
 		prop = getOrCreateIntProperty("knife.sharpener", Configuration.CATEGORY_ITEM, 1002);
