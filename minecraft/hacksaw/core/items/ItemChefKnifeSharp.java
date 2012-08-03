@@ -11,7 +11,7 @@ public class ItemChefKnifeSharp extends Item implements ITextureProvider{
 	public ItemChefKnifeSharp(int i) {
 		super(i);
 		this.setMaxStackSize(1);
-		this.setMaxDamage(100);
+		this.setMaxDamage(45);
 		this.setItemName("sharp.chef.knife");
 		this.setIconIndex(0);
 	}
@@ -29,6 +29,14 @@ public class ItemChefKnifeSharp extends Item implements ITextureProvider{
 	public Item getContainerItem(){
 		return this;
 		
+	}
+	
+	public Item setNoRepair(){
+		return this;
+	}
+	
+	public boolean isRepairable(){
+		return false;
 	}
 	
 	public boolean doesContainerItemLeaveCraftingGrid(){

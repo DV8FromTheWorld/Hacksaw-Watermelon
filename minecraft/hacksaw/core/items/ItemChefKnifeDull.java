@@ -27,7 +27,13 @@ public class ItemChefKnifeDull extends Item implements ITextureProvider{
 		
 	}
 	
+	public Item setNoRepair(){
+		return this;
+	}
 	
+	public boolean isRepairable(){
+		return false;
+	}
 	
 	public void addCreativeItems(ArrayList itemList){
 		itemList.add(new ItemStack(this, 1));

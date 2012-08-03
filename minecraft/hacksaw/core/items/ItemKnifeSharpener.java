@@ -25,6 +25,14 @@ public class ItemKnifeSharpener extends Item{
 		
 	}
 	
+	public Item setNoRepair(){
+		return this;
+	}
+	
+	public boolean isRepairable(){
+		return false;
+	}
+	
 	
 	public boolean doesContainerItemLeaveCraftingGrid(){
 		return false;
