@@ -32,13 +32,18 @@ public class mod_Hacksaw extends NetworkMod {
 	public void load() {
 		if(initialized == false){
 			initialized = true;
-			MinecraftForgeClient.preloadTexture("/hacksaw/textures/items.png");
+			preloadTextures();
 			CoreConfiguration.init( "config/hacksaw/core.cfg" );
 			Register.registerItemsAndBlocksAndRecipes();
 			PluginLoader.checkPlugins();
 			RecipeRemover.removeVanillaRecipes();
 		}
 	}	
+	
+	public void preloadTextures(){
+		MinecraftForgeClient.preloadTexture("/hacksaw/textures/items.png");
+		MinecraftForgeClient.preloadTexture("/hacksaw/textures/food.png");
+	}
 	
 	public void modsLoaded(){
 		CraftingStuff.init();

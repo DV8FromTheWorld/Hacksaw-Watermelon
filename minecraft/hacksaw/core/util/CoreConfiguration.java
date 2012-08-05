@@ -30,28 +30,48 @@ public class CoreConfiguration extends Configuration {
 		
 		final File file = new File(Minecraft.getMinecraftDir(), path);
 		INSTANCE = new CoreConfiguration(file);
+		
 		INSTANCE.load();
 		INSTANCE.populateDefaults();
 		INSTANCE.save();
 	}
 	
 	private void populateDefaults() {
-			//
-		Property prop = getOrCreateBooleanProperty(USE_VANILLA_RECIPES, Configuration.CATEGORY_GENERAL, false);
-		prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
 		
-		// TODO: read default id's from a separate file?
+		//====================================== Options ==========================================
+			//Gets the True/False for whether Vanilla recipes should or shouldn't be used for cooking
+				Property prop = getOrCreateBooleanProperty(USE_VANILLA_RECIPES, Configuration.CATEGORY_GENERAL, false);
+				prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
+		
+		//======================================== Food =========================================
+			//Gets the ID for the "Carrot"
+				prop = getOrCreateIntProperty("carrot", Configuration.CATEGORY_ITEM, 1004);
+				HacksawItems.carrot.itemId = prop.getInt();
+		
+			//Gets the ID for the "Sliced Carrot"
+				prop = getOrCreateIntProperty("carrot.sliced", Configuration.CATEGORY_ITEM, 1005);
+				HacksawItems.carrotSliced.itemId = prop.getInt();
+				
+			//Gets the ID for the "Raw Lamb Chop"
+				prop = getOrCreateIntProperty("lamb.chop.raw", Configuration.CATEGORY_ITEM, 1006);
+				HacksawItems.lambChopRaw.itemId = prop.getInt();
+				
+			//Gets the ID for the "Cooked Lamb Chop"
+				prop = getOrCreateIntProperty("lamb.chop.cooked", Configuration.CATEGORY_ITEM, 1007);
+				HacksawItems.lambChopCooked.itemId = prop.getInt();
+			
+		//======================================== Tools ========================================
 			//Gets the ID for the "Sharp Chef Knife"
-		prop = getOrCreateIntProperty("sharp.chef.knife", Configuration.CATEGORY_ITEM, 1000);
-		HacksawItems.chefKnifeSharp.itemId = prop.getInt();
+				prop = getOrCreateIntProperty("chef.knife.sharp", Configuration.CATEGORY_ITEM, 1000);
+				HacksawItems.chefKnifeSharp.itemId = prop.getInt();
 			
 			//Gets the ID for the "Dull Chef Knife"
-		prop = getOrCreateIntProperty("dull.chef.knife", Configuration.CATEGORY_ITEM, 1001);
-		HacksawItems.chefKnifeDull.itemId = prop.getInt();
+				prop = getOrCreateIntProperty("chef.knife.dull", Configuration.CATEGORY_ITEM, 1001);
+				HacksawItems.chefKnifeDull.itemId = prop.getInt();
 		
 			//Gets the ID for the "Knife Sharpener"
-		prop = getOrCreateIntProperty("knife.sharpener", Configuration.CATEGORY_ITEM, 1002);
-		HacksawItems.knifeSharpener.itemId = prop.getInt();
+				prop = getOrCreateIntProperty("knife.sharpener", Configuration.CATEGORY_ITEM, 1002);
+				HacksawItems.knifeSharpener.itemId = prop.getInt();
 	}
 	
 	public static boolean getPreference( String propName ) {
