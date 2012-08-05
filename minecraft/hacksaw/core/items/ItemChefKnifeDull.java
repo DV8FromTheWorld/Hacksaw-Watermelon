@@ -12,7 +12,7 @@ public class ItemChefKnifeDull extends Item implements ITextureProvider{
 		super(i);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(100);
-		this.setIconIndex(0);
+		this.setIconCoord(0, 0);
 		this.setItemName("dull.chef.knife");
 	}
 	

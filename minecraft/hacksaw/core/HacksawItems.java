@@ -4,13 +4,17 @@ import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 
 public enum HacksawItems {
+	//----------- Food ------------
+	carrot,
+	carrotSliced,
+	lambChopRaw,
+	lambChopCooked,
+	
+	//---------- Tools ------------
 	chefKnifeSharp,
 	chefKnifeDull,
-	knifeSharpener,
-	multigrainBread,
-	flatBread;
+	knifeSharpener;
 	
 	public Item item;
 	public int itemId;
-	public ItemStack itemstack;
 }
