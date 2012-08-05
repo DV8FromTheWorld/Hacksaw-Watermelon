@@ -35,12 +35,16 @@ public class GrillCook {
 	 */
 	public void addToGrillToCook(int input, ItemStack output){
 		try{
+			Class GrillCookRecipes = Class.forName("hacksaw.core.machines.GrillRecipes");
+			Method addNewFood = GrillCookRecipes.getMethod("addToGrillToCook", new Class[]{ Integer.TYPE, ItemStack.class});
+			addNewFood.invoke(null, new Object[]{
+					input, output
+			});
 			
-		}catch(Exception exception){
-			
+		}catch(Exception e){
+			e.printStackTrace();
 		}
 	}
-	
 	
 	/*
 	 * Use this method to be able to cook something on the grill.  
@@ -53,8 +57,8 @@ public class GrillCook {
 	public void addToGrillToCook(int input, ItemStack output, int cookTime){
 		try{	
 			Class GrillCookRecipes = Class.forName("hacksaw.core.machines.GrillRecipes");
-			Method bob = GrillCookRecipes.getMethod("addToGrillToCook", new Class[]{ Integer.TYPE, ItemStack.class, Integer.TYPE});
-			bob.invoke(null, new Object[]{
+			Method addNewFood = GrillCookRecipes.getMethod("addToGrillToCook", new Class[]{ Integer.TYPE, ItemStack.class, Integer.TYPE});
+			addNewFood.invoke(null, new Object[]{
 					input, output, cookTime
 			});
 		}catch(Exception e){
