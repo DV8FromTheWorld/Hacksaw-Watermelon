@@ -7,10 +7,11 @@ import java.util.ArrayList;
 import net.minecraft.src.EnumAction;
 import net.minecraft.src.ItemFood;
 import net.minecraft.src.ItemStack;
+import net.minecraft.src.forge.ITextureProvider;
 
 
 
-public class ItemCarrot extends ItemFood{
+public class ItemCarrot extends ItemFood implements ITextureProvider{
 
 	public int foodHealAmount;
 	public float saturationAmount;

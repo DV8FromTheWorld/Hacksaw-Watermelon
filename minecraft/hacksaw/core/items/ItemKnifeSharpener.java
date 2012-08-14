@@ -4,8 +4,9 @@ import java.util.ArrayList;
 
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
+import net.minecraft.src.forge.ITextureProvider;
 
-public class ItemKnifeSharpener extends Item{
+public class ItemKnifeSharpener extends Item implements ITextureProvider{
 
 	public ItemKnifeSharpener(int i) {
 		super(i);
