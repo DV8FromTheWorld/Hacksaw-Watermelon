@@ -1,10 +1,8 @@
 package net.minecraft.src;
 
-import hacksaw.core.HacksawItems;
-import hacksaw.core.PluginLoader;
 import hacksaw.core.RecipeRemover;
 import hacksaw.core.Register;
-import hacksaw.core.items.ItemSharpChefKnife;
+import hacksaw.core.PluginLoader;
 import hacksaw.core.util.CoreConfiguration;
 import hacksaw.core.util.CraftingStuff;
 
@@ -34,7 +32,7 @@ public class mod_Hacksaw extends NetworkMod {
 
 	@Override
 	public void load() {
-		CoreConfiguration.init( "config/hacksaw/core.cfg" );
+		CoreConfiguration.init(null, "config/hacksaw/core.cfg" );
 		Register.registerItemsAndBlocksAndRecipes();
 		PluginLoader.checkPlugins();
 		RecipeRemover.removeVanillaRecipes();
@@ -51,5 +49,4 @@ public class mod_Hacksaw extends NetworkMod {
 	public boolean serverSideRequired() {
 		return false;
 	}
-	
 }

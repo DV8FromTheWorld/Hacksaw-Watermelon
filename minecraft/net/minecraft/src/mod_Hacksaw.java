@@ -5,6 +5,7 @@ import hacksaw.core.RecipeRemover;
 import hacksaw.core.Register;
 import hacksaw.core.util.CoreConfiguration;
 import hacksaw.core.util.CraftingStuff;
+import net.minecraft.client.Minecraft;
 import net.minecraft.src.mod_Hacksaw;
 
 import net.minecraft.src.forge.MinecraftForgeClient;
@@ -33,7 +34,7 @@ public class mod_Hacksaw extends NetworkMod {
 	public void load() {
 		if(!mod_Hacksaw.initialized && !ModLoader.isModLoaded("mod_Hacksaw")){
 			preloadTextures();
-			CoreConfiguration.init( "config/hacksaw/core.cfg" );
+			CoreConfiguration.init(Minecraft.getMinecraftDir(), "config/hacksaw/core.cfg");
 			Register.registerItemsAndBlocksAndRecipes();
 			PluginLoader.checkPlugins();
 			RecipeRemover.removeVanillaRecipes();
@@ -42,7 +43,7 @@ public class mod_Hacksaw extends NetworkMod {
 		}else{
 			ModLoader.getLogger().severe("[Hacksaw] Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed");
 		}
-	}	
+	}
 	
 	public void preloadTextures(){
 		MinecraftForgeClient.preloadTexture("/hacksaw/textures/items.png");

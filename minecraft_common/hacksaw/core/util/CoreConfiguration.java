@@ -4,7 +4,6 @@ import hacksaw.core.HacksawItems;
 
 import java.io.File;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.src.ModLoader;
 import net.minecraft.src.mod_Hacksaw;
 import net.minecraft.src.forge.Configuration;
@@ -22,13 +21,17 @@ public class CoreConfiguration extends Configuration {
 		super(file);
 	}
 	
-	public static void init( String path ) {
+	public static void init( File minecraftDir, String path ) {
 		if( INSTANCE != null ) {
 			ModLoader.getLogger().warning("[Hacksaw] blocked attempt to reinit config");
 			return;
 		}
-		
-		final File file = new File(Minecraft.getMinecraftDir(), path);
+		final File file;
+		if (minecraftDir != null) {
+			file = new File(minecraftDir, path);
+		} else {
+			file = new File(path);
+		}
 		INSTANCE = new CoreConfiguration(file);
 		
 		INSTANCE.load();
