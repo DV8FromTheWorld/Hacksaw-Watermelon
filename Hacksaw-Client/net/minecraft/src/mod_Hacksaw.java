@@ -1,5 +1,6 @@
 package net.minecraft.src;
 
+import hacksaw.core.BlockReplacer;
 import hacksaw.core.PluginLoader;
 import hacksaw.core.RecipeRemover;
 import hacksaw.core.Register;
@@ -36,6 +37,7 @@ public class mod_Hacksaw extends NetworkMod {
 			preloadTextures();
 			CoreConfiguration.init(Minecraft.getMinecraftDir(), "config/hacksaw/core.cfg");
 			Register.registerItemsAndBlocksAndRecipes();
+			BlockReplacer.replaceVanillaBlocks();
 			PluginLoader.checkPlugins();
 			RecipeRemover.removeVanillaRecipes();
 			mod_Hacksaw.initialized = true;

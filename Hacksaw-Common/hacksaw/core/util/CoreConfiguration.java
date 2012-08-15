@@ -1,5 +1,6 @@
 package hacksaw.core.util;
 
+import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
 
 import java.io.File;
@@ -45,7 +46,11 @@ public class CoreConfiguration extends Configuration {
 			//Gets the True/False for whether Vanilla recipes should or shouldn't be used for cooking
 				Property prop = getOrCreateBooleanProperty(USE_VANILLA_RECIPES, Configuration.CATEGORY_GENERAL, false);
 				prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
-		
+				
+		//======================================== Vegetation =========================================
+				prop = getOrCreateIntProperty("supermelon", Configuration.CATEGORY_BLOCK, 103);
+				HacksawBlocks.supermelon.blockId = prop.getInt();
+				
 		//======================================== Food =========================================
 			//Gets the ID for the "Carrot"
 				prop = getOrCreateIntProperty("carrot", Configuration.CATEGORY_ITEM, 1004);

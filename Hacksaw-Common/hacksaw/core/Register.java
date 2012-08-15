@@ -1,6 +1,7 @@
 package hacksaw.core;
 
 import hacksaw.api.GrillCook;
+import hacksaw.core.blocks.BlockSuperMelon;
 import hacksaw.core.items.ItemCarrot;
 import hacksaw.core.items.ItemCarrotSliced;
 import hacksaw.core.items.ItemChefKnifeDull;
@@ -21,7 +22,8 @@ public class Register {
 	public static void registerItemsAndBlocksAndRecipes(){
 		//====================== Registers blocks ======================== 
 			//TODO for when we add blocks
-		
+			//---------Vegetation----------
+				HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId);
 		
 		//====================== Registers the Items ========================
 		
@@ -39,7 +41,8 @@ public class Register {
 				
 		//==================== Registers the names for the blocks ======================
 			//TODO for when we add blocks
-		
+			//---------Vegetation----------
+				ModLoader.addName(HacksawBlocks.supermelon.block, "Melon");
 		
 		
 		//======================= Registers the names for the items =======================
