@@ -6,7 +6,7 @@ import net.minecraft.src.ModLoader;
 
 public class HacksawLogger extends Level{
 	
-	public static Level HS_DEBUG = new HacksawLogger("Hacksaw-Debug", Level.INFO.intValue()+1);
+	public static Level HS_DEBUG = new HacksawLogger("Hacksaw-Debug", Level.FINE.intValue()+1);
 	
 	protected HacksawLogger(String levelName, int levelValue) {
 		super(levelName, levelValue);
@@ -41,7 +41,7 @@ public class HacksawLogger extends Level{
 			ModLoader.getLogger().severe("[Hacksaw] " + logText);
 			break;
 		case LogLevel.DEBUG:
-			ModLoader.getLogger().log(HacksawLogger.HS_DEBUG, "[Hacksaw] " + logText);			
+			ModLoader.getLogger().log(HacksawLogger.HS_DEBUG, " [Hacksaw Debug] " + logText);			
 		}
 	}
 }
