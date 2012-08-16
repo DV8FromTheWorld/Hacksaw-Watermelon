@@ -2,11 +2,11 @@ package net.minecraft.src;
 
 import hacksaw.core.BlockRemover;
 import hacksaw.core.RecipeRemover;
-import hacksaw.core.Register;
 import hacksaw.core.PluginLoader;
 import hacksaw.core.util.CoreConfiguration;
 import hacksaw.core.util.CraftingStuff;
 import hacksaw.core.util.HacksawLogger;
+import hacksaw.core.util.Register;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 
 import java.io.File;

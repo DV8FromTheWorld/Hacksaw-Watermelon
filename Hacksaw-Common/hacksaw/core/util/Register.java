@@ -1,9 +1,12 @@
-package hacksaw.core;
+package hacksaw.core.util;
 
 import java.lang.reflect.Field;
 
 import cpw.mods.fml.common.ReflectionHelper;
 import hacksaw.api.GrillCook;
+import hacksaw.core.BlockRemover;
+import hacksaw.core.HacksawBlocks;
+import hacksaw.core.HacksawItems;
 import hacksaw.core.blocks.BlockSuperMelon;
 import hacksaw.core.items.ItemCarrot;
 import hacksaw.core.items.ItemCarrotSliced;
@@ -13,8 +16,6 @@ import hacksaw.core.items.ItemKnifeSharpener;
 import hacksaw.core.items.ItemLambChopCooked;
 import hacksaw.core.items.ItemLambChopRaw;
 import hacksaw.core.machines.GrillRecipes;
-import hacksaw.core.util.CoreConfiguration;
-import hacksaw.core.util.HacksawLogger;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 import net.minecraft.src.Block;
 import net.minecraft.src.Item;
