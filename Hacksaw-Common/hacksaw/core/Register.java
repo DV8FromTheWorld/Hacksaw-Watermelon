@@ -1,5 +1,7 @@
 package hacksaw.core;
 
+import java.lang.reflect.Field;
+
 import cpw.mods.fml.common.ReflectionHelper;
 import hacksaw.api.GrillCook;
 import hacksaw.core.blocks.BlockSuperMelon;
@@ -44,10 +46,7 @@ public class Register {
 			// if the block was removed
 			if (BlockRemover.removeVanillaBlock(Block.melon)) {
 				// initialize the block
-				HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId);
-				// TODO : Reflection to replace Block.melon with HacksawBlocks.supermelon.block
-				//ReflectionHelper.getPrivateValue(classToAccess, instance, fieldIndex)
-				//Block.melon = HacksawBlocks.supermelon.block;
+				HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId).setBlockName("melon");
 				// log some success message
 				HacksawDebugLoggerLevel.log("BlockSuperMelon loaded successfully.", HacksawDebugLoggerLevel.LogLevel.FINE);
 			}

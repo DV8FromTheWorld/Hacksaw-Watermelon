@@ -12,6 +12,8 @@ public class BlockSuperMelon extends BlockMelon {
 
 	public BlockSuperMelon(int par1) {
 		super(par1);
+		setHardness(1.0F);
+		setStepSound(soundWoodFootstep);
 	}
 
     /**
