@@ -7,7 +7,7 @@ import net.minecraft.src.ItemFood;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.forge.ITextureProvider;
 
-public class ItemLambChopRaw extends ItemFood implements ITextureProvider{
+public class ItemLambChopRaw extends ItemBaseFood{
 	
 	public int foodHealAmount;
 	public float saturationAmount;
@@ -41,8 +41,4 @@ public class ItemLambChopRaw extends ItemFood implements ITextureProvider{
 		return "/hacksaw/textures/food.png";
 	}
 	
-	public void addCreativeItems(ArrayList itemList){
-		itemList.add(new ItemStack(this, 1));
-	}
-
 }

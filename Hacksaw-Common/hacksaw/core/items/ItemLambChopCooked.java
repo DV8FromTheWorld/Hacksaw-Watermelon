@@ -7,7 +7,7 @@ import net.minecraft.src.ItemFood;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.forge.ITextureProvider;
 
-public class ItemLambChopCooked extends ItemFood implements ITextureProvider{
+public class ItemLambChopCooked extends ItemBaseFood{
 	
 	public int foodHealAmount;
 	public float saturationAmount;
@@ -15,7 +15,7 @@ public class ItemLambChopCooked extends ItemFood implements ITextureProvider{
 	public ItemLambChopCooked(int par1, int par2, float par3, boolean par4) {
 		super(par1, par2, par3, par4);
 		this.setMaxStackSize(64);
-		this.setIconCoord(4, 0);
+		this.setIconCoord(3, 0);
 		this.setItemName("lamb.chop.cooked");
 		foodHealAmount = par2;
 		saturationAmount = par3;
@@ -38,10 +38,6 @@ public class ItemLambChopCooked extends ItemFood implements ITextureProvider{
 	
 	public String getTextureFile(){
 		return "/hacksaw/textures/food.png";
-	}
-	
-	public void addCreativeItems(ArrayList itemList){
-		itemList.add(new ItemStack(this, 1));
 	}
 	
 }

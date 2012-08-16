@@ -11,7 +11,7 @@ import net.minecraft.src.forge.ITextureProvider;
 
 
 
-public class ItemCarrot extends ItemFood implements ITextureProvider{
+public class ItemCarrot extends ItemBaseFood{
 
 	public int foodHealAmount;
 	public float saturationAmount;
@@ -44,8 +44,5 @@ public class ItemCarrot extends ItemFood implements ITextureProvider{
 		return "/hacksaw/textures/food.png";
 	}
 	
-	public void addCreativeItems(ArrayList itemList){
-		itemList.add(new ItemStack(this, 1));
-	}
 
 }

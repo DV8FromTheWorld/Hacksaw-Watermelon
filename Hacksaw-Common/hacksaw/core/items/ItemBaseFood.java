@@ -1,5 +1,7 @@
 package hacksaw.core.items;
 
+import java.util.ArrayList;
+
 import net.minecraft.src.EnumAction;
 import net.minecraft.src.ItemFood;
 import net.minecraft.src.ItemStack;
@@ -22,4 +24,7 @@ public abstract class ItemBaseFood extends ItemFood{
 	
 	public abstract float getSaturationModifier();
 	
+	public void addCreativeItems(ArrayList itemList){
+		itemList.add(new ItemStack(this, 1));
+	}
 }
