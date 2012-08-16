@@ -8,4 +8,5 @@ public enum HacksawBlocks {
 
 	public Block block;
 	public int blockId;
+	public String name;
 }

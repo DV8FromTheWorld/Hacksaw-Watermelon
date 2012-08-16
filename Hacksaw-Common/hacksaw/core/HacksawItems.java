@@ -17,4 +17,5 @@ public enum HacksawItems {
 	
 	public Item item;
 	public int itemId;
+	public String name;
 }
