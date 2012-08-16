@@ -48,8 +48,8 @@ public class CoreConfiguration extends Configuration {
 				prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
 				
 		//======================================== Vegetation =========================================
-				prop = getOrCreateIntProperty("supermelon", Configuration.CATEGORY_BLOCK, 103);
-				HacksawBlocks.supermelon.blockId = prop.getInt();
+				//prop = getOrCreateIntProperty("supermelon", Configuration.CATEGORY_BLOCK, 103);
+				//HacksawBlocks.supermelon.blockId = prop.getInt();
 				
 		//======================================== Food =========================================
 			//Gets the ID for the "Carrot"
@@ -90,9 +90,13 @@ public class CoreConfiguration extends Configuration {
 		return false;
 	}
 	
+	public static String version(){
+		return "0.1";
+	}
+	
 	@Override
 	public void save() {
-		Property version = getOrCreateProperty("version", Configuration.CATEGORY_GENERAL, mod_Hacksaw.version());
+		Property version = getOrCreateProperty("version", Configuration.CATEGORY_GENERAL, version());
 		super.save();
 	}
 }

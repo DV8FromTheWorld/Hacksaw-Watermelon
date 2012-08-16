@@ -23,7 +23,7 @@ public class Register {
 		//====================== Registers blocks ======================== 
 			//TODO for when we add blocks
 			//---------Vegetation----------
-				HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId);
+				//HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId);
 		
 		//====================== Registers the Items ========================
 		
@@ -42,7 +42,7 @@ public class Register {
 		//==================== Registers the names for the blocks ======================
 			//TODO for when we add blocks
 			//---------Vegetation----------
-				ModLoader.addName(HacksawBlocks.supermelon.block, "Melon");
+				//ModLoader.addName(HacksawBlocks.supermelon.block, "Melon");
 		
 		
 		//======================= Registers the names for the items =======================
