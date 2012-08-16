@@ -19,7 +19,7 @@ public class mod_Hacksaw extends NetworkMod {
 	
 	@Override
 	public String getVersion() {
-		return version();
+		return CoreConfiguration.version();
 	}
 	
 	@Override
@@ -27,9 +27,6 @@ public class mod_Hacksaw extends NetworkMod {
 		return "Hacksaw Watermelon";
 	}
 	
-	public static String version() {
-		return "0.1";
-	}
 
 	@Override
 	public void load() {

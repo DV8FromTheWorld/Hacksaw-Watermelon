@@ -1,5 +1,6 @@
 package net.minecraft.src;
 
+import hacksaw.core.BlockReplacer;
 import hacksaw.core.RecipeRemover;
 import hacksaw.core.Register;
 import hacksaw.core.PluginLoader;
@@ -15,10 +16,12 @@ import net.minecraft.src.forge.NetworkMod;
 
 public class mod_Hacksaw extends NetworkMod {
 
+	//SERVER SIDE
+	public static boolean initialized = false;
 	
 	@Override
 	public String getVersion() {
-		return version();
+		return CoreConfiguration.version();
 	}
 	
 	@Override
@@ -26,16 +29,19 @@ public class mod_Hacksaw extends NetworkMod {
 		return "Hacksaw Watermelon";
 	}
 	
-	public static String version() {
-		return "0.0.1";
-	}
-
 	@Override
 	public void load() {
-		CoreConfiguration.init(null, "config/hacksaw/core.cfg" );
-		Register.registerItemsAndBlocksAndRecipes();
-		PluginLoader.checkPlugins();
-		RecipeRemover.removeVanillaRecipes();
+		if(!mod_Hacksaw.initialized && !ModLoader.isModLoaded("mod_Hacksaw")){
+			CoreConfiguration.init(null, "config/hacksaw/core.cfg" );
+			Register.registerItemsAndBlocksAndRecipes();
+			BlockReplacer.replaceVanillaBlocks();
+			PluginLoader.checkPlugins();
+			RecipeRemover.removeVanillaRecipes();
+			mod_Hacksaw.initialized = true;
+			ModLoader.getLogger().info("[Hacksaw] Hacksaw-Watermelon has successfully loaded");
+		}else{
+			ModLoader.getLogger().severe("[Hacksaw] Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed");
+		}
 	}
 	
 	public void modsLoaded(){
