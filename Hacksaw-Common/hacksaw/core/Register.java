@@ -48,7 +48,7 @@ public class Register {
 				// initialize the block
 				HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId).setBlockName("melon");
 				// log some success message
-				HacksawDebugLoggerLevel.log("BlockSuperMelon loaded successfully.", HacksawDebugLoggerLevel.LogLevel.FINE);
+				ModLoader.getLogger().log(HacksawDebugLoggerLevel.HS_DEBUG, "BlockSuperMelon loaded successfully.");
 			}
 			
 		//========= Register Each Block ==============

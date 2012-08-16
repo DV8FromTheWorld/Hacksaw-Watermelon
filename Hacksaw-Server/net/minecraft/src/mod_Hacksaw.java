@@ -38,9 +38,9 @@ public class mod_Hacksaw extends NetworkMod {
 			PluginLoader.checkPlugins();
 			RecipeRemover.removeVanillaRecipes();
 			mod_Hacksaw.initialized = true;
-			HacksawDebugLoggerLevel.log("Hacksaw-Watermelon has successfully loaded");
+			ModLoader.getLogger().info("Hacksaw-Watermelon has successfully loaded");
 		}else{
-			HacksawDebugLoggerLevel.log("Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed", HacksawDebugLoggerLevel.LogLevel.SEVERE);
+			ModLoader.getLogger().severe("Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed");
 		}
 	}
 	
