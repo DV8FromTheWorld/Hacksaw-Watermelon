@@ -11,6 +11,8 @@ import net.minecraft.src.forge.Configuration;
 import net.minecraft.src.forge.Property;
 
 public class CoreConfiguration extends Configuration {
+	private static final String version = "0.1";
+	private static final String name = "Hacksaw Watermelon";
 	public static final String USE_VANILLA_RECIPES = "useVanillaRecipes";
 	
 	private static CoreConfiguration INSTANCE = null;
@@ -24,7 +26,7 @@ public class CoreConfiguration extends Configuration {
 	
 	public static void init( File minecraftDir, String path ) {
 		if( INSTANCE != null ) {
-			ModLoader.getLogger().warning("[Hacksaw] blocked attempt to reinit config");
+			HacksawDebugLoggerLevel.log("Blocked attempt to Re-Init configuration", HacksawDebugLoggerLevel.LogLevel.WARNING);
 			return;
 		}
 		final File file;
@@ -48,8 +50,8 @@ public class CoreConfiguration extends Configuration {
 				prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
 				
 		//======================================== Vegetation =========================================
-				//prop = getOrCreateIntProperty("supermelon", Configuration.CATEGORY_BLOCK, 103);
-				//HacksawBlocks.supermelon.blockId = prop.getInt();
+				prop = getOrCreateIntProperty("supermelon", Configuration.CATEGORY_BLOCK, 103);
+				HacksawBlocks.supermelon.blockId = prop.getInt();
 				
 		//======================================== Food =========================================
 			//Gets the ID for the "Carrot"
@@ -89,14 +91,18 @@ public class CoreConfiguration extends Configuration {
 		}
 		return false;
 	}
-	
-	public static String version(){
-		return "0.1";
+
+	public static String getVersion() {
+		return version;
+	}
+
+	public static String getName() {
+		return name;
 	}
 	
 	@Override
 	public void save() {
-		Property version = getOrCreateProperty("version", Configuration.CATEGORY_GENERAL, version());
+		Property version = getOrCreateProperty("version", Configuration.CATEGORY_GENERAL, getVersion());
 		super.save();
 	}
 }

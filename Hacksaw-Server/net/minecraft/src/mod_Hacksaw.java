@@ -1,11 +1,12 @@
 package net.minecraft.src;
 
-import hacksaw.core.BlockReplacer;
+import hacksaw.core.BlockRemover;
 import hacksaw.core.RecipeRemover;
 import hacksaw.core.Register;
 import hacksaw.core.PluginLoader;
 import hacksaw.core.util.CoreConfiguration;
 import hacksaw.core.util.CraftingStuff;
+import hacksaw.core.util.HacksawDebugLoggerLevel;
 
 import java.io.File;
 
@@ -21,12 +22,12 @@ public class mod_Hacksaw extends NetworkMod {
 	
 	@Override
 	public String getVersion() {
-		return CoreConfiguration.version();
+		return CoreConfiguration.getVersion();
 	}
 	
 	@Override
 	public String getName() {
-		return "Hacksaw Watermelon";
+		return CoreConfiguration.getName();
 	}
 	
 	@Override
@@ -34,13 +35,12 @@ public class mod_Hacksaw extends NetworkMod {
 		if(!mod_Hacksaw.initialized && !ModLoader.isModLoaded("mod_Hacksaw")){
 			CoreConfiguration.init(null, "config/hacksaw/core.cfg" );
 			Register.registerItemsAndBlocksAndRecipes();
-			BlockReplacer.replaceVanillaBlocks();
 			PluginLoader.checkPlugins();
 			RecipeRemover.removeVanillaRecipes();
 			mod_Hacksaw.initialized = true;
-			ModLoader.getLogger().info("[Hacksaw] Hacksaw-Watermelon has successfully loaded");
+			HacksawDebugLoggerLevel.log("Hacksaw-Watermelon has successfully loaded");
 		}else{
-			ModLoader.getLogger().severe("[Hacksaw] Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed");
+			HacksawDebugLoggerLevel.log("Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed", HacksawDebugLoggerLevel.LogLevel.SEVERE);
 		}
 	}
 	

@@ -11,6 +11,7 @@ import hacksaw.core.items.ItemLambChopCooked;
 import hacksaw.core.items.ItemLambChopRaw;
 import hacksaw.core.machines.GrillRecipes;
 import hacksaw.core.util.CoreConfiguration;
+import hacksaw.core.util.HacksawDebugLoggerLevel;
 import net.minecraft.src.Block;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
@@ -23,7 +24,10 @@ public class Register {
 		//====================== Registers blocks ======================== 
 			//TODO for when we add blocks
 			//---------Vegetation----------
-				//HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId);
+				if (BlockRemover.removeVanillaBlock(Block.melon)) {
+					ModLoader.registerBlock(new BlockSuperMelon(HacksawBlocks.supermelon.blockId));
+					HacksawDebugLoggerLevel.log("BlockSuperMelon loaded successfully.", HacksawDebugLoggerLevel.LogLevel.FINE);
+				}
 		
 		//====================== Registers the Items ========================
 		
@@ -43,7 +47,6 @@ public class Register {
 			//TODO for when we add blocks
 			//---------Vegetation----------
 				//ModLoader.addName(HacksawBlocks.supermelon.block, "Melon");
-		
 		
 		//======================= Registers the names for the items =======================
 			
