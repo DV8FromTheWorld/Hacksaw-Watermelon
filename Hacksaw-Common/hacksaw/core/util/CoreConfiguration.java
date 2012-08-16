@@ -115,7 +115,8 @@ public class CoreConfiguration extends Configuration {
 	
 	@Override
 	public void save() {
-		Property version = getOrCreateProperty("version", Configuration.CATEGORY_GENERAL, getVersion());
+		Property versionProp = getOrCreateProperty("version", Configuration.CATEGORY_GENERAL, "0.0");
+		versionProp.value = getVersion();
 		super.save();
 	}
 }
