@@ -49,7 +49,7 @@ public class Register {
 				//ReflectionHelper.getPrivateValue(classToAccess, instance, fieldIndex)
 				//Block.melon = HacksawBlocks.supermelon.block;
 				// log some success message
-				HacksawDebugLoggerLevel.log("BlockSuperMelon loaded successfully.", HacksawDebugLoggerLevel.LogLevel.FINE);
+				ModLoader.getLogger().log(HacksawDebugLoggerLevel.HS_DEBUG, "BlockSuperMelon loaded successfully.");
 			}
 			
 		//========= Register Each Block ==============

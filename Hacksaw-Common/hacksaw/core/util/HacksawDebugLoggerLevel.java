@@ -8,13 +8,14 @@ import net.minecraft.src.ModLoader;
 public class HacksawDebugLoggerLevel extends Level{
 	
 	//not sure what to name the variable yet, so for now named it bob.  This is just somethign i do :P
-	public static Level bob = new HacksawDebugLoggerLevel("Hacksaw-Debug", Level.FINER.intValue()+1);
+	public static Level HS_DEBUG = new HacksawDebugLoggerLevel("Hacksaw-Debug", Level.INFO.intValue()+1);
 	
 	protected HacksawDebugLoggerLevel(String levelName, int levelValue) {
 		super(levelName, levelValue);
 
 	}
 	
+	/*
 	public class LogLevel {
 		public static final int INFO = 0;
 		public static final int FINE = 1;
@@ -43,5 +44,5 @@ public class HacksawDebugLoggerLevel extends Level{
 			ModLoader.getLogger().severe("[Hacksaw] " + logText);
 		}
 	}
-
+	*/
 }

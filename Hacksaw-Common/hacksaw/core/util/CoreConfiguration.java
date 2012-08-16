@@ -26,7 +26,7 @@ public class CoreConfiguration extends Configuration {
 	
 	public static void init( File minecraftDir, String path ) {
 		if( INSTANCE != null ) {
-			HacksawDebugLoggerLevel.log("Blocked attempt to Re-Init configuration", HacksawDebugLoggerLevel.LogLevel.WARNING);
+			ModLoader.getLogger().warning("Blocked attempt to Re-Init configuration");
 			return;
 		}
 		final File file;
