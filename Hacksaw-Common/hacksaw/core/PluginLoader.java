@@ -4,6 +4,7 @@ import hacksaw.core.plugins.HacksawPlugin;
 import hacksaw.core.plugins.Plugin_EE;
 import hacksaw.core.plugins.Plugin_IC2;
 import hacksaw.core.plugins.Plugin_ThaumCraft;
+import hacksaw.core.util.HacksawLogger;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +21,7 @@ public enum PluginLoader {
 	}
 
 	public static void checkPlugins() {
-		ModLoader.getLogger().info( "[Hacksaw] PluginLoader scanning for integration plugins..." );
+		HacksawLogger.log("PluginLoader scanning for integration plugins...");
 
 		addPlugin( "IC2", new Plugin_IC2("mod_IC2", "IC2") );
 		addPlugin( "EE", new Plugin_EE("mod_EE", "EquivalentExchange") );
@@ -32,7 +33,7 @@ public enum PluginLoader {
 			if( plugin.isLoaded() )
 				loadedPlugins++;
 		}
-		ModLoader.getLogger().info( "[Hacksaw] PluginLoader has loaded "+loadedPlugins+"/"+numPlugins+" plugins." );
+		HacksawLogger.log("PluginLoader has loaded "+loadedPlugins+"/"+numPlugins+" plugins.");
 	}
 
 	private static void addPlugin( String pluginName, HacksawPlugin plugin ) {

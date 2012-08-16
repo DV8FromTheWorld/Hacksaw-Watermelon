@@ -1,5 +1,6 @@
 package hacksaw.core.plugins;
 
+import hacksaw.core.util.HacksawLogger;
 import net.minecraft.src.ModLoader;
 import net.minecraft.src.forge.NetworkMod;
 
@@ -12,9 +13,9 @@ public abstract class HacksawPlugin {
 		plugin_name = pluginName;
 		mod = loadMod( className );
 		if( mod == null ) {
-			ModLoader.getLogger().info("[Hacksaw] Not loading "+plugin_name+" integration" );
+			HacksawLogger.log("Not loading "+plugin_name+" integration" );
 		} else {
-			ModLoader.getLogger().info("[Hacksaw] Loading "+plugin_name+" integration plugin" );
+			HacksawLogger.log("Loading "+plugin_name+" integration plugin" );
 			loaded = true;
 			init();
 		}
@@ -25,7 +26,7 @@ public abstract class HacksawPlugin {
 		try {
 			clazz = (Class<NetworkMod>) Class.forName( className );
 			NetworkMod mod = clazz.newInstance();
-			ModLoader.getLogger().info("[Hacksaw] "+getClass().getSimpleName()+" - Found "+plugin_name+" version "+mod.getVersion() );
+			HacksawLogger.log(getClass().getSimpleName()+" - Found "+plugin_name+" version "+mod.getVersion() );
 			return mod;
 		} catch (InstantiationException e) {
 			// TODO Auto-generated catch block

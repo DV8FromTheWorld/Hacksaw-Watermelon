@@ -14,14 +14,14 @@ import hacksaw.core.items.ItemLambChopCooked;
 import hacksaw.core.items.ItemLambChopRaw;
 import hacksaw.core.machines.GrillRecipes;
 import hacksaw.core.util.CoreConfiguration;
-import hacksaw.core.util.HacksawDebugLoggerLevel;
+import hacksaw.core.util.HacksawLogger;
+import hacksaw.core.util.HacksawLogger.LogLevel;
 import net.minecraft.src.Block;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.ModLoader;
 
 public class Register {
-	
 	
 	public static void registerItemsAndBlocksAndRecipes(){
 		registerBlocks();
@@ -46,9 +46,9 @@ public class Register {
 			// if the block was removed
 			if (BlockRemover.removeVanillaBlock(Block.melon)) {
 				// initialize the block
-				HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId).setBlockName("melon");
+				HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId);
 				// log some success message
-				ModLoader.getLogger().log(HacksawDebugLoggerLevel.HS_DEBUG, "BlockSuperMelon loaded successfully.");
+				HacksawLogger.log(LogLevel.DEBUG, "BlockSuperMelon loaded successfully.");
 			}
 			
 		//========= Register Each Block ==============
@@ -123,7 +123,7 @@ public class Register {
 			
 		//recipe for using the Chef knife to cut melon blocks to get melon slices
 			ModLoader.addShapelessRecipe(new ItemStack(Item.melon, 4), new Object[]{
-				Block.melon, new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1)//Note: a new itemstack is made here because you want to be able to use the item no matter what the damage value
+				HacksawBlocks.supermelon.block, new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1)//Note: a new itemstack is made here because you want to be able to use the item no matter what the damage value
 			});
 		
 		//recipe for "sharpening" the Dull Chef knife

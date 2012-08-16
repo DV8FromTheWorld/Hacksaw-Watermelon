@@ -4,18 +4,15 @@ import java.util.logging.Level;
 
 import net.minecraft.src.ModLoader;
 
-	//this class creates a new level for us to use to log debug messages. (might want to change the class name :p)
-public class HacksawDebugLoggerLevel extends Level{
+public class HacksawLogger extends Level{
 	
-	//not sure what to name the variable yet, so for now named it bob.  This is just somethign i do :P
-	public static Level HS_DEBUG = new HacksawDebugLoggerLevel("Hacksaw-Debug", Level.INFO.intValue()+1);
+	public static Level HS_DEBUG = new HacksawLogger("Hacksaw-Debug", Level.INFO.intValue()+1);
 	
-	protected HacksawDebugLoggerLevel(String levelName, int levelValue) {
+	protected HacksawLogger(String levelName, int levelValue) {
 		super(levelName, levelValue);
 
 	}
 	
-	/*
 	public class LogLevel {
 		public static final int INFO = 0;
 		public static final int FINE = 1;
@@ -26,10 +23,10 @@ public class HacksawDebugLoggerLevel extends Level{
 	}
 	
 	public static void log(String logText) {
-		log(logText, LogLevel.INFO);
+		log(LogLevel.INFO, logText);
 	}
 	
-	public static void log(String logText, int level) {
+	public static void log(int level, String logText) {
 		switch (level) {
 		case LogLevel.FINE:
 			ModLoader.getLogger().fine("[Hacksaw] " + logText);
@@ -42,7 +39,9 @@ public class HacksawDebugLoggerLevel extends Level{
 			break;
 		case LogLevel.SEVERE:
 			ModLoader.getLogger().severe("[Hacksaw] " + logText);
+			break;
+		case LogLevel.DEBUG:
+			ModLoader.getLogger().log(HacksawLogger.HS_DEBUG, "[Hacksaw] " + logText);			
 		}
 	}
-	*/
 }

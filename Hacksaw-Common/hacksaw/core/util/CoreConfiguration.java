@@ -2,6 +2,7 @@ package hacksaw.core.util;
 
 import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
+import hacksaw.core.util.HacksawLogger.LogLevel;
 
 import java.io.File;
 
@@ -14,6 +15,7 @@ public class CoreConfiguration extends Configuration {
 	private static final String version = "0.1";
 	private static final String name = "Hacksaw Watermelon";
 	public static final String USE_VANILLA_RECIPES = "useVanillaRecipes";
+	public static final String ENABLE_DEBUG = "Debug Mode";
 	
 	private static CoreConfiguration INSTANCE = null;
 	public static CoreConfiguration getInstance() {
@@ -26,7 +28,7 @@ public class CoreConfiguration extends Configuration {
 	
 	public static void init( File minecraftDir, String path ) {
 		if( INSTANCE != null ) {
-			ModLoader.getLogger().warning("Blocked attempt to Re-Init configuration");
+			HacksawLogger.log(LogLevel.WARNING, "Blocked attempt to Re-Init configuration");
 			return;
 		}
 		final File file;
@@ -48,6 +50,10 @@ public class CoreConfiguration extends Configuration {
 			//Gets the True/False for whether Vanilla recipes should or shouldn't be used for cooking
 				Property prop = getOrCreateBooleanProperty(USE_VANILLA_RECIPES, Configuration.CATEGORY_GENERAL, false);
 				prop.comment = "Should we keep vanilla bread and meat recipes? (default: false)";
+				
+			//Gets the True/False for whether Debug Mode should be enabled	
+				prop = getOrCreateBooleanProperty(ENABLE_DEBUG, Configuration.CATEGORY_GENERAL, false);
+				prop.comment = "Enables Debug messages to track bugs (default: false)";				
 				
 		//======================================== Vegetation =========================================
 				prop = getOrCreateIntProperty("supermelon", Configuration.CATEGORY_BLOCK, 103);
@@ -90,8 +96,7 @@ public class CoreConfiguration extends Configuration {
 				prop = getOrCreateIntProperty("knife.sharpener", Configuration.CATEGORY_ITEM, 1002);
 				HacksawItems.knifeSharpener.itemId = prop.getInt();
 				HacksawItems.knifeSharpener.name = "Knife Sharpener";
-	}
-	
+	}	
 	public static boolean getPreference( String propName ) {
 		Property prop = INSTANCE.generalProperties.get(propName);
 		if( prop != null && prop.isBooleanValue() ) {

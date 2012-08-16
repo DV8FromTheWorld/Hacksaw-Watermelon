@@ -1,6 +1,8 @@
 package hacksaw.core;
 
 import hacksaw.core.util.CoreConfiguration;
+import hacksaw.core.util.HacksawLogger;
+import hacksaw.core.util.HacksawLogger.LogLevel;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -19,7 +21,7 @@ public class RecipeRemover {
 	
 	public static void removeVanillaRecipes(){
 		if(CoreConfiguration.getPreference(CoreConfiguration.USE_VANILLA_RECIPES) == false){
-			ModLoader.getLogger().fine("[Hacksaw] Removing vanilla recipes");
+			HacksawLogger.log(LogLevel.DEBUG, "Removing vanilla recipes");
 			removeCrafting();
 			removeSmelting();
 		}	
@@ -42,7 +44,7 @@ public class RecipeRemover {
 			}
 		}
 		for( IRecipe recipe : matches ) {
-			ModLoader.getLogger().finer("[Hacksaw] Removing recipe for "+recipe);
+			HacksawLogger.log(LogLevel.DEBUG, "Removing recipe for "+recipe);
 			recipes.remove(recipe);
 		}
 	}

@@ -1,6 +1,7 @@
 package hacksaw.core;
 
-import hacksaw.core.util.HacksawDebugLoggerLevel;
+import hacksaw.core.util.HacksawLogger;
+import hacksaw.core.util.HacksawLogger.LogLevel;
 
 import java.util.List;
 
@@ -19,11 +20,11 @@ public class BlockRemover {
 			// Set the block in the blocksList to null
 			Block.blocksList[oldBlock.blockID] = null;
 			// Output a success message
-			ModLoader.getLogger().log(HacksawDebugLoggerLevel.HS_DEBUG, "Block ID ["+oldBlock.blockID+"] successfully removed.");
+			HacksawLogger.log(LogLevel.DEBUG, "Block ID ["+oldBlock.blockID+"] successfully removed.");
 			return true;
 		} else {
 			// Output a failure message
-			ModLoader.getLogger().severe("Block ID not removed! Either the ID did not exist or was incorrect!");
+			HacksawLogger.log(LogLevel.SEVERE, "Block ID not removed! Either the ID did not exist or was incorrect!");
 			return false;
 		}
 	}

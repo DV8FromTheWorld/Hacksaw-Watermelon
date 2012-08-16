@@ -5,7 +5,8 @@ import hacksaw.core.RecipeRemover;
 import hacksaw.core.Register;
 import hacksaw.core.util.CoreConfiguration;
 import hacksaw.core.util.CraftingStuff;
-import hacksaw.core.util.HacksawDebugLoggerLevel;
+import hacksaw.core.util.HacksawLogger;
+import hacksaw.core.util.HacksawLogger.LogLevel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.mod_Hacksaw;
 
@@ -36,9 +37,9 @@ public class mod_Hacksaw extends NetworkMod {
 			PluginLoader.checkPlugins();
 			RecipeRemover.removeVanillaRecipes();
 			mod_Hacksaw.initialized = true;
-			ModLoader.getLogger().info("Hacksaw-Watermelon has successfully loaded");
+			HacksawLogger.log("Hacksaw-Watermelon has successfully loaded");
 		}else{
-			ModLoader.getLogger().severe("Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed");
+			HacksawLogger.log( LogLevel.SEVERE, "Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed");
 		}
 	}
 	
