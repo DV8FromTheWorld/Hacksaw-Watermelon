@@ -17,8 +17,8 @@ public class ItemLambChopCooked extends ItemFood implements ITextureProvider{
 		this.setMaxStackSize(64);
 		this.setIconCoord(4, 0);
 		this.setItemName("lamb.chop.cooked");
-		par2 = foodHealAmount;
-		par3 = saturationAmount;
+		foodHealAmount = par2;
+		saturationAmount = par3;
 	}
 
 	public EnumAction getItemUseAction(ItemStack par1ItemStack)

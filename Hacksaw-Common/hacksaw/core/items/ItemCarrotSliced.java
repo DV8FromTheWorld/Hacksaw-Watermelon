@@ -17,8 +17,8 @@ public class ItemCarrotSliced extends ItemFood implements ITextureProvider{
 		this.setMaxStackSize(64);
 		this.setIconCoord(1, 0);
 		this.setItemName("carrot.sliced");
-		par2 = foodHealAmount;
-		par3 = saturationAmount;
+		foodHealAmount = par2;
+		saturationAmount = par3;
 	}
 	
 	public EnumAction getItemUseAction(ItemStack par1ItemStack)
