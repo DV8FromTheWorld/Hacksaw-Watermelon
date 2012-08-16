@@ -9,13 +9,8 @@ import net.minecraft.src.ItemFood;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.forge.ITextureProvider;
 
-
-
 public class ItemCarrot extends ItemBaseFood{
 
-	public int foodHealAmount;
-	public float saturationAmount;
-	
 	public ItemCarrot(int par1, int par2, float par3, boolean par4) {
 		super(par1, par2, par3, par4);
 		this.setMaxStackSize(64);
@@ -24,25 +19,4 @@ public class ItemCarrot extends ItemBaseFood{
 		foodHealAmount = par2;
 		saturationAmount = par3;
 	}
-	
-	public EnumAction getItemUseAction(ItemStack par1ItemStack)
-    {
-        return EnumAction.eat;
-    }
-	
-	public int getHealAmount()
-    {
-        return foodHealAmount;
-    }
-	
-	public float getSaturationModifier()
-    {
-        return saturationAmount;
-    }
-	
-	public String getTextureFile(){
-		return "/hacksaw/textures/food.png";
-	}
-	
-
 }

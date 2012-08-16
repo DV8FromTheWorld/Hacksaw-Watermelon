@@ -5,26 +5,43 @@ import java.util.ArrayList;
 import net.minecraft.src.EnumAction;
 import net.minecraft.src.ItemFood;
 import net.minecraft.src.ItemStack;
+import net.minecraft.src.forge.ITextureProvider;
 
-public abstract class ItemBaseFood extends ItemFood{
-		
+public abstract class ItemBaseFood extends ItemFood implements ITextureProvider {
+	
+	protected int foodHealAmount;
+	protected float saturationAmount;
+	
 	public ItemBaseFood(int par1, int foodHealAmount, float saturationAmount, boolean par4) {
 		super(par1, foodHealAmount, saturationAmount, par4);
+	}
 	
-	}	
 	public ItemBaseFood(int par1, int foodHealAmount, boolean par3) {
 		super(par1, foodHealAmount, par3);
 	}
 	
-	public abstract EnumAction getItemUseAction(ItemStack par1ItemStack);
-		
-	public abstract String getTextureFile();
+	@Override
+	public EnumAction getItemUseAction(ItemStack par1ItemStack) {
+        return EnumAction.eat;
+    }
 	
-	public abstract int getHealAmount();
+	@Override
+	public int getHealAmount() {
+		return this.foodHealAmount;
+	}
 	
-	public abstract float getSaturationModifier();
+	@Override
+	public float getSaturationModifier() {
+		return this.saturationAmount;
+	}
 	
-	public void addCreativeItems(ArrayList itemList){
+	@Override
+	public void addCreativeItems(ArrayList itemList) {
 		itemList.add(new ItemStack(this, 1));
+	}
+	
+	@Override
+	public String getTextureFile() {
+		return "/hacksaw/textures/food.png";
 	}
 }

@@ -6,7 +6,7 @@ import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.forge.ITextureProvider;
 
-public class ItemKnifeSharpener extends Item implements ITextureProvider{
+public class ItemKnifeSharpener extends ItemBaseChefTools {
 
 	public ItemKnifeSharpener(int i) {
 		super(i);
@@ -16,31 +16,18 @@ public class ItemKnifeSharpener extends Item implements ITextureProvider{
 		this.setItemName("knife.sharpener");
 	}
 	
-	public String getTextureFile(){
-		return "/hacksaw/textures/items.png";
-		
-	}
-	
+	@Override
 	public Item getContainerItem(){
 		return this;
-		
-	}
-	
-	public Item setNoRepair(){
-		return this;
-	}
-	
-	public boolean isRepairable(){
-		return false;
-	}
-	
-	
-	public boolean doesContainerItemLeaveCraftingGrid(){
-		return false;
-	}
-	
-	public void addCreativeItems(ArrayList itemList){
-		itemList.add(new ItemStack(this, 1));
 	}
 
+	@Override
+	public boolean shouldRotateAroundWhenRendering() {
+		return false;
+	}
+
+	@Override
+	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemstack) {
+		return true;
+	}
 }

@@ -28,11 +28,11 @@ public class HacksawLogger extends Level{
 	
 	public static void log(int level, String logText) {
 		switch (level) {
-		case LogLevel.FINE:
-			ModLoader.getLogger().fine("[Hacksaw] " + logText);
-			break;
 		case LogLevel.INFO:
 			ModLoader.getLogger().info("[Hacksaw] " + logText);
+			break;
+		case LogLevel.FINE:
+			ModLoader.getLogger().fine("[Hacksaw] " + logText);
 			break;
 		case LogLevel.WARNING:
 			ModLoader.getLogger().warning("[Hacksaw] " + logText);

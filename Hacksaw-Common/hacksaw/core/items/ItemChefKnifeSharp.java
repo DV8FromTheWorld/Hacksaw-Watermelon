@@ -6,7 +6,7 @@ import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.forge.ITextureProvider;
 
-public class ItemChefKnifeSharp extends Item implements ITextureProvider{
+public class ItemChefKnifeSharp extends ItemBaseChefTools {
 	
 	public ItemChefKnifeSharp(int i) {
 		super(i);
@@ -15,35 +15,19 @@ public class ItemChefKnifeSharp extends Item implements ITextureProvider{
 		this.setItemName("sharp.chef.knife");
 		this.setIconCoord(0, 0);
 	}
-	
 
-	public boolean shouldRotateAroundWhenRendering(){
-		return true;
-	}
-	
-	public String getTextureFile(){
-		return "/hacksaw/textures/items.png";
-		
-	}
-	
+	@Override
 	public Item getContainerItem(){
 		return this;
-		
 	}
-	
-	public Item setNoRepair(){
-		return this;
+
+	@Override
+	public boolean shouldRotateAroundWhenRendering() {
+		return true;
 	}
-	
-	public boolean isRepairable(){
+
+	@Override
+	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemstack) {
 		return false;
-	}
-	
-	public boolean doesContainerItemLeaveCraftingGrid(){
-		return false;
-	}
-	
-	public void addCreativeItems(ArrayList itemList){
-		itemList.add(new ItemStack(this, 1));
 	}
 }
