@@ -7,6 +7,8 @@ public enum HacksawItems {
 	//----------- Food ------------
 	carrot,
 	carrotSliced,
+	orange,
+	orangeSliced,
 	lambChopRaw,
 	lambChopCooked,
 	

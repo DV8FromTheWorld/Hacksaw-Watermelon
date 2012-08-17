@@ -80,6 +80,16 @@ public class CoreConfiguration extends Configuration {
 				prop = getOrCreateIntProperty("lamb.chop.cooked", Configuration.CATEGORY_ITEM, 1007);
 				HacksawItems.lambChopCooked.itemId = prop.getInt();
 				HacksawItems.lambChopCooked.name = "Cooked Lamb Chop";
+				
+			//Gets the ID for the "Orange"
+				prop = getOrCreateIntProperty("orange", Configuration.CATEGORY_ITEM, 1008);
+				HacksawItems.orange.itemId = prop.getInt();
+				HacksawItems.orange.name = "Orange";
+				
+			//Gets the ID for the "Sliced Orange"
+				prop = getOrCreateIntProperty("orange.sliced", Configuration.CATEGORY_ITEM, 1009);
+				HacksawItems.orangeSliced.itemId = prop.getInt();
+				HacksawItems.orangeSliced.name = "Sliced Orange";
 			
 		//======================================== Tools ========================================
 			//Gets the ID for the "Sharp Chef Knife"

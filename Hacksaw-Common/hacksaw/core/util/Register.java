@@ -15,6 +15,8 @@ import hacksaw.core.items.ItemChefKnifeSharp;
 import hacksaw.core.items.ItemKnifeSharpener;
 import hacksaw.core.items.ItemLambChopCooked;
 import hacksaw.core.items.ItemLambChopRaw;
+import hacksaw.core.items.ItemOrange;
+import hacksaw.core.items.ItemOrangeSliced;
 import hacksaw.core.machines.GrillRecipes;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 import net.minecraft.src.Block;
@@ -90,6 +92,8 @@ public class Register {
 			HacksawItems.carrotSliced.item = new ItemCarrotSliced(HacksawItems.carrotSliced.itemId, 1, 0.15F, false);
 			HacksawItems.lambChopRaw.item = new ItemLambChopRaw(HacksawItems.lambChopRaw.itemId, 3, 0.3F, false);
 			HacksawItems.lambChopCooked.item = new ItemLambChopCooked(HacksawItems.lambChopCooked.itemId, 7, 0.7F, false);
+			HacksawItems.orange.item = new ItemOrange(HacksawItems.orange.itemId, 4, 0.3F, false);
+			HacksawItems.orangeSliced.item = new ItemOrangeSliced(HacksawItems.orangeSliced.itemId, 2, 0.15F, false);
 	}
 
 	private static void registerItemNames() {
@@ -129,7 +133,17 @@ public class Register {
 		
 		//recipe for "sharpening" the Dull Chef knife
 			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.chefKnifeSharp.item), new Object[]{
-				 HacksawItems.chefKnifeDull.item, new ItemStack(HacksawItems.knifeSharpener.item, 1, -1)
+				HacksawItems.chefKnifeDull.item, new ItemStack(HacksawItems.knifeSharpener.item, 1, -1)
+			});
+			
+		//recipe for sliced carrots
+			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.carrotSliced.item, 2), new Object[]{
+				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), HacksawItems.carrot.item 
+			});
+			
+		//recipe for sliced orange
+			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.orangeSliced.item, 2), new Object[]{
+				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), HacksawItems.orange.item
 			});
 	}
 }
