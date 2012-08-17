@@ -31,6 +31,7 @@ public class mod_Hacksaw extends NetworkMod {
 	@Override
 	public void load() {
 		if(!mod_Hacksaw.initialized && !ModLoader.isModLoaded("mod_Hacksaw")){
+			HacksawLogger.log("Loading Hacksaw-Watermelon...");
 			preloadTextures();
 			CoreConfiguration.init(Minecraft.getMinecraftDir(), "config/hacksaw/core.cfg");
 			Register.registerItemsAndBlocksAndRecipes();
