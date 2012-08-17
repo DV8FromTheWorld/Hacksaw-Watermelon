@@ -86,8 +86,8 @@ public class Register {
 			HacksawItems.knifeSharpener.item = new ItemKnifeSharpener(HacksawItems.knifeSharpener.itemId);
 		
 		//---------Food-----------		
-			HacksawItems.carrot.item = new ItemCarrot(HacksawItems.carrot.itemId, 2, 2, false);
-			HacksawItems.carrotSliced.item = new ItemCarrotSliced(HacksawItems.carrotSliced.itemId, 1, 1, false);
+			HacksawItems.carrot.item = new ItemCarrot(HacksawItems.carrot.itemId, 2, 0.3F, false);
+			HacksawItems.carrotSliced.item = new ItemCarrotSliced(HacksawItems.carrotSliced.itemId, 1, 0.15F, false);
 			HacksawItems.lambChopRaw.item = new ItemLambChopRaw(HacksawItems.lambChopRaw.itemId, 3, 0.3F, false);
 			HacksawItems.lambChopCooked.item = new ItemLambChopCooked(HacksawItems.lambChopCooked.itemId, 7, 0.7F, false);
 	}
