@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import java.io.File;
+
+import hacksaw.core.HacksawCore;
 import hacksaw.core.PluginLoader;
 import hacksaw.core.RecipeRemover;
 import hacksaw.core.util.Register;
@@ -14,9 +17,10 @@ import net.minecraft.src.forge.MinecraftForgeClient;
 import net.minecraft.src.forge.NetworkMod;
 
 public class mod_Hacksaw extends NetworkMod {
-
+		
 	//CLIENT SIDE
 	public static boolean initialized = false;
+	public static File path = Minecraft.getMinecraftDir();
 	
 	@Override
 	public String getVersion() {
@@ -33,12 +37,7 @@ public class mod_Hacksaw extends NetworkMod {
 		if(!mod_Hacksaw.initialized && !ModLoader.isModLoaded("mod_Hacksaw")){
 			HacksawLogger.log("Loading Hacksaw-Watermelon...");
 			preloadTextures();
-			CoreConfiguration.init(Minecraft.getMinecraftDir(), "config/hacksaw/core.cfg");
-			//HacksawLogger.checkDebugSetting();  <-- commented until we can get it to work correctly :3
-			Register.registerItemsAndBlocksAndRecipes();
-			PluginLoader.checkPlugins();
-			RecipeRemover.removeVanillaRecipes();
-			mod_Hacksaw.initialized = true;
+			HacksawCore.init();
 			HacksawLogger.log("Hacksaw-Watermelon has successfully loaded");
 		}else{
 			HacksawLogger.log( LogLevel.SEVERE, "Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed");

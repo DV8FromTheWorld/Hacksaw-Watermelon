@@ -1,6 +1,7 @@
 package net.minecraft.src;
 
 import hacksaw.core.BlockRemover;
+import hacksaw.core.HacksawCore;
 import hacksaw.core.RecipeRemover;
 import hacksaw.core.PluginLoader;
 import hacksaw.core.util.CoreConfiguration;
@@ -20,6 +21,7 @@ public class mod_Hacksaw extends NetworkMod {
 
 	//SERVER SIDE
 	public static boolean initialized = false;
+	public static File path = null;
 	
 	@Override
 	public String getVersion() {
@@ -35,11 +37,7 @@ public class mod_Hacksaw extends NetworkMod {
 	public void load() {
 		if(!mod_Hacksaw.initialized && !ModLoader.isModLoaded("mod_Hacksaw")){
 			HacksawLogger.log("Loading Hacksaw-Watermelon...");
-			CoreConfiguration.init(null, "config/hacksaw/core.cfg" );
-			Register.registerItemsAndBlocksAndRecipes();
-			PluginLoader.checkPlugins();
-			RecipeRemover.removeVanillaRecipes();
-			mod_Hacksaw.initialized = true;
+			HacksawCore.init();
 			HacksawLogger.log("Hacksaw-Watermelon has successfully loaded");
 		}else{
 			HacksawLogger.log(LogLevel.SEVERE, "Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed");
