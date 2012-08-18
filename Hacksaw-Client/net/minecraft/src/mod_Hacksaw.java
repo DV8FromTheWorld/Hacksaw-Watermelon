@@ -34,6 +34,7 @@ public class mod_Hacksaw extends NetworkMod {
 			HacksawLogger.log("Loading Hacksaw-Watermelon...");
 			preloadTextures();
 			CoreConfiguration.init(Minecraft.getMinecraftDir(), "config/hacksaw/core.cfg");
+			HacksawLogger.checkDebugSetting();
 			Register.registerItemsAndBlocksAndRecipes();
 			PluginLoader.checkPlugins();
 			RecipeRemover.removeVanillaRecipes();

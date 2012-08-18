@@ -37,10 +37,9 @@ public class CoreConfiguration extends Configuration {
 		} else {
 			file = new File(path);
 		}
-		INSTANCE = new CoreConfiguration(file);
-		
+		INSTANCE = new CoreConfiguration(file);	
 		INSTANCE.load();
-		INSTANCE.populateDefaults();
+		INSTANCE.populateDefaults();	
 		INSTANCE.save();
 	}
 	

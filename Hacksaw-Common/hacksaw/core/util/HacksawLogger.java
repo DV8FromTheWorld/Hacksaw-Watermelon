@@ -1,6 +1,10 @@
 package hacksaw.core.util;
 
+import hacksaw.core.HacksawItems;
+
 import java.util.logging.Level;
+
+import cpw.mods.fml.common.Loader;
 
 import net.minecraft.src.ModLoader;
 
@@ -11,6 +15,20 @@ public class HacksawLogger extends Level{
 	protected HacksawLogger(String levelName, int levelValue) {
 		super(levelName, levelValue);
 
+	}
+	
+	public static void checkDebugSetting(){
+
+		if(CoreConfiguration.getPreference(CoreConfiguration.ENABLE_DEBUG) == true){
+			Level k;
+			k = Loader.log.getLevel();
+			System.out.println(String.valueOf(k));
+			Loader.log.setLevel(Level.FINER);
+			k = ModLoader.getLogger().getLevel();
+			System.out.println(String.valueOf(k));
+			ModLoader.getLogger().finer("yo!");
+			System.out.println("yo!");
+		}
 	}
 	
 	public class LogLevel {
@@ -41,7 +59,7 @@ public class HacksawLogger extends Level{
 			ModLoader.getLogger().severe("[Hacksaw] " + logText);
 			break;
 		case LogLevel.DEBUG:
-			ModLoader.getLogger().log(HacksawLogger.HS_DEBUG, " [Hacksaw Debug] " + logText);			
+			ModLoader.getLogger().log(HacksawLogger.HS_DEBUG, " [Hacksaw-Debug] " + logText);			
 		}
 	}
 }
