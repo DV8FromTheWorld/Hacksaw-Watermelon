@@ -6,8 +6,6 @@ import hacksaw.core.util.HacksawLogger.LogLevel;
 
 import java.io.File;
 
-import net.minecraft.src.ModLoader;
-import net.minecraft.src.mod_Hacksaw;
 import net.minecraft.src.forge.Configuration;
 import net.minecraft.src.forge.Property;
 

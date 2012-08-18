@@ -1,12 +1,5 @@
 package hacksaw.core.items;
 
-import java.util.ArrayList;
-
-import net.minecraft.src.EnumAction;
-import net.minecraft.src.ItemFood;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.forge.ITextureProvider;
-
 public class ItemLambChopCooked extends ItemBaseFood {
 
 	public ItemLambChopCooked(int par1, int par2, float par3, boolean par4) {

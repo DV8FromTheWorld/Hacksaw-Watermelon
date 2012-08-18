@@ -9,8 +9,6 @@ import hacksaw.core.util.HacksawLogger;
 import java.util.HashMap;
 import java.util.Map;
 
-import net.minecraft.src.ModLoader;
-
 public enum PluginLoader {
 	INSTANCE;
 

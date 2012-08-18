@@ -1,12 +1,8 @@
 package hacksaw.core.blocks;
 
-import hacksaw.core.BlockRemover;
-
 import java.util.Random;
 
-import net.minecraft.src.Block;
 import net.minecraft.src.BlockMelon;
-import net.minecraft.src.Item;
 
 public class BlockSuperMelon extends BlockMelon {
 

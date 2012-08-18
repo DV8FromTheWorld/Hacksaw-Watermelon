@@ -1,10 +1,7 @@
 package hacksaw.core.items;
 
-import java.util.ArrayList;
-
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
-import net.minecraft.src.forge.ITextureProvider;
 
 public class ItemChefKnifeSharp extends ItemBaseChefTools {
 	

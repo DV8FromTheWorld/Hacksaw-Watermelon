@@ -2,7 +2,6 @@ package hacksaw.core.machines;
 
 import java.util.HashMap;
 
-import hacksaw.api.GrillCook;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.ModLoader;
 		

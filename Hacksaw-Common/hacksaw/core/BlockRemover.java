@@ -3,14 +3,7 @@ package hacksaw.core;
 import hacksaw.core.util.HacksawLogger;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 
-import java.util.List;
-
 import net.minecraft.src.Block;
-import net.minecraft.src.ModLoader;
-
-import java.lang.reflect.Field;
-
-import cpw.mods.fml.common.ReflectionHelper;
 
 public class BlockRemover {
 	

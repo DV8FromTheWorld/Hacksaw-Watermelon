@@ -1,5 +1,13 @@
 package hacksaw.core;
 
+import java.util.ArrayList;
+
+import net.minecraft.src.DamageSource;
+import net.minecraft.src.EntityItem;
+import net.minecraft.src.EntityLiving;
+import net.minecraft.src.World;
+import net.minecraft.src.forge.IEntityLivingHandler;
+
 public class MeatProvider implements IEntityLivingHandler {
 	private static MeatProvider INSTANCE = new MeatProvider();
 	private MeatProvider() {}

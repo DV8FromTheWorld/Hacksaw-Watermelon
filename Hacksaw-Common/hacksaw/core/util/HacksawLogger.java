@@ -1,12 +1,11 @@
 package hacksaw.core.util;
 
-import hacksaw.core.HacksawItems;
-
 import java.util.logging.Level;
 
 import cpw.mods.fml.common.Loader;
 
 import net.minecraft.src.ModLoader;
+
 
 public class HacksawLogger extends Level{
 	

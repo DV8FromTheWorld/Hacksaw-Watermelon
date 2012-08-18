@@ -1,9 +1,6 @@
 package hacksaw.api;
 
-import hacksaw.core.machines.GrillRecipes;
-
 import java.lang.reflect.Method;
-import java.util.HashMap;
 
 import net.minecraft.src.ItemStack;
 

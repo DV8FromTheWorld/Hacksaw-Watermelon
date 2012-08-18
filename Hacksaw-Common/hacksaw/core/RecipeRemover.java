@@ -11,11 +11,9 @@ import java.util.List;
 import java.util.Set;
 
 import net.minecraft.src.CraftingManager;
-import net.minecraft.src.FurnaceRecipes;
 import net.minecraft.src.IRecipe;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
-import net.minecraft.src.ModLoader;
 
 public class RecipeRemover {
 	

@@ -1,7 +1,6 @@
 package hacksaw.core.plugins;
 
 import hacksaw.core.util.HacksawLogger;
-import net.minecraft.src.ModLoader;
 import net.minecraft.src.forge.NetworkMod;
 
 public abstract class HacksawPlugin {

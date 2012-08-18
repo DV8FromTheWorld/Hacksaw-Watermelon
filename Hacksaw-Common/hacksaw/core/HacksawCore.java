@@ -1,7 +1,6 @@
 package hacksaw.core;
 
 import hacksaw.core.util.CoreConfiguration;
-import hacksaw.core.util.HacksawLogger;
 import hacksaw.core.util.Register;
 import net.minecraft.src.mod_Hacksaw;
 

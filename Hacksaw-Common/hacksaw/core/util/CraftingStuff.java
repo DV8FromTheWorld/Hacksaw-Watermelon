@@ -8,7 +8,6 @@ import java.util.HashSet;
 import net.minecraft.src.forge.ICraftingHandler;
 import net.minecraft.src.forge.MinecraftForge;
 import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.IInventory;
 
