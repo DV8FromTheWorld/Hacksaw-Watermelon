@@ -10,8 +10,8 @@ import net.minecraft.src.forge.Configuration;
 import net.minecraft.src.forge.Property;
 
 public class CoreConfiguration extends Configuration {
-	private static final String version = "0.1";
-	private static final String name = "Hacksaw Watermelon";
+	private static final String version = "v0.1";
+	private static final String name = "Hacksaw-Watermelon";
 	public static final String USE_VANILLA_RECIPES = "useVanillaRecipes";
 	public static final String ENABLE_DEBUG = "Debug Mode";
 	

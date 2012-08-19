@@ -32,10 +32,10 @@ public class mod_Hacksaw extends NetworkMod {
 	@Override
 	public void load() {
 		if(!mod_Hacksaw.initialized && !ModLoader.isModLoaded("mod_Hacksaw")){
-			HacksawLogger.log("Loading Hacksaw-Watermelon...");
+			HacksawLogger.log("Loading " + getName() + "...");
 			preloadTextures();
 			HacksawCore.init();
-			HacksawLogger.log("Hacksaw-Watermelon has successfully loaded");
+			HacksawLogger.log(getName() + " " +getVersion() + " has successfully loaded");
 		}else{
 			HacksawLogger.log( LogLevel.SEVERE, "Hacksaw-Watermelon is already loaded, check for a duplicate Hacksaw-Watermlon installed");
 		}
