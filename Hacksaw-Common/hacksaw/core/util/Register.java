@@ -4,6 +4,7 @@ import hacksaw.api.GrillCook;
 import hacksaw.core.BlockRemover;
 import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
+import hacksaw.core.MeatProvider;
 import hacksaw.core.blocks.BlockSuperMelon;
 import hacksaw.core.items.ItemCarrot;
 import hacksaw.core.items.ItemCarrotSliced;
@@ -19,6 +20,7 @@ import net.minecraft.src.Block;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.ModLoader;
+import net.minecraft.src.forge.MinecraftForge;
 
 public class Register {
 	
@@ -27,6 +29,7 @@ public class Register {
 		registerBlockNames();
 		registerItems();
 		registerItemNames();
+		registerHandlers();
 		addShapedRecipes();
 		addShapelessRecipes();
 		addGrillRecipes();
@@ -141,5 +144,11 @@ public class Register {
 			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.orangeSliced.item, 2), new Object[]{
 				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), HacksawItems.orange.item
 			});
+			
+	}
+	
+	private static void registerHandlers(){
+		MinecraftForge.registerEntityLivingHandler(new MeatProvider());
+		
 	}
 }
