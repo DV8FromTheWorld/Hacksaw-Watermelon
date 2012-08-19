@@ -1,10 +1,13 @@
 package hacksaw.core;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import net.minecraft.src.DamageSource;
 import net.minecraft.src.EntityItem;
 import net.minecraft.src.EntityLiving;
+import net.minecraft.src.EntitySheep;
+import net.minecraft.src.ItemStack;
 import net.minecraft.src.World;
 import net.minecraft.src.forge.IEntityLivingHandler;
 
@@ -21,7 +24,22 @@ public class MeatProvider implements IEntityLivingHandler {
 
 	public void onEntityLivingDrops( EntityLiving entity, DamageSource source, ArrayList<EntityItem> drops, int lootingLevel, boolean recentlyHit, int specialDropValue ) {
 		// meat goes here
-		return;
+		/*if(entity instanceof EntitySheep){
+			if(!entity.isChild()){
+				Random generator = new Random();
+				int Chance =  generator.nextInt(5);
+				//if(Chance < 4){
+					if(entity.isBurning()){
+						drops.add(new EntityItem(entity.worldObj, entity.posX, entity.posY, entity.posZ, new ItemStack(HacksawItems.lambChopCooked.item, 1)));
+					}else{
+						drops.add(new EntityItem(entity.worldObj, entity.posX, entity.posY, entity.posZ, new ItemStack(HacksawItems.lambChopRaw.item, 1)));
+					}
+				//}
+				
+			}
+		}*/						//Not sure why, but the code above does not seem to work...
+		
+		
 	}
 
 	// irrelevant interface stuff
