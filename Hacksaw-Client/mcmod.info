@@ -1,0 +1,17 @@
+[
+{
+  "modid": "hacksaw_watermelon",
+  "name": "HackSawWatermelon",
+  "description": "Adds a variation of food types",
+  "version": "1.0.0",
+  "mcversion": "1.2.5",
+  "url": "https://github.com/DV8FromTheWorld/Hacksaw-Watermelon",
+  "updateUrl": "",
+  "credits": "Mod by DV8FromTheWorld, Eurymachus, allaryin, Silentspy, GadgetTvMan and Bockwurst",
+  "authors": ["DV8FromTheWorld","Eurymachus","allaryin","Silentspy","GadgetTvMan","Bockwurst"],
+  "logoFile": "",
+  "screenshots": [],
+  "parent":"",
+  "dependencies": []
+}
+]

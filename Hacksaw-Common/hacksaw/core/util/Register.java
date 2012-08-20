@@ -5,6 +5,7 @@ import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
 import hacksaw.core.MeatProvider;
 import hacksaw.core.blocks.BlockSuperMelon;
+import hacksaw.core.items.ItemAppleSliced;
 import hacksaw.core.items.ItemCarrot;
 import hacksaw.core.items.ItemCarrotSliced;
 import hacksaw.core.items.ItemChefKnifeDull;
@@ -89,6 +90,7 @@ public class Register {
 			HacksawItems.lambChopCooked.item = new ItemLambChopCooked(HacksawItems.lambChopCooked.itemId, 7, 0.7F, false);
 			HacksawItems.orange.item = new ItemOrange(HacksawItems.orange.itemId, 4, 0.3F, false);
 			HacksawItems.orangeSliced.item = new ItemOrangeSliced(HacksawItems.orangeSliced.itemId, 2, 0.15F, false);
+			HacksawItems.appleSliced.item = new ItemAppleSliced(HacksawItems.appleSliced.itemId, 2, 0.15F, false);
 	}
 
 	private static void registerItemNames() {
