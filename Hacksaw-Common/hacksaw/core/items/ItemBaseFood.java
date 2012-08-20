@@ -12,6 +12,8 @@ public abstract class ItemBaseFood extends ItemFood implements ITextureProvider 
 	protected int foodHealAmount;
 	protected float saturationAmount;
 	
+	public abstract boolean shouldRotateAroundWhenRendering();
+	
 	public ItemBaseFood(int par1, int foodHealAmount, float saturationAmount, boolean par4) {
 		super(par1, foodHealAmount, saturationAmount, par4);
 	}

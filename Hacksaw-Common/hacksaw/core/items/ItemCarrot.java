@@ -10,4 +10,9 @@ public class ItemCarrot extends ItemBaseFood{
 		foodHealAmount = par2;
 		saturationAmount = par3;
 	}
+
+	@Override
+	public boolean shouldRotateAroundWhenRendering() {
+		return false;
+	}
 }

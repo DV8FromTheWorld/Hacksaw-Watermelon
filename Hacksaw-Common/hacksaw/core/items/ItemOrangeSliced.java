@@ -11,4 +11,9 @@ public class ItemOrangeSliced extends ItemBaseFood{
 		this.saturationAmount = saturationAmount;		
 	}
 
+	@Override
+	public boolean shouldRotateAroundWhenRendering() {
+		return false;
+	}
+
 }

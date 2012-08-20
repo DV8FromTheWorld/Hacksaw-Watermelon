@@ -10,4 +10,9 @@ public class ItemLambChopRaw extends ItemBaseFood {
 		this.foodHealAmount = par2;
 		this.saturationAmount = par3;
 	}
+
+	@Override
+	public boolean shouldRotateAroundWhenRendering() {
+		return false;
+	}
 }
