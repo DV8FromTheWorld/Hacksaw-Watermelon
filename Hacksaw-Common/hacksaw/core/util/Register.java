@@ -141,6 +141,10 @@ public class Register {
 				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), HacksawItems.orange.item
 			});
 			
+		//recipe for sliced apple
+			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.appleSliced.item, 2), new Object[]{
+				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), Item.appleRed 
+			});
 	}
 	
 	private static void registerHandlers(){
