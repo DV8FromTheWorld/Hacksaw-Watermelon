@@ -11,11 +11,7 @@ public class GrillRecipes{
 
 	public static HashMap<Integer,ItemStack> foodCookList = new HashMap<Integer,ItemStack>();
 	public static HashMap<Integer,Integer> durationToCookFood = new HashMap<Integer,Integer>();
-	
-	
-	
 	private static final GrillRecipes INSTANCE = new GrillRecipes();	
-	
 	
 	private GrillRecipes(){	
 		
@@ -36,7 +32,7 @@ public class GrillRecipes{
 	 * @param input: ID of the item to be "cooked" (Note, this needs to be the shiftedIndex ID)
 	 * @param output: the "cooked" version of the item
 	 */
-	public void addToGrillToCook(int input, ItemStack output){
+	public static void addToGrillToCook(int input, ItemStack output){
 		addToGrillToCook(input, output, -1);
 	}
 
@@ -62,10 +58,6 @@ public class GrillRecipes{
 	
 	public HashMap<Integer,Integer> getDurationToCook(){
 		return durationToCookFood;
-	}
-	
-	public void bob(){
-		System.out.println("yo!");
 	}
 
 }	
