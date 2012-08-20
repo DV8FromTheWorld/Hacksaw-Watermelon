@@ -130,7 +130,7 @@ public class Register {
 		
 		//recipe for "sharpening" the Dull Chef knife
 			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.chefKnifeSharp.item), new Object[]{
-				HacksawItems.chefKnifeDull.item, new ItemStack(HacksawItems.knifeSharpener.item, 1, -1)
+				new ItemStack(HacksawItems.chefKnifeDull.item, 1, -1), new ItemStack(HacksawItems.knifeSharpener.item, 1, -1)
 			});
 			
 		//recipe for sliced carrots
