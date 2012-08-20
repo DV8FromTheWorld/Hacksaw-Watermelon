@@ -1,6 +1,5 @@
 package hacksaw.core.util;
 
-import hacksaw.api.GrillCook;
 import hacksaw.core.BlockRemover;
 import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
@@ -15,6 +14,8 @@ import hacksaw.core.items.ItemLambChopCooked;
 import hacksaw.core.items.ItemLambChopRaw;
 import hacksaw.core.items.ItemOrange;
 import hacksaw.core.items.ItemOrangeSliced;
+import hacksaw.core.machines.GrillRecipes;
+import hacksaw.core.machines.JuicerRecipes;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 import net.minecraft.src.Block;
 import net.minecraft.src.Item;
@@ -33,14 +34,9 @@ public class Register {
 		addShapedRecipes();
 		addShapelessRecipes();
 		addGrillRecipes();
+		addJuicerRecipes();
 	}
 
-	private static void addGrillRecipes() {
-		//================== Registers the cooking recipes for the Grill ===================
-		
-		GrillCook.getInstance().addToGrillToCook(HacksawItems.lambChopRaw.item.shiftedIndex, new ItemStack(HacksawItems.lambChopCooked.item), 25);
-	}
-	
 	private static void registerBlocks() {
 		//====================== Registers blocks ========================
 		
@@ -148,7 +144,20 @@ public class Register {
 	}
 	
 	private static void registerHandlers(){
+		//================= Registers Forge Handlers =========================
 		MinecraftForge.registerEntityLivingHandler(new MeatProvider());
+		
+	}
+	
+	private static void addGrillRecipes(){
+		//================== Registers the cooking recipes for the Grill ===================
+		
+		GrillRecipes.addToGrillToCook(HacksawItems.lambChopRaw.item.shiftedIndex, new ItemStack(HacksawItems.lambChopCooked.item), 25);
+	}
+	
+	private static void addJuicerRecipes(){
+		//================== Registers the juicing recipes for the Juicer ====================
+		
 		
 	}
 }
