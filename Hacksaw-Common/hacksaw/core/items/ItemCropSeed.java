@@ -23,29 +23,29 @@ public abstract class ItemCropSeed extends Item implements ITextureProvider {
 	/**
 	 * Called whenever we attempt to right click with a seed.
 	 * 
-	 * @param par1ItemStack Seeds in question.
-	 * @param par2EntityPlayer Player performing the action.
-	 * @param par3World Current world.
-	 * @param par4 X coordinate.
-	 * @param par5 Z coordinate.
-	 * @param par6 Y coordinate.
-	 * @param par7 side of item.
+	 * @param itemStack Seeds in question.
+	 * @param player Player performing the action.
+	 * @param world Current world.
+	 * @param x X coordinate.
+	 * @param z Z coordinate.
+	 * @param y Y coordinate.
+	 * @param face side of item.
 	 * @return
 	 */
 	@Override
-	public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7)
+	public boolean onItemUse(ItemStack itemStack, EntityPlayer player, World world, int x, int z, int y, int face)
     {
-		if( par7 != 1 ) {
+		if( face != 1 ) {
 			// unless we're clicking on the top of the block, it's a failure
 			return false;
-		} else if( par2EntityPlayer.canPlayerEdit(par4, par5, par6) && par2EntityPlayer.canPlayerEdit(par4, par5+1, par6) ) {
+		} else if( player.canPlayerEdit(x, z, y) && player.canPlayerEdit(x, z+1, y) ) {
 			// only fire if we can modify the block targetted and the one directly above it is air
-			int targetBlockId = par3World.getBlockId(par4, par5, par6);
-			if( targetBlockId == this.getSoilBlockID() && par3World.isAirBlock(par4, par5+1, par6) ) {
+			int targetBlockId = world.getBlockId(x, z, y);
+			if( targetBlockId == this.getSoilBlockID() && world.isAirBlock(x, z+1, y) ) {
 				// place the plant
-				par3World.setBlockWithNotify(par4, par5+1, par6, this.getCropBlockID());
+				world.setBlockWithNotify(x, z+1, y, this.getCropBlockID());
 				// decrement our stack
-				--par1ItemStack.stackSize;
+				--itemStack.stackSize;
 				return true;
 			}
 		}
@@ -67,7 +67,7 @@ public abstract class ItemCropSeed extends Item implements ITextureProvider {
 	
 	@Override
 	public String getTextureFile(){
-		return "/hacksaw/textures/crops.png";
+		return "/hacksaw/textures/seeds.png";
 	}
 
 }
