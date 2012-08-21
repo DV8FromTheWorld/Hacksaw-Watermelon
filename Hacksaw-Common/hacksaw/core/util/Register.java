@@ -94,7 +94,7 @@ public class Register {
 			HacksawItems.appleSliced.item = new ItemAppleSliced(HacksawItems.appleSliced.itemId, 2, 0.15F, false);
 		
 		//---------Seeds----------
-			HacksawItems.carrotSeed.item = new ItemCarrotSeed(HacksawItems.carrot.itemId);
+			HacksawItems.carrotSeed.item = new ItemCarrotSeed(HacksawItems.carrotSeed.itemId);
 	}
 
 	private static void registerItemNames() {
