@@ -57,6 +57,10 @@ public class CoreConfiguration extends Configuration {
 				HacksawBlocks.supermelon.blockId = prop.getInt();
 				HacksawBlocks.supermelon.name = "Melon";
 				
+				prop = getOrCreateIntProperty("carrot", Configuration.CATEGORY_BLOCK, 104);
+				HacksawBlocks.carrot.blockId = prop.getInt();
+				HacksawBlocks.carrot.name = "Carrot Plant";
+				
 		//======================================== Food =========================================
 			//Gets the ID and Name for the "Carrot"
 				prop = getOrCreateIntProperty("carrot", Configuration.CATEGORY_ITEM, 1004);
@@ -92,6 +96,12 @@ public class CoreConfiguration extends Configuration {
 				prop = getOrCreateIntProperty("apple.sliced", Configuration.CATEGORY_ITEM, 1010);
 				HacksawItems.appleSliced.itemId = prop.getInt();
 				HacksawItems.appleSliced.name = "Sliced Apple";
+				
+		//======================================== Tools ========================================
+			//Gets the ID for the "Carrot Seed"
+				prop = getOrCreateIntProperty("carrot.seed", Configuration.CATEGORY_ITEM, 1011);
+				HacksawItems.carrotSeed.itemId = prop.getInt();
+				HacksawItems.carrotSeed.name = "Carrot Seed";
 				
 		//======================================== Tools ========================================
 			//Gets the ID for the "Sharp Chef Knife"

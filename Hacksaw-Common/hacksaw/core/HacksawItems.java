@@ -12,6 +12,9 @@ public enum HacksawItems {
 	lambChopRaw,
 	lambChopCooked,
 	
+	//---------- Seeds ------------
+	carrotSeed,
+	
 	//---------- Tools ------------
 	chefKnifeSharp,
 	chefKnifeDull,

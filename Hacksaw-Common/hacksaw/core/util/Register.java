@@ -7,6 +7,7 @@ import hacksaw.core.MeatProvider;
 import hacksaw.core.blocks.BlockSuperMelon;
 import hacksaw.core.items.ItemAppleSliced;
 import hacksaw.core.items.ItemCarrot;
+import hacksaw.core.items.ItemCarrotSeed;
 import hacksaw.core.items.ItemCarrotSliced;
 import hacksaw.core.items.ItemChefKnifeDull;
 import hacksaw.core.items.ItemChefKnifeSharp;
@@ -91,6 +92,9 @@ public class Register {
 			HacksawItems.orange.item = new ItemOrange(HacksawItems.orange.itemId, 4, 0.3F, false);
 			HacksawItems.orangeSliced.item = new ItemOrangeSliced(HacksawItems.orangeSliced.itemId, 2, 0.15F, false);
 			HacksawItems.appleSliced.item = new ItemAppleSliced(HacksawItems.appleSliced.itemId, 2, 0.15F, false);
+		
+		//---------Seeds----------
+			HacksawItems.carrotSeed.item = new ItemCarrotSeed(HacksawItems.carrot.itemId);
 	}
 
 	private static void registerItemNames() {
@@ -131,6 +135,11 @@ public class Register {
 		//recipe for "sharpening" the Dull Chef knife
 			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.chefKnifeSharp.item), new Object[]{
 				new ItemStack(HacksawItems.chefKnifeDull.item, 1, -1), new ItemStack(HacksawItems.knifeSharpener.item, 1, -1)
+			});
+			
+		//carrot seeds come from carrots
+			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.carrotSeed.item), new Object[]{
+				new ItemStack(HacksawItems.carrot.item, 1, -1)
 			});
 			
 		//recipe for sliced carrots
