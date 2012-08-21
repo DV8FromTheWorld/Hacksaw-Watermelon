@@ -3,39 +3,34 @@ package hacksaw.core.items;
 import java.util.ArrayList;
 
 import net.minecraft.src.EnumAction;
+import net.minecraft.src.Item;
 import net.minecraft.src.ItemFood;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.forge.ITextureProvider;
 
 public abstract class ItemBaseFood extends ItemFood implements ITextureProvider {
 	
-	protected int foodHealAmount;
-	protected float saturationAmount;
-	
 	public abstract boolean shouldRotateAroundWhenRendering();
 	
-	public ItemBaseFood(int par1, int foodHealAmount, float saturationAmount, boolean par4) {
-		super(par1, foodHealAmount, saturationAmount, par4);
+	public ItemBaseFood(int id, int foodHealAmount, float saturationAmount, boolean isWolfsFavoriteMeat) {
+		super(id, foodHealAmount, isWolfsFavoriteMeat);
 	}
 	
-	public ItemBaseFood(int par1, int foodHealAmount, boolean par3) {
-		super(par1, foodHealAmount, par3);
+	@Override
+	// To add the 'food.' string as a prefix to Hacksaw food items
+	public Item setItemName(String itemName) {
+		String newname = "food." + itemName;
+		return super.setItemName(newname);
+	}
+	
+	public ItemBaseFood(int id, int foodHealAmount, boolean isWolfsFavoriteMeat) {
+		super(id, foodHealAmount, isWolfsFavoriteMeat);
 	}
 	
 	@Override
 	public EnumAction getItemUseAction(ItemStack par1ItemStack) {
         return EnumAction.eat;
     }
-	
-	@Override
-	public int getHealAmount() {
-		return this.foodHealAmount;
-	}
-	
-	@Override
-	public float getSaturationModifier() {
-		return this.saturationAmount;
-	}
 	
 	@Override
 	public void addCreativeItems(ArrayList itemList) {

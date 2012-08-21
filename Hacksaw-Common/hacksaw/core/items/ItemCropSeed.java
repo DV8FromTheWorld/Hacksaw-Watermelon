@@ -8,10 +8,10 @@ import net.minecraft.src.ItemStack;
 import net.minecraft.src.World;
 import net.minecraft.src.forge.ITextureProvider;
 
-public abstract class ItemCropSeed extends Item implements ITextureProvider{
+public abstract class ItemCropSeed extends Item implements ITextureProvider {
 
-	public ItemCropSeed(int par1) {
-		super(par1);
+	public ItemCropSeed(int id) {
+		super(id);
 	}
 	
 	// return the block we turn into when planted
@@ -52,6 +52,13 @@ public abstract class ItemCropSeed extends Item implements ITextureProvider{
 		// invalid case, we didn't do anything
         return false;
     }
+	
+	@Override
+	// To add the 'crop.' String as a prefix to Hacksaw crop items
+	public Item setItemName(String itemName) {
+		String newname = "crop." + itemName;
+		return super.setItemName(newname);
+	}
 
 	@Override
 	public void addCreativeItems(ArrayList itemList){
@@ -60,7 +67,7 @@ public abstract class ItemCropSeed extends Item implements ITextureProvider{
 	
 	@Override
 	public String getTextureFile(){
-		return "/hacksaw/textures/items.png";
+		return "/hacksaw/textures/crops.png";
 	}
 
 }

@@ -5,8 +5,8 @@ import net.minecraft.src.ItemStack;
 
 public class ItemKnifeSharpener extends ItemBaseChefTools {
 
-	public ItemKnifeSharpener(int i) {
-		super(i);
+	public ItemKnifeSharpener(int id) {
+		super(id);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(10);
 		this.setIconCoord(2, 0);

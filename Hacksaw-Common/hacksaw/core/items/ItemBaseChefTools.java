@@ -8,8 +8,15 @@ import net.minecraft.src.forge.ITextureProvider;
 
 public abstract class ItemBaseChefTools extends Item implements ITextureProvider {
 
-	protected ItemBaseChefTools(int par1) {
-		super(par1);
+	protected ItemBaseChefTools(int id) {
+		super(id);
+	}
+	
+	@Override
+	// To add the 'chef.' string as a prefix to Hacksaw chef tools
+	public Item setItemName(String itemName) {
+		String newname = "chef." + itemName;
+		return super.setItemName(newname);
 	}
 	
 	public abstract boolean shouldRotateAroundWhenRendering();

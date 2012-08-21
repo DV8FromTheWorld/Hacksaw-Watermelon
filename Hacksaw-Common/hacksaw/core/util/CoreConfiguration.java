@@ -5,6 +5,7 @@ import hacksaw.core.HacksawItems;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 
 import java.io.File;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Level;
 
@@ -66,8 +67,8 @@ public class CoreConfiguration extends Configuration {
 				
 			//Gets the True/False for whether Debug Mode should be enabled	
 				prop = getOrCreateBooleanProperty(AUTORESOLVE_CONFLICTS, Configuration.CATEGORY_GENERAL, true);
-				prop.comment = "Attempt to automatically resolve item/block ID conflicts (default: true)";
-				autoresolve = prop.getBoolean(true);
+				prop.comment = "Attempt to automatically resolve item/block ID conflicts (default: false)";
+				autoresolve = prop.getBoolean(false);
 				
 		//======================================== Vegetation =========================================
 				prop = getOrCreateIntProperty("supermelon", Configuration.CATEGORY_BLOCK, 103);	// intentionally clobbering vanilla melon
@@ -78,45 +79,57 @@ public class CoreConfiguration extends Configuration {
 				HacksawBlocks.carrot.blockId = prop.getInt();
 				HacksawBlocks.carrot.name = "Carrot Plant";
 				
+				prop = getOrCreateIntProperty("carrot2", Configuration.CATEGORY_BLOCK, nextBlockId());
+				HacksawBlocks.carrot.blockId = prop.getInt();
+				HacksawBlocks.carrot.name = "Carrot Plant2";
+				
+				prop = getOrCreateIntProperty("carrot3", Configuration.CATEGORY_BLOCK, nextBlockId());
+				HacksawBlocks.carrot.blockId = prop.getInt();
+				HacksawBlocks.carrot.name = "Carrot Plant3";
+				
+				prop = getOrCreateIntProperty("carrot4", Configuration.CATEGORY_BLOCK, nextBlockId());
+				HacksawBlocks.carrot.blockId = prop.getInt();
+				HacksawBlocks.carrot.name = "Carrot Plant4";
+				
 		//======================================== Food =========================================
 			//Gets the ID and Name for the "Carrot"
-				prop = getOrCreateIntProperty("carrot", Configuration.CATEGORY_ITEM, nextItemId());
+				prop = getOrCreateIntProperty("food.carrot", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.carrot.itemId = prop.getInt();
 				HacksawItems.carrot.name = "Carrot";
 		
 			//Gets the ID for the "Sliced Carrot"
-				prop = getOrCreateIntProperty("carrot.sliced", Configuration.CATEGORY_ITEM, nextItemId());
+				prop = getOrCreateIntProperty("food.carrot.sliced", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.carrotSliced.itemId = prop.getInt();
 				HacksawItems.carrotSliced.name = "Sliced Carrots";
 				
 			//Gets the ID for the "Raw Lamb Chop"
-				prop = getOrCreateIntProperty("lamb.chop.raw", Configuration.CATEGORY_ITEM, nextItemId());
+				prop = getOrCreateIntProperty("food.lamb.chop.raw", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.lambChopRaw.itemId = prop.getInt();
 				HacksawItems.lambChopRaw.name = "Raw Lamb Chop";
 				
 			//Gets the ID for the "Cooked Lamb Chop"
-				prop = getOrCreateIntProperty("lamb.chop.cooked", Configuration.CATEGORY_ITEM, nextItemId());
+				prop = getOrCreateIntProperty("food.lamb.chop.cooked", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.lambChopCooked.itemId = prop.getInt();
 				HacksawItems.lambChopCooked.name = "Cooked Lamb Chop";
 				
 			//Gets the ID for the "Orange"
-				prop = getOrCreateIntProperty("orange", Configuration.CATEGORY_ITEM, nextItemId());
+				prop = getOrCreateIntProperty("food.orange", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.orange.itemId = prop.getInt();
 				HacksawItems.orange.name = "Orange";
 				
 			//Gets the ID for the "Sliced Orange"
-				prop = getOrCreateIntProperty("orange.sliced", Configuration.CATEGORY_ITEM, nextItemId());
+				prop = getOrCreateIntProperty("food.orange.sliced", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.orangeSliced.itemId = prop.getInt();
 				HacksawItems.orangeSliced.name = "Sliced Orange";
 			
 			//Gets the ID for the "Sliced Apple"
-				prop = getOrCreateIntProperty("apple.sliced", Configuration.CATEGORY_ITEM, nextItemId());
+				prop = getOrCreateIntProperty("food.apple.sliced", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.appleSliced.itemId = prop.getInt();
 				HacksawItems.appleSliced.name = "Sliced Apple";
 				
 		//======================================== Seeds ========================================
 			//Gets the ID for the "Carrot Seed"
-				prop = getOrCreateIntProperty("carrot.seed", Configuration.CATEGORY_ITEM, nextItemId());
+				prop = getOrCreateIntProperty("food.carrot.seed", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.carrotSeed.itemId = prop.getInt();
 				HacksawItems.carrotSeed.name = "Carrot Seed";
 				
@@ -124,15 +137,15 @@ public class CoreConfiguration extends Configuration {
 			//Gets the ID for the "Sharp Chef Knife"
 				prop = getOrCreateIntProperty("chef.knife.sharp", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.chefKnifeSharp.itemId = prop.getInt();
-				HacksawItems.chefKnifeSharp.name = "Sharp Chef Knife";
+				HacksawItems.chefKnifeSharp.name = "Sharp Chef's Knife";
 				
 			//Gets the ID for the "Dull Chef Knife"
 				prop = getOrCreateIntProperty("chef.knife.dull", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.chefKnifeDull.itemId = prop.getInt();
-				HacksawItems.chefKnifeDull.name = "Dull Chef Knife";
+				HacksawItems.chefKnifeDull.name = "Dull Chef's Knife";
 		
 			//Gets the ID for the "Knife Sharpener"
-				prop = getOrCreateIntProperty("knife.sharpener", Configuration.CATEGORY_ITEM, nextItemId());
+				prop = getOrCreateIntProperty("chef.knife.sharpener", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.knifeSharpener.itemId = prop.getInt();
 				HacksawItems.knifeSharpener.name = "Knife Sharpener";
 	}	
@@ -160,22 +173,23 @@ public class CoreConfiguration extends Configuration {
 	}
 	
 	//======================================== Automatic ID conflict resolution ===================
-	private Set<Integer> claimed_blocks;
-	private Set<Integer> claimed_items;
+	private Set<Integer> claimed_blocks = new HashSet<Integer>();
+	private Set<Integer> claimed_items = new HashSet<Integer>();
 	private int next_block_id = START_BLOCK_ID;
 	private int next_item_id = START_ITEM_ID;
 	
 	private int nextBlockId( int id ) {
-		if( autoresolve )
+		if( !autoresolve )
 			return id;
 		final int oid = id;
-		while( Block.blocksList[id] != null && claimed_blocks.contains(id)) {
+		while( Block.blocksList[id] != null || claimed_blocks.contains(Integer.valueOf(id))) {
 			++id;
 		}
 		if( oid != id ) {
 			HacksawLogger.log("Block ID conflict @ "+oid+", taken by "+Block.blocksList[oid]+", assigning "+id);
 		}
-		claimed_blocks.add(id);
+		// TODO : Resolved Null pointer on Add.
+		claimed_blocks.add(Integer.valueOf(id));
 		return id;
 	}
 	private int nextBlockId() {
@@ -185,16 +199,17 @@ public class CoreConfiguration extends Configuration {
 	}
 	
 	private int nextItemId( int id ) {
-		if( autoresolve )
+		if( !autoresolve )
 			return id;
 		final int oid = id;
-		while( Item.itemsList[id+256] != null && claimed_items.contains(id)) {
+		while( Item.itemsList[id+256] != null || claimed_items.contains(Integer.valueOf(id))) {
 			++id;
 		}
 		if( oid != id ) {
 			HacksawLogger.log("Item ID conflict @ "+oid+", taken by "+Item.itemsList[oid+256]+", assigning "+id);
 		}
-		claimed_items.add(id);
+		// TODO : Resolved Null pointer on Add.
+		claimed_items.add(Integer.valueOf(id));
 		return id;
 	}
 	private int nextItemId() {

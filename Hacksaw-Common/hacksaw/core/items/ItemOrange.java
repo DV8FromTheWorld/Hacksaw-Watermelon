@@ -7,8 +7,6 @@ public class ItemOrange extends ItemBaseFood{
 		this.setMaxStackSize(64);
 		this.setIconCoord(4, 0);
 		this.setItemName("orange");
-		this.foodHealAmount = foodHealAmount;
-		this.saturationAmount = saturationAmount;
 	}
 
 	@Override

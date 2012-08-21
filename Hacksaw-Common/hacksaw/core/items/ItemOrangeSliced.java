@@ -6,9 +6,7 @@ public class ItemOrangeSliced extends ItemBaseFood{
 		super(par1, foodHealAmount, saturationAmount, par4);
 		this.setMaxStackSize(64);
 		this.setIconCoord(5, 0);
-		this.setItemName("orange.sliced");
-		this.foodHealAmount = foodHealAmount;
-		this.saturationAmount = saturationAmount;		
+		this.setItemName("orange.sliced");	
 	}
 
 	@Override

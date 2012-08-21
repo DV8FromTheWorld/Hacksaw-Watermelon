@@ -7,11 +7,11 @@ import net.minecraft.src.World;
 
 public class ItemChefKnifeSharp extends ItemBaseChefTools {
 	
-	public ItemChefKnifeSharp(int i) {
-		super(i);
+	public ItemChefKnifeSharp(int id) {
+		super(id);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(45);
-		this.setItemName("sharp.chef.knife");
+		this.setItemName("knife.sharp");
 		this.setIconCoord(0, 0);
 	}
 
