@@ -4,6 +4,7 @@ import hacksaw.core.BlockRemover;
 import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
 import hacksaw.core.MeatProvider;
+import hacksaw.core.blocks.BlockCarrot;
 import hacksaw.core.blocks.BlockSuperMelon;
 import hacksaw.core.items.ItemAppleSliced;
 import hacksaw.core.items.ItemCarrot;
@@ -50,6 +51,8 @@ public class Register {
 				// log some success message
 				HacksawLogger.log(LogLevel.DEBUG, "BlockSuperMelon loaded successfully.");
 			}
+
+			HacksawBlocks.carrot.block = new BlockCarrot(HacksawBlocks.carrot.blockId);
 			
 		//========= Register Each Block ==============
 			

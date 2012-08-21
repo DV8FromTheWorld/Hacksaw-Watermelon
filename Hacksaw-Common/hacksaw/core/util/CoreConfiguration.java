@@ -79,18 +79,6 @@ public class CoreConfiguration extends Configuration {
 				HacksawBlocks.carrot.blockId = prop.getInt();
 				HacksawBlocks.carrot.name = "Carrot Plant";
 				
-				prop = getOrCreateIntProperty("carrot2", Configuration.CATEGORY_BLOCK, nextBlockId());
-				HacksawBlocks.carrot.blockId = prop.getInt();
-				HacksawBlocks.carrot.name = "Carrot Plant2";
-				
-				prop = getOrCreateIntProperty("carrot3", Configuration.CATEGORY_BLOCK, nextBlockId());
-				HacksawBlocks.carrot.blockId = prop.getInt();
-				HacksawBlocks.carrot.name = "Carrot Plant3";
-				
-				prop = getOrCreateIntProperty("carrot4", Configuration.CATEGORY_BLOCK, nextBlockId());
-				HacksawBlocks.carrot.blockId = prop.getInt();
-				HacksawBlocks.carrot.name = "Carrot Plant4";
-				
 		//======================================== Food =========================================
 			//Gets the ID and Name for the "Carrot"
 				prop = getOrCreateIntProperty("food.carrot", Configuration.CATEGORY_ITEM, nextItemId());

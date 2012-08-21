@@ -15,6 +15,11 @@ public class BlockCarrot extends Block {
 		this.setStepSound(soundWoodFootstep);
 		this.setBlockName("carrot");
 	}
+	
+	public String getTextureFile() {
+		return "/hacksaw/textures/crops.png";
+	}
+	
 
     /**
      * Returns the ID of the items to drop on destruction.
