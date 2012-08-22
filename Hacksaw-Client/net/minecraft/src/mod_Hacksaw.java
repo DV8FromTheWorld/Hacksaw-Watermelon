@@ -44,6 +44,8 @@ public class mod_Hacksaw extends NetworkMod {
 	public void preloadTextures(){
 		MinecraftForgeClient.preloadTexture("/hacksaw/textures/items.png");
 		MinecraftForgeClient.preloadTexture("/hacksaw/textures/food.png");
+		MinecraftForgeClient.preloadTexture("/hacksaw/textures/crops.png");
+		MinecraftForgeClient.preloadTexture("/hacksaw/textures/seeds.png");
 	}
 	
 	public void modsLoaded(){
