@@ -18,6 +18,11 @@ public abstract class ItemCropSeed extends ItemSeeds {
 		super(id, blockId, blockToGrowOnId);
 	}
 	
+	// by default assume crops grow on tilled soil
+	public ItemCropSeed(int id, int blockId) {
+		this(id, blockId, Block.tilledField.blockID);
+	}
+
 	@Override
 	public Item setItemName(String name) {
 		String newname = "crop." + name;
