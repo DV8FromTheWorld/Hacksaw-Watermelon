@@ -56,7 +56,7 @@ public class BlockCarrot extends BlockBaseCrop {
 
 	@Override
 	public int getRenderType() {
-		return HacksawBlocks.carrot.renderId;
+		return HacksawBlocks.carrotCrop.renderId;
 	}
 
 	@Override

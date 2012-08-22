@@ -52,7 +52,7 @@ public class Register {
 				HacksawLogger.log(LogLevel.DEBUG, "BlockSuperMelon loaded successfully.");
 			}
 
-			HacksawBlocks.carrot.block = new BlockCarrot(HacksawBlocks.carrot.blockId);
+			HacksawBlocks.carrotCrop.block = new BlockCarrot(HacksawBlocks.carrotCrop.blockId);
 			
 		//========= Register Each Block ==============
 			
@@ -97,7 +97,7 @@ public class Register {
 			HacksawItems.appleSliced.item = new ItemAppleSliced(HacksawItems.appleSliced.itemId, 2, 0.15F, false);
 		
 		//---------Seeds----------
-			HacksawItems.carrotSeed.item = new ItemCarrotSeed(HacksawItems.carrotSeed.itemId);
+			HacksawItems.carrotSeed.item = new ItemCarrotSeed(HacksawItems.carrotSeed.itemId, HacksawBlocks.carrotCrop.blockId);
 	}
 
 	private static void registerItemNames() {

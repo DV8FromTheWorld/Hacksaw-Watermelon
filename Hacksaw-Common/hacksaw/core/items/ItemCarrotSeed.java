@@ -5,8 +5,8 @@ import hacksaw.core.HacksawBlocks;
 
 public class ItemCarrotSeed extends ItemCropSeed {
 
-	public ItemCarrotSeed(int id) {
-		super(id, HacksawBlocks.carrot.blockId);
+	public ItemCarrotSeed(int id, int blockId) {
+		super(id, blockId);
 		this.setMaxStackSize(64);
 		this.setItemName("carrot.seed");
 	}
