@@ -62,21 +62,21 @@ public class BlockCarrot extends BlockBaseCrop {
 	@Override
 	public ArrayList<ItemStack> getBlockDropped(World world, int x, int y,
 			int z, int metadata, int fortune) {
-		ArrayList<ItemStack> ret = new ArrayList<ItemStack>();
+		ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
 		
 		// drop 0-2 carrots
 		int numCarrots = (metadata * quantityDropped(world.rand)) / this.growthStages;
 		if( numCarrots > 0 ) {
-			ret.add(new ItemStack(HacksawItems.carrot.item,numCarrots));
+			drops.add(new ItemStack(HacksawItems.carrot.item, numCarrots));
 		}
 
 		for (int n = 0; n < 3 + fortune; n++) {
 			// 50% chance to drop a seed per growth 
 			if (world.rand.nextInt(this.growthStages*2) <= metadata) {
-				ret.add(new ItemStack(HacksawItems.carrotSeed.item));
+				drops.add(new ItemStack(HacksawItems.carrotSeed.item));
 			}
 		}
 
-		return ret;
+		return drops;
 	}
 }
