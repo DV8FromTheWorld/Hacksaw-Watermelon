@@ -19,7 +19,8 @@ public class BlockCarrot extends BlockBaseCrop {
 		this.setHardness(1.0F);
 		this.setStepSound(soundWoodFootstep);
 		this.setBlockName("carrot");
-		this.setTickRandomly(true);
+		this.setMinLight(9);
+		this.setBaseGrowthRate(1.0F);
 	}
 
 	/**

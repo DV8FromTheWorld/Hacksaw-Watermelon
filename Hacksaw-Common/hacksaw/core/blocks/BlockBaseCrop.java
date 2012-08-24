@@ -12,6 +12,8 @@ import net.minecraft.src.forge.IBonemealHandler;
 import net.minecraft.src.forge.ITextureProvider;
 
 public abstract class BlockBaseCrop extends BlockCrops implements IBonemealHandler {
+	// set on metadata to determine bonemeal state
+	protected static final int BIT_BONEMEAL = 0xF0;
 
 	// number of steps in growth - vanilla wheat has 7  
 	protected int growthStages = 7;
@@ -23,28 +25,47 @@ public abstract class BlockBaseCrop extends BlockCrops implements IBonemealHandl
 	protected BlockBaseCrop(int id, int blockIndexInTexture, int growthStages) {
 		super(id, blockIndexInTexture);
 		this.growthStages = growthStages;
+		this.setTickRandomly(true);
 	}
 	
 	public void setBaseGrowthRate( float growthRate ) {
 		baseGrowthRate = growthRate;
 	}
+	public void setMinLight( int minLight ) {
+		if( minLight < 0 ) minLight = 0;
+		if( minLight > 15 ) minLight = 15;
+		this.minLight = minLight;
+	}
+	
+	protected boolean isBonemealed(int meta) {
+		return (meta & BIT_BONEMEAL) == BIT_BONEMEAL;
+	}
+	protected int getGrowthLevel(int meta) {
+		return meta & ~BIT_BONEMEAL;
+	}
 	
 	@Override
 	public void updateTick(World world, int x, int z, int y, Random rng) {
-		// we don't want to call the base growth - because among other reasons it calls flower's growth, and likes to make things unspawn
-		//super.updateTick(world, x, z, y, rng);
+		/**
+		 * under no circumstances should we call super's updateTick() method:
+		 * - It contains largely identical logic, this means two ticks every tick
+		 * - It inherits behavior from flowers, which have a chance to unspawn in low light
+		 * 
+		 * //super.updateTick(world, x, z, y, rng);
+		 */
 
 		// only grow if it's light
 		if (world.getBlockLightValue(x, z + 1, y) >= this.minLight) {
-			int growthLevel = world.getBlockMetadata(x, z, y);
+			final int meta = world.getBlockMetadata(x, z, y);
+			final int growthLevel = getGrowthLevel(meta);
+			final boolean bonemeal = isBonemealed(meta);
 
 			if (growthLevel < this.growthStages) {
-				float growthRate = calculateGrowthRate(world, x, z, y);
+				final float growthRate = calculateGrowthRate(world, x, z, y, bonemeal);
 
 				if (rng.nextInt((int) (25.0F / growthRate) + 1) == 0) {
-					//System.out.println("growing to " + growthLevel);
-					++growthLevel;
-					world.setBlockMetadataWithNotify(x, z, y, growthLevel);
+					// it is safe to simply increment meta
+					world.setBlockMetadataWithNotify(x, z, y, meta + 1);
 				}
 			}
 		}
@@ -58,9 +79,10 @@ public abstract class BlockBaseCrop extends BlockCrops implements IBonemealHandl
      * NB: This method is directly adapted from the superclass with the exception that we provide a base rate to start with.
      *     We would just override the previous method but it is private for some rason.
      */
-    protected float calculateGrowthRate(World world, int x, int z, int y)
+    protected float calculateGrowthRate(World world, int x, int z, int y, boolean bonemeal)
     {
         float finalRate = this.baseGrowthRate;
+        
         int n = world.getBlockId(x, z, y - 1);
         int s = world.getBlockId(x, z, y + 1);
         int e = world.getBlockId(x - 1, z, y);
@@ -85,9 +107,12 @@ public abstract class BlockBaseCrop extends BlockCrops implements IBonemealHandl
                     }
                 }
 
-                // diagonal soil is only worth 25%
+                // adjacent soil is only worth 25%
                 if (i != x || j != y) {
                     bonus /= 4.0F;
+                } else if( bonemeal ) {
+                	// for ourselves, we apply a bonus equivalent to double-watering for being bonemealed
+                	bonus += 2.0F;
                 }
 
                 finalRate += bonus;
@@ -110,6 +135,7 @@ public abstract class BlockBaseCrop extends BlockCrops implements IBonemealHandl
     }
 	
     public int getBlockTextureFromSideAndMetadata(int side, int meta) {
+    	meta = getGrowthLevel(meta);
         if (meta < 0 || meta > this.growthStages) {
             meta = this.growthStages;
         }
@@ -134,7 +160,14 @@ public abstract class BlockBaseCrop extends BlockCrops implements IBonemealHandl
 
 	@Override
 	public boolean onUseBonemeal(World world, int blockID, int X, int Y, int Z) {
-		return false;
+		final int meta = world.getBlockMetadata(X, Y, Z);
+		if( isBonemealed(meta) ) {
+			return false;
+		} else {
+			// apply the bonemeal bit to our meta
+			world.setBlockMetadataWithNotify(X, Y, Z, meta | BIT_BONEMEAL);
+			return true;
+		}
 	}
 
 }
