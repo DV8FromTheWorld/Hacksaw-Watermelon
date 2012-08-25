@@ -4,7 +4,8 @@ import net.minecraft.src.Block;
 
 public enum HacksawBlocks {
 	//----------- Vegetation ------------
-	supermelon, 
+	supermelon,
+	appleSappling,
 	carrotCrop;
 
 	public Block block;

@@ -6,17 +6,19 @@ import hacksaw.core.HacksawItems;
 import hacksaw.core.MeatProvider;
 import hacksaw.core.blocks.BlockCarrot;
 import hacksaw.core.blocks.BlockSuperMelon;
-import hacksaw.core.items.ItemAppleSliced;
-import hacksaw.core.items.ItemCarrot;
-import hacksaw.core.items.ItemCarrotSeed;
-import hacksaw.core.items.ItemCarrotSliced;
 import hacksaw.core.items.ItemChefKnifeDull;
 import hacksaw.core.items.ItemChefKnifeSharp;
 import hacksaw.core.items.ItemKnifeSharpener;
-import hacksaw.core.items.ItemLambChopCooked;
-import hacksaw.core.items.ItemLambChopRaw;
-import hacksaw.core.items.ItemOrange;
-import hacksaw.core.items.ItemOrangeSliced;
+import hacksaw.core.items.food.ItemAppleGreen;
+import hacksaw.core.items.food.ItemAppleGreenSliced;
+import hacksaw.core.items.food.ItemAppleRedSliced;
+import hacksaw.core.items.food.ItemCarrot;
+import hacksaw.core.items.food.ItemCarrotSliced;
+import hacksaw.core.items.food.ItemLambChopCooked;
+import hacksaw.core.items.food.ItemLambChopRaw;
+import hacksaw.core.items.food.ItemOrange;
+import hacksaw.core.items.food.ItemOrangeSliced;
+import hacksaw.core.items.seeds.ItemCarrotSeed;
 import hacksaw.core.machines.GrillRecipes;
 import hacksaw.core.machines.JuicerRecipes;
 import hacksaw.core.util.HacksawLogger.LogLevel;
@@ -94,10 +96,14 @@ public class Register {
 			HacksawItems.lambChopCooked.item = new ItemLambChopCooked(HacksawItems.lambChopCooked.itemId, 7, 0.7F, false);
 			HacksawItems.orange.item = new ItemOrange(HacksawItems.orange.itemId, 4, 0.3F, false);
 			HacksawItems.orangeSliced.item = new ItemOrangeSliced(HacksawItems.orangeSliced.itemId, 2, 0.15F, false);
-			HacksawItems.appleSliced.item = new ItemAppleSliced(HacksawItems.appleSliced.itemId, 2, 0.15F, false);
-		
+			HacksawItems.appleRedSliced.item = new ItemAppleRedSliced(HacksawItems.appleRedSliced.itemId, 2, 0.15F, false);
+			HacksawItems.appleGreen.item = new ItemAppleGreen(HacksawItems.appleGreen.itemId, 4, 0.3F, false);
+			HacksawItems.appleGreenSliced.item = new ItemAppleGreenSliced(HacksawItems.appleGreenSliced.itemId, 2, 0.15F, false);
+			
+			
 		//---------Seeds----------
 			HacksawItems.carrotSeed.item = new ItemCarrotSeed(HacksawItems.carrotSeed.itemId, HacksawBlocks.carrotCrop.blockId);
+			//HacksawItems.appleSeed.item = new ItemAppleSeed(HacksawItems.appleSeed.itemId, HacksawBlocks.appleSappling.blockId);
 	}
 
 	private static void registerItemNames() {
@@ -156,8 +162,13 @@ public class Register {
 			});
 			
 		//recipe for sliced apple
-			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.appleSliced.item, 2), new Object[]{
+			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.appleRedSliced.item, 2), new Object[]{
 				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), Item.appleRed 
+			});
+			
+		//recipe for the sliced green apple
+			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.appleGreenSliced.item, 2), new Object[]{
+				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), HacksawItems.appleGreen.item
 			});
 	}
 	

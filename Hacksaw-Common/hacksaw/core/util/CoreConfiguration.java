@@ -111,9 +111,19 @@ public class CoreConfiguration extends Configuration {
 				HacksawItems.orangeSliced.name = "Sliced Orange";
 			
 			//Gets the ID for the "Sliced Apple"
-				prop = getOrCreateIntProperty("food.apple.sliced", Configuration.CATEGORY_ITEM, nextItemId());
-				HacksawItems.appleSliced.itemId = prop.getInt();
-				HacksawItems.appleSliced.name = "Sliced Apple";
+				prop = getOrCreateIntProperty("food.apple.red.sliced", Configuration.CATEGORY_ITEM, nextItemId());
+				HacksawItems.appleRedSliced.itemId = prop.getInt();
+				HacksawItems.appleRedSliced.name = "Sliced Apple";
+				
+			//Gets the ID for the "Green Apple"
+				prop = getOrCreateIntProperty("food.apple.green", Configuration.CATEGORY_ITEM, nextItemId());
+				HacksawItems.appleGreen.itemId = prop.getInt();
+				HacksawItems.appleGreen.name = "Green Apple";
+				
+			//Gets the ID for the "Sliced Green Apple"
+				prop = getOrCreateIntProperty("food.apple.green.sliced", Configuration.CATEGORY_ITEM, nextItemId());
+				HacksawItems.appleGreenSliced.itemId = prop.getInt();
+				HacksawItems.appleGreenSliced.name = "Sliced Green Apple";
 				
 		//======================================== Seeds ========================================
 			//Gets the ID for the "Carrot Seed"

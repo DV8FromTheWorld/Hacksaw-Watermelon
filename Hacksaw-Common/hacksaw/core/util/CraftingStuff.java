@@ -106,6 +106,8 @@ public class CraftingStuff {
 			 * Note: you need to use .item.shiftedIndex instead of .itemId because MC wont understand the ID correctly.
 			 */
 		containers.put(HacksawItems.chefKnifeSharp.item.shiftedIndex, HacksawItems.chefKnifeDull.item.shiftedIndex);
+		//containers.put(HacksawItems.appleRedSliced.item.shiftedIndex, HacksawItems.appleSeed.item.shiftedIndex);
+		//containers.put(HacksawItems.appleGreenSliced.item.shiftedIndex, HacksawItems.appleSeed.item.shiftedIndex);
 		
 		
 			/*

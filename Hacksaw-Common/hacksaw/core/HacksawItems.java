@@ -8,12 +8,15 @@ public enum HacksawItems {
 	carrotSliced,
 	orange,
 	orangeSliced,
-	appleSliced,
+	appleRedSliced,
+	appleGreen,
+	appleGreenSliced,
 	lambChopRaw,
 	lambChopCooked,
 	
 	//---------- Seeds ------------
 	carrotSeed,
+	appleSeed,
 	
 	//---------- Tools ------------
 	chefKnifeSharp,
