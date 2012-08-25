@@ -1,4 +1,6 @@
-package hacksaw.core.items;
+package hacksaw.core.items.food;
+
+import hacksaw.core.items.ItemBaseFood;
 
 public class ItemCarrot extends ItemBaseFood{
 

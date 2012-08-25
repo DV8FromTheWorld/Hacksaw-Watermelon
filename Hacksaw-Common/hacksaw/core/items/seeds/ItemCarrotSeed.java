@@ -1,7 +1,8 @@
-package hacksaw.core.items;
+package hacksaw.core.items.seeds;
 
 import net.minecraft.src.Block;
 import hacksaw.core.HacksawBlocks;
+import hacksaw.core.items.ItemCropSeed;
 
 public class ItemCarrotSeed extends ItemCropSeed {
 
