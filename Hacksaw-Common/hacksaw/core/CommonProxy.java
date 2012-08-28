@@ -1,10 +1,14 @@
 package hacksaw.core;
 
+import java.io.File;
+
 import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.World;
 import cpw.mods.fml.common.network.IGuiHandler;
 
 public class CommonProxy implements IGuiHandler{
+	
+	public static File path = null;
 
 	public void preloadTextures() {
 	

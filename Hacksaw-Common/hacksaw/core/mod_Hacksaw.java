@@ -7,6 +7,9 @@ import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PostInit;
 import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
 import hacksaw.core.CommonProxy;
@@ -27,23 +30,22 @@ import net.minecraft.src.ModLoader;
 
 public class mod_Hacksaw{
 	
-	@SidedProxy(clientSide = "hacksaw.core.ClientProxy", serverSide = "shadowmage.catapult.CommonProxy")
+	@SidedProxy(clientSide = "hacksaw.core.ClientProxy", serverSide = "hacksaw.core.CommonProxy")
 	public static CommonProxy proxy;
 	
 	public static boolean initialized = false;
-	public static File path = Minecraft.getMinecraftDir();
 	
 	@PreInit
-	public void preInitialization(){
+	public void preInitialization(FMLPreInitializationEvent event){
 		
 	}
 
 	@Init
-	public void initialize(){
-		if(!mod_Hacksaw.initialized && !ModLoader.isModLoaded("mod_Hacksaw")){
+	public void Initialize(FMLInitializationEvent event){
+		if(!mod_Hacksaw.initialized /*&& !ModLoader.isModLoaded("mod_Hacksaw")*/){
 			HacksawLogger.log("Loading " + CoreConfiguration.name + "...");
 			proxy.preloadTextures();
-			CoreConfiguration.init(mod_Hacksaw.path, "config/hacksaw/core.cfg");
+			CoreConfiguration.init(proxy.path, "config/hacksaw/core.cfg");
 			//HacksawLogger.checkDebugSetting();  <-- commented until we can get it to work correctly :3
 			Register.registerItemsAndBlocksAndRecipes();
 			PluginLoader.checkPlugins();
@@ -56,7 +58,7 @@ public class mod_Hacksaw{
 	}
 	
 	@PostInit
-	public void postInitialization(){
+	public void postInitialization(FMLPostInitializationEvent event){
 		CraftingStuff.init();
 	}
 	
