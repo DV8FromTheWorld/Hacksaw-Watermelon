@@ -11,12 +11,12 @@ import java.util.logging.Level;
 
 import net.minecraft.src.Block;
 import net.minecraft.src.Item;
-import net.minecraft.src.forge.Configuration;
-import net.minecraft.src.forge.Property;
+import net.minecraftforge.common.Configuration;
+import net.minecraftforge.common.Property;
 
 public class CoreConfiguration extends Configuration {
-	private static final String version = "v0.1";
-	private static final String name = "Hacksaw-Watermelon";
+	public static final String version = "v0.1";
+	public static final String name = "Hacksaw-Watermelon";
 	
 	private static final int START_BLOCK_ID = 1200;
 	private static final int START_ITEM_ID = 1000;
@@ -154,19 +154,11 @@ public class CoreConfiguration extends Configuration {
 		}
 		return false;
 	}
-
-	public static String getVersion() {
-		return version;
-	}
-
-	public static String getName() {
-		return name;
-	}
 	
 	@Override
 	public void save() {
 		Property versionProp = getOrCreateProperty("version", Configuration.CATEGORY_GENERAL, "0.0");
-		versionProp.value = getVersion();
+		versionProp.value = version;
 		super.save();
 	}
 	

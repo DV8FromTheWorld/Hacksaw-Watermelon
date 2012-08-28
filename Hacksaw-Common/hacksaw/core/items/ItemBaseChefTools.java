@@ -2,14 +2,15 @@ package hacksaw.core.items;
 
 import java.util.ArrayList;
 
+import net.minecraft.src.CreativeTabs;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
-import net.minecraft.src.forge.ITextureProvider;
 
-public abstract class ItemBaseChefTools extends Item implements ITextureProvider {
+public abstract class ItemBaseChefTools extends Item{
 
 	protected ItemBaseChefTools(int id) {
 		super(id);
+		this.setTabToDisplayOn(CreativeTabs.tabFood);
 	}
 	
 	@Override
@@ -32,10 +33,6 @@ public abstract class ItemBaseChefTools extends Item implements ITextureProvider
 		return false;
 	}
 	
-	@Override
-	public void addCreativeItems(ArrayList itemList){
-		itemList.add(new ItemStack(this, 1));
-	}
 	
 	@Override
 	public String getTextureFile(){

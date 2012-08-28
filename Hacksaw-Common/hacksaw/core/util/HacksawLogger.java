@@ -16,11 +16,11 @@ public class HacksawLogger extends Level{
 
 	}
 	
-	public static void checkDebugSetting(){
+	/*public static void checkDebugSetting(){
 
 		if(CoreConfiguration.getPreference(CoreConfiguration.ENABLE_DEBUG) == true){
 			Level k;
-			k = Loader.log.getLevel();
+			k = FMLLogger.log.getLevel();
 			System.out.println(String.valueOf(k));
 			Loader.log.setLevel(Level.FINER);
 			k = ModLoader.getLogger().getLevel();
@@ -28,7 +28,7 @@ public class HacksawLogger extends Level{
 			ModLoader.getLogger().finer("yo!");
 			System.out.println("yo!");
 		}
-	}
+	}*/
 	
 	public class LogLevel {
 		public static final int INFO = 0;

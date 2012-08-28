@@ -1,5 +1,6 @@
-package hacksaw.core.items;
+package hacksaw.core.items.tools;
 
+import hacksaw.core.items.ItemBaseChefTools;
 import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;

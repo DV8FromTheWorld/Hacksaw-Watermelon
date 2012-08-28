@@ -1,7 +1,8 @@
 package hacksaw.core.plugins;
 
+import cpw.mods.fml.common.network.NetworkMod;
 import hacksaw.core.util.HacksawLogger;
-import net.minecraft.src.forge.NetworkMod;
+
 
 public abstract class HacksawPlugin {
 	protected NetworkMod mod;
@@ -25,7 +26,8 @@ public abstract class HacksawPlugin {
 		try {
 			clazz = (Class<NetworkMod>) Class.forName( className );
 			NetworkMod mod = clazz.newInstance();
-			HacksawLogger.log(getClass().getSimpleName()+" - Found "+plugin_name+" version "+mod.getVersion() );
+			//@allaryin, this needs to be reworked due to FML changes
+			//HacksawLogger.log(getClass().getSimpleName()+" - Found "+plugin_name+" version "+mod.getVersion() );
 			return mod;
 		} catch (InstantiationException e) {
 			// TODO Auto-generated catch block

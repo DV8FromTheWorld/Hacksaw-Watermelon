@@ -8,10 +8,8 @@ import net.minecraft.src.BlockCrops;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.Material;
 import net.minecraft.src.World;
-import net.minecraft.src.forge.IBonemealHandler;
-import net.minecraft.src.forge.ITextureProvider;
 
-public abstract class BlockBaseCrop extends BlockCrops implements IBonemealHandler {
+public abstract class BlockBaseCrop extends BlockCrops{
 	// set on metadata to determine bonemeal state
 	protected static final int BIT_BONEMEAL = 0xF0;
 
@@ -158,7 +156,10 @@ public abstract class BlockBaseCrop extends BlockCrops implements IBonemealHandl
 		return "/hacksaw/textures/crops.png";
 	}
 
-	@Override
+	
+	//needs to be reworked
+	
+	/*@Override
 	public boolean onUseBonemeal(World world, int blockID, int X, int Y, int Z) {
 		final int meta = world.getBlockMetadata(X, Y, Z);
 		if( isBonemealed(meta) ) {
@@ -168,6 +169,6 @@ public abstract class BlockBaseCrop extends BlockCrops implements IBonemealHandl
 			world.setBlockMetadataWithNotify(X, Y, Z, meta | BIT_BONEMEAL);
 			return true;
 		}
-	}
+	} */
 
 }

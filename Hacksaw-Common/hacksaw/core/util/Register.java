@@ -1,14 +1,16 @@
 package hacksaw.core.util;
 
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 import hacksaw.core.BlockRemover;
 import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
 import hacksaw.core.MeatProvider;
 import hacksaw.core.blocks.BlockCarrot;
 import hacksaw.core.blocks.BlockSuperMelon;
-import hacksaw.core.items.ItemChefKnifeDull;
-import hacksaw.core.items.ItemChefKnifeSharp;
-import hacksaw.core.items.ItemKnifeSharpener;
+import hacksaw.core.items.tools.ItemChefKnifeDull;
+import hacksaw.core.items.tools.ItemChefKnifeSharp;
+import hacksaw.core.items.tools.ItemKnifeSharpener;
 import hacksaw.core.items.food.ItemAppleGreen;
 import hacksaw.core.items.food.ItemAppleGreenSliced;
 import hacksaw.core.items.food.ItemAppleRedSliced;
@@ -26,7 +28,7 @@ import net.minecraft.src.Block;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.ModLoader;
-import net.minecraft.src.forge.MinecraftForge;
+import net.minecraftforge.common.MinecraftForge;
 
 public class Register {
 	
@@ -63,7 +65,7 @@ public class Register {
 				// Check the block is initialized
 				if (blocks.block != null) {
 					// Register the block with ModLoader
-					ModLoader.registerBlock(blocks.block);
+					GameRegistry.registerBlock(blocks.block);
 				}
 			}
 	}
@@ -76,7 +78,7 @@ public class Register {
 				// Check that the block is initialized and the block name is set
 				if (blocks.block != null && blocks.name != null) {
 					// Register the name of the block with ModLoader
-					ModLoader.addName(blocks.block, blocks.name);
+					LanguageRegistry.addName(blocks.block, blocks.name);
 				}
 			}
 	}
@@ -114,7 +116,7 @@ public class Register {
 				// Check that the item is initialized and the item name is set
 				if (items.item != null & items.name != null) {
 					// Register the name of the item with ModLoader
-					ModLoader.addName(items.item, items.name);
+					LanguageRegistry.addName(items.item, items.name);
 				}
 			}
 	}
@@ -123,12 +125,12 @@ public class Register {
 		//==================== Registers the shaped-recipes ====================
 		
 		//recipe for creating the Chef knife.  Contains full durability, so it is the "Sharp Chef Knife"
-			ModLoader.addRecipe(new ItemStack(HacksawItems.chefKnifeSharp.item, 1), new Object[]{
+			GameRegistry.addRecipe(new ItemStack(HacksawItems.chefKnifeSharp.item, 1), new Object[]{
 				"  Y", " XY", "XY ", Character.valueOf('X'), Item.stick, Character.valueOf('Y'), Item.ingotIron
 			});
 		
 		//recipe for creating a Knife Sharpener
-			ModLoader.addRecipe(new ItemStack(HacksawItems.knifeSharpener.item, 1), new Object[]{
+			GameRegistry.addRecipe(new ItemStack(HacksawItems.knifeSharpener.item, 1), new Object[]{
 				"X X", "YXY", "ZZZ", Character.valueOf('X'), Item.flint, Character.valueOf('Y'), Block.cobblestone, Character.valueOf('Z'), Block.planks
 			});	
 	}
@@ -137,44 +139,44 @@ public class Register {
 		//=================== Registers the shapeless-recipes ====================
 			
 		//recipe for using the Chef knife to cut melon blocks to get melon slices
-			ModLoader.addShapelessRecipe(new ItemStack(Item.melon, 4), new Object[]{
+			GameRegistry.addShapelessRecipe(new ItemStack(Item.melon, 4), new Object[]{
 				HacksawBlocks.supermelon.block, new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1)//Note: a new itemstack is made here because you want to be able to use the item no matter what the damage value
 			});
 		
 		//recipe for "sharpening" the Dull Chef knife
-			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.chefKnifeSharp.item), new Object[]{
+			GameRegistry.addShapelessRecipe(new ItemStack(HacksawItems.chefKnifeSharp.item), new Object[]{
 				new ItemStack(HacksawItems.chefKnifeDull.item, 1, -1), new ItemStack(HacksawItems.knifeSharpener.item, 1, -1)
 			});
 			
 		//carrot seeds come from carrots
-			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.carrotSeed.item), new Object[]{
+			GameRegistry.addShapelessRecipe(new ItemStack(HacksawItems.carrotSeed.item), new Object[]{
 				new ItemStack(HacksawItems.carrot.item, 1, -1)
 			});
 			
 		//recipe for sliced carrots
-			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.carrotSliced.item, 2), new Object[]{
+			GameRegistry.addShapelessRecipe(new ItemStack(HacksawItems.carrotSliced.item, 2), new Object[]{
 				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), HacksawItems.carrot.item 
 			});
 			
 		//recipe for sliced orange
-			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.orangeSliced.item, 2), new Object[]{
+			GameRegistry.addShapelessRecipe(new ItemStack(HacksawItems.orangeSliced.item, 2), new Object[]{
 				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), HacksawItems.orange.item
 			});
 			
 		//recipe for sliced apple
-			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.appleRedSliced.item, 2), new Object[]{
+			GameRegistry.addShapelessRecipe(new ItemStack(HacksawItems.appleRedSliced.item, 2), new Object[]{
 				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), Item.appleRed 
 			});
 			
 		//recipe for the sliced green apple
-			ModLoader.addShapelessRecipe(new ItemStack(HacksawItems.appleGreenSliced.item, 2), new Object[]{
+			GameRegistry.addShapelessRecipe(new ItemStack(HacksawItems.appleGreenSliced.item, 2), new Object[]{
 				new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1), HacksawItems.appleGreen.item
 			});
 	}
 	
 	private static void registerHandlers(){
 		//================= Registers Forge Handlers =========================
-		MinecraftForge.registerEntityLivingHandler(new MeatProvider());
+		MinecraftForge.EVENT_BUS.register(new MeatProvider());
 		
 	}
 	

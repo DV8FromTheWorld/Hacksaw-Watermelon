@@ -5,11 +5,13 @@ import hacksaw.core.HacksawItems;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import net.minecraft.src.forge.ICraftingHandler;
-import net.minecraft.src.forge.MinecraftForge;
+import cpw.mods.fml.common.ICraftingHandler;
+import cpw.mods.fml.common.registry.GameRegistry;
+
 import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.IInventory;
+import net.minecraftforge.common.MinecraftForge;
 
 public class CraftingStuff {
 	
@@ -26,7 +28,7 @@ public class CraftingStuff {
     {
         ICraftingHandler ich = new ICraftingHandler()
         {
-            public void onTakenFromCrafting(EntityPlayer playerCrafting, ItemStack itemstack, IInventory craftingInventory)
+            public void onCrafting(EntityPlayer playerCrafting, ItemStack itemstack, IInventory craftingInventory)
             {
             	//the for loop loops through all the slots in the inventory
                 for (int totalInventorySize = 0; totalInventorySize < craftingInventory.getSizeInventory(); totalInventorySize++)
@@ -85,8 +87,12 @@ public class CraftingStuff {
                     }
                 }
             }
+			@Override
+			public void onSmelting(EntityPlayer player, ItemStack item) {				
+			}
+			
         };
-        MinecraftForge.registerCraftingHandler(ich);
+        GameRegistry.registerCraftingHandler(ich);
     }
 	
 	public static void AddItemsForCrazyCraftingSetup(){
