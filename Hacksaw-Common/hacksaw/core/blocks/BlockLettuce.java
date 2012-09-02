@@ -12,13 +12,13 @@ import net.minecraft.src.ItemStack;
 import net.minecraft.src.Material;
 import net.minecraft.src.World;
 
-public class BlockCarrot extends BlockBaseCrop {
+public class BlockLettuce extends BlockBaseCrop {
 
-	public BlockCarrot(int id) {
-		super(id, 0, 4);
+	public BlockLettuce(int id) {
+		super(id, 4, 4);
 		this.setHardness(1.0F);
 		this.setStepSound(soundWoodFootstep);
-		this.setBlockName("carrot");
+		this.setBlockName("lettuce");
 		this.setMinLight(9);
 		this.setBaseGrowthRate(1.0F);
 	}
@@ -28,9 +28,7 @@ public class BlockCarrot extends BlockBaseCrop {
 	 */
 	@Override
 	public int idDropped(int par1, Random par2Random, int par3) {
-		// You must use shifted index as the Item ID is - 256 on the 'actual'
-		// value
-		return HacksawItems.carrot.item.shiftedIndex;
+		return HacksawItems.lettuce.item.shiftedIndex;
 	}
 
 	/**
@@ -38,7 +36,7 @@ public class BlockCarrot extends BlockBaseCrop {
 	 */
 	@Override
 	public int quantityDropped(Random par1Random) {
-		return 2;
+		return 1;
 	}
 
 	/**
@@ -57,7 +55,7 @@ public class BlockCarrot extends BlockBaseCrop {
 
 	@Override
 	public int getRenderType() {
-		return HacksawBlocks.carrotCrop.renderId;
+		return HacksawBlocks.lettuceCrop.renderId;
 	}
 
 	@Override
@@ -66,16 +64,13 @@ public class BlockCarrot extends BlockBaseCrop {
 		ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
 		
 		final int growth = this.getGrowthLevel(metadata);
-		// drop 0-2 carrots
-		int numCarrots = (growth * quantityDropped(world.rand)) / this.growthStages;
-		if( numCarrots > 0 ) {
-			drops.add(new ItemStack(HacksawItems.carrot.item, numCarrots));
+		if( growth == this.growthStages ) {
+			drops.add(new ItemStack(HacksawItems.lettuce.item, 1));
 		}
 
 		for (int n = 0; n < 3 + fortune; n++) {
-			// 50% chance to drop a seed per growth 
-			if (world.rand.nextInt(this.growthStages*2) <= growth) {
-				drops.add(new ItemStack(HacksawItems.carrotSeed.item));
+			if (world.rand.nextInt(this.growthStages) <= growth) {
+				drops.add(new ItemStack(HacksawItems.lettuceSeed.item));
 			}
 		}
 

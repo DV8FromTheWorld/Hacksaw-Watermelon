@@ -6,6 +6,8 @@ public enum HacksawItems {
 	//----------- Food ------------
 	carrot,
 	carrotSliced,
+	lettuce,
+	lettuceSliced,
 	orange,
 	orangeSliced,
 	appleRedSliced,
@@ -17,6 +19,7 @@ public enum HacksawItems {
 	//---------- Seeds ------------
 	carrotSeed,
 	appleSeed,
+	lettuceSeed,
 	
 	//---------- Tools ------------
 	chefKnifeSharp,

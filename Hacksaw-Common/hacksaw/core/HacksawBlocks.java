@@ -6,7 +6,8 @@ public enum HacksawBlocks {
 	//----------- Vegetation ------------
 	supermelon,
 	appleSappling,
-	carrotCrop;
+	carrotCrop,
+	lettuceCrop;
 
 	public Block block;
 	public int blockId;

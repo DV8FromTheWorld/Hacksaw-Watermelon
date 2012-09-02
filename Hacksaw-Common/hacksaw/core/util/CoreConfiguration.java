@@ -79,6 +79,10 @@ public class CoreConfiguration extends Configuration {
 				HacksawBlocks.carrotCrop.blockId = prop.getInt();
 				HacksawBlocks.carrotCrop.name = "Carrot Plant";
 				
+				prop = getOrCreateIntProperty("lettuce.crop", Configuration.CATEGORY_BLOCK, nextBlockId());
+				HacksawBlocks.lettuceCrop.blockId = prop.getInt();
+				HacksawBlocks.lettuceCrop.name = "Lettuce Plant";
+				
 		//======================================== Food =========================================
 			//Gets the ID and Name for the "Carrot"
 				prop = getOrCreateIntProperty("food.carrot", Configuration.CATEGORY_ITEM, nextItemId());
@@ -89,6 +93,16 @@ public class CoreConfiguration extends Configuration {
 				prop = getOrCreateIntProperty("food.carrot.sliced", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.carrotSliced.itemId = prop.getInt();
 				HacksawItems.carrotSliced.name = "Sliced Carrots";
+		
+			//Gets the ID and Name for the "Lettuce"
+				prop = getOrCreateIntProperty("food.lettuce", Configuration.CATEGORY_ITEM, nextItemId());
+				HacksawItems.lettuce.itemId = prop.getInt();
+				HacksawItems.lettuce.name = "Lettuce";
+		
+			//Gets the ID for the "Sliced Lettuce"
+				prop = getOrCreateIntProperty("food.lettuce.sliced", Configuration.CATEGORY_ITEM, nextItemId());
+				HacksawItems.lettuceSliced.itemId = prop.getInt();
+				HacksawItems.lettuceSliced.name = "Sliced Lettuce";
 				
 			//Gets the ID for the "Raw Lamb Chop"
 				prop = getOrCreateIntProperty("food.lamb.chop.raw", Configuration.CATEGORY_ITEM, nextItemId());
@@ -130,6 +144,10 @@ public class CoreConfiguration extends Configuration {
 				prop = getOrCreateIntProperty("food.carrot.seed", Configuration.CATEGORY_ITEM, nextItemId());
 				HacksawItems.carrotSeed.itemId = prop.getInt();
 				HacksawItems.carrotSeed.name = "Carrot Seed";
+				
+				prop = getOrCreateIntProperty("food.lettuce.seed", Configuration.CATEGORY_ITEM, nextItemId());
+				HacksawItems.lettuceSeed.itemId = prop.getInt();
+				HacksawItems.lettuceSeed.name = "Lettuce Seed";
 				
 		//======================================== Tools ========================================
 			//Gets the ID for the "Sharp Chef Knife"
