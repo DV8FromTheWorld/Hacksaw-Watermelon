@@ -1,7 +1,8 @@
-package hacksaw.core.blocks;
+package hacksaw.core.blocks.crops;
 
 import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
+import hacksaw.core.blocks.BlockBaseCrop;
 
 import java.util.ArrayList;
 import java.util.Random;
