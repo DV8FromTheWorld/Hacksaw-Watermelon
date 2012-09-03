@@ -7,8 +7,12 @@ public enum HacksawBlocks {
 	supermelon,
 	appleSappling,
 	carrotCrop,
-	lettuceCrop;
-
+	lettuceCrop,
+	
+	//----------- Machines --------------
+	grill;
+	
+	
 	public Block block;
 	public int blockId;
 	public String name;

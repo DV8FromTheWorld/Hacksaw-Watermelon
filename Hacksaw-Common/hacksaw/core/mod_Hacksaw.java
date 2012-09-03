@@ -30,6 +30,8 @@ import net.minecraft.src.ModLoader;
 
 public class mod_Hacksaw{
 	
+	public static mod_Hacksaw INSTANCE;
+	
 	@SidedProxy(clientSide = "hacksaw.core.ClientProxy", serverSide = "hacksaw.core.CommonProxy")
 	public static CommonProxy proxy;
 	
