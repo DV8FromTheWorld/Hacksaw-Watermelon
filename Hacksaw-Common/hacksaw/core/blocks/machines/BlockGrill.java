@@ -33,19 +33,15 @@ public class BlockGrill extends BlockContainer{
     
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int par6, float par7, float par8, float par9)
     {
-        if (world.isRemote){
-            return true;
-        }
-        else{
-            TileEntityGrill var10 = (TileEntityGrill) world.getBlockTileEntity(x, y, z);
-            //TileEntityFurnace var10 = (TileEntityFurnace) world.getBlockTileEntity(x, y, z);
-            
-            if (var10 != null){
-				player.openGui(mod_Hacksaw.INSTANCE, HacksawGuiIds.GRILL, world, x, y, z);
-                //player.displayGUIFurnace(var10);
-            }
-            return true;
-        }
+    	TileEntityGrill var10 = (TileEntityGrill) world.getBlockTileEntity(x, y, z);
+    	
+    	if(!world.isRemote){
+    			player.openGui(mod_Hacksaw.INSTANCE, HacksawGuiIds.GRILL, world, x, y, z);
+    			return true;
+    	}else{
+    		return false;
+    	}
+    	
     }    
     
 }
