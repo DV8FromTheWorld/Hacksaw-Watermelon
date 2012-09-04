@@ -70,6 +70,17 @@ public class CoreConfiguration extends Configuration {
 				prop.comment = "Attempt to automatically resolve item/block ID conflicts (default: false)";
 				autoresolve = prop.getBoolean(false);
 				
+		//======================================== Machines ===========================================
+		/*
+		 * 		prop = getOrCreateIntProperty("grill", Configuration.CATEGORY_BLOCK, nextBlockId());
+		 *		HacksawBlocks.grill.blockId = prop.getInt();
+		 *		HacksawBlocks.grill.name = "Grill";
+		 *
+		 *		prop = getOrCreateIntProperty("grill.electric", Configuration.CATEGORY_BLOCK, nextBlockId());
+		 *		HacksawBlocks.grillElectric.blockId = prop.getInt();
+		 *		HacksawBlocks.grillElectric.name = "Electric Grill";
+		 *
+		 */
 		//======================================== Vegetation =========================================
 				prop = getOrCreateIntProperty("supermelon", Configuration.CATEGORY_BLOCK, 103);	// intentionally clobbering vanilla melon
 				HacksawBlocks.supermelon.blockId = prop.getInt();

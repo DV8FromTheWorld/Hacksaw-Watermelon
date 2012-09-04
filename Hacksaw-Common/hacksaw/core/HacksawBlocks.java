@@ -10,7 +10,8 @@ public enum HacksawBlocks {
 	lettuceCrop,
 	
 	//----------- Machines --------------
-	grill;
+	grill,
+	grillElectric;
 	
 	
 	public Block block;

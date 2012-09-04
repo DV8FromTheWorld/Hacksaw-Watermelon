@@ -23,7 +23,7 @@ public class BlockGrill extends BlockContainer{
 
 	@Override
 	public TileEntity createNewTileEntity(World var1) {
-		return null;
+		return new TileEntityGrill();
 	}
 	
     public int idDropped(int par1, Random par2Random, int par3)
@@ -42,6 +42,7 @@ public class BlockGrill extends BlockContainer{
     		return false;
     	}
     	
-    }    
+    }  
+    
     
 }
