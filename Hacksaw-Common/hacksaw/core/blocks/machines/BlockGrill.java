@@ -1,6 +1,7 @@
 package hacksaw.core.blocks.machines;
 
 import hacksaw.core.HacksawBlocks;
+import hacksaw.core.HacksawGuiIds;
 import hacksaw.core.mod_Hacksaw;
 import hacksaw.core.machines.tileentities.TileEntityGrill;
 
@@ -32,21 +33,17 @@ public class BlockGrill extends BlockContainer{
     
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int par6, float par7, float par8, float par9)
     {
-        if (world.isRemote)
-        {
+        if (world.isRemote){
             return true;
         }
-        else
-        {
+        else{
             TileEntityGrill var10 = (TileEntityGrill) world.getBlockTileEntity(x, y, z);
             //TileEntityFurnace var10 = (TileEntityFurnace) world.getBlockTileEntity(x, y, z);
             
-            if (var10 != null)
-            {
-				player.openGui(mod_Hacksaw.INSTANCE, 0, world, x, y, z);
+            if (var10 != null){
+				player.openGui(mod_Hacksaw.INSTANCE, HacksawGuiIds.GRILL, world, x, y, z);
                 //player.displayGUIFurnace(var10);
             }
-
             return true;
         }
     }    
