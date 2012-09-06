@@ -1,8 +1,10 @@
 package hacksaw.core.items.food;
 
+import hacksaw.api.IGrillable;
+import hacksaw.core.HacksawItems;
 import hacksaw.core.items.ItemBaseFood;
 
-public class ItemLambChopRaw extends ItemBaseFood {
+public class ItemLambChopRaw extends ItemBaseFood implements IGrillable{
 
 	public ItemLambChopRaw(int id, int foodHealAmount, float saturationAmount, boolean isWolfsFavoriteMeat) {
 		super(id, foodHealAmount, saturationAmount, isWolfsFavoriteMeat);
@@ -15,4 +17,15 @@ public class ItemLambChopRaw extends ItemBaseFood {
 	public boolean shouldRotateAroundWhenRendering() {
 		return false;
 	}
+
+	@Override
+	public int getCookingTime() {
+		return -1;
+	}
+
+	@Override
+	public int getCookedItemId() {
+		return HacksawItems.lambChopCooked.item.shiftedIndex;
+	}
+
 }
