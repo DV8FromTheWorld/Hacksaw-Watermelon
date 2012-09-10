@@ -16,7 +16,7 @@ public abstract class ItemCropSeed extends ItemSeeds {
 
 	public ItemCropSeed(int id, int blockId, int blockToGrowOnId) {
 		super(id, blockId, blockToGrowOnId);
-		this.setTabToDisplayOn(CreativeTabs.tabAllSearch);
+		//this.setTabToDisplayOn(CreativeTabs.tabAllSearch);
 	}
 	
 	// by default assume crops grow on tilled soil

@@ -10,15 +10,19 @@ import hacksaw.core.blocks.*;
 import hacksaw.core.blocks.crops.BlockCarrot;
 import hacksaw.core.blocks.crops.BlockLettuce;
 import hacksaw.core.blocks.crops.BlockSuperMelon;
+import hacksaw.core.blocks.machines.BlockGrill;
 import hacksaw.core.items.tools.*;
 import hacksaw.core.items.food.*;
 import hacksaw.core.items.seeds.*;
 import hacksaw.core.machines.GrillRecipes;
 import hacksaw.core.machines.JuicerRecipes;
+import hacksaw.core.machines.tileentities.TileEntityGrill;
+import hacksaw.core.machines.tileentities.TileEntityGrillElectric;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 import net.minecraft.src.Block;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
+import net.minecraft.src.Material;
 import net.minecraft.src.ModLoader;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -50,7 +54,10 @@ public class Register {
 
 			HacksawBlocks.carrotCrop.block = new BlockCarrot(HacksawBlocks.carrotCrop.blockId);
 			HacksawBlocks.lettuceCrop.block = new BlockLettuce(HacksawBlocks.lettuceCrop.blockId);
-			
+/** PLACEHOLDERS
+			HacksawBlocks.grill.block = new BlockGrill(HacksawBlocks.grill.blockId, TileEntityGrill.class, Material.iron);
+			HacksawBlocks.grillElectric.block = new BlockGrill(HacksawBlocks.grillElectric.blockId, TileEntityGrillElectric.class, Material.iron);
+**/
 		//========= Register Each Block ==============
 			
 			// for each Block within the enum (HacksawBlocks)
