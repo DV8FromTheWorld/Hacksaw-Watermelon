@@ -21,6 +21,10 @@ public class RecipeRemover {
 	// set of recipes to remove
 	private static Set<Integer> recipeSet = new HashSet<Integer>();
 
+	private static void flushItems() {
+		recipeSet.clear();
+	}
+	
 	public static void registerItemRecipeToRemove(Object object) {
 		// Checks if object being parsed is a Block or an Item and adds to the Set accordingly
 		
@@ -34,6 +38,10 @@ public class RecipeRemover {
 
 	// set of smelting recipes to remove
 	private static Set<Integer> smeltingSet = new HashSet<Integer>();
+
+	private static void flushSmelting() {
+		smeltingSet.clear();
+	}
 
 	public static void registerItemSmeltingToRemove(Object object) {
 		// Checks if object being parsed is a Block or an Item and adds to the Set accordingly
@@ -49,6 +57,7 @@ public class RecipeRemover {
 	private static void removeCrafting() {
 
 		// remove everything from the list
+		@SuppressWarnings("unchecked")
 		List<IRecipe> recipes = CraftingManager
 				.getInstance()
 					.getRecipeList();
@@ -57,7 +66,7 @@ public class RecipeRemover {
 		while (it.hasNext()) {
 			IRecipe recipe = it.next();
 			ItemStack output = recipe.getRecipeOutput();
-			if (recipeSet.contains(output.itemID)) {
+			if (output != null && recipeSet.contains(output.itemID)) {
 				matches.add(recipe);
 			}
 		}
@@ -65,10 +74,12 @@ public class RecipeRemover {
 			HacksawLogger.log(LogLevel.INFO, "Removing recipe for " + recipe);
 			recipes.remove(recipe);
 		}
+		flushItems();
 	}
 
 	private static void removeSmelting() {
 		// TODO: repeat above but with FurnaceRecipes
+		flushSmelting();
 	}
 
 	public static void removeVanillaRecipes() {

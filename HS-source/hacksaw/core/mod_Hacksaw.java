@@ -51,10 +51,10 @@ public class mod_Hacksaw{
 			HacksawLogger.log("Loading " + CoreConfiguration.name + "...");
 			proxy.preloadTextures();
 			CoreConfiguration.init(proxy.path, "config/hacksaw/core.cfg");
+			RecipeRemover.removeVanillaRecipes();
 			//HacksawLogger.checkDebugSetting();  <-- commented until we can get it to work correctly :3
 			Register.registerItemsAndBlocksAndRecipes();
 			PluginLoader.checkPlugins();
-			RecipeRemover.removeVanillaRecipes();
 			mod_Hacksaw.initialized = true;
 			HacksawLogger.log(CoreConfiguration.name + " " +CoreConfiguration.version+ " has successfully loaded");
 		}else{
