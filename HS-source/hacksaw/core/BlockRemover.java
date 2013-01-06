@@ -1,9 +1,9 @@
 package hacksaw.core;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemBlock;
 import hacksaw.core.util.HacksawLogger;
 import hacksaw.core.util.HacksawLogger.LogLevel;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 
 public class BlockRemover {
 	
@@ -11,8 +11,8 @@ public class BlockRemover {
 		// if the the block in blocksList with the blockID of the oldBlock is initialized
 		if (Block.blocksList[oldBlock.blockID] != null) {
 			// Checks if the block is also has an ItemBlock associated with it
-			if (ItemBlock.itemsList[oldBlock.blockID] != null) {
-				ItemBlock.itemsList[oldBlock.blockID] = null;
+			if (Item.itemsList[oldBlock.blockID] != null) {
+				Item.itemsList[oldBlock.blockID] = null;
 			}
 			// Set the block in the blocksList to null
 			Block.blocksList[oldBlock.blockID] = null;

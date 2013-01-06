@@ -1,7 +1,7 @@
 package hacksaw.core.plugins;
 
-import cpw.mods.fml.common.network.NetworkMod;
 import hacksaw.core.util.HacksawLogger;
+import cpw.mods.fml.common.network.NetworkMod;
 
 
 public abstract class HacksawPlugin {

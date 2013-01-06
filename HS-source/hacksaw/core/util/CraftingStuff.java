@@ -5,12 +5,11 @@ import hacksaw.core.HacksawItems;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.ICraftingHandler;
 import cpw.mods.fml.common.registry.GameRegistry;
-
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.inventory.IInventory;
 
 public class CraftingStuff {
 	

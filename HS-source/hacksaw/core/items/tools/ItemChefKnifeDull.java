@@ -1,7 +1,7 @@
 package hacksaw.core.items.tools;
 
-import net.minecraft.item.ItemStack;
 import hacksaw.core.items.ItemBaseChefTools;
+import net.minecraft.item.ItemStack;
 
 public class ItemChefKnifeDull extends ItemBaseChefTools {
 	

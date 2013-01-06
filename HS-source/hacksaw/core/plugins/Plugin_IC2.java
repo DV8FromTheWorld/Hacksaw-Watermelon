@@ -1,6 +1,5 @@
 package hacksaw.core.plugins;
 
-import hacksaw.core.plugins.HacksawPlugin;
 
 public class Plugin_IC2 extends HacksawPlugin {
 

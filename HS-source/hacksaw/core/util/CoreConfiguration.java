@@ -7,7 +7,6 @@ import hacksaw.core.util.HacksawLogger.LogLevel;
 import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.logging.Level;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

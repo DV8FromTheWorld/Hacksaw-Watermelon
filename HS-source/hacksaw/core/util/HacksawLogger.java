@@ -2,8 +2,6 @@ package hacksaw.core.util;
 
 import java.util.logging.Level;
 
-import cpw.mods.fml.common.Loader;
-
 import net.minecraft.src.ModLoader;
 
 

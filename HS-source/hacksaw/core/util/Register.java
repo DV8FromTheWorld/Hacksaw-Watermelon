@@ -1,7 +1,5 @@
 package hacksaw.core.util;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 import hacksaw.core.BlockRemover;
 import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
@@ -9,15 +7,30 @@ import hacksaw.core.MeatProvider;
 import hacksaw.core.blocks.crops.BlockCarrot;
 import hacksaw.core.blocks.crops.BlockLettuce;
 import hacksaw.core.blocks.crops.BlockSuperMelon;
-import hacksaw.core.items.tools.*;
-import hacksaw.core.items.food.*;
-import hacksaw.core.items.seeds.*;
+import hacksaw.core.items.food.ItemAppleGreen;
+import hacksaw.core.items.food.ItemAppleGreenSliced;
+import hacksaw.core.items.food.ItemAppleRedSliced;
+import hacksaw.core.items.food.ItemCarrot;
+import hacksaw.core.items.food.ItemCarrotSliced;
+import hacksaw.core.items.food.ItemLambChopCooked;
+import hacksaw.core.items.food.ItemLambChopRaw;
+import hacksaw.core.items.food.ItemLettuce;
+import hacksaw.core.items.food.ItemLettuceSliced;
+import hacksaw.core.items.food.ItemOrange;
+import hacksaw.core.items.food.ItemOrangeSliced;
+import hacksaw.core.items.seeds.ItemCarrotSeed;
+import hacksaw.core.items.seeds.ItemLettuceSeed;
+import hacksaw.core.items.tools.ItemChefKnifeDull;
+import hacksaw.core.items.tools.ItemChefKnifeSharp;
+import hacksaw.core.items.tools.ItemKnifeSharpener;
 import hacksaw.core.machines.GrillRecipes;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class Register {
 	

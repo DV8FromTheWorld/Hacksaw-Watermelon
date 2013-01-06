@@ -1,8 +1,8 @@
 package hacksaw.core.items.tools;
 
+import hacksaw.core.items.ItemBaseChefTools;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import hacksaw.core.items.ItemBaseChefTools;
 
 public class ItemChefKnifeSharp extends ItemBaseChefTools {
 	

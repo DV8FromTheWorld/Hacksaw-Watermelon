@@ -1,7 +1,10 @@
 package hacksaw.core;
 
-import java.io.File;
-
+import hacksaw.core.util.CoreConfiguration;
+import hacksaw.core.util.CraftingStuff;
+import hacksaw.core.util.HacksawLogger;
+import hacksaw.core.util.HacksawLogger.LogLevel;
+import hacksaw.core.util.Register;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -12,19 +15,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-
-import hacksaw.core.CommonProxy;
-import hacksaw.core.PluginLoader;
-import hacksaw.core.RecipeRemover;
-import hacksaw.core.mod_Hacksaw;
-import hacksaw.core.util.CoreConfiguration;
-import hacksaw.core.util.CraftingStuff;
-import hacksaw.core.util.HacksawLogger;
-import hacksaw.core.util.Register;
-import hacksaw.core.util.HacksawLogger.LogLevel;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.src.ModLoader;
 
 @Mod(modid = "HSWM", name= CoreConfiguration.name, version= CoreConfiguration.version)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -50,7 +40,7 @@ public class mod_Hacksaw{
 		if(!mod_Hacksaw.initialized /*&& !ModLoader.isModLoaded("mod_Hacksaw")*/){
 			HacksawLogger.log("Loading " + CoreConfiguration.name + "...");
 			proxy.preloadTextures();
-			CoreConfiguration.init(proxy.path, "config/hacksaw/core.cfg");
+			CoreConfiguration.init(CommonProxy.path, "config/hacksaw/core.cfg");
 			RecipeRemover.removeVanillaRecipes();
 			//HacksawLogger.checkDebugSetting();  <-- commented until we can get it to work correctly :3
 			Register.registerItemsAndBlocksAndRecipes();
