@@ -15,7 +15,7 @@ import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.Property;
 
 public class CoreConfiguration extends Configuration {
-	public static final String version = "v0.1";
+	public static final String version = "v0.2";
 	public static final String name = "Hacksaw-Watermelon";
 	
 	private static final int START_BLOCK_ID = 1200;

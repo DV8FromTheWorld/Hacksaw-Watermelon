@@ -1,0 +1,17 @@
+[
+{
+  "modid": "Hacksaw-Watermelon",
+  "name": "Hacksaw Watermelon",
+  "description": "Improving sustinance",
+  "version": "0.2",
+  "mcversion": "1.4.6",
+  "url": "",
+  "updateUrl": "",
+  "credits": "DV8FromTheWorld, allaryin, Eurymachus",
+  "authors": ["Hacksaw Crew"],
+  "logoFile": "",
+  "screenshots": [],
+  "parent":"",
+  "dependencies": [""]
+}
+]
