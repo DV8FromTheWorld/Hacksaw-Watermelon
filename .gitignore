@@ -1,2 +1,5 @@
 /minecraft/
 /minecraft_server/
+bin/
+jar/
+lib/
