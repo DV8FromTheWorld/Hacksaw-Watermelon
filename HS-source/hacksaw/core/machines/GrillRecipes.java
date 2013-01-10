@@ -29,7 +29,7 @@ public class GrillRecipes{
 	 * Use this method to be able to cook something on the grill.  
 	 * This uses the default "cooking" time.
 	 * 
-	 * @param input: ID of the item to be "cooked" (Note, this needs to be the shiftedIndex ID)
+	 * @param input: ID of the item to be "cooked" (Note, this needs to be the itemID ID)
 	 * @param output: the "cooked" version of the item
 	 */
 	public static void addToGrillToCook(int input, ItemStack output){
@@ -40,7 +40,7 @@ public class GrillRecipes{
 	 * Use this method to be able to cook something on the grill.  
 	 * This method allows specifying an amount of time to cook the item.
 	 * 
-	 * @param input: ID of the item to be "cooked" (Note, this needs to be the shiftedIndex ID)
+	 * @param input: ID of the item to be "cooked" (Note, this needs to be the itemID ID)
 	 * @param output: the "cooked" version of the item
 	 * @param cookTime: amount of time needed to cook the item (in seconds)
 	 */

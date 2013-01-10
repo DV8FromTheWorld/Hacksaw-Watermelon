@@ -97,21 +97,21 @@ public class CraftingStuff {
 		
 			/*
 			 * @para1 int: Item that can be damaged in crafting recipe
-			 * Note: Note: you need to use .item.shiftedIndex instead of .itemId because MC wont understand the ID correctly.
+			 * Note: Note: you need to use .item.itemID instead of .itemId because MC wont understand the ID correctly.
 			 */		
-		craftDamage.add(HacksawItems.chefKnifeSharp.item.shiftedIndex);
-		craftDamage.add(HacksawItems.knifeSharpener.item.shiftedIndex);
+		craftDamage.add(HacksawItems.chefKnifeSharp.item.itemID);
+		craftDamage.add(HacksawItems.knifeSharpener.item.itemID);
 					
 			/*
 			 * @para1 int: Item that has durability,  EX: Ic2 charged battery.
 			 * @para2 int: Item that does not have durability, EX: ic2 uncharged battery
 			 * 
 			 * Note:  Item from @para1 will be replaced by Item from @para2 if it breaks in recipe
-			 * Note: you need to use .item.shiftedIndex instead of .itemId because MC wont understand the ID correctly.
+			 * Note: you need to use .item.itemID instead of .itemId because MC wont understand the ID correctly.
 			 */
-		containers.put(HacksawItems.chefKnifeSharp.item.shiftedIndex, HacksawItems.chefKnifeDull.item.shiftedIndex);
-		//containers.put(HacksawItems.appleRedSliced.item.shiftedIndex, HacksawItems.appleSeed.item.shiftedIndex);
-		//containers.put(HacksawItems.appleGreenSliced.item.shiftedIndex, HacksawItems.appleSeed.item.shiftedIndex);
+		containers.put(HacksawItems.chefKnifeSharp.item.itemID, HacksawItems.chefKnifeDull.item.itemID);
+		//containers.put(HacksawItems.appleRedSliced.item.itemID, HacksawItems.appleSeed.item.itemID);
+		//containers.put(HacksawItems.appleGreenSliced.item.itemID, HacksawItems.appleSeed.item.itemID);
 		
 		
 			/*
@@ -120,7 +120,7 @@ public class CraftingStuff {
 			 * 
 			 * Note: Item from @para1 will be replaced by Item from @para2 if it breaks in recipe 
 			 */
-		damage.put(HacksawItems.chefKnifeSharp.item.shiftedIndex, 99);
+		damage.put(HacksawItems.chefKnifeSharp.item.itemID, 99);
 	}
 	
 }

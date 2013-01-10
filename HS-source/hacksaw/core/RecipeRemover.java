@@ -32,7 +32,7 @@ public class RecipeRemover {
 			recipeSet.add(((Block) object).blockID);
 		}
 		if (object instanceof Item) {
-			recipeSet.add(((Item) object).shiftedIndex);
+			recipeSet.add(((Item) object).itemID);
 		}
 	}
 
@@ -50,7 +50,7 @@ public class RecipeRemover {
 			smeltingSet.add(((Block) object).blockID);
 		}
 		if (object instanceof Item) {
-			smeltingSet.add(((Item) object).shiftedIndex);
+			smeltingSet.add(((Item) object).itemID);
 		}
 	}
 
@@ -86,7 +86,7 @@ public class RecipeRemover {
 		if (CoreConfiguration
 				.getPreference(CoreConfiguration.USE_VANILLA_RECIPES) == false) {
 			HacksawLogger.log(LogLevel.DEBUG, "Registering recipes to remove");
-			registerItemRecipeToRemove(Item.bread.shiftedIndex);
+			registerItemRecipeToRemove(Item.bread.itemID);
 
 			HacksawLogger.log(LogLevel.DEBUG, "Removing vanilla recipes");
 			removeCrafting();

@@ -28,7 +28,7 @@ public class BlockCarrot extends BlockBaseCrop {
 	public int idDropped(int par1, Random par2Random, int par3) {
 		// You must use shifted index as the Item ID is - 256 on the 'actual'
 		// value
-		return HacksawItems.carrot.item.shiftedIndex;
+		return HacksawItems.carrot.item.itemID;
 	}
 
 	/**

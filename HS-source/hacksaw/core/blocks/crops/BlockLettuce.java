@@ -26,7 +26,7 @@ public class BlockLettuce extends BlockBaseCrop {
 	 */
 	@Override
 	public int idDropped(int par1, Random par2Random, int par3) {
-		return HacksawItems.lettuce.item.shiftedIndex;
+		return HacksawItems.lettuce.item.itemID;
 	}
 
 	/**

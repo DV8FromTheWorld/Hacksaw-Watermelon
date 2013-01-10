@@ -24,7 +24,7 @@ public class BlockSuperMelon extends BlockMelon {
     	// Check the player is holding an item
     	if (entityplayer.getCurrentEquippedItem() != null) {
     		// Check if that item is the Chef's Sharp Knife
-        	if (entityplayer.getCurrentEquippedItem().itemID == HacksawItems.chefKnifeSharp.item.shiftedIndex) {
+        	if (entityplayer.getCurrentEquippedItem().itemID == HacksawItems.chefKnifeSharp.item.itemID) {
         		// create a new Random generator
 	    		Random drop = new Random();
 	    		// Get a random drop chance between 3 and 8 (slices)

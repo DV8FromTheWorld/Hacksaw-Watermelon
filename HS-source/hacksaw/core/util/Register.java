@@ -202,7 +202,7 @@ public class Register {
 	private static void addGrillRecipes(){
 		//================== Registers the cooking recipes for the Grill ===================
 		
-		GrillRecipes.addToGrillToCook(HacksawItems.lambChopRaw.item.shiftedIndex, new ItemStack(HacksawItems.lambChopCooked.item), 25);
+		GrillRecipes.addToGrillToCook(HacksawItems.lambChopRaw.item.itemID, new ItemStack(HacksawItems.lambChopCooked.item), 25);
 	}
 	
 	private static void addJuicerRecipes(){

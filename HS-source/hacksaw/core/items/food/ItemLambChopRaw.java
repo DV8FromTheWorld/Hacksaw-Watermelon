@@ -25,7 +25,7 @@ public class ItemLambChopRaw extends ItemBaseFood implements IGrillable{
 
 	@Override
 	public int getCookedItemId() {
-		return HacksawItems.lambChopCooked.item.shiftedIndex;
+		return HacksawItems.lambChopCooked.item.itemID;
 	}
 
 }
