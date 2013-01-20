@@ -78,7 +78,7 @@ public class RecipeRemover {
 	}
 
 	private static void removeSmelting() {
-		// TODO: repeat above but with FurnaceRecipes
+		// TODO :: repeat above but with FurnaceRecipes
 		flushSmelting();
 	}
 

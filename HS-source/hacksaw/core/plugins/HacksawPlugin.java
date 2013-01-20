@@ -30,10 +30,8 @@ public abstract class HacksawPlugin {
 			//HacksawLogger.log(getClass().getSimpleName()+" - Found "+plugin_name+" version "+mod.getVersion() );
 			return mod;
 		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch( ClassNotFoundException e ) {
 		}

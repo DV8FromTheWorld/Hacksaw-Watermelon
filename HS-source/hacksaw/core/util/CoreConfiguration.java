@@ -206,7 +206,7 @@ public class CoreConfiguration extends Configuration {
 		if( oid != id ) {
 			HacksawLogger.log("Block ID conflict @ "+oid+", taken by "+Block.blocksList[oid]+", assigning "+id);
 		}
-		// TODO : Resolved Null pointer on Add.
+		// TODO :: Resolved Null pointer on Add.
 		claimed_blocks.add(Integer.valueOf(id));
 		return id;
 	}
@@ -226,7 +226,7 @@ public class CoreConfiguration extends Configuration {
 		if( oid != id ) {
 			HacksawLogger.log("Item ID conflict @ "+oid+", taken by "+Item.itemsList[oid+256]+", assigning "+id);
 		}
-		// TODO : Resolved Null pointer on Add.
+		// TODO :: Resolved Null pointer on Add.
 		claimed_items.add(Integer.valueOf(id));
 		return id;
 	}

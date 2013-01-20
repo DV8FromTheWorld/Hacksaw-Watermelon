@@ -8,6 +8,6 @@ public class Plugin_ThaumCraft extends HacksawPlugin {
 	}
 
 	public void init() {
-		// TODO: mod-specific integration goes here
+		// TODO :: mod-specific integration goes here
 	}
 }
