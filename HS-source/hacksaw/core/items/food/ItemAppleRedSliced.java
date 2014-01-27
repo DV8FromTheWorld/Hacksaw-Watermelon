@@ -2,17 +2,21 @@ package hacksaw.core.items.food;
 
 import hacksaw.core.items.ItemBaseFood;
 
-public class ItemAppleRedSliced extends ItemBaseFood{
+public class ItemAppleRedSliced extends ItemBaseFood
+{
 
-	public ItemAppleRedSliced(int id, int foodHealAmount, float saturationAmount, boolean isWolfsFavoriteMeat) {
+	public ItemAppleRedSliced(int id, int foodHealAmount,
+			float saturationAmount, boolean isWolfsFavoriteMeat)
+	{
 		super(id, foodHealAmount, saturationAmount, isWolfsFavoriteMeat);
 		this.setMaxStackSize(64);
-		this.setIconCoord(6, 0);
-		this.setItemName("apple.red.sliced");
+		this.setUnlocalizedName("apple.red.sliced");
+		this.setTextureName("apple_slice");
 	}
 
 	@Override
-	public boolean shouldRotateAroundWhenRendering() {
+	public boolean shouldRotateAroundWhenRendering()
+	{
 		return false;
 	}
 

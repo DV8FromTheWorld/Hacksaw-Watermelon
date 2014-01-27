@@ -17,9 +17,9 @@ public abstract class ItemBaseFood extends ItemFood {
 	
 	@Override
 	// To add the 'food.' string as a prefix to Hacksaw food items
-	public Item setItemName(String itemName) {
+	public Item setUnlocalizedName(String itemName) {
 		String newname = "food." + itemName;
-		return super.setItemName(newname);
+		return super.setUnlocalizedName(newname);
 	}
 	
 	@Override
@@ -27,8 +27,8 @@ public abstract class ItemBaseFood extends ItemFood {
         return EnumAction.eat;
     }
 	
-	@Override
-	public String getTextureFile() {
-		return "/hacksaw/textures/food.png";
-	}
+//	@Override
+//	public String getTextureFile() {
+//		return "/hacksaw/textures/food.png";
+//	}
 }

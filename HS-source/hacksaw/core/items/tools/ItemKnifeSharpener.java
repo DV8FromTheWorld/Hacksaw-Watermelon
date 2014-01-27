@@ -4,28 +4,34 @@ import hacksaw.core.items.ItemBaseChefTools;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ItemKnifeSharpener extends ItemBaseChefTools {
+public class ItemKnifeSharpener extends ItemBaseChefTools
+{
 
-	public ItemKnifeSharpener(int id) {
+	public ItemKnifeSharpener(int id)
+	{
 		super(id);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(10);
-		this.setIconCoord(2, 0);
-		this.setItemName("knife.sharpener");
+		// this.setIconCoord(2, 0);
+		this.setUnlocalizedName("knife.sharpener");
+		this.setTextureName("test_face");
 	}
-	
+
 	@Override
-	public Item getContainerItem(){
+	public Item getContainerItem()
+	{
 		return this;
 	}
 
 	@Override
-	public boolean shouldRotateAroundWhenRendering() {
+	public boolean shouldRotateAroundWhenRendering()
+	{
 		return false;
 	}
 
 	@Override
-	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemstack) {
+	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemstack)
+	{
 		return true;
 	}
 }

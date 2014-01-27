@@ -4,27 +4,33 @@ import hacksaw.api.IGrillable;
 import hacksaw.core.HacksawItems;
 import hacksaw.core.items.ItemBaseFood;
 
-public class ItemLambChopRaw extends ItemBaseFood implements IGrillable{
+public class ItemLambChopRaw extends ItemBaseFood implements IGrillable
+{
 
-	public ItemLambChopRaw(int id, int foodHealAmount, float saturationAmount, boolean isWolfsFavoriteMeat) {
+	public ItemLambChopRaw(int id, int foodHealAmount, float saturationAmount,
+			boolean isWolfsFavoriteMeat)
+	{
 		super(id, foodHealAmount, saturationAmount, isWolfsFavoriteMeat);
 		this.setMaxStackSize(64);
-		this.setIconCoord(2, 0);
-		this.setItemName("lamb.chop.raw");
+		this.setUnlocalizedName("lamb.chop.raw");
+		this.setTextureName("porkchop_raw");
 	}
 
 	@Override
-	public boolean shouldRotateAroundWhenRendering() {
+	public boolean shouldRotateAroundWhenRendering()
+	{
 		return false;
 	}
 
 	@Override
-	public int getCookingTime() {
+	public int getCookingTime()
+	{
 		return -1;
 	}
 
 	@Override
-	public int getCookedItemId() {
+	public int getCookedItemId()
+	{
 		return HacksawItems.lambChopCooked.item.itemID;
 	}
 
