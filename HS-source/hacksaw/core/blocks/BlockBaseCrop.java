@@ -165,7 +165,9 @@ public abstract class BlockBaseCrop extends BlockCrops
 		return finalRate;
 	}
 
-	public int getBlockTextureFromSideAndMetadata(int side, int meta)
+	//TODO: Replace with getIcon()  and registerIcons()
+
+	/*public int getBlockTextureFromSideAndMetadata(int side, int meta)
 	{
 		meta = getGrowthLevel(meta);
 		if (meta < 0 || meta > this.growthStages)
@@ -175,7 +177,7 @@ public abstract class BlockBaseCrop extends BlockCrops
 
 		// return this.blockIndexInTexture + meta;
 		return 32 + meta;
-	}
+	}*/
 
 	public abstract int getRenderType();
 

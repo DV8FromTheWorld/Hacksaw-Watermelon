@@ -55,4 +55,6 @@ public abstract class BlockBaseMachine extends BlockContainer
 
 	public abstract boolean onBlockActivated(World world, int x, int y, int z,
 			EntityPlayer player, int par6, float par7, float par8, float par9);
+
+	//TODO: registerIcons() and getIcon()
 }

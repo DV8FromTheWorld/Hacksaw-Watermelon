@@ -26,6 +26,7 @@ public class CraftingStuff {
     {
         ICraftingHandler ich = new ICraftingHandler()
         {
+        	@Override
             public void onCrafting(EntityPlayer playerCrafting, ItemStack itemstack, IInventory craftingInventory)
             {
             	//the for loop loops through all the slots in the inventory
