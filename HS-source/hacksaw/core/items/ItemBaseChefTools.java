@@ -39,4 +39,11 @@ public abstract class ItemBaseChefTools extends Item
 	{
 		return false;
 	}
+
+	@Override
+	public Item setTextureName(String name)
+	{
+		super.setTextureName("hacksaw:" + name);
+		return this;
+	}
 }

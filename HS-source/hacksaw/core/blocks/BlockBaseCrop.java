@@ -173,7 +173,8 @@ public abstract class BlockBaseCrop extends BlockCrops
 			meta = this.growthStages;
 		}
 
-		return this.blockIndexInTexture + meta;
+		// return this.blockIndexInTexture + meta;
+		return 32 + meta;
 	}
 
 	public abstract int getRenderType();

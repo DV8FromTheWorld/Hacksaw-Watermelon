@@ -24,4 +24,11 @@ public abstract class ItemCropSeed extends ItemSeeds
 		String newname = "crop." + name;
 		return super.setUnlocalizedName(newname);
 	}
+
+	@Override
+	public Item setTextureName(String name)
+	{
+		super.setTextureName("hacksaw:" + name);
+		return this;
+	}
 }
