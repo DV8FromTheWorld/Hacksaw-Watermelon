@@ -24,12 +24,12 @@ import hacksaw.core.items.tools.ItemChefKnifeDull;
 import hacksaw.core.items.tools.ItemChefKnifeSharp;
 import hacksaw.core.items.tools.ItemKnifeSharpener;
 import hacksaw.core.machines.GrillRecipes;
+import hacksaw.core.recipes.ChefKnifeRecipe;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import recipes.ChefKnifeRecipe;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -215,7 +215,7 @@ public class Register
     {
         //================== Registers the cooking recipes for the Grill ===================
 
-        GrillRecipes.addToGrillToCook(HacksawItems.lambChopRaw.item.itemID, new ItemStack(HacksawItems.lambChopCooked.item), 25);
+        GrillRecipes.addToGrillToCook(HacksawItems.lambChopRaw.item.itemID, new ItemStack(HacksawItems.lambChopCooked.item), 25, 0.35F);
     }
 
     private static void addJuicerRecipes()

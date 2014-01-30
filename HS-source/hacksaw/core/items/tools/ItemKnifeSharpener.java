@@ -7,31 +7,29 @@ import net.minecraft.item.ItemStack;
 public class ItemKnifeSharpener extends ItemBaseChefTools
 {
 
-	public ItemKnifeSharpener(int id)
-	{
-		super(id);
-		this.setMaxStackSize(1);
-		this.setMaxDamage(10);
-		// this.setIconCoord(2, 0);
-		this.setUnlocalizedName("knife.sharpener");
-		this.setTextureName("test_face");
-	}
+    public ItemKnifeSharpener(int id)
+    {
+        super(id);
+        this.setMaxStackSize(1);
+        this.setUnlocalizedName("knife.sharpener");
+        this.setTextureName("test_face");
+    }
 
-	@Override
-	public Item getContainerItem()
-	{
-		return this;
-	}
+    @Override
+    public Item getContainerItem()
+    {
+        return this;
+    }
 
-	@Override
-	public boolean shouldRotateAroundWhenRendering()
-	{
-		return false;
-	}
+    @Override
+    public boolean shouldRotateAroundWhenRendering()
+    {
+        return false;
+    }
 
-	@Override
-	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemstack)
-	{
-		return true;
-	}
+    @Override
+    public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemstack)
+    {
+        return true;
+    }
 }

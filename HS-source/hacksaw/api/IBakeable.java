@@ -1,5 +1,6 @@
 package hacksaw.api;
 
-public interface IBakeable {
+public interface IBakeable
+{
 
 }

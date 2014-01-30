@@ -1,4 +1,4 @@
-package recipes;
+package hacksaw.core.recipes;
 
 import hacksaw.core.HacksawItems;
 
