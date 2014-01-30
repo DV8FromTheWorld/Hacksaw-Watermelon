@@ -40,7 +40,7 @@
 	<variableList>
 		<variable>
 			<name>FORGE_LOC</name>
-			<value>$%7BPARENT-1-PROJECT_LOC%7D/MinecraftForge</value>
+			<value>$%7BPARENT-2-PROJECT_LOC%7D/Forge</value>
 		</variable>
 		<variable>
 			<name>MCP_LOC</name>
