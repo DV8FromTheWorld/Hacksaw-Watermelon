@@ -2,59 +2,87 @@ package hacksaw.core.machines.tileentities;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityGrill extends TileEntity implements IInventory, ISidedInventory
+public class TileEntityGrill extends TileEntity implements IInventory
 {
+
+    private ItemStack[] inventory;
+
+    public TileEntityGrill()
+    {
+        inventory = new ItemStack[19];
+    }
 
     @Override
     public int getSizeInventory()
     {
-        return 0;
+        return inventory.length;
     }
 
     @Override
-    public ItemStack getStackInSlot(int var1)
+    public ItemStack getStackInSlot(int slot)
     {
-        return null;
+        return inventory[slot];
     }
 
     @Override
-    public ItemStack decrStackSize(int var1, int var2)
+    public void setInventorySlotContents(int slot, ItemStack stack)
     {
-        return null;
+        inventory[slot] = stack;
+        if (stack != null && stack.stackSize > getInventoryStackLimit())
+        {
+            stack.stackSize = getInventoryStackLimit();
+        }
     }
 
     @Override
-    public ItemStack getStackInSlotOnClosing(int var1)
+    public ItemStack decrStackSize(int slot, int amt)
     {
-        return null;
+        ItemStack stack = getStackInSlot(slot);
+        if (stack != null)
+        {
+            if (stack.stackSize <= amt)
+            {
+                setInventorySlotContents(slot, null);
+            } else
+            {
+                stack = stack.splitStack(amt);
+                if (stack.stackSize == 0)
+                {
+                    setInventorySlotContents(slot, null);
+                }
+            }
+        }
+        return stack;
     }
 
     @Override
-    public void setInventorySlotContents(int var1, ItemStack var2)
+    public ItemStack getStackInSlotOnClosing(int slot)
     {
-
-    }
-
-    @Override
-    public String getInvName()
-    {
-        return "container.grill";
+        ItemStack stack = getStackInSlot(slot);
+        if (stack != null)
+        {
+            setInventorySlotContents(slot, null);
+        }
+        return stack;
     }
 
     @Override
     public int getInventoryStackLimit()
     {
-        return 4;
+        return 64;
     }
 
     @Override
-    public boolean isUseableByPlayer(EntityPlayer var1)
+    public boolean isUseableByPlayer(EntityPlayer player)
     {
-        return false;
+        return worldObj.getBlockTileEntity(xCoord, yCoord, zCoord) == this
+                && player.getDistanceSq(xCoord + 0.5, yCoord + 0.5,
+                        zCoord + 0.5) < 64;
     }
 
     @Override
@@ -67,54 +95,63 @@ public class TileEntityGrill extends TileEntity implements IInventory, ISidedInv
     {
     }
 
-    /* (non-Javadoc)
-     * @see net.minecraft.inventory.ISidedInventory#getAccessibleSlotsFromSide(int)
-     */
     @Override
-    public int[] getAccessibleSlotsFromSide(int var1)
+    public void readFromNBT(NBTTagCompound tagCompound)
     {
-        // TODO Auto-generated method stub
-        return null;
+        super.readFromNBT(tagCompound);
+
+        NBTTagList tagList = tagCompound.getTagList("Inventory");
+        for (int i = 0; i < tagList.tagCount(); i++)
+        {
+            NBTTagCompound tag = (NBTTagCompound) tagList.tagAt(i);
+            byte slot = tag.getByte("Slot");
+            if (slot >= 0 && slot < inventory.length)
+            {
+                inventory[slot] = ItemStack.loadItemStackFromNBT(tag);
+            }
+        }
     }
 
-    /* (non-Javadoc)
-     * @see net.minecraft.inventory.ISidedInventory#canInsertItem(int, net.minecraft.item.ItemStack, int)
-     */
     @Override
-    public boolean canInsertItem(int i, ItemStack itemstack, int j)
+    public void writeToNBT(NBTTagCompound tagCompound)
     {
-        // TODO Auto-generated method stub
-        return false;
+        super.writeToNBT(tagCompound);
+
+        NBTTagList itemList = new NBTTagList();
+        for (int i = 0; i < inventory.length; i++)
+        {
+            ItemStack stack = inventory[i];
+            if (stack != null)
+            {
+                NBTTagCompound tag = new NBTTagCompound();
+                tag.setByte("Slot", (byte) i);
+                stack.writeToNBT(tag);
+                itemList.appendTag(tag);
+            }
+        }
+        tagCompound.setTag("Inventory", itemList);
     }
 
-    /* (non-Javadoc)
-     * @see net.minecraft.inventory.ISidedInventory#canExtractItem(int, net.minecraft.item.ItemStack, int)
-     */
     @Override
-    public boolean canExtractItem(int i, ItemStack itemstack, int j)
+    public String getInvName()
     {
-        // TODO Auto-generated method stub
-        return false;
+        return "hacksaw.tileentitygrill";
     }
 
-    /* (non-Javadoc)
-     * @see net.minecraft.inventory.IInventory#isInvNameLocalized()
-     */
     @Override
     public boolean isInvNameLocalized()
     {
-        // TODO Auto-generated method stub
         return false;
     }
 
-    /* (non-Javadoc)
-     * @see net.minecraft.inventory.IInventory#isItemValidForSlot(int, net.minecraft.item.ItemStack)
-     */
     @Override
-    public boolean isItemValidForSlot(int i, ItemStack itemstack)
+    public boolean isItemValidForSlot(int slotIndex, ItemStack itemstack)
     {
-        // TODO Auto-generated method stub
-        return false;
+        //Prevents placing items in output slots.
+        if (slotIndex >= 9  && slotIndex <= 17)
+        {
+            return false; 
+        }
+        return true;
     }
-
 }
