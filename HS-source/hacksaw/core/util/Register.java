@@ -7,6 +7,7 @@ import hacksaw.core.MeatProvider;
 import hacksaw.core.blocks.crops.BlockCarrot;
 import hacksaw.core.blocks.crops.BlockLettuce;
 import hacksaw.core.blocks.crops.BlockSuperMelon;
+import hacksaw.core.blocks.machines.BlockGrill;
 import hacksaw.core.items.food.ItemAppleGreen;
 import hacksaw.core.items.food.ItemAppleGreenSliced;
 import hacksaw.core.items.food.ItemAppleRedSliced;
@@ -65,15 +66,11 @@ public class Register
 
         HacksawBlocks.carrotCrop.block = new BlockCarrot(HacksawBlocks.carrotCrop.blockId);
         HacksawBlocks.lettuceCrop.block = new BlockLettuce(HacksawBlocks.lettuceCrop.blockId);
-        /**
-         * PLACEHOLDERS
-         * HacksawBlocks.grill.block = new
-         * BlockGrill(HacksawBlocks.grill.blockId, TileEntityGrill.class,
-         * Material.iron);
-         * HacksawBlocks.grillElectric.block = new
-         * BlockGrill(HacksawBlocks.grillElectric.blockId,
-         * TileEntityGrillElectric.class, Material.iron);
-         **/
+
+        //PLACEHOLDERS
+        HacksawBlocks.grill.block = new BlockGrill(HacksawBlocks.grill.blockId);
+        //HacksawBlocks.grillElectric.block = new BlockGrill(HacksawBlocks.grillElectric.blockId);
+
         //========= Register Each Block ==============
 
         // for each Block within the enum (HacksawBlocks)

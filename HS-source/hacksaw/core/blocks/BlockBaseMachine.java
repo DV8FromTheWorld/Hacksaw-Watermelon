@@ -1,6 +1,7 @@
 package hacksaw.core.blocks;
 
-import java.util.Random;
+import hacksaw.core.mod_Hacksaw;
+import hacksaw.core.machines.tileentities.TileEntityBase;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -15,7 +16,8 @@ public abstract class BlockBaseMachine extends BlockContainer
     /**
      * machineClass is the TileEntity class associated with the Block Instance
      */
-    private Class<? extends TileEntity> machineClass;
+    private Class<? extends TileEntityBase> machineClass;
+    private int guiId;
 
     /**
      * Abstract Class BlockBaseMachine
@@ -24,14 +26,31 @@ public abstract class BlockBaseMachine extends BlockContainer
      *            the ID of the Block
      * @param machineClass
      *            the TileEntity class associated with the Block instance
-     * @param blockIndexInTexture
-     *            the value of the texture sprite
+     * @param guiId
+     *            the GUI id of the block / tile entity.
      */
-    protected BlockBaseMachine(int blockId, Class<? extends TileEntity> machineClass, int blockIndexInTexture)
+    protected BlockBaseMachine(int blockId, Class<? extends TileEntityBase> machineClass, int guiId)
     {
         super(blockId, Material.iron);
         this.machineClass = machineClass;
+        this.guiId = guiId;
         this.setCreativeTab(CreativeTabs.tabBlock);
+    }
+    
+    @Override
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int metadata, float hitX, float hitY, float hitZ) 
+    {
+        TileEntity tileEntity = world.getBlockTileEntity(x, y, z);
+        if (tileEntity == null || player.isSneaking() || world.isRemote) 
+        {
+                return false;
+        }
+        if (!tileEntity.getClass().isAssignableFrom(machineClass))
+        {
+            return false;
+        }
+        player.openGui(mod_Hacksaw.INSTANCE, guiId, world, x, y, z);
+        return true;
     }
 
     /**
@@ -44,17 +63,11 @@ public abstract class BlockBaseMachine extends BlockContainer
         {
             return this.machineClass.newInstance();
         }
-        catch (Exception var3)
+        catch (Exception e)
         {
-            throw new RuntimeException(var3);
+            throw new RuntimeException(e);
         }
     }
-
-    @Override
-    public abstract int idDropped(int par1, Random par2Random, int par3);
-
-    @Override
-    public abstract boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int par6, float par7, float par8, float par9);
-
+    
     //TODO: registerIcons() and getIcon()
 }
