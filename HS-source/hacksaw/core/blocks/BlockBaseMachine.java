@@ -40,8 +40,12 @@ public abstract class BlockBaseMachine extends BlockContainer
     @Override
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int metadata, float hitX, float hitY, float hitZ) 
     {
+        if (world.isRemote)
+        {
+            return true;
+        }
         TileEntity tileEntity = world.getBlockTileEntity(x, y, z);
-        if (tileEntity == null || player.isSneaking() || world.isRemote) 
+        if (tileEntity == null || player.isSneaking()) 
         {
                 return false;
         }
