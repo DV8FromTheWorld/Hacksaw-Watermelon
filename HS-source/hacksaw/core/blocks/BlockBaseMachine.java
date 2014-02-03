@@ -2,7 +2,6 @@ package hacksaw.core.blocks;
 
 import hacksaw.core.mod_Hacksaw;
 import hacksaw.core.machines.tileentities.TileEntityBase;
-
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -36,20 +35,16 @@ public abstract class BlockBaseMachine extends BlockContainer
         this.guiId = guiId;
         this.setCreativeTab(CreativeTabs.tabBlock);
     }
-    
+
     @Override
-    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int metadata, float hitX, float hitY, float hitZ) 
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int metadata, float hitX, float hitY, float hitZ)
     {
         if (world.isRemote)
         {
             return true;
         }
         TileEntity tileEntity = world.getBlockTileEntity(x, y, z);
-        if (tileEntity == null || player.isSneaking()) 
-        {
-                return false;
-        }
-        if (!tileEntity.getClass().isAssignableFrom(machineClass))
+        if (player.isSneaking() || tileEntity == null || !tileEntity.getClass().isAssignableFrom(machineClass))
         {
             return false;
         }
@@ -72,6 +67,6 @@ public abstract class BlockBaseMachine extends BlockContainer
             throw new RuntimeException(e);
         }
     }
-    
+
     //TODO: registerIcons() and getIcon()
 }
