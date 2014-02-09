@@ -1,17 +1,17 @@
 [
 {
-  "modid": "Hacksaw-Watermelon",
-  "name": "Hacksaw Watermelon",
-  "description": "Improving sustinance",
-  "version": "0.2",
-  "mcversion": "1.4.6",
-  "url": "",
+  "modid": "HSWM",
+  "name": "Hacksaw-Watermelon",
+  "description": "Adds a variation of food types",
+  "version": "0.1",
+  "mcversion": "1.6.4",
+  "url": "https://github.com/DV8FromTheWorld/Hacksaw-Watermelon",
   "updateUrl": "",
-  "credits": "DV8FromTheWorld, allaryin, Eurymachus",
-  "authors": ["Hacksaw Crew"],
+  "credits": "Mod by DV8FromTheWorld, allaryin, Eurymachus, GadgetTvMan, Silentspy",
+  "authors": ["DV8FromTheWorld","allaryin","Eurymachus", "GadgetTvMan","Silentspy"],
   "logoFile": "",
   "screenshots": [],
   "parent":"",
-  "dependencies": [""]
+  "dependencies": []
 }
 ]
