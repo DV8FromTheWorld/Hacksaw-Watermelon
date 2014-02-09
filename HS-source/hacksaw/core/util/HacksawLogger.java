@@ -4,6 +4,7 @@ import java.util.logging.Level;
 
 import cpw.mods.fml.common.FMLLog;
 
+@SuppressWarnings("serial")
 public class HacksawLogger extends Level
 {
 

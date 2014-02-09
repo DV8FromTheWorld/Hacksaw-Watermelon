@@ -1,6 +1,5 @@
 package hacksaw.core.tileentities;
 
-import hacksaw.core.HacksawGuiIds;
 import net.minecraft.item.ItemStack;
 
 public class TileEntityGrill extends TileEntityBase
@@ -15,7 +14,7 @@ public class TileEntityGrill extends TileEntityBase
     public TileEntityGrill()
     {
         super(19);
-    }   
+    }
 
     @Override
     public String getInvName()
@@ -27,9 +26,9 @@ public class TileEntityGrill extends TileEntityBase
     public boolean isItemValidForSlot(int slotIndex, ItemStack itemstack)
     {
         //Prevents placing items in output slots.
-        if (slotIndex >= 8  && slotIndex <= 17)
+        if (slotIndex >= 8 && slotIndex <= 17)
         {
-            return false; 
+            return false;
         }
         return true;
     }

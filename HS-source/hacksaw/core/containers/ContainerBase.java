@@ -32,14 +32,14 @@ public abstract class ContainerBase extends Container
      * Super constructor with player inventory and a choice to bind the hotbar.
      * 
      * @param playerInventory
-     *            the Inventory of the player
+     *            the Inventory of the player.
      * @param iinventory
-     *            the inventory we want to bind
+     *            the inventory we want to bind.
      * @param playerInventoryCoords
      *            the coordinates where we would like to bind the player
-     *            invetory
+     *            inventory.
      * @param shouldBindHotbar
-     *            if we should bind the player's hotbar
+     *            if we should bind the player's hotbar.
      */
     protected ContainerBase(InventoryPlayer playerInventory, IInventory iinventory, Coord playerInventoryCoords, boolean shouldBindHotbar)
     {
@@ -49,6 +49,8 @@ public abstract class ContainerBase extends Container
     }
 
     /**
+     * The inventory of the Tile Entity.
+     * 
      * @return the inventory
      */
     public IInventory getInventoryData()
