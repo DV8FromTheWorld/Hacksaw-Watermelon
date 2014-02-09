@@ -3,28 +3,31 @@ package hacksaw.core.containers;
 import hacksaw.core.tileentities.TileEntityGrill;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
-import net.minecraft.item.ItemStack;
 
-public class ContainerGrill extends Container
+public class ContainerGrill extends ContainerBase
 {
+    private static final Coord INV_COORD = new Coord(14, 92);
+    private static final Coord GRILL_LEFT = new Coord(9, 8);
+    private static final Coord GRILL_RIGHT = new Coord(121, 10);
+    private static final Coord GRILL_FUEL = new Coord(93, 59);
+
     protected TileEntityGrill tileEntity;
-    
+
+    /**
+     * Creates a new Container for the a Grill TileEntity.
+     * Used to control the normal Grill's GUI.
+     * 
+     * @param inventoryPlayer
+     *            The inventory of the player currently using the tile entity.
+     * @param te
+     *            The tile entity being used by the player.
+     */
     public ContainerGrill(InventoryPlayer inventoryPlayer, TileEntityGrill te)
     {
-        tileEntity = te;
-
-        // the Slot constructor takes the IInventory and the slot number in that
-        // it binds to
-        // and the x-y coordinates it resides on-screen
-        
-        //TODO: use addSlotToContainer with for-loops
-        //Example: addSlotToContainer(new Slot(tileEntity, j + i * 3, 62 + j * 18, 17 + i * 18)  where j and i are variables in loops.
-        
-
-        // commonly used vanilla code that adds the player's inventory
-        bindPlayerInventory(inventoryPlayer);
+        this.tileEntity = te;
+        this.bindContainerSlots();
+        super.bindPlayerInventory(inventoryPlayer, INV_COORD, true);
     }
 
     @Override
@@ -33,65 +36,41 @@ public class ContainerGrill extends Container
         return tileEntity.isUseableByPlayer(player);
     }
 
-    protected void bindPlayerInventory(InventoryPlayer inventoryPlayer)
-    {
-        //TODO: fix slot locations.
-        for (int i = 0; i < 3; i++)
-        {
-            for (int j = 0; j < 9; j++)
-            {
-                addSlotToContainer(new Slot(inventoryPlayer, j + i * 9 + 9,
-                        8 + j * 18, 84 + i * 18));
-            }
-        }
-
-        for (int i = 0; i < 9; i++)
-        {
-            addSlotToContainer(new Slot(inventoryPlayer, i, 8 + i * 18, 142));
-        }
-    }
-
+    /**
+     * Binds the specific slots of the Grill GUI to their correct places.
+     * Slots: 0-8 are input, 9-17 are output, and 18 is fuel. (total 19).
+     */
     @Override
-    public ItemStack transferStackInSlot(EntityPlayer player, int slot)
+    public void bindContainerSlots()
     {
-        ItemStack stack = null;
-        Slot slotObject = (Slot) inventorySlots.get(slot);
+        final int LEFT_SPACING = 7;
+        final int RIGHT_SPACING_X = 3;
+        final int RIGHT_SPACING_Y = 5;
+        int slot = 0;
 
-        // null checks and checks if the item can be stacked (maxStackSize > 1)
-        if (slotObject != null && slotObject.getHasStack())
+        //Slots on left side (input slots) (slots: 0-8)
+        for (int rows = 0; rows < 3; rows++)
         {
-            ItemStack stackInSlot = slotObject.getStack();
-            stack = stackInSlot.copy();
-
-            // merges the item into player inventory since its in the tileEntity
-            if (slot < 9)
+            for (int columns = 0; columns < 3; columns++)
             {
-                if (!this.mergeItemStack(stackInSlot, 0, 35, true))
-                {
-                    return null;
-                }
+                addSlotToContainer(new Slot(tileEntity, slot, GRILL_LEFT.X + (columns * SLOT_SIZE) + (columns * LEFT_SPACING), GRILL_LEFT.Y
+                        + (rows * SLOT_SIZE) + (rows * LEFT_SPACING)));
+                slot++;
             }
-            // places it into the tileEntity is possible since its in the player
-            // inventory
-            else if (!this.mergeItemStack(stackInSlot, 0, 9, false))
-            {
-                return null;
-            }
-
-            if (stackInSlot.stackSize == 0)
-            {
-                slotObject.putStack(null);
-            } else
-            {
-                slotObject.onSlotChanged();
-            }
-
-            if (stackInSlot.stackSize == stack.stackSize)
-            {
-                return null;
-            }
-            slotObject.onPickupFromSlot(player, stackInSlot);
         }
-        return stack;
+
+        //Slots on the right side (output slots) (slots: 9-17)
+        for (int rows = 0; rows < 3; rows++)
+        {
+            for (int columns = 0; columns < 3; columns++)
+            {
+                addSlotToContainer(new Slot(tileEntity, slot, GRILL_RIGHT.X + (columns * SLOT_SIZE) + (columns * RIGHT_SPACING_X), GRILL_RIGHT.Y
+                        + (rows * SLOT_SIZE) + (rows * RIGHT_SPACING_Y)));
+                slot++;
+            }
+        }
+
+        //Slot for the fuel (slot: 18)
+        addSlotToContainer(new Slot(tileEntity, slot, GRILL_FUEL.X, GRILL_FUEL.Y));
     }
 }
