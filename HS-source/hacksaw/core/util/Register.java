@@ -40,7 +40,6 @@ public class Register
     public static void registerItemsAndBlocksAndRecipes()
     {
         registerBlocks();
-        registerBlockNames();
         registerItems();
         registerItemNames();
         registerHandlers();
@@ -74,30 +73,13 @@ public class Register
         //========= Register Each Block ==============
 
         // for each Block within the enum (HacksawBlocks)
-        for (HacksawBlocks blocks : HacksawBlocks.values())
+        for (HacksawBlocks block : HacksawBlocks.values())
         {
             // Check the block is initialized
-            if (blocks.block != null)
+            if (block.block != null)
             {
                 // Register the block with ModLoader
-                //TODO: Before updating to beyond 1.6.4, change this. 
-                GameRegistry.registerBlock(blocks.block);
-            }
-        }
-    }
-
-    private static void registerBlockNames()
-    {
-        //==================== Registers the names for the blocks ======================
-
-        // for each Block within the enum (HacksawBlocks)
-        for (HacksawBlocks blocks : HacksawBlocks.values())
-        {
-            // Check that the block is initialized and the block name is set
-            if (blocks.block != null && blocks.name != null)
-            {
-                // Register the name of the block with ModLoader
-                LanguageRegistry.addName(blocks.block, blocks.name);
+                GameRegistry.registerBlock(block.block, block.name);
             }
         }
     }
@@ -164,9 +146,9 @@ public class Register
         //=================== Registers the shapeless-recipes ====================
 
         //recipe for using the Chef knife to cut melon blocks to get melon slices
-        GameRegistry.addRecipe(new ChefKnifeRecipe(new ItemStack(Item.melon, 4), new Object[] { HacksawBlocks.supermelon.block,
-                new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1) //Note: a new itemstack is made here because you want to be able to use the item no matter what the damage value
-                }));
+        //GameRegistry.addRecipe(new ChefKnifeRecipe(new ItemStack(Item.melon, 4), new Object[] { HacksawBlocks.supermelon.block,
+        //        new ItemStack(HacksawItems.chefKnifeSharp.item, 1, -1) //Note: a new itemstack is made here because you want to be able to use the item no matter what the damage value
+        //        }));
 
         //recipe for "sharpening" the Dull Chef knife
         GameRegistry.addShapelessRecipe(new ItemStack(HacksawItems.chefKnifeSharp.item), new Object[] { HacksawItems.chefKnifeDull.item,

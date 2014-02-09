@@ -80,17 +80,6 @@ public class CoreConfiguration extends Configuration
         prop.comment = "Attempt to automatically resolve item/block ID conflicts (default: false)";
         autoresolve = prop.getBoolean(false);
 
-        // ======================================== Machines ===========================================
-        /*
-         * 		prop = get("grill", Configuration.CATEGORY_BLOCK, nextBlockId());
-         *		HacksawBlocks.grill.blockId = prop.getInt();
-         *		HacksawBlocks.grill.name = "Grill";
-         *
-         *		prop = get("grill.electric", Configuration.CATEGORY_BLOCK, nextBlockId());
-         *		HacksawBlocks.grillElectric.blockId = prop.getInt();
-         *		HacksawBlocks.grillElectric.name = "Electric Grill";
-         *
-         */
         // ======================================== Vegetation =========================================
         prop = get(Configuration.CATEGORY_BLOCK, "supermelon", 103); // intentionally
                                                                      // clobbering
@@ -107,6 +96,17 @@ public class CoreConfiguration extends Configuration
         HacksawBlocks.lettuceCrop.blockId = prop.getInt();
         HacksawBlocks.lettuceCrop.name = "Lettuce Plant";
 
+        // ======================================== Machines ===========================================
+
+        prop = get(Configuration.CATEGORY_BLOCK, "grill", nextBlockId());
+        HacksawBlocks.grill.blockId = prop.getInt();
+        HacksawBlocks.grill.name = "Grill";
+
+        /*      prop = get("grill.electric", Configuration.CATEGORY_BLOCK, nextBlockId());
+         *      HacksawBlocks.grillElectric.blockId = prop.getInt();
+         *      HacksawBlocks.grillElectric.name = "Electric Grill";
+         *
+         */
         // ======================================== Food =========================================
         // Gets the ID and Name for the "Carrot"
         prop = get(Configuration.CATEGORY_ITEM, "food.carrot", nextItemId());
