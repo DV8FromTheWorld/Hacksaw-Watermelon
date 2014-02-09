@@ -3,6 +3,7 @@ package hacksaw.core.containers;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
@@ -12,6 +13,54 @@ public abstract class ContainerBase extends Container
     public final int INV_HEIGHT = 3;
     public static final int SLOT_SIZE = 18;
     public final int HOT_BAR_GAP = 58;
+
+    private final IInventory inventory;
+
+    /**
+     * Super constructor for containers without a player inventory
+     * 
+     * @param iinventory
+     *            the inventory we want to bind
+     */
+    protected ContainerBase(IInventory iinventory)
+    {
+        this.inventory = iinventory;
+        this.bindContainerSlots();
+    }
+
+    /**
+     * Super constructor with player inventory and a choice to bind the hotbar.
+     * 
+     * @param playerInventory
+     *            the Inventory of the player
+     * @param iinventory
+     *            the inventory we want to bind
+     * @param playerInventoryCoords
+     *            the coordinates where we would like to bind the player
+     *            invetory
+     * @param shouldBindHotbar
+     *            if we should bind the player's hotbar
+     */
+    protected ContainerBase(InventoryPlayer playerInventory, IInventory iinventory, Coord playerInventoryCoords, boolean shouldBindHotbar)
+    {
+        this.inventory = iinventory;
+        this.bindContainerSlots();
+        this.bindPlayerInventory(playerInventory, playerInventoryCoords, shouldBindHotbar);
+    }
+
+    /**
+     * @return the inventory
+     */
+    public IInventory getInventoryData()
+    {
+        return inventory;
+    }
+
+    @Override
+    public boolean canInteractWith(EntityPlayer player)
+    {
+        return this.getInventoryData().isUseableByPlayer(player);
+    }
 
     /**
      * Binds the player's inventory slots based on the provided coordinates.

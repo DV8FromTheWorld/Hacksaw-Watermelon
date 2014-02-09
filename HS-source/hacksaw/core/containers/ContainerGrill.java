@@ -1,7 +1,6 @@
 package hacksaw.core.containers;
 
 import hacksaw.core.tileentities.TileEntityGrill;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Slot;
 
@@ -11,8 +10,6 @@ public class ContainerGrill extends ContainerBase
     private static final Coord GRILL_LEFT = new Coord(9, 8);
     private static final Coord GRILL_RIGHT = new Coord(121, 10);
     private static final Coord GRILL_FUEL = new Coord(93, 59);
-
-    protected TileEntityGrill tileEntity;
 
     /**
      * Creates a new Container for the a Grill TileEntity.
@@ -25,15 +22,7 @@ public class ContainerGrill extends ContainerBase
      */
     public ContainerGrill(InventoryPlayer inventoryPlayer, TileEntityGrill te)
     {
-        this.tileEntity = te;
-        this.bindContainerSlots();
-        super.bindPlayerInventory(inventoryPlayer, INV_COORD, true);
-    }
-
-    @Override
-    public boolean canInteractWith(EntityPlayer player)
-    {
-        return tileEntity.isUseableByPlayer(player);
+        super(inventoryPlayer, te, INV_COORD, true);
     }
 
     /**
@@ -53,7 +42,7 @@ public class ContainerGrill extends ContainerBase
         {
             for (int columns = 0; columns < 3; columns++)
             {
-                addSlotToContainer(new Slot(tileEntity, slot, GRILL_LEFT.X + (columns * SLOT_SIZE) + (columns * LEFT_SPACING), GRILL_LEFT.Y
+                addSlotToContainer(new Slot(this.getInventoryData(), slot, GRILL_LEFT.X + (columns * SLOT_SIZE) + (columns * LEFT_SPACING), GRILL_LEFT.Y
                         + (rows * SLOT_SIZE) + (rows * LEFT_SPACING)));
                 slot++;
             }
@@ -64,13 +53,13 @@ public class ContainerGrill extends ContainerBase
         {
             for (int columns = 0; columns < 3; columns++)
             {
-                addSlotToContainer(new Slot(tileEntity, slot, GRILL_RIGHT.X + (columns * SLOT_SIZE) + (columns * RIGHT_SPACING_X), GRILL_RIGHT.Y
-                        + (rows * SLOT_SIZE) + (rows * RIGHT_SPACING_Y)));
+                addSlotToContainer(new Slot(this.getInventoryData(), slot, GRILL_RIGHT.X + (columns * SLOT_SIZE) + (columns * RIGHT_SPACING_X),
+                        GRILL_RIGHT.Y + (rows * SLOT_SIZE) + (rows * RIGHT_SPACING_Y)));
                 slot++;
             }
         }
 
         //Slot for the fuel (slot: 18)
-        addSlotToContainer(new Slot(tileEntity, slot, GRILL_FUEL.X, GRILL_FUEL.Y));
+        addSlotToContainer(new Slot(this.getInventoryData(), slot, GRILL_FUEL.X, GRILL_FUEL.Y));
     }
 }
