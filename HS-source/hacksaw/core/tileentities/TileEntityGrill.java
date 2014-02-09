@@ -1,4 +1,4 @@
-package hacksaw.core.machines.tileentities;
+package hacksaw.core.tileentities;
 
 import hacksaw.core.HacksawGuiIds;
 import net.minecraft.item.ItemStack;

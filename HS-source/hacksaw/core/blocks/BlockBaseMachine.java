@@ -1,7 +1,7 @@
 package hacksaw.core.blocks;
 
 import hacksaw.core.mod_Hacksaw;
-import hacksaw.core.machines.tileentities.TileEntityBase;
+import hacksaw.core.tileentities.TileEntityBase;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;

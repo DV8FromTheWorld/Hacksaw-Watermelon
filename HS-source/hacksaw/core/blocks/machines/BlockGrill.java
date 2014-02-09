@@ -2,7 +2,7 @@ package hacksaw.core.blocks.machines;
 
 import hacksaw.core.HacksawGuiIds;
 import hacksaw.core.blocks.BlockBaseMachine;
-import hacksaw.core.machines.tileentities.TileEntityGrill;
+import hacksaw.core.tileentities.TileEntityGrill;
 
 
 

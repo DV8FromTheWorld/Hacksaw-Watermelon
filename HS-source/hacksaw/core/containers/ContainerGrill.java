@@ -1,6 +1,6 @@
-package hacksaw.core.machines.containers;
+package hacksaw.core.containers;
 
-import hacksaw.core.machines.tileentities.TileEntityGrill;
+import hacksaw.core.tileentities.TileEntityGrill;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
