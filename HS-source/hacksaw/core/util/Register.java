@@ -4,10 +4,12 @@ import hacksaw.core.BlockRemover;
 import hacksaw.core.HacksawBlocks;
 import hacksaw.core.HacksawItems;
 import hacksaw.core.MeatProvider;
+import hacksaw.core.mod_Hacksaw;
 import hacksaw.core.blocks.crops.BlockCarrot;
 import hacksaw.core.blocks.crops.BlockLettuce;
 import hacksaw.core.blocks.crops.BlockSuperMelon;
 import hacksaw.core.blocks.machines.BlockGrill;
+import hacksaw.core.handlers.GuiHandler;
 import hacksaw.core.items.food.ItemAppleGreen;
 import hacksaw.core.items.food.ItemAppleGreenSliced;
 import hacksaw.core.items.food.ItemAppleRedSliced;
@@ -31,6 +33,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -187,6 +190,7 @@ public class Register
     {
         //================= Registers Forge Handlers =========================
         MinecraftForge.EVENT_BUS.register(new MeatProvider());
+        NetworkRegistry.instance().registerGuiHandler(mod_Hacksaw.INSTANCE, new GuiHandler());
 
     }
 
