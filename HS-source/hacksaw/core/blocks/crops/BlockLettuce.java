@@ -1,6 +1,6 @@
 package hacksaw.core.blocks.crops;
 
-import hacksaw.core.HacksawBlocks;
+import hacksaw.core.EnumVegetation;
 import hacksaw.core.HacksawItems;
 import hacksaw.core.blocks.BlockBaseCrop;
 
@@ -60,7 +60,7 @@ public class BlockLettuce extends BlockBaseCrop
     @Override
     public int getRenderType()
     {
-        return HacksawBlocks.lettuceCrop.renderId;
+        return EnumVegetation.CROP_LETTUCE.renderId;
     }
 
     @Override

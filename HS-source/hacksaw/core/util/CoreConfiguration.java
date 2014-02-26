@@ -1,6 +1,7 @@
 package hacksaw.core.util;
 
-import hacksaw.core.HacksawBlocks;
+import hacksaw.core.EnumMachines;
+import hacksaw.core.EnumVegetation;
 import hacksaw.core.HacksawItems;
 import hacksaw.core.util.HacksawLogger.LogLevel;
 
@@ -15,8 +16,12 @@ import net.minecraftforge.common.Property;
 
 public class CoreConfiguration extends Configuration
 {
-    public static final String version = "v0.2";
-    public static final String name = "Hacksaw-Watermelon";
+    public static final String MOD_ID = "HSWM";
+    public static final String MOD_VERSION = "v0.2";
+    public static final String MOD_NAME = "Hacksaw-Watermelon";
+    public static final String MOD_RESOURCES = "hacksaw";
+    public static final String CLIENT_PROXY = "hacksaw.core.ClientProxy";
+    public static final String COMMON_PROXY = "hacksaw.core.CommonProxy";
 
     private static final int START_BLOCK_ID = 1200;
     private static final int START_ITEM_ID = 1000;
@@ -85,28 +90,22 @@ public class CoreConfiguration extends Configuration
                                                                      // clobbering
                                                                      // vanilla
                                                                      // melon
-        HacksawBlocks.supermelon.blockId = prop.getInt();
-        HacksawBlocks.supermelon.name = "Melon";
+        EnumVegetation.MELON.blockId = prop.getInt();
+        EnumVegetation.MELON.name = "Melon";
 
         prop = get(Configuration.CATEGORY_BLOCK, "carrot.crop", nextBlockId());
-        HacksawBlocks.carrotCrop.blockId = prop.getInt();
-        HacksawBlocks.carrotCrop.name = "Carrot Plant";
+        EnumVegetation.CROP_CARROT.blockId = prop.getInt();
+        EnumVegetation.CROP_CARROT.name = "Carrot Plant";
 
         prop = get(Configuration.CATEGORY_BLOCK, "lettuce.crop", nextBlockId());
-        HacksawBlocks.lettuceCrop.blockId = prop.getInt();
-        HacksawBlocks.lettuceCrop.name = "Lettuce Plant";
+        EnumVegetation.CROP_LETTUCE.blockId = prop.getInt();
+        EnumVegetation.CROP_LETTUCE.name = "Lettuce Plant";
 
         // ======================================== Machines ===========================================
 
-        prop = get(Configuration.CATEGORY_BLOCK, "grill", nextBlockId());
-        HacksawBlocks.grill.blockId = prop.getInt();
-        HacksawBlocks.grill.name = "Grill";
+        prop = get(Configuration.CATEGORY_BLOCK, "machine", nextBlockId());
+        EnumMachines.blockMachineId = prop.getInt();
 
-        /*      prop = get("grill.electric", Configuration.CATEGORY_BLOCK, nextBlockId());
-         *      HacksawBlocks.grillElectric.blockId = prop.getInt();
-         *      HacksawBlocks.grillElectric.name = "Electric Grill";
-         *
-         */
         // ======================================== Food =========================================
         // Gets the ID and Name for the "Carrot"
         prop = get(Configuration.CATEGORY_ITEM, "food.carrot", nextItemId());
@@ -205,7 +204,7 @@ public class CoreConfiguration extends Configuration
     {
         Property versionProp = get(Configuration.CATEGORY_GENERAL, "version", 0);
         // versionProp.value = version;
-        versionProp.set(version);
+        versionProp.set(MOD_VERSION);
         super.save();
     }
 

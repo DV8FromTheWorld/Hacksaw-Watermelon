@@ -13,17 +13,16 @@ public class GuiHandler implements IGuiHandler
 {
 
     @Override
-    public Object getServerGuiElement(int ID, EntityPlayer player, World world,
-            int x, int y, int z)
+    public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
     {
         TileEntity tileEntity = world.getBlockTileEntity(x, y, z);
-        switch(ID)
+        switch (ID)
         {
             case HacksawGuiIds.GRILL:
                 if (tileEntity instanceof TileEntityGrill)
                 {
-                    return new ContainerGrill(player.inventory, (TileEntityGrill)tileEntity);
-                }  
+                    return new ContainerGrill(player.inventory, (TileEntityGrill) tileEntity);
+                }
                 break;
             case HacksawGuiIds.GRILL_ELECTRIC:
                 break;
@@ -34,19 +33,18 @@ public class GuiHandler implements IGuiHandler
         }
         return null;
     }
-    
+
     @Override
-    public Object getClientGuiElement(int ID, EntityPlayer player, World world,
-            int x, int y, int z)
+    public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
     {
         TileEntity tileEntity = world.getBlockTileEntity(x, y, z);
-        switch(ID)
+        switch (ID)
         {
             case HacksawGuiIds.GRILL:
                 if (tileEntity instanceof TileEntityGrill)
                 {
-                    return new GuiGrill(player.inventory, (TileEntityGrill)tileEntity);
-                }  
+                    return new GuiGrill(player.inventory, (TileEntityGrill) tileEntity);
+                }
                 break;
             case HacksawGuiIds.GRILL_ELECTRIC:
                 break;

@@ -1,14 +1,14 @@
 package hacksaw.core.util;
 
 import hacksaw.core.BlockRemover;
-import hacksaw.core.HacksawBlocks;
+import hacksaw.core.EnumMachines;
+import hacksaw.core.EnumVegetation;
 import hacksaw.core.HacksawItems;
 import hacksaw.core.MeatProvider;
 import hacksaw.core.mod_Hacksaw;
 import hacksaw.core.blocks.crops.BlockCarrot;
 import hacksaw.core.blocks.crops.BlockLettuce;
 import hacksaw.core.blocks.crops.BlockSuperMelon;
-import hacksaw.core.blocks.machines.BlockGrill;
 import hacksaw.core.handlers.GuiHandler;
 import hacksaw.core.items.food.ItemAppleGreen;
 import hacksaw.core.items.food.ItemAppleGreenSliced;
@@ -56,27 +56,29 @@ public class Register
     {
         //====================== Registers blocks ========================
 
+        EnumMachines.registerMachines();
+
         //---------Vegetation----------
         // if the block was removed
         if (BlockRemover.removeVanillaBlock(Block.melon))
         {
             // initialize the block
-            HacksawBlocks.supermelon.block = new BlockSuperMelon(HacksawBlocks.supermelon.blockId);
+            EnumVegetation.MELON.block = new BlockSuperMelon(EnumVegetation.MELON.blockId);
             // log some success message
             HacksawLogger.log(LogLevel.DEBUG, "BlockSuperMelon loaded successfully.");
         }
 
-        HacksawBlocks.carrotCrop.block = new BlockCarrot(HacksawBlocks.carrotCrop.blockId);
-        HacksawBlocks.lettuceCrop.block = new BlockLettuce(HacksawBlocks.lettuceCrop.blockId);
+        EnumVegetation.CROP_CARROT.block = new BlockCarrot(EnumVegetation.CROP_CARROT.blockId);
+        EnumVegetation.CROP_LETTUCE.block = new BlockLettuce(EnumVegetation.CROP_LETTUCE.blockId);
 
         //PLACEHOLDERS
-        HacksawBlocks.grill.block = new BlockGrill(HacksawBlocks.grill.blockId);
+        //HacksawBlocks.grill.block = new BlockGrill(HacksawBlocks.grill.blockId);
         //HacksawBlocks.grillElectric.block = new BlockGrill(HacksawBlocks.grillElectric.blockId);
 
         //========= Register Each Block ==============
 
         // for each Block within the enum (HacksawBlocks)
-        for (HacksawBlocks block : HacksawBlocks.values())
+        for (EnumVegetation block : EnumVegetation.values())
         {
             // Check the block is initialized
             if (block.block != null)
@@ -110,8 +112,8 @@ public class Register
         HacksawItems.appleGreenSliced.item = new ItemAppleGreenSliced(HacksawItems.appleGreenSliced.itemId, 2, 0.15F, false);
 
         //---------Seeds----------
-        HacksawItems.carrotSeed.item = new ItemCarrotSeed(HacksawItems.carrotSeed.itemId, HacksawBlocks.carrotCrop.blockId);
-        HacksawItems.lettuceSeed.item = new ItemLettuceSeed(HacksawItems.lettuceSeed.itemId, HacksawBlocks.lettuceCrop.blockId);
+        HacksawItems.carrotSeed.item = new ItemCarrotSeed(HacksawItems.carrotSeed.itemId, EnumVegetation.CROP_CARROT.blockId);
+        HacksawItems.lettuceSeed.item = new ItemLettuceSeed(HacksawItems.lettuceSeed.itemId, EnumVegetation.CROP_LETTUCE.blockId);
         //HacksawItems.appleSeed.item = new ItemAppleSeed(HacksawItems.appleSeed.itemId, HacksawBlocks.appleSappling.blockId);
     }
 

@@ -2,20 +2,21 @@ package hacksaw.core;
 
 import net.minecraft.block.Block;
 
-public enum HacksawBlocks
+public enum EnumVegetation
 {
     //----------- Vegetation ------------
-    supermelon,
-    appleSappling,
-    carrotCrop,
-    lettuceCrop,
-
-    //----------- Machines --------------
-    grill,
-    grillElectric;
+    MELON(""),
+    SAPLING_APPLE(""),
+    CROP_CARROT(""),
+    CROP_LETTUCE("");
 
     public int blockId;
     public int renderId;
     public String name;
     public Block block;
+
+    EnumVegetation(String name)
+    {
+        this.name = name;
+    }
 }

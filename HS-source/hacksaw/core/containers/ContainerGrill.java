@@ -42,8 +42,8 @@ public class ContainerGrill extends ContainerBase
         {
             for (int columns = 0; columns < 3; columns++)
             {
-                addSlotToContainer(new Slot(this.getInventoryData(), slot, GRILL_LEFT.X + (columns * SLOT_SIZE) + (columns * LEFT_SPACING), GRILL_LEFT.Y
-                        + (rows * SLOT_SIZE) + (rows * LEFT_SPACING)));
+                addSlotToContainer(new Slot(this.getInventoryData(), slot, GRILL_LEFT.X + (columns * SLOT_SIZE) + (columns * LEFT_SPACING),
+                        GRILL_LEFT.Y + (rows * SLOT_SIZE) + (rows * LEFT_SPACING)));
                 slot++;
             }
         }

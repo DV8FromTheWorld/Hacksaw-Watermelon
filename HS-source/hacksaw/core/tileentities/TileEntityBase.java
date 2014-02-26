@@ -1,5 +1,6 @@
 package hacksaw.core.tileentities;
 
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -10,13 +11,12 @@ import net.minecraft.tileentity.TileEntity;
 public abstract class TileEntityBase extends TileEntity implements IInventory
 {
     protected ItemStack[] inventory;
-    
+    private int rotation;
+
     public TileEntityBase(int inventorySize)
     {
         inventory = new ItemStack[inventorySize];
     }
-    
-   
 
     @Override
     public void setInventorySlotContents(int slot, ItemStack stack)
@@ -27,7 +27,7 @@ public abstract class TileEntityBase extends TileEntity implements IInventory
             stack.stackSize = getInventoryStackLimit();
         }
     }
-    
+
     @Override
     public ItemStack getStackInSlotOnClosing(int slot)
     {
@@ -38,7 +38,7 @@ public abstract class TileEntityBase extends TileEntity implements IInventory
         }
         return stack;
     }
-    
+
     @Override
     public ItemStack decrStackSize(int slot, int amt)
     {
@@ -48,7 +48,8 @@ public abstract class TileEntityBase extends TileEntity implements IInventory
             if (stack.stackSize <= amt)
             {
                 setInventorySlotContents(slot, null);
-            } else
+            }
+            else
             {
                 stack = stack.splitStack(amt);
                 if (stack.stackSize == 0)
@@ -59,13 +60,13 @@ public abstract class TileEntityBase extends TileEntity implements IInventory
         }
         return stack;
     }
-    
+
     @Override
     public int getSizeInventory()
     {
         return inventory.length;
     }
-    
+
     @Override
     public int getInventoryStackLimit()
     {
@@ -77,7 +78,7 @@ public abstract class TileEntityBase extends TileEntity implements IInventory
     {
         return inventory[slot];
     }
-    
+
     @Override
     public void openChest()
     {
@@ -87,11 +88,12 @@ public abstract class TileEntityBase extends TileEntity implements IInventory
     public void closeChest()
     {
     }
-    
+
     @Override
     public void readFromNBT(NBTTagCompound tagCompound)
     {
         super.readFromNBT(tagCompound);
+        this.rotation = tagCompound.getInteger("Rotation");
 
         NBTTagList tagList = tagCompound.getTagList("Inventory");
         for (int i = 0; i < tagList.tagCount(); i++)
@@ -109,6 +111,7 @@ public abstract class TileEntityBase extends TileEntity implements IInventory
     public void writeToNBT(NBTTagCompound tagCompound)
     {
         super.writeToNBT(tagCompound);
+        tagCompound.setInteger("Rotation", this.rotation);
 
         NBTTagList itemList = new NBTTagList();
         for (int i = 0; i < inventory.length; i++)
@@ -124,18 +127,30 @@ public abstract class TileEntityBase extends TileEntity implements IInventory
         }
         tagCompound.setTag("Inventory", itemList);
     }
-    
+
     @Override
     public boolean isInvNameLocalized()
     {
         return false;
     }
-    
+
     @Override
     public boolean isUseableByPlayer(EntityPlayer player)
     {
-        return worldObj.getBlockTileEntity(xCoord, yCoord, zCoord) == this
-                && player.getDistanceSq(xCoord + 0.5, yCoord + 0.5,
-                        zCoord + 0.5) < 64;
-    }    
+        return worldObj.getBlockTileEntity(xCoord, yCoord, zCoord) == this && player.getDistanceSq(xCoord + 0.5, yCoord + 0.5, zCoord + 0.5) < 64;
+    }
+
+    /**
+     * @param itemstack
+     * @param entity
+     */
+    public void onBlockPlacedBy(ItemStack itemstack, EntityLivingBase entity)
+    {
+        this.rotation = (int) Math.floor((double) ((entity.rotationYaw * 4F) / 360F) + 0.5D) & 3;
+    }
+
+    public int getRotation()
+    {
+        return this.rotation;
+    }
 }

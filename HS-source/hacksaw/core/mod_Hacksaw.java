@@ -14,15 +14,15 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
-@Mod(modid = "HSWM", name = CoreConfiguration.name, version = CoreConfiguration.version)
+@Mod(modid = CoreConfiguration.MOD_ID, name = CoreConfiguration.MOD_NAME, version = CoreConfiguration.MOD_VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class mod_Hacksaw
 {
 
-    @Instance("HSWM")
+    @Instance(CoreConfiguration.MOD_ID)
     public static mod_Hacksaw INSTANCE;
 
-    @SidedProxy(clientSide = "hacksaw.core.ClientProxy", serverSide = "hacksaw.core.CommonProxy")
+    @SidedProxy(clientSide = CoreConfiguration.CLIENT_PROXY, serverSide = CoreConfiguration.COMMON_PROXY)
     public static CommonProxy proxy;
 
     public static boolean initialized = false;
@@ -38,7 +38,7 @@ public class mod_Hacksaw
     {
         if (!mod_Hacksaw.initialized)
         {
-            HacksawLogger.log("Loading " + CoreConfiguration.name + "...");
+            HacksawLogger.log("Loading " + CoreConfiguration.MOD_NAME + "...");
             proxy.preloadTextures();
             CoreConfiguration.init(CommonProxy.path, "config/hacksaw/core.cfg");
             RecipeRemover.removeVanillaRecipes();
@@ -46,7 +46,7 @@ public class mod_Hacksaw
             Register.registerItemsAndBlocksAndRecipes();
             PluginLoader.checkPlugins();
             mod_Hacksaw.initialized = true;
-            HacksawLogger.log(CoreConfiguration.name + " " + CoreConfiguration.version + " has successfully loaded");
+            HacksawLogger.log(CoreConfiguration.MOD_NAME + " " + CoreConfiguration.MOD_VERSION + " has successfully loaded");
         }
         else
         {
